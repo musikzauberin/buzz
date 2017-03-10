@@ -1,0 +1,12 @@
+# weird stuff
+
+/.Rhistory
+
+
+# latex
+
+.aux
+.log
+.out
+.synctex.gz
+.toc
