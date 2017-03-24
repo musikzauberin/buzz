@@ -9,6 +9,7 @@ __version__ = '0.0.3'
 import csv
 import numpy
 import operator
+import decimal
 
 months = []
 days = []
@@ -19,6 +20,7 @@ startofmonths = [0]
 alist = []
 blist = []
 clist = []
+bints = []
 
 # Read a file containing:
 # '' System  Season  Month  Day  Year  Bee  Plant  Visits  Precip  Tmax  Tmin  Humid
@@ -102,6 +104,10 @@ print len(alist)
 print len(alist) == len(blist) == len(clist)
 
 # calculate turnover rate
+for i in range(len(alist)):
+  bint = (alist[i] + blist[i] + clist[i]) / ((2*alist[i] + blist[i] + clist[i])/2.0) - 1.0
+  bint = round(bint, 4)
+  bints.append(bint)
 
-
-
+print bints
+print len(bints)
