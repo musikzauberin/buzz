@@ -73,4 +73,9 @@ for(i in 1:nrow(LnkLst)){
 write.csv(OutData,"../Results/ClimNetDataBee.csv")
 
 #Now summarize bee-specific data... 
-
+SumData <- read.csv("../Results/ClimNetDataBee.csv", header = TRUE)
+head(SumData)
+str(SumData)
+plot(SumData$Visits~SumData$Season)
+#logmodelpie1<-lm(pie.1~log(time_min),data=d)
+#summary(logmodelpie1)
