@@ -3,7 +3,7 @@
 \geometry{
  a4paper,
  total={210mm,297mm},
- left=25mm, % usually 20, 35 for binding?
+ left=25mm, 
  right=25mm,
  top=25mm,
  bottom=25mm,
@@ -88,7 +88,18 @@
 %\\
 %\large{I would like to thank }
 %\vfill
-%
+
+
+\newpage
+\pagenumbering{gobble}
+\vspace*{\fill}
+\begin{abstract}  
+\doublespacing
+abstracting abstracting abstracting
+
+\end{abstract}
+\vfill
+
 % contents page
 \newpage
 \pagenumbering{gobble}
@@ -99,25 +110,14 @@
 
 \doublespacing
 
-%% abbreviations page?
-%\newpage 
-%\vspace*{\fill}
-%{\huge\bfseries Abbreviations} \\
-%\\
-%\\
-%\large{maybe a table}
-%\vfill
-%
-%% abstract page
-%\newpage
-%\pagenumbering{gobble}
-%\vspace*{\fill}
-%\begin{abstract}  
-%\doublespacing
-%abstracting abstracting abstracting
-%
-%\end{abstract}
-%\vfill
+% abbreviations page?
+\newpage 
+\vspace*{\fill}
+{\huge\bfseries Abbreviations} \\
+\\
+\\
+\large{maybe a table}
+\vfill
 
 % Page number
 \newpage
@@ -129,47 +129,6 @@
 
 %%% Start writing
 \section{Introduction} 
-\subsection{Things we can try}
-\begin{itemize}
-	\item metabolism equation for bees using size
-	\item network turnover rate for bees 
-	\begin{itemize}
-		\item change of interactions
-		\item species turnover 
-		\item is there sufficient data..., will need to cover a substantial number of bee species
-	\end{itemize}
-	\item how size relates with abundance of bees
-	\begin{itemize}
-		\item what size indicator to use... 
-		\item intertegular span (62 bee species, Greenleaf et al 2007)
-		\item correlation analysis of data
-		\item there will probably be enough data for this
-	\end{itemize}
-	\item how size relates with foraging distances and hence network?
-	\begin{itemize}
-		\item increase in size significantly correlated with increase in foraging distances
-		\item so perhaps bigger bees have higher changes of interactions as they are generalists...?
-	\end{itemize}
-	\item how metabolism rate link with (body size and hence) network turnover perhaps...?
-\end{itemize}
-
-\subsection{Things to do}
-\begin{itemize}
-	\item Timetable/Plan
-	\item Focus
-	\begin{itemize}
-		\item on one bee species?
-		\item 
-	\end{itemize}
-	\item null and alternative hypotheses
-\end{itemize}
-
-\subsection{Questions...}
-\begin{itemize}
-	\item how does one know which equation to use....? to have a model for metabolism rate of bees
-	\item have a bunch of equations and then see if data matches....?
-	\item what kind of equations to use..... is it possible ODE rate of change of metabolism rate with respect to size or am i sprouting nonsense....
-\end{itemize}
 
 	
 
@@ -190,6 +149,8 @@
 \newpage
 \bibliography{CRISPR2}
 \bibliographystyle{cell}
+
+%Appendices/Supplementary Information (optional)
 
 
 \end{document}
