@@ -1,32 +1,30 @@
 #!/usr/bin/env python
 
 
-"""Calculating weekly turnover in Cerrado"""
+"""Calculating monthly turnover in Cerrado"""
 
 __author__ = 'Jia Le Lim'
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 
 import csv
-import numpy
 import operator
 import decimal
+import numpy as np
+import matplotlib.pyplot as pl
+import calendar
 
 months = []
 days = []
 years = []
 bees = []
 plants = []
-startofmonths = [0]
-alist = []
-blist = []
-clist = []
-bints = []
 
 # Read a file containing:
 # '' System  Season  Month  Day  Year  Bee  Plant  Visits  Precip  Tmax  Tmin  Humid
 
 f = open('../data/CerradoBoaVentura/rearranged/ClimNetDataLnx.csv','rb')
 g = open('../data/CerradoBoaVentura/rearranged/ReqData.csv','wb')
+
 csvread = csv.reader(f)
 csvwrite = csv.writer(g)
 
@@ -35,6 +33,9 @@ for row in csvread:
 
 f.close()
 g.close()
+
+
+# do a rearranging data script at the top
 
 h = open('../data/CerradoBoaVentura/rearranged/ReqData.csv','rb')
 data = csv.reader(h)
@@ -54,18 +55,23 @@ plants = plants[1:]
 
 datalen = len(months)
 
-# starting index of every month + the last index -> stored as startofmonths
+# starting index of every month + the last index(len of months) -> stored as startofmonths
+startofmonths = [0]
+
 for i in range(1, datalen):
-  if months[i] == months[i-1]:
-    i += 1
-  else:
+  if months[i] != months[i-1]:
     startofmonths.append(i)
-    i += 1
 startofmonths.append(len(months))
 print 'startofmonths' + str(startofmonths)
 
 # for every loop, startindex is where month 1 starts, nextindex is where month 2 starts, thereafter compare month 1 and month 2
 # calculate a, similarity bet two consecutive months, and b & c, unique pairs in each month.
+
+alist = []
+blist = []
+clist = []
+bints = []
+
 for x in range(len(startofmonths)-2):
   startindex = startofmonths[x]
   nextindex = startofmonths[x + 1]
@@ -73,19 +79,15 @@ for x in range(len(startofmonths)-2):
   a = 0
   b = 0
   c = 0
-  e = nextindex
-  print 'indexes ' + str(startindex) + ' ' + str(nextindex) + ' ' + str(nextnextindex)
-  
+
   for i in range(startindex, nextindex):
     e = nextindex
-    print 'start ' + str(i) + ' ' + str(e)
     
     while e < nextnextindex:
-      print 'middle ' + str(i) + ' ' + str(e)
       if bees[i] == bees[e]:
         if plants[i] == plants[e]:
           a += 1
-          break
+          break # breaks the while loop
         else:
           e += 1
       else:
@@ -111,3 +113,37 @@ for i in range(len(alist)):
 
 print bints
 print len(bints)
+
+xlabel = []
+xlabels = []
+
+for i in startofmonths[1:-1]:
+  xlabel = calendar.month_abbr[int(months[i])] + ' ' + str(years[i])
+  xlabels.append(xlabel)
+
+print xlabels
+print len(xlabels) == len(bints)
+
+pl.plot(bints, 'bo', bints, 'k')
+
+pl.xticks( range(len(xlabels)), xlabels, rotation = 'vertical')
+pl.margins(0.2)
+pl.subplots_adjust(bottom=0.15)
+
+pl.title(' monthly turnover rate Cerrado')
+
+pl.savefig('../results/monthlyCerrado.pdf')
+# pl.plot(x, y, options)
+# ro : scatterplots
+
+# plot(x1, y1, r)
+
+# pl.xlabel(' ')
+# pl.ylabel(' ')
+#
+
+
+# pl.xlim('')
+# pl.ylim('')
+
+# python unique elements
