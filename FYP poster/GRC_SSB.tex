@@ -1,0 +1,189 @@
+\documentclass[20pt,margin=5mm, innermargin=3mm]{tikzposter}
+\usepackage[utf8]{inputenc}
+\geometry{paperwidth=42.0cm,paperheight=59.4cm}
+% \usetheme{Simple}
+% \usecolorstyle{Spain}
+% \usebackgroundstyle{Empty}
+% \usetitlestyle{Filled}
+% \useblockstyle{Basic}
+\tikzposterlatexaffectionproofoff
+\usepackage{amsmath}
+
+\useblockstyle{Slide}
+\renewcommand*\familydefault{cabin}
+\usepackage[sfdefault,condensed]{cabin}
+\usepackage[T1]{fontenc}
+\usepackage{fix-cm}
+\usepackage{tikz,multicol}
+\usepackage{capt-of}
+
+\definecolor{greenone}{RGB}{21,75,52}
+\definecolor{greentwo}{RGB}{25,97,66}
+\definecolor{greenthree}{RGB}{16,57,39}
+\definecolor{mygray}{RGB}{203,203,203}
+\definecolorstyle{myColorStyle} {
+    \colorlet{colorOne}{greenone}
+    \colorlet{colorTwo}{greentwo}
+    \colorlet{colorThree}{greenthree}
+    \colorlet{colorFour}{mygray}
+    }{
+    % Background Colors
+    \colorlet{backgroundcolor}{colorOne}
+    \colorlet{framecolor}{colorOne}
+    % Title Colors
+    \colorlet{titlefgcolor}{white}
+    \colorlet{titlebgcolor}{colorTwo}
+    % Block Colors
+    \colorlet{blocktitlebgcolor}{colorFour}
+    \colorlet{blocktitlefgcolor}{colorTwo}
+    \colorlet{blockbodybgcolor}{white}
+    \colorlet{blockbodyfgcolor}{black}
+    % Innerblock Colors
+    \colorlet{innerblocktitlebgcolor}{white}
+    \colorlet{innerblocktitlefgcolor}{black}
+    \colorlet{innerblockbodybgcolor}{white}
+    \colorlet{innerblockbodyfgcolor}{black}
+    % Note colors
+    \colorlet{notefgcolor}{black}
+    \colorlet{notebgcolor}{white}
+    \colorlet{notefrcolor}{white}
+}
+
+\usecolorstyle{myColorStyle}
+
+\usebackgroundstyle{Rays}
+\usepackage{adjustbox}
+\usetitlestyle{Empty}
+
+\makeatletter %To make columns scale to custom width 
+\setlength{\TP@visibletextwidth}{\textwidth-2\TP@innermargin}
+\setlength{\TP@visibletextheight}{\textheight-2\TP@innermargin}
+\makeatother
+
+ 
+%\graphicspath{{images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\parbox{\linewidth}{\vspace{-4.5cm} \centering \huge Scaling up individual metabolism to ecosystem fluxes}}
+\author{\vspace{-100pt} % space between title and author
+  {\begin{minipage}{8cm}
+    \hfill
+    \vspace{-20pt}
+    \flushleft
+    \includegraphics[trim=0cm 8cm 0cm 8cm,clip,width=5cm]{Imperial_Whitelogo.pdf}
+  \end{minipage}
+    \vspace{-20pt}
+    \hspace{2pt}}
+  {\begin{minipage}{20cm}
+    \centering
+        { \Large Sofia Sal \& Samraat Pawar \\ \vspace{-20pt}
+          s.sal-bregua@imperial.ac.uk  }
+  \end{minipage}
+    \vspace{-20pt}
+  \hspace{2pt}}
+  {\begin{minipage}{8cm}
+    \centering
+    \hfill
+    \centering
+    \includegraphics[trim=0cm 8cm 0cm 8cm,clip,width=8cm]{ExeterLogo.pdf}
+  \end{minipage}
+  \vspace{-20pt}}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand\semiHUGE{\@setfontsize\semiHUGE{60}{27.38}}
+\makeatother
+
+\begin{document}
+\node[xshift=-20cm, at=(topright),opacity=0.9]{\includegraphics[width=\paperwidth, height=10cm]{head1low.jpg}} ;
+
+\maketitle[titletoblockverticalspace=-8mm]
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\block[titleinnersep=5mm]{\small Do species-level thermal performance curves (TPCs) scale up to ecosystem fluxes?}{
+
+  \begin{minipage}[]{0.45\linewidth}
+    \centering
+    \includegraphics[trim=6cm 2cm 4cm 6cm,clip,width=5cm]{EcoModelFigure2.pdf}
+    
+  \end{minipage}   
+  \hspace{.8cm}    
+  \begin{minipage}[]{0.52\linewidth}
+
+    %% {\bf Scaling up} is a linear mapping (strictly what geometric scaling means) between the lower-level phenomenon (here,individual-level or intra-specific thermal responses) and the emergent one of ecosystem functioning. \\
+
+   Previous studies assume that the temperature dependence of ecosystem function is a simple scaling up of all the component species’ thermal responses. In this case, predicting the effects of climatic warming or cooling on ecosystem function would be a relatively straightforward task. 
+
+   
+    \end{minipage}
+ }
+
+\begin{columns}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \column{0.45}
+  \block{Parametrization}{
+    
+    \centering
+    \includegraphics[width=\linewidth]{IntraspPlots.pdf}
+    \footnotesize Representative set of individual-level plot pairs for R (left) and NP (right). Each pair of R-NP corresponds to the same experiment and species. These species are associated to temperate regions.\\
+    
+     \vspace{20pt}
+    \includegraphics[width=\linewidth]{Terr_EaPairHistInt.pdf}
+    \footnotesize Distributions of intraspecific activation energies for R and NP.
+
+  }
+
+  \column{0.55}
+  \block{Validation}{ 
+    \centering
+    \includegraphics[width=\linewidth]{EcosystemPlots.pdf}
+    \footnotesize Representative set of ecosystem flux responses to temperature for different sites from tropical and temperate regions. Y axis show respiration in log scale. 
+
+    \includegraphics[width=\linewidth]{Terr_EaPairHistEco.pdf}
+    \captionof{figure}{\footnotesize Distributions of activation energies for Reco and NEP at ecosystem level.}
+    
+  }
+\end{columns}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{columns}
+
+  \column{0.55}
+  \block[bodyverticalshift=-9mm]{Summary}{ 	
+    \begin{itemize}
+      
+    \item At the intra-specific level, $E_a$ and $T_{peak}$ for $R$ are usually higher than for $P$.
+    \item $T_{peak}$’s are usually much higher than the “characteristic” adaptive environment of the organism, so the full unimodal thermal response doesn't matter for mapping individual TPCs to ecosystem-level fluxes.
+     \item Ecosystem responses strongly depend on the temperature fluctuations of each ecosystem regime.
+    \end{itemize}         
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \column{0.45}
+  \block{Ongoing}{
+    
+    \begin{itemize}\itemsep10pt
+    \item What role might acclimation of intraspecific TPCs play on the ecosystem response?
+    \item What is an appropriate distribution for species-level biomass abundances $x_i$?
+    \item  Which is the effect of non-linear interactions between species? 
+    \end{itemize}      
+  }
+  
+\end{columns}
+
+\block[bodyverticalshift=-8mm]{}{
+  \footnotesize   
+  \begin{itemize}
+  \item Enquist, B. J., Economo, E. P., Huxman, T. E., Allen, A. P., Ignace, D. D. and Gillooly, J. F. 2003. Scaling metabolism from organisms to ecosystems. – Nature 423(6940): 639–42.
+  \item Savage, V. M. 2004. Improved approximations to scaling relationships for species, populations, and ecosystems across latitudinal and elevational gradients. – J. Theor. Biol. 227(4): 525–534.
+  \item Yvon-Durocher, G. and Allen, A. P. 2012. Linking community size structure and ecosystem functioning using metabolic theory. – Philos. Trans. R. Soc. Lond. B. Biol. Sci. 367(1605): 2998–3007.
+  \item Yvon-Durocher, et al. 2012. Reconciling the temperature dependence of respiration across timescales and ecosystem types. – Nature 487(7408): 472–6.
+  \end{itemize}
+  \textit{Acknowledge: This work used eddy covariance data acquired by the FLUXNET community (http://fluxnet.fluxdata.org).}
+}
+
+
+\end{document}
