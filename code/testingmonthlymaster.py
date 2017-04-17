@@ -1,17 +1,10 @@
 #!/usr/bin/env python
 
+
 """Calculating monthly turnover in Cerrado"""
 
 __author__ = 'Jia Le Lim'
-__version__ = '0.0.8'
-
-def CheckInt(s):
-  try: 
-    int(s)
-    return True
-  except ValueError:
-    return False
-
+__version__ = '0.0.4'
 
 import csv
 import operator
@@ -19,19 +12,6 @@ import decimal
 import numpy as np
 import matplotlib.pyplot as pl
 import calendar
-import sys
-import os.path
-
-print "Data file must have the following columns in the order: Month Day Year Bee Plant"
-filename = raw_input('Enter your data file name in rearranged folder: ')
-
-pathname = os.path.join("../data/rearranged/", filename)
-
-if os.path.isfile(pathname):
-  print 'Valid file!'
-else:
-  print 'Invalid file!'
-  sys.exit()
 
 months = []
 days = []
@@ -42,7 +22,7 @@ plants = []
 # Read a file containing:
 # Month  Day  Year  Bee  Plant
 
-h = open(pathname,'rb')
+h = open('../data/rearranged/CerradoData.csv','rb')
 data = csv.reader(h)
 
 for column in data:
@@ -66,9 +46,6 @@ startofmonths = [0]
 for i in range(1, datalen):
   if months[i] != months[i-1]:
     startofmonths.append(i)
-
-print "Total number of months is " + str(len(startofmonths)) + '.'
-
 startofmonths.append(len(months))
 
 # for every loop, startindex is where month 1 starts, nextindex is where month 2 starts, thereafter compare month 1 and month 2
@@ -78,13 +55,7 @@ alist = []
 blist = []
 clist = []
 
-noofmonths = raw_input('What is the interval of months? Type an integer pls.')
-
-while not CheckInt(noofmonths):
-  print 'I asked for an integer! Last chance!'
-  noofmonths = raw_input('What is the interval of months? Type an integer pls.')
-
-noofmonths = int(noofmonths)
+noofmonths = 6
 
 rangeofmonths = range(0, len(startofmonths) - noofmonths, noofmonths)
 
@@ -92,6 +63,8 @@ for x in rangeofmonths:
   startindex = startofmonths[x]
   nextindex = startofmonths[x + noofmonths]
   lastindex = x + noofmonths*2
+  print lastindex
+  print len(startofmonths)
   if lastindex >= len(startofmonths):
     break
   else:
@@ -118,6 +91,14 @@ for x in rangeofmonths:
   blist.append(b)
   clist.append(c)
 
+
+print alist
+print blist
+print clist
+print "Total number of months is " + str(len(startofmonths) - 1) + '.'
+print len(alist)
+print len(alist) == len(blist) == len(clist)
+
 bints = []
 
 # calculate turnover rate
@@ -132,10 +113,14 @@ print "Total number of comparisons made: "+ str(len(bints))
 xlabel = []
 xlabels = []
 
+print rangeofmonths
+
 for i in rangeofmonths[1:]:
   firstmonth = startofmonths[i]
   lastmonthindex = i + noofmonths -1
+  print lastmonthindex
   if lastmonthindex >= len(startofmonths):
+    print "ohnoes"
     break
   else:
     lastmonth = startofmonths[lastmonthindex]
@@ -144,10 +129,8 @@ for i in rangeofmonths[1:]:
   ' - ' + calendar.month_abbr[int(months[lastmonth])] + ' ' + years[lastmonth][2:4]
   xlabels.append(xlabel)
 
-if len(xlabels) == len(bints):
-  print 'Correct number of x axis labels found.'
-else:
-  print 'ERROR! Incorrect number of x axis labels!'
+print xlabels
+print len(xlabels) == len(bints)
 
 pl.plot(bints, 'bo', bints, 'k')
 

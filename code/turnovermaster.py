@@ -71,12 +71,23 @@ print "Total number of months is " + str(len(startofmonths)) + '.'
 
 startofmonths.append(len(months))
 
-# for every loop, startindex is where month 1 starts, nextindex is where month 2 starts, thereafter compare month 1 and month 2
-# calculate a, similarity bet two consecutive months, and b & c, unique pairs in each month.
+# starting index of every year + the last index(len of years) -> stored as startofyears
+startofyears = [0]
 
-alist = []
-blist = []
-clist = []
+for i in range(1, datalen):
+  if years[i] != years[i-1]:
+    startofyears.append(i)
+
+print "Total number of years is " + str(len(startofyears)) + '.'
+
+startofyears.append(len(years))
+
+timeinterval = raw_input('Turnover rates in months or years?')
+timeinterval = timeinterval.lower()
+
+while timeinterval != 'months' and timeinterval != 'years':
+  timeinterval = raw_input('Turnover rates in MONTHS or YEARS? If you want something else do the script yourself.')
+  timeinterval = timeinterval.lower()
 
 noofmonths = raw_input('What is the interval of months? Type an integer pls.')
 
@@ -86,7 +97,15 @@ while not CheckInt(noofmonths):
 
 noofmonths = int(noofmonths)
 
+
+alist = []
+blist = []
+clist = []
+
 rangeofmonths = range(0, len(startofmonths) - noofmonths, noofmonths)
+
+# for every loop, startindex is where month 1 starts, nextindex is where month 2 starts, thereafter compare month 1 and month 2
+# calculate a, similarity bet two consecutive months, and b & c, unique pairs in each month.
 
 for x in rangeofmonths:
   startindex = startofmonths[x]
