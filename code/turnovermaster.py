@@ -71,6 +71,13 @@ print "Total number of months is " + str(len(startofmonths)) + '.'
 
 startofmonths.append(len(months))
 
+noofinteractions = []
+for i in range(len(startofmonths)-1):
+  noofinteraction = startofmonths[i+1]-startofmonths[i]
+  noofinteractions.append(noofinteraction)
+
+print "Number of interactions in each month: " + str(noofinteractions)
+
 # starting index of every year + the last index(len of years) -> stored as startofyears
 startofyears = [0]
 
@@ -81,13 +88,6 @@ for i in range(1, datalen):
 print "Total number of years is " + str(len(startofyears)) + '.'
 
 startofyears.append(len(years))
-
-timeinterval = raw_input('Turnover rates in months or years?')
-timeinterval = timeinterval.lower()
-
-while timeinterval != 'months' and timeinterval != 'years':
-  timeinterval = raw_input('Turnover rates in MONTHS or YEARS? If you want something else do the script yourself.')
-  timeinterval = timeinterval.lower()
 
 noofmonths = raw_input('What is the interval of months? Type an integer pls.')
 
@@ -151,22 +151,46 @@ print "Total number of comparisons made: "+ str(len(bints))
 xlabel = []
 xlabels = []
 
-for i in rangeofmonths[1:]:
-  firstmonth = startofmonths[i]
-  lastmonthindex = i + noofmonths -1
-  if lastmonthindex >= len(startofmonths):
-    break
+if CheckInt(months[0]):
+  if noofmonths == 1:
+    for i in startofmonths[1:-1]:
+      xlabel = calendar.month_abbr[int(months[i])] + ' ' + str(years[i])
+      xlabels.append(xlabel)
   else:
-    lastmonth = startofmonths[lastmonthindex]
-    
-  xlabel = calendar.month_abbr[int(months[firstmonth])] + ' ' + years[firstmonth][2:4] + \
-  ' - ' + calendar.month_abbr[int(months[lastmonth])] + ' ' + years[lastmonth][2:4]
-  xlabels.append(xlabel)
+    for i in rangeofmonths[1:]:
+      firstmonth = startofmonths[i]
+      lastmonthindex = i + noofmonths -1
+      if lastmonthindex >= len(startofmonths):
+        break
+      else:
+        lastmonth = startofmonths[lastmonthindex]
+      xlabel = calendar.month_abbr[int(months[firstmonth])] + ' ' + years[firstmonth][2:4] + \
+      ' - ' + calendar.month_abbr[int(months[lastmonth])] + ' ' + years[lastmonth][2:4]
+      xlabels.append(xlabel)
+elif len(months[0]) == 3:
+  if noofmonths == 1:
+    for i in startofmonths[1:-1]:
+      xlabel = str(months[i]) + ' ' + str(years[i])
+      xlabels.append(xlabel)
+  else:
+    for i in rangeofmonths[1:]:
+      firstmonth = startofmonths[i]
+      lastmonthindex = i + noofmonths -1
+      if lastmonthindex >= len(startofmonths):
+        break
+      else:
+        lastmonth = startofmonths[lastmonthindex]
+      xlabel = str(months[firstmonth]) + ' ' + years[firstmonth][2:4] + \
+      ' - ' + str(months[lastmonth]) + ' ' + years[lastmonth][2:4]
+      xlabels.append(xlabel)
+else:
+  print 'The dumb computer does not understand the month column in dataset.'
 
 if len(xlabels) == len(bints):
   print 'Correct number of x axis labels found.'
 else:
   print 'ERROR! Incorrect number of x axis labels!'
+  print 'Incorrect xlabels are: ' + str(xlabels)
 
 pl.plot(bints, 'bo', bints, 'k')
 

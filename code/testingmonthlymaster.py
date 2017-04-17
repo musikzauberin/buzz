@@ -156,3 +156,26 @@ pl.savefig(plotpath)
 
 print 'Find figures in results folder! \nFigure saved as ' + plotname + '.pdf'
 print 'Done!'
+
+##########################
+timeinterval = raw_input('Turnover rates in months or years?')
+timeinterval = timeinterval.lower()
+
+while timeinterval != 'months' and timeinterval != 'years':
+  timeinterval = raw_input('Turnover rates in MONTHS or YEARS? If you want something else do the script yourself.')
+  timeinterval = timeinterval.lower()
+##########################
+while True:
+  timeinterval = raw_input('Turnover rates in MONTHS or YEARS? If you want something else do the script yourself.')
+  timeinterval = timeinterval.lower()
+  if timeinterval == 'months' or timeinterval == 'years':
+    break
+  else:
+    print 'Eh what the heck last warning ah!'
+##########################
+while True:
+  timeinterval = raw_input('Turnover rates in MONTHS or YEARS? If you want something else do the script yourself.')
+  timeinterval = timeinterval.lower()
+  if timeinterval == 'months' or timeinterval == 'years':
+    break
+##########################
