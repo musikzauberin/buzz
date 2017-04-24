@@ -154,7 +154,7 @@ xlabels = []
 if CheckInt(months[0]):
   if noofmonths == 1:
     for i in startofmonths[1:-1]:
-      xlabel = calendar.month_abbr[int(months[i])] + ' ' + str(years[i])
+      xlabel = calendar.month_abbr[int(months[i])] + ' ' + str(years[i][2:4])
       xlabels.append(xlabel)
   else:
     for i in rangeofmonths[1:]:
@@ -170,7 +170,7 @@ if CheckInt(months[0]):
 elif len(months[0]) == 3:
   if noofmonths == 1:
     for i in startofmonths[1:-1]:
-      xlabel = str(months[i]) + ' ' + str(years[i])
+      xlabel = str(months[i]) + ' ' + str(years[i][2:4])
       xlabels.append(xlabel)
   else:
     for i in rangeofmonths[1:]:
