@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  27 APR 2017 02:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  27 APR 2017 09:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1188,6 +1188,18 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/capt-of/capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box99
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen285
+\ttl@minus=\dimen286
+\ttl@toksa=\toks38
+\titlewidth=\dimen287
+\titlewidthlast=\dimen288
+\titlewidthfirst=\dimen289
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
@@ -1200,21 +1212,21 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box99
+\collectedbox=\box100
 )
-\tc@llx=\dimen285
-\tc@lly=\dimen286
-\tc@urx=\dimen287
-\tc@ury=\dimen288
+\tc@llx=\dimen290
+\tc@lly=\dimen291
+\tc@urx=\dimen292
+\tc@ury=\dimen293
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen289
-\adjbox@Height=\dimen290
-\adjbox@Depth=\dimen291
-\adjbox@Totalheight=\dimen292
+\adjbox@Width=\dimen294
+\adjbox@Height=\dimen295
+\adjbox@Depth=\dimen296
+\adjbox@Totalheight=\dimen297
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
@@ -1222,30 +1234,30 @@ Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box100
+\@vwid@box=\box101
 \sift@deathcycles=\count142
-\@vwid@loff=\dimen293
-\@vwid@roff=\dimen294
+\@vwid@loff=\dimen298
+\@vwid@roff=\dimen299
 ))
 (./buzzposter.aux)
 \openout1 = `buzzposter.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
 LaTeX Font Info:    Try loading font information for T1+CabinCondensed-TLF on i
-nput line 106.
+nput line 108.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cabin/T1CabinCondensed-TLF.fd
 File: T1CabinCondensed-TLF.fd 2012/11/17 (autoinst) Font definitions for T1/Cab
@@ -1255,16 +1267,16 @@ ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count143
-\scratchdimen=\dimen295
-\scratchbox=\box101
+\scratchdimen=\dimen300
+\scratchbox=\box102
 \nofMPsegments=\count144
 \nofMParguments=\count145
-\everyMPshowfont=\toks38
+\everyMPshowfont=\toks39
 \MPscratchCnt=\count146
-\MPscratchDim=\dimen296
+\MPscratchDim=\dimen301
 \MPnumerator=\count147
 \makeMPintoPDFobject=\count148
-\everyMPtoPDFconversion=\toks39
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1343,99 +1355,140 @@ e
 <head1low.jpg, id=31, 2560.767pt x 853.5087pt>
 File: head1low.jpg Graphic file (type jpg)
  <use head1low.jpg>
-Package pdftex.def Info: head1low.jpg used on input line 107.
+Package pdftex.def Info: head1low.jpg used on input line 109.
 (pdftex.def)             Requested size: 1195.00346pt x 341.42348pt.
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
-LaTeX Font Info:    Calculating math sizes for size <51.59> on input line 109.
+LaTeX Font Info:    Calculating math sizes for size <51.59> on input line 111.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <51.59> not available
-(Font)              size <24.88> substituted on input line 109.
+(Font)              size <24.88> substituted on input line 111.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <36.11284> not available
-(Font)              size <24.88> substituted on input line 109.
+(Font)              size <24.88> substituted on input line 111.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <25.795> not available
-(Font)              size <24.88> substituted on input line 109.
+(Font)              size <24.88> substituted on input line 111.
 
 <Imperial_Whitelogo.pdf, id=32, 597.23125pt x 845.1575pt>
 File: Imperial_Whitelogo.pdf Graphic file (type pdf)
 
 <use Imperial_Whitelogo.pdf>
-Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 109.
+Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 111.
 (pdftex.def)             Requested size: 213.39566pt x 139.3216pt.
-LaTeX Font Info:    Calculating math sizes for size <42.99> on input line 109.
+LaTeX Font Info:    Calculating math sizes for size <42.99> on input line 111.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <42.99> not available
-(Font)              size <24.88> substituted on input line 109.
+(Font)              size <24.88> substituted on input line 111.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <30.09286> not available
-(Font)              size <24.88> substituted on input line 109.
+(Font)              size <24.88> substituted on input line 111.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <21.495> not available
-(Font)              size <20.74> substituted on input line 109.
+(Font)              size <20.74> substituted on input line 111.
 
 <picture.JPG, id=34, 3337.46875pt x 1815.78375pt>
 File: picture.JPG Graphic file (type jpg)
  <use picture.JPG>
-Package pdftex.def Info: picture.JPG used on input line 109.
+Package pdftex.def Info: picture.JPG used on input line 111.
 (pdftex.def)             Requested size: 256.0748pt x 104.38196pt.
 File: Imperial_Whitelogo.pdf Graphic file (type pdf)
 
 <use Imperial_Whitelogo.pdf>
-Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 109.
+Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 111.
 (pdftex.def)             Requested size: 213.39566pt x 139.3216pt.
 File: picture.JPG Graphic file (type jpg)
  <use picture.JPG>
-Package pdftex.def Info: picture.JPG used on input line 109.
+Package pdftex.def Info: picture.JPG used on input line 111.
 (pdftex.def)             Requested size: 256.0748pt x 104.38196pt.
-LaTeX Font Info:    Try loading font information for TS1+CabinCondensed-TLF on 
-input line 149.
 
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+CabinCondensed-TLF on 
+input line 145.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cabin/TS1CabinCondensed-TLF.fd
 File: TS1CabinCondensed-TLF.fd 2012/11/17 (autoinst) Font definitions for TS1/C
 abinCondensed-TLF.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 2980) in paragraph at lines 145--145
+[]\T1/CabinCondensed-TLF/m/n/20.74 Does tem-per-a-ture, pre-cip-i-ta-tion or hu
+-mid-ity af-fect bee-flower in-ter-ac-tion
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 171--171
+[]\T1/CabinCondensed-TLF/m/n/20.74 Whittaker's dis-sim-i-lar-ity in-dex, $[]$,
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 171--171
+\T1/CabinCondensed-TLF/m/n/20.74 re-flects the dif-fer-ence be-tween two
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
 
  []
 
-<monthlyCerrado.pdf, id=40, 518.11536pt x 412.74902pt>
-File: monthlyCerrado.pdf Graphic file (type pdf)
 
-<use monthlyCerrado.pdf>
-Package pdftex.def Info: monthlyCerrado.pdf used on input line 194.
-(pdftex.def)             Requested size: 584.53287pt x 465.70187pt.
- [1
+Underfull \hbox (badness 6188) in paragraph at lines 171--171
+[]$\OML/cmm/m/it/20.74 a$ \T1/CabinCondensed-TLF/m/n/20.74 is the num-ber of in
+-ter-ac-tions
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 171--171
+\T1/CabinCondensed-TLF/m/n/20.74 re-flects a higher dif-fer-ence be-tween
+ []
+
+<MonthlyTurnoverOldCerrado.pdf, id=40, 578.16pt x 433.62pt>
+File: MonthlyTurnoverOldCerrado.pdf Graphic file (type pdf)
+
+<use MonthlyTurnoverOldCerrado.pdf>
+Package pdftex.def Info: MonthlyTurnoverOldCerrado.pdf used on input line 184.
+(pdftex.def)             Requested size: 602.7427pt x 452.07896pt.
+
+Underfull \hbox (badness 1430) in paragraph at lines 213--213
+[]\T1/CabinCondensed-TLF/m/n/20.74 If cli-mate does not af-fect bee-flower in-t
+er-ac-tion
+ []
+
+[1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Imper
-ial_Whitelogo.pdf> <./picture.JPG> <./head1low.jpg> <./monthlyCerrado.pdf>] (./
-buzzposter.aux)
+ial_Whitelogo.pdf> <./picture.JPG> <./head1low.jpg> <./MonthlyTurnoverOldCerrad
+o.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./MonthlyTurnoverOldCerrado.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (./buzzposter.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 26.70999pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 19373 strings out of 493089
- 408513 string characters out of 6134841
- 527592 words of memory out of 5000000
- 22389 multiletter control sequences out of 15000+600000
- 173126 words of font info for 75 fonts, out of 8000000 for 9000
+ 19644 strings out of 493089
+ 412038 string characters out of 6134841
+ 532609 words of memory out of 5000000
+ 22652 multiletter control sequences out of 15000+600000
+ 176281 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,84p,820b,1064s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,84p,820b,1065s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cabin/cbn_zljgjy.enc}{/us
 r/local/texlive/2015/texmf-dist/fonts/enc/dvips/cabin/cbn_xvjm53.enc}{/usr/loca
 l/texlive/2015/texmf-dist/fonts/enc/dvips/cabin/cbn_6vzwvh.enc}</usr/local/texl
@@ -1443,14 +1496,14 @@ ive/2015/texmf-dist/fonts/type1/impallari/cabin/CabinCondensed-Bold.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/impallari/cabin/CabinCondensed-Regular
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/impallari/cabin/CabinConde
 nsed-RegularItalic.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb>
-Output written on buzzposter.pdf (1 page, 24634308 bytes).
+msfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb>
+Output written on buzzposter.pdf (1 page, 24570232 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 139 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

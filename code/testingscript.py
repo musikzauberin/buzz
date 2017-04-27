@@ -1,8 +1,3 @@
-"""Analysing data and plotting general graphs"""
-
-__author__ = 'Jia Le Lim'
-__version__ = '0.0.9'
-
 import csv
 import operator
 import decimal
@@ -11,8 +6,10 @@ import matplotlib.pyplot as pl
 import calendar
 import sys
 import os.path
+import networkx as nx
 
-with open('../data/CerradoBoaVentura/rearrange/ClimNetDataLnx.csv') as csvfile:
+
+with open('../data/rearranged/testtrial.csv') as csvfile:
    reader = csv.DictReader(csvfile, delimiter=',')
    rows = list(reader)
    data = []
@@ -24,3 +21,15 @@ with open('../data/CerradoBoaVentura/rearrange/ClimNetDataLnx.csv') as csvfile:
       
 print data[0]
 print data[0][1]
+print data
+
+G=nx.Graph()#  G is an empty Graph
+
+Nodes=range(len(data))
+G.add_nodes_from(Nodes)
+Edges=data
+G.add_edges_from(Edges)
+
+
+nx.draw(G, node_color='c',edge_color='k', with_labels=True)
+pl.show()
