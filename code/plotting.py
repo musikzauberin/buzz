@@ -78,7 +78,7 @@ pl.axvspan(11, 23, facecolor='r', alpha=0.2)
 pl.legend(loc='upper right', frameon=True, numpoints=1)
 pl.title('Monthly Turnover in Cerrado')
 
-plotpath = '../results/' + 'MonthlyTurnoverOldCerrado' + '.pdf'
+plotpath = '../results/' + 'MonthlyTurnoverOldCerrado2' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()
