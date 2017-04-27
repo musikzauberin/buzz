@@ -8,6 +8,15 @@ import sys
 import os.path
 import networkx as nx
 
+def longest(l):
+  if(not isinstance(l, list)): 
+    return(0)
+  else:
+    return(max([len(subl) for subl in l]))
+
+def maxValue(inputlist):
+  return max([sublist[-1] for sublist in inputlist])
+
 
 with open('../data/rearranged/testtrial.csv') as csvfile:
    reader = csv.DictReader(csvfile, delimiter=',')
@@ -45,8 +54,8 @@ for i in range(1, datalen):
     startofmonths.append(i)
 startofmonths.append(len(months))
 
-print min(plants)
 # shifting data downwards
+
 bees[:] = [int(x) - ((min(int(s) for s in bees)) - 1) for x in bees]
 plants[:] = [int(x) - ((min(int(s) for s in plants)) - 1) for x in plants]
 
@@ -68,27 +77,45 @@ for x in rangeofmonths:
   plantlists.append(plantlist)
 
 # totalnoofmonthsx4
-upperbound = 8
+upperbound = 12
 
 e = 0
-beedots = [np.nan for i in range(upperbound)]
+beedots = [[-10] for i in range(upperbound)]
 for i in range(0, upperbound, 4):
   beedots[i] = beelists[e]
   e += 1
 
-# beedots = []
-# beedots.append(beelists[0])
-# beedots.append(None)
-# beedots.append(beelists[1])
-# beedots.append([20])
+ideallen = longest(beedots)
 
+for beedot in beedots:
+  while len(beedot) < ideallen:
+    beedot.append(-10)
+    
+e = 0
+plantdots = [[-10] for i in range(upperbound)]
+for i in range(2, upperbound, 4):
+  plantdots[i] = plantlists[e]
+  e += 1
 
-print beelists
-print plantlists
-print beeplants
-print startofmonths
+print plantdots
 print beedots
 
+ideallen = longest(plantdots)
 
-pl.plot(beedots, 'ro')
-# pl.show()
+for plantdot in plantdots:
+  while len(plantdot) < ideallen:
+    plantdot.append(-10)
+
+pl.axis([-1, 24, 0, 200])
+
+
+# beeplants[:][:] = [int(beeplant[0]) - ((min(int(s) for s in bees)) - 1) for beeplant[0] in beeplants]
+# #   beeplant[1] = [int(x) - ((min(int(s) for s in plants)) - 1) for x in plants]
+
+print beeplants[:][:]
+print startofmonths
+
+
+pl.plot(beedots, 'mo')
+pl.plot(plantdots, 'go')
+pl.show()

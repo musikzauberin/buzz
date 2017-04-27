@@ -42,9 +42,6 @@ for i in range(datalen):
       if plants[i] == plants[e]:
         if str(i) + str(e) not in uniqueint:
           uniqueint.append(str(i) + str(e))
-          print uniqueint
-          print i 
-          print e
           e += 1
       else:
         e += 1

@@ -92,3 +92,13 @@ averagevisits = range(len(nodays))
 for i in range(len(nodays)):
   averagevisits[i] = sumvisits[i]/nodays[i]
 print "average daily visits in each month: " + str(averagevisits)
+
+g = open('../data/rearranged/AvgVisit.csv','wb')
+csvwrite = csv.writer(g)
+
+tobewritten = zip(averagevisits)
+
+for row in tobewritten:
+  csvwrite.writerow(row)
+
+g.close()

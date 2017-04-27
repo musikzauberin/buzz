@@ -65,10 +65,6 @@ pl.plot(bintsdisplay[6:30], 'bo', label = '1995-1996')
 pl.plot(bintsline[6:30], 'k', label = None)
 pl.xticks( range(len(monthsdisplay[6:30])), monthsdisplay[6:30])
 
-bintsline[30] = None
-pl.plot(bintsdisplay[30:48], 'ro', label = '1996-1997')
-pl.plot(bintsline[30:48], 'k', label = None)
-
 pl.axis([-1, 24, 0.7, 1.05])
 pl.grid(True)
 
