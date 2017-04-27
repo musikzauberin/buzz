@@ -51,6 +51,7 @@ for column in data:
   years.append(column[2])
   bees.append(column[3])
   plants.append(column[4])
+h.close()
 
 months = months[1:]
 days = days[1:]
@@ -148,6 +149,7 @@ for i in range(len(alist)):
 print "Turnover rates are: " + str(bints)
 print "Total number of comparisons made: "+ str(len(bints))
 
+# making x labels work
 xlabel = []
 xlabels = []
 
@@ -192,6 +194,7 @@ else:
   print 'ERROR! Incorrect number of x axis labels!'
   print 'Incorrect xlabels are: ' + str(xlabels)
 
+# plotting plotting plotting
 pl.plot(bints, 'bo', bints, 'k')
 
 if noofmonths == 1:
@@ -207,12 +210,23 @@ else:
   plottitle = str(noofmonths) + "-monthly turnover rate in Cerrado" 
 
 pl.title(plottitle)
-
 plotname = plottitle.title().strip().replace(" ", "")
-
 plotpath = '../results/' + plotname + '.pdf'
-
 pl.savefig(plotpath)
 
 print 'Find figures in results folder! \nFigure saved as ' + plotname + '.pdf'
+
+# save data in excel to analyse 
+pathname3 = plotpath.replace(".pdf", ".csv")
+g = open(pathname3,'wb')
+csvwrite = csv.writer(g)
+
+tobewritten = zip(xlabels,bints)
+
+for row in tobewritten:
+  csvwrite.writerow(row)
+
+g.close()
+
+
 print 'Done!'

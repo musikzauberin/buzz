@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  16 APR 2017 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  27 APR 2017 02:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1344,7 +1344,7 @@ e
 File: head1low.jpg Graphic file (type jpg)
  <use head1low.jpg>
 Package pdftex.def Info: head1low.jpg used on input line 107.
-(pdftex.def)             Requested size: 1195.00346pt x 284.52391pt.
+(pdftex.def)             Requested size: 1195.00346pt x 341.42348pt.
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
@@ -1416,7 +1416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--181
 File: monthlyCerrado.pdf Graphic file (type pdf)
 
 <use monthlyCerrado.pdf>
-Package pdftex.def Info: monthlyCerrado.pdf used on input line 192.
+Package pdftex.def Info: monthlyCerrado.pdf used on input line 194.
 (pdftex.def)             Requested size: 584.53287pt x 465.70187pt.
  [1
 
@@ -1431,7 +1431,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  19373 strings out of 493089
  408513 string characters out of 6134841
- 527688 words of memory out of 5000000
+ 527592 words of memory out of 5000000
  22389 multiletter control sequences out of 15000+600000
  173126 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1447,7 +1447,7 @@ msfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr17.pfb>
-Output written on buzzposter.pdf (1 page, 24633423 bytes).
+Output written on buzzposter.pdf (1 page, 24634308 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

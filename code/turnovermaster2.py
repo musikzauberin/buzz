@@ -93,8 +93,6 @@ duplicates = []
 for x in rangeofmonths:
   startindex = startofmonths[x]
   nextindex = startofmonths[x + noofmonths]
-  if (x + noofmonths) >= len(startofmonths):
-    break
   for i in range(startindex, nextindex):
     e = i + 1
     while e < nextindex:
@@ -133,6 +131,8 @@ g.close()
 t = open(pathname2,'rb')
 data = csv.reader(t)
 
+print pathname2
+
 for column in data:
   months.append(column[0])
   days.append(column[1])
@@ -151,14 +151,11 @@ plants = plants[1:]
 datalen = len(months)
 
 startofmonths = [0]
-
 for i in range(1, datalen):
   if months[i] != months[i-1]:
     startofmonths.append(i)
 
 startofmonths.append(len(months))
-
-noofmonths = 1
 
 rangeofmonths = range(0, len(startofmonths) - noofmonths, noofmonths)
 
@@ -177,8 +174,6 @@ duplicates = []
 for x in rangeofmonths:
   startindex = startofmonths[x]
   nextindex = startofmonths[x + noofmonths]
-  if (x + noofmonths) >= len(startofmonths):
-    break
   for i in range(startindex, nextindex):
     e = i + 1
     while e < nextindex:
@@ -186,8 +181,7 @@ for x in rangeofmonths:
         if plants[i] == plants[e]:
           duplicateno += 1
           duplicates.append(e)
-          print str(i) + ' matches with ' + str(e) + 'really?'
-          print duplicateno
+          print str(i) + ' matches with ' + str(e) + ' really?'
           e += 1
         else:
           e += 1
