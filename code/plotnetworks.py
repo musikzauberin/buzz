@@ -100,6 +100,12 @@ for i in range(2, upperbound, 4):
 print plantdots
 print beedots
 
+# beeplants = [[0,0] for i in range(upperbound)]
+# for i in range(upperbound):
+#   beeplants[i][0] = beedots[i]
+#   beeplants[i][1] = plantdots[i]
+# separate the list out and then combine again......
+
 ideallen = longest(plantdots)
 
 for plantdot in plantdots:
@@ -109,13 +115,15 @@ for plantdot in plantdots:
 pl.axis([-1, 24, 0, 200])
 
 
-# beeplants[:][:] = [int(beeplant[0]) - ((min(int(s) for s in bees)) - 1) for beeplant[0] in beeplants]
-# #   beeplant[1] = [int(x) - ((min(int(s) for s in plants)) - 1) for x in plants]
-
-print beeplants[:][:]
+print beeplants
 print startofmonths
 
 
 pl.plot(beedots, 'mo')
 pl.plot(plantdots, 'go')
+plotpath = '../results/' + 'networkdraft' + '.pdf'
+pl.savefig(plotpath)
+
 pl.show()
+
+

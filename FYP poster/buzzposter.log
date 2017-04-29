@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  27 APR 2017 09:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  27 APR 2017 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1462,7 +1462,7 @@ File: MonthlyTurnoverOldCerrado.pdf Graphic file (type pdf)
 Package pdftex.def Info: MonthlyTurnoverOldCerrado.pdf used on input line 184.
 (pdftex.def)             Requested size: 602.7427pt x 452.07896pt.
 
-Underfull \hbox (badness 1430) in paragraph at lines 213--213
+Underfull \hbox (badness 1430) in paragraph at lines 211--211
 []\T1/CabinCondensed-TLF/m/n/20.74 If cli-mate does not af-fect bee-flower in-t
 er-ac-tion
  []
@@ -1484,7 +1484,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  19644 strings out of 493089
  412038 string characters out of 6134841
- 532609 words of memory out of 5000000
+ 532433 words of memory out of 5000000
  22652 multiletter control sequences out of 15000+600000
  176281 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1500,7 +1500,7 @@ msfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on buzzposter.pdf (1 page, 24570232 bytes).
+Output written on buzzposter.pdf (1 page, 24570204 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Analysing data and plotting general graphs"""
+'''Analysing data and plotting general graphs'''
 
 __author__ = 'Jia Le Lim'
 __version__ = '0.0.1'
@@ -13,92 +13,126 @@ import matplotlib.pyplot as pl
 import calendar
 import sys
 import os.path
+from operator import div
 
-# file has " "	System	Season	Month	Day	Year	Bee	Plant	Visits	Precip	Tmax	Tmin	Humid
+########## Script starts here ##########
 
-h = open('../data/CerradoBoaVentura/rearrange/ClimNetDataLnx.csv','rb')
+filename = 'ClimNetDataLnx.csv'
+pathname = '../data/CerradoBoaVentura/rearrange/' + filename
+h = open(pathname,'rb')
 data = csv.reader(h)
 
-indexes = []
-seasons = []
-months = []
-days = []
-years = []
-bees = []
-plants = []
-visits = []
-precip = []
-tempmax = []
-tempmin = []
-humid = []
 
-# import each column into lists
+########## Inputting data into lists ##########
+
+# copy and paste all headers in data three times
+headers = 'indexes, systems, seasons, months, days, years, bees, plants, \
+visits, precip, tempmax, tempmin, humid'
+
+[indexes, systems, seasons, months, days, years, bees, plants, \
+visits, precip, tempmax, tempmin, humid] = ([] for i in range(len(next(data))))
+
+headers2 = [indexes, systems, seasons, months, days, years, bees, plants, \
+visits, precip, tempmax, tempmin, humid]
+
 for column in data:
-  indexes.append(column[0])
-  seasons.append(column[2])
-  months.append(column[3])
-  days.append(column[4])
-  years.append(column[5])
-  bees.append(column[6])
-  plants.append(column[7])
-  visits.append(column[8])
-  precip.append(column[9])
-  tempmax.append(column[10])
-  tempmin.append(column[11])
-  humid.append(column[12])
+  for j, i in enumerate(headers2):
+    i.append(column[j])
 
 h.close()
 
 #remove header
-for i in [indexes, seasons, months, days, years, bees, plants, visits, precip, tempmax, tempmin, humid]:
+for i in headers2:
   del i[0]
 
-# starting index of every month + the last index(len of months) -> stored as startofmonths
-datalen = len(months)
-startofmonths = [0]
-for i in range(1, datalen):
-  if months[i] != months[i-1]:
-    startofmonths.append(i)
-print "Total number of months is " + str(len(startofmonths)) + '.'
-startofmonths.append(len(months))
+########## Analysing data ##########
 
-# find sum for each month
-sumvisit = 0
-sumvisits = []
-for x in range(len(startofmonths)-1):
-  startindex = startofmonths[x]
-  endindex = startofmonths[x + 1]
-  sumvisit = 0
-  for i in range(startindex, endindex):
-    sumvisit += int(visits[i])
-  sumvisits.append(sumvisit)
+def findstartindex(values, timescale_str):
+  'Finds starting index of timescale + last index(len(timescale)), returns startoftimescale'
+  'require years and months list'
+  startofmonths = [0]
+  startofyears = [0]
+  datalen = len(values)
+  if timescale_str == 'months':
+    for i in range(1, datalen):
+      if values[i] != values[i-1]:
+        startofmonths.append(i)
+    print 'Total number of months is ' + str(len(startofmonths)) + '.'
+    startofmonths.append(len(months))
+    return startofmonths
+  if timescale_str == 'years':
+    for i in range(1, datalen):
+      if values[i] != values[i-1]:
+        startofyears.append(i)
+    print 'Total number of years is ' + str(len(startofyears)) + '.'
+    startofyears.append(len(years))
+    return startofyears
 
-print sumvisits
+startofmonths = findstartindex(months, 'months')
 
-# number of days observed in each month
-nodays = []
-for x in range(len(startofmonths)-1):
-  startindex = startofmonths[x]
-  endindex = startofmonths[x + 1]
-  noday = 0
-  for i in range(startindex, endindex):
-    if days[i] != days[i-1]:
-      noday += 1
-  nodays.append(noday)
-print nodays
+def monthlysum1(values, startofmonths):
+  'find sum of value per month'
+  measures = []
+  for x in range(len(startofmonths)-1):
+    startindex = startofmonths[x]
+    endindex = startofmonths[x + 1]
+    measure = 0
+    for i in range(startindex, endindex):
+      measure += int(values[i])
+    measures.append(measure)
+  return measures
 
-# find average daily whatever in each month
-averagevisits = range(len(nodays))
-for i in range(len(nodays)):
-  averagevisits[i] = sumvisits[i]/nodays[i]
-print "average daily visits in each month: " + str(averagevisits)
+def nodaysinmonth(days, startofmonths):
+  'find number of observed days in each month'
+  nodays = []
+  for x in range(len(startofmonths)-1):
+    startindex = startofmonths[x]
+    endindex = startofmonths[x + 1]
+    noday = 0
+    for i in range(startindex, endindex):
+      if days[i] != days[i-1]:
+        noday += 1
+    nodays.append(noday)
+  print 'Number of observed days in each month: ' + str(nodays)
+  return nodays
 
-g = open('../data/rearranged/AvgVisit.csv','wb')
-csvwrite = csv.writer(g)
+def dailyavgpermonth(divisor, values, decimalplaces):
+  'Finding daily average of values for each month'
+  values = [float(value) for value in values]
+  avgvalues = map(div, values, divisor)
+  avgvalues[:] = [round(avgvalue, decimalplaces) for avgvalue in avgvalues]
+  print 'Average daily for each month: ' + str(avgvalues)
+  return avgvalues
 
-tobewritten = zip(averagevisits)
+sumvisits = monthlysum1(visits, startofmonths)
+nodays = nodaysinmonth(days, startofmonths)
+avgvisits = dailyavgpermonth(nodays, sumvisits, 2)
 
-for row in tobewritten:
-  csvwrite.writerow(row)
+########## Writing Data ##########
+def timelabels(timeinterval, startofmonths):
+  'creating new timeinterval list that corresponds to new data'
+  timelabels = []
+  for i in startofmonths[:-1]:
+    timelabels.append(timeinterval[i])
+  return timelabels
 
-g.close()
+seasonlabels = timelabels(seasons, startofmonths)
+yearlabels = timelabels(years, startofmonths)
+monthlabels = timelabels(months, startofmonths)
+
+def writenewdata(filename_str, headers, values):
+  'inputting new data into csv file'
+  headers = headers.split(', ')
+  for i in range(len(headers)):
+    values[i].insert(0, headers[i])
+  pathname = '../data/rearranged/' + filename_str + '.csv'
+  g = open(pathname, 'wb')
+  csvwrite = csv.writer(g)
+  tobewritten = zip(*values)
+  for row in tobewritten:
+    csvwrite.writerow(row)
+  g.close()
+
+newheaders = 'Season, Year, Month, NoDaysInMonth, AverageDailyVisits'
+newvalues = [seasonlabels, yearlabels, monthlabels, nodays, avgvisits]
+writenewdata('AvgVisits', newheaders, newvalues)
