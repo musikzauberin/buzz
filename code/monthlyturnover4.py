@@ -55,14 +55,31 @@ plants = plants[1:]
 
 datalen = len(months)
 
-# starting index of every month + the last index(len of months) -> stored as startofmonths
-startofmonths = [0]
+########## Analysing data ##########
 
-for i in range(1, datalen):
-  if months[i] != months[i-1]:
-    startofmonths.append(i)
-startofmonths.append(len(months))
-print 'startofmonths' + str(startofmonths)
+def findstartindex(values, timescale_str):
+  'Finds starting index of timescale + last index(len(timescale)), returns startoftimescale'
+  'require years and months list'
+  startofmonths = [0]
+  startofyears = [0]
+  datalen = len(values)
+  if timescale_str == 'months':
+    for i in range(1, datalen):
+      if values[i] != values[i-1]:
+        startofmonths.append(i)
+    print 'Total number of months is ' + str(len(startofmonths)) + '.'
+    startofmonths.append(len(months))
+    return startofmonths
+  if timescale_str == 'years':
+    for i in range(1, datalen):
+      if values[i] != values[i-1]:
+        startofyears.append(i)
+    print 'Total number of years is ' + str(len(startofyears)) + '.'
+    startofyears.append(len(years))
+    return startofyears
+
+startofmonths = findstartindex(months, 'months')
+
 
 # for every loop, startindex is where month 1 starts, nextindex is where month 2 starts, thereafter compare month 1 and month 2
 # calculate a, similarity bet two consecutive months, and b & c, unique pairs in each month.

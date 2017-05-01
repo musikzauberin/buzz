@@ -7,19 +7,18 @@ import calendar
 import sys
 import os.path
 
-months = []
-days = []
-years = []
-bees = []
-plants = []
+def simpleline(x1, y1, x2, y2):
+  gradient = (y2-y1)/(x2-x1)
+  intercept = y2 - gradient * x2
+  x = np.arange(x1, x2)
+  print x
+  pl.plot(x, gradient*x + intercept)
 
-h = open('../data/rearranged/OldCerradoData.csv','rb')
+x1 = 0
+x2 = 2
+y1 = 1
+y2 = 4
 
-columns = [column for column in csv.reader(h)]
+simpleline(x1, y1, x2, y2)
 
-h = open('../data/rearranged/OldCerradoData.csv','rb')
-rows = [row for row in csv.reader(h)]
-
-
-print len(rows)
-print len(columns)
+pl.show()

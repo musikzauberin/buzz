@@ -149,6 +149,7 @@ for i in range(len(alist)):
 print "Turnover rates are: " + str(bints)
 print "Total number of comparisons made: "+ str(len(bints))
 
+### plotting
 # making x labels work
 xlabel = []
 xlabels = []

@@ -35,15 +35,16 @@ visits, precip, tempmax, tempmin, humid] = ([] for i in range(len(next(data))))
 headers2 = [indexes, systems, seasons, months, days, years, bees, plants, \
 visits, precip, tempmax, tempmin, humid]
 
+enu = enumerate(headers2)
+for i in enu:
+  print i
+
 for column in data:
   for j, i in enumerate(headers2):
     i.append(column[j])
+    print j
 
 h.close()
-
-#remove header
-for i in headers2:
-  del i[0]
 
 ########## Analysing data ##########
 

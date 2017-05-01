@@ -47,9 +47,9 @@ for column in data:
 
 h.close()
 
-#remove header
-for i in headers2:
-  del i[0]
+# #remove header
+# for i in headers2:
+#   del i[0]
 
 ########## Analysing data ##########
 

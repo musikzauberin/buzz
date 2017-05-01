@@ -7,6 +7,7 @@ import calendar
 import sys
 import os.path
 
+
 h = open('../results/MonthlyTurnoverOldCerrado.csv','rb')
 data = csv.reader(h)
 

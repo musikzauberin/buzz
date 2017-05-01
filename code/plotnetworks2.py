@@ -153,15 +153,17 @@ for i in range(1, upperbound, 4):
 
 # # figure size
 # # figure(num=None, figsize=(8, 6), dpi=80, facecolor='w', edgecolor='k')
-pl.figure(figsize=(20,8))
+pl.figure(figsize=(20,5))
+almost_black = '#262626'
+dotcolours = brewer2mpl.get_map('RdYlGn', 'diverging', 11).mpl_colors
 
 # plot dots
-pl.plot(beedots, 'mo', markeredgewidth=0.6, markersize=4.8, alpha = 0.8)
-pl.plot(plantdots, 'go', markeredgewidth=0.6, markersize=4.8, alpha = 0.8)
+pl.plot(beedots, 'o', color = dotcolours[2], markeredgewidth=0.5, markeredgecolor=almost_black, markersize=4.5, alpha = 0.7)
+pl.plot(plantdots, 'o', color = dotcolours[10], markeredgewidth=0.5, markeredgecolor=almost_black, markersize=4.5, alpha = 0.7)
 
 beeplants = []
 for i in range(len(bees)):
-  beeplants.append([bees[i], plants[i]])
+  beeplants.append((bees[i], plants[i]))
 
 # find unique interactions in the whole data set
 uniqueints = []
@@ -179,36 +181,38 @@ colours = brewer2mpl.get_map('Dark2', 'qualitative', 8).mpl_colors
 # find max number of times an interaction appears in beeplants
 appearmax = 0
 for i in range(len(uniqueints)):
-  appearno = beeplants.count([bees[i], plants[i]])
+  appearno = beeplants.count(uniqueints[i])
   if appearno > appearmax:
     appearmax = appearno
 print 'max number of appearances: ' + str(appearmax)
 
 #create better range of colours for interaction lines, better alpha too
 colours2 = []
-for i in [7, 5, 0, 4, 1, 3]:
+for i in [7, 7, 2, 2, 3, 3]:
   colours2.append(colours[i])
 # for i in range(1, 12, 12/appearmax):
 #   colours2.append(colours[i])
 
-alphanos = [0.3, 0.4, 0.6, 0.7, 0.8, 1.0]
+alphanos = [0.1, 0.1, 0.7, 0.7, 1.0, 1.0]
+widths = [0.8, 0.8, 1.0, 1.0, 1.1, 1.1]
   
 # Assign a colour to interactions based on how many months they appear in 
 colourdict = {}
 alphadict = {}
+widthdict = {}
 for i in range(len(uniqueints)):
-  appearno = beeplants.count([bees[i], plants[i]])
+  appearno = beeplants.count(uniqueints[i])
   colourdict[uniqueints[i]] = colours2[appearno - 1]
   alphadict[uniqueints[i]] = alphanos[appearno - 1]
+  widthdict[uniqueints[i]] = widths[appearno - 1]
 
 # plot lines/interactions within months
-def simpleline(x1, x2, y1, y2, colour, alphano):
+def simpleline(x1, x2, y1, y2, colour, alphano, width):
   'draw a line between two points in plot'
   gradient = (y2-y1)/(x2-x1)
   intercept = y2 - gradient * x2
   x = np.arange(x1, x2 + 1)
-  line = pl.plot(x, gradient*x + intercept)
-  pl.setp(line, color=colour, linewidth=1.2, alpha = alphano)
+  pl.setp(pl.plot(x, gradient*x + intercept), color=colour, alpha = alphano, linewidth=width)
 
 for i in range(0, upperbound, 4):
   x1 = i # x value of bee in bees
@@ -218,7 +222,7 @@ for i in range(0, upperbound, 4):
   nextindex = startofmonths[e + noofmonths]
   p = startindex
   while p < nextindex:
-    simpleline(x1, x2, bees[p], plants[p], colourdict[(bees[p], plants[p])], alphadict[(bees[p], plants[p])])
+    simpleline(x1, x2, bees[p], plants[p], colourdict[(bees[p], plants[p])], alphadict[(bees[p], plants[p])], widthdict[(bees[p], plants[p])])
     p += 1
 
 ## create list for drawing lines/common points between months
@@ -251,7 +255,7 @@ for i in range(len(commonints)):
   x1 = 4 * i + 2
   x2 = x1 + 2
   for cint in commonints[i]:
-    simpleline(x1, x2, plants[cint], bees[cint], colourdict[(bees[cint], plants[cint])], alphadict[(bees[cint], plants[cint])])
+    simpleline(x1, x2, plants[cint], bees[cint], colourdict[(bees[cint], plants[cint])], alphadict[(bees[cint], plants[cint])], widthdict[(bees[cint], plants[cint])])
 
 
 ## aesthetics
@@ -301,42 +305,60 @@ pl.title('Pollinator Networks in a Tropical Savanna', size = 20)
 pl.gca().set_yticks(())
 
 # colour background according to season
-pl.axvspan(-1, 23, facecolor='r', alpha=0.1)
-pl.axvspan(23, 48, facecolor='c', alpha=0.1)
-pl.text(10, 210, 'Dry Season', size = 14)
-pl.text(32, 210, 'Wet Season', size = 14)
+pl.axvspan(-1, 23, facecolor='r', alpha=0.05)
+pl.axvspan(23, 48, facecolor='c', alpha=0.05)
+pl.text(10, 210, 'Dry Season', size = 16)
+pl.text(32, 210, 'Wet Season', size = 16)
 
 ## creating proxy artists for legends
 # legend for lines
 linereps = []
-for i in colours2:
+# [7, 7, 2, 2, 3, 3]
+coloursused = [colours2[0], colours2[2], colours2[4]]
+for i in coloursused:
   linerep = mlines.Line2D([], [], color= i , linewidth=3)
   linereps.append(linerep)
 
 handles = linereps
-labelsstr = 'once, twice, thrice, four times, five times, six times'
+labelsstr = '1 - 2, 3 - 4, 5 - 6'
 labels = labelsstr.split(', ')
 
 first_legend = pl.legend(handles, labels, frameon=True, 
-title = 'Number of times interaction appears:', ncol = 2, 
-bbox_to_anchor=(1.01, 0.88), loc=2, borderaxespad=0., prop={'size':14})
-first_legend.get_title().set_fontsize('14') 
+title = 'Number of times interaction appears:', ncol = 1, 
+bbox_to_anchor=(1.01, 0.85), loc=2, borderaxespad=0., prop={'size':12})
+first_legend.get_title().set_fontsize('12') 
 
+light_grey = np.array([float(248)/float(255)]*3)
+first_legend.get_frame().set_linewidth(0.0)
+first_legend.get_frame().set_color(light_grey)
 pl.gca().add_artist(first_legend)
 
 #legend for dots
-beedotrep = mlines.Line2D([], [], linestyle="none", marker="o", markersize=8, markerfacecolor="m")
-plantdotrep = mlines.Line2D([], [], linestyle="none", marker="o", markersize=8, markerfacecolor="g")
+beedotrep = mlines.Line2D([], [], linestyle="none", marker = 'o', color = dotcolours[2], markeredgewidth=0.5, markeredgecolor=almost_black, markersize=4.5, alpha = 0.7)
+plantdotrep = mlines.Line2D([], [], linestyle="none", marker = 'o', color = dotcolours[10], markeredgewidth=0.5, markeredgecolor=almost_black, markersize=4.5, alpha = 0.7)
 handles2 = [beedotrep, plantdotrep]
 labels2 = ['Bee', 'Plant']
 
-second_legend = pl.legend(handles2, labels2, frameon=True, 
-title = 'Species:', numpoints=1, ncol = 2, 
-bbox_to_anchor=(1.01, 1), loc=2, borderaxespad=0., prop={'size':14})
 
-second_legend.get_title().set_position((-60, 0)) 
-second_legend.get_title().set_fontsize('14') 
+second_legend = pl.legend(handles2, labels2, frameon=True, 
+title = 'Species:', numpoints=1, ncol = 1, 
+bbox_to_anchor=(1.01, 1), loc=2, borderaxespad=0., prop={'size':12})
+
+second_legend.get_title().set_position((-5, 0)) 
+second_legend.get_title().set_fontsize('12') 
 pl.gca().add_artist(second_legend)
+
+
+#legend = ax.legend(frameon=True, scatterpoints=1, fontcolor=almost_black)
+#rect = legend.get_frame()
+second_legend.get_frame().set_linewidth(0.0)
+second_legend.get_frame().set_color(light_grey)
+
+# # Change the legend label colors to almost black, too
+# texts = legend.texts
+# for t in texts:
+#     t.set_color(almost_black)
+
 
 # pl.legend(loc='upper right', frameon=True, numpoints=1)
 
@@ -352,5 +374,3 @@ plotpath = '../results/' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()
-
-
