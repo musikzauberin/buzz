@@ -320,11 +320,11 @@ for i in coloursused:
   linereps.append(linerep)
 
 handles = linereps
-labelsstr = '1 - 2, 3 - 4, 5 - 6'
+labelsstr = '1 - 2 months, 3 - 4 months, 5 - 6 months'
 labels = labelsstr.split(', ')
 
 first_legend = pl.legend(handles, labels, frameon=True, 
-title = 'Number of times interaction appears:', ncol = 1, 
+title = 'Interaction present in:', ncol = 1, 
 bbox_to_anchor=(1.01, 0.85), loc=2, borderaxespad=0., prop={'size':12})
 first_legend.get_title().set_fontsize('12') 
 
@@ -369,7 +369,7 @@ pl.gca().spines['left'].set_visible(False)
 pl.gca().xaxis.set_ticks_position('bottom')
 
 # save plot
-plotname = 'networkdraft1'
+plotname = 'newnetworkdraft1'
 plotpath = '../results/' + plotname + '.pdf'
 pl.savefig(plotpath)
 

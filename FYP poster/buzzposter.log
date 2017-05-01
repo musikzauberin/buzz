@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  27 APR 2017 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  1 MAY 2017 13:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,22 +1242,22 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 (./buzzposter.aux)
 \openout1 = `buzzposter.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
 LaTeX Font Info:    Try loading font information for T1+CabinCondensed-TLF on i
-nput line 108.
+nput line 111.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cabin/T1CabinCondensed-TLF.fd
 File: T1CabinCondensed-TLF.fd 2012/11/17 (autoinst) Font definitions for T1/Cab
@@ -1355,137 +1355,129 @@ e
 <head1low.jpg, id=31, 2560.767pt x 853.5087pt>
 File: head1low.jpg Graphic file (type jpg)
  <use head1low.jpg>
-Package pdftex.def Info: head1low.jpg used on input line 109.
+Package pdftex.def Info: head1low.jpg used on input line 112.
 (pdftex.def)             Requested size: 1195.00346pt x 341.42348pt.
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
-LaTeX Font Info:    Calculating math sizes for size <51.59> on input line 111.
+LaTeX Font Info:    Calculating math sizes for size <51.59> on input line 114.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <51.59> not available
-(Font)              size <24.88> substituted on input line 111.
+(Font)              size <24.88> substituted on input line 114.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <36.11284> not available
-(Font)              size <24.88> substituted on input line 111.
+(Font)              size <24.88> substituted on input line 114.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <25.795> not available
-(Font)              size <24.88> substituted on input line 111.
+(Font)              size <24.88> substituted on input line 114.
 
 <Imperial_Whitelogo.pdf, id=32, 597.23125pt x 845.1575pt>
 File: Imperial_Whitelogo.pdf Graphic file (type pdf)
 
 <use Imperial_Whitelogo.pdf>
-Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 111.
+Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 114.
 (pdftex.def)             Requested size: 213.39566pt x 139.3216pt.
-LaTeX Font Info:    Calculating math sizes for size <42.99> on input line 111.
+LaTeX Font Info:    Calculating math sizes for size <42.99> on input line 114.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <42.99> not available
-(Font)              size <24.88> substituted on input line 111.
+(Font)              size <24.88> substituted on input line 114.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <30.09286> not available
-(Font)              size <24.88> substituted on input line 111.
+(Font)              size <24.88> substituted on input line 114.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <21.495> not available
-(Font)              size <20.74> substituted on input line 111.
+(Font)              size <20.74> substituted on input line 114.
 
-<picture.JPG, id=34, 3337.46875pt x 1815.78375pt>
+<picture.JPG, id=34, 1219.55624pt x 731.73375pt>
 File: picture.JPG Graphic file (type jpg)
  <use picture.JPG>
-Package pdftex.def Info: picture.JPG used on input line 111.
-(pdftex.def)             Requested size: 256.0748pt x 104.38196pt.
+Package pdftex.def Info: picture.JPG used on input line 114.
+(pdftex.def)             Requested size: 213.39566pt x 88.20547pt.
 File: Imperial_Whitelogo.pdf Graphic file (type pdf)
 
 <use Imperial_Whitelogo.pdf>
-Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 111.
+Package pdftex.def Info: Imperial_Whitelogo.pdf used on input line 114.
 (pdftex.def)             Requested size: 213.39566pt x 139.3216pt.
 File: picture.JPG Graphic file (type jpg)
  <use picture.JPG>
-Package pdftex.def Info: picture.JPG used on input line 111.
-(pdftex.def)             Requested size: 256.0748pt x 104.38196pt.
+Package pdftex.def Info: picture.JPG used on input line 114.
+(pdftex.def)             Requested size: 213.39566pt x 88.20547pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 
  []
 
 LaTeX Font Info:    Try loading font information for TS1+CabinCondensed-TLF on 
-input line 145.
+input line 148.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cabin/TS1CabinCondensed-TLF.fd
 File: TS1CabinCondensed-TLF.fd 2012/11/17 (autoinst) Font definitions for TS1/C
 abinCondensed-TLF.
 )
-Underfull \hbox (badness 2980) in paragraph at lines 145--145
+Underfull \hbox (badness 2980) in paragraph at lines 148--148
 []\T1/CabinCondensed-TLF/m/n/20.74 Does tem-per-a-ture, pre-cip-i-ta-tion or hu
 -mid-ity af-fect bee-flower in-ter-ac-tion
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 171--171
-[]\T1/CabinCondensed-TLF/m/n/20.74 Whittaker's dis-sim-i-lar-ity in-dex, $[]$,
+Underfull \hbox (badness 5274) in paragraph at lines 177--177
+[]$\T1/CabinCondensed-TLF/m/n/20.74 , re-flects the dif-fer-ence
  []
 
 
-Underfull \hbox (badness 2393) in paragraph at lines 171--171
-\T1/CabinCondensed-TLF/m/n/20.74 re-flects the dif-fer-ence be-tween two
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+\T1/CabinCondensed-TLF/m/n/20.74 be-tween two suc-ces-sive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 
  []
 
 
-Underfull \hbox (badness 6188) in paragraph at lines 171--171
-[]$\OML/cmm/m/it/20.74 a$ \T1/CabinCondensed-TLF/m/n/20.74 is the num-ber of in
--ter-ac-tions
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 171--171
-\T1/CabinCondensed-TLF/m/n/20.74 re-flects a higher dif-fer-ence be-tween
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+\T1/CabinCondensed-TLF/m/n/20.74 dif-fer-ence be-tween monthly
  []
 
-<MonthlyTurnoverOldCerrado.pdf, id=40, 578.16pt x 433.62pt>
-File: MonthlyTurnoverOldCerrado.pdf Graphic file (type pdf)
+<network4.pdf, id=40, 1156.32pt x 482.40225pt>
+File: network4.pdf Graphic file (type pdf)
+ <use network4.pdf>
+Package pdftex.def Info: network4.pdf used on input line 194.
+(pdftex.def)             Requested size: 810.90361pt x 338.29758pt.
 
-<use MonthlyTurnoverOldCerrado.pdf>
-Package pdftex.def Info: MonthlyTurnoverOldCerrado.pdf used on input line 184.
-(pdftex.def)             Requested size: 602.7427pt x 452.07896pt.
-
-Underfull \hbox (badness 1430) in paragraph at lines 211--211
-[]\T1/CabinCondensed-TLF/m/n/20.74 If cli-mate does not af-fect bee-flower in-t
-er-ac-tion
- []
-
-[1
+<turnover.pdf, id=41, 845.1575pt x 597.23125pt>
+File: turnover.pdf Graphic file (type pdf)
+ <use turnover.pdf>
+Package pdftex.def Info: turnover.pdf used on input line 194.
+(pdftex.def)             Requested size: 810.90361pt x 573.04387pt.
+ [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Imper
-ial_Whitelogo.pdf> <./picture.JPG> <./head1low.jpg> <./MonthlyTurnoverOldCerrad
-o.pdf
+ial_Whitelogo.pdf> <./picture.JPG> <./head1low.jpg> <./network4.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./MonthlyTurnoverOldCerrado.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./buzzposter.aux)
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./network4.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./turnover.pdf, page is rotated 270 degrees>] (./buzzposter.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 26.70999pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 19644 strings out of 493089
- 412038 string characters out of 6134841
- 532433 words of memory out of 5000000
- 22652 multiletter control sequences out of 15000+600000
+ 19649 strings out of 493089
+ 412032 string characters out of 6134841
+ 532641 words of memory out of 5000000
+ 22656 multiletter control sequences out of 15000+600000
  176281 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,17n,84p,820b,1065s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1500,10 +1492,10 @@ msfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on buzzposter.pdf (1 page, 24570204 bytes).
+Output written on buzzposter.pdf (1 page, 22194252 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 160 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
