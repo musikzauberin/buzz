@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  1 MAY 2017 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  1 MAY 2017 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1409,58 +1409,64 @@ File: picture.JPG Graphic file (type jpg)
 Package pdftex.def Info: picture.JPG used on input line 114.
 (pdftex.def)             Requested size: 213.39566pt x 88.20547pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 
  []
 
 LaTeX Font Info:    Try loading font information for TS1+CabinCondensed-TLF on 
-input line 148.
+input line 149.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cabin/TS1CabinCondensed-TLF.fd
 File: TS1CabinCondensed-TLF.fd 2012/11/17 (autoinst) Font definitions for TS1/C
 abinCondensed-TLF.
 )
-Underfull \hbox (badness 2980) in paragraph at lines 148--148
+Underfull \hbox (badness 2980) in paragraph at lines 149--149
 []\T1/CabinCondensed-TLF/m/n/20.74 Does tem-per-a-ture, pre-cip-i-ta-tion or hu
 -mid-ity af-fect bee-flower in-ter-ac-tion
  []
 
 
-Underfull \hbox (badness 5274) in paragraph at lines 177--177
+Underfull \hbox (badness 5274) in paragraph at lines 178--178
 []$\T1/CabinCondensed-TLF/m/n/20.74 , re-flects the dif-fer-ence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 \T1/CabinCondensed-TLF/m/n/20.74 be-tween two suc-ces-sive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
 \T1/CabinCondensed-TLF/m/n/20.74 dif-fer-ence be-tween monthly
  []
 
 <network4.pdf, id=40, 1156.32pt x 482.40225pt>
 File: network4.pdf Graphic file (type pdf)
  <use network4.pdf>
-Package pdftex.def Info: network4.pdf used on input line 194.
+Package pdftex.def Info: network4.pdf used on input line 195.
 (pdftex.def)             Requested size: 810.90361pt x 338.29758pt.
 
 <turnover.pdf, id=41, 845.1575pt x 597.23125pt>
 File: turnover.pdf Graphic file (type pdf)
  <use turnover.pdf>
-Package pdftex.def Info: turnover.pdf used on input line 194.
+Package pdftex.def Info: turnover.pdf used on input line 195.
 (pdftex.def)             Requested size: 810.90361pt x 573.04387pt.
- [1
+
+Underfull \hbox (badness 1430) in paragraph at lines 224--224
+[]\T1/CabinCondensed-TLF/m/n/20.74 If cli-mate does not af-fect bee-flower in-t
+er-ac-tion
+ []
+
+[1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Imper
 ial_Whitelogo.pdf> <./picture.JPG> <./head1low.jpg> <./network4.pdf
@@ -1476,7 +1482,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  19649 strings out of 493089
  412032 string characters out of 6134841
- 532641 words of memory out of 5000000
+ 533708 words of memory out of 5000000
  22656 multiletter control sequences out of 15000+600000
  176281 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1492,7 +1498,7 @@ msfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
-Output written on buzzposter.pdf (1 page, 22194252 bytes).
+Output written on buzzposter.pdf (1 page, 22193930 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
