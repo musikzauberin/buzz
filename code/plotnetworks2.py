@@ -286,14 +286,14 @@ pl.gca().grid(True, which='minor', linestyle='--', alpha=0.3)
 
 ## titles and axis labels
 title = pl.title('Pollinator Networks in Cerrado, a Tropical Savanna (1996 - 1997)', size = 18)
-title.set_position([.34, 1.05])
+title.set_position([.37, 1.05])
 # pl.xlabel("this is X", size=10)
 
 ## colour background according to season
 pl.axvspan(-1, 23, facecolor='r', alpha=0.05)
 pl.axvspan(23, 48, facecolor='c', alpha=0.05)
 pl.text(9, 215, 'Dry Season', size = 16)
-pl.text(31, 215, 'Wet Season', size = 16)
+pl.text(30, 215, 'Wet Season', size = 16)
 
 # remove borders
 pl.gca().spines['top'].set_visible(False)
@@ -317,7 +317,7 @@ labelsstr1 = '1 - 2 months, 3 - 4 months, 5 - 6 months'
 labels1 = labelsstr1.split(', ')
 
 first_legend = pl.legend(handles1, labels1, frameon=True, title='Interaction present in:', ncol=2, 
-bbox_to_anchor=(1.01, 1.08), loc=1, borderaxespad=0., prop={'size':10}, handletextpad=0.2,
+bbox_to_anchor=(1.02, 1.08), loc=1, borderaxespad=0., prop={'size':10}, handletextpad=0.2,
 borderpad=0.5, labelspacing=0.2, columnspacing=0.5)
 first_legend.get_title().set_fontsize('11') 
 first_legend.get_frame().set_linewidth(0.0)
@@ -332,8 +332,8 @@ handles2 = [beedotrep, plantdotrep]
 labels2 = ['Bee node', 'Plant node']
 
 second_legend = pl.legend(handles2, labels2, frameon=True, ncol=2, 
-bbox_to_anchor=(1.01, 1.05), loc=4, borderaxespad=0., prop={'size':10}, handletextpad=0.5, numpoints=1, 
-borderpad=0.8, labelspacing=1, columnspacing=1.4)
+bbox_to_anchor=(1.02, 1.06), loc=4, borderaxespad=0., prop={'size':10}, handletextpad=0.5, numpoints=1, 
+borderpad=0.8, labelspacing=1, columnspacing=1.9)
 second_legend.get_frame().set_linewidth(0.0)
 second_legend.get_frame().set_color(light_grey)
 pl.gca().add_artist(second_legend)

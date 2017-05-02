@@ -11,7 +11,7 @@
 \usepackage{enumitem}
 
 
-\useblockstyle[titleinnersep=4mm, bodyinnersep = 6mm]{Slide}
+\useblockstyle[titleinnersep=4mm, bodyinnersep = 5.5mm]{Slide}
 \renewcommand*\familydefault{cabin}
 \usepackage[sfdefault,condensed]{cabin}
 \usepackage[T1]{fontenc}
@@ -87,9 +87,9 @@
     \hspace{2pt}}
   {\begin{minipage}{22cm}
     \centering
-        { \Large Jia Le, Lim \\
+        { \Large Jia Le Lim \\
         \vspace{2pt}
-        \normalsize jialelim@hotmail.com \\
+        \normalsize jia.l.lim13@imperial.ac.uk\\
          \vspace{-28pt}
           \normalsize Department of Life Sciences, Silwood Park Campus, Imperial College London}
   \end{minipage}
@@ -115,32 +115,33 @@
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Introduction in form of a question?
-\block{\Large \hspace{0.5pt} Dynamics of bee-flower interactions}{
+\block{\Large \hspace{0.5pt} Dynamics of bee-flower interactions}{ \vspace{-5pt}
 
   \normalsize
      %Brief Introduction explaining broader significance of research problem and the gap in knowledge that is being addressed
      %%% Bee-flower interactions differ drastically between subsequent seasons or even weeks. However, this high interaction turnover has been largely overlooked by previous studies, which assume a static picture of pollination networks. Understanding how and why bee-flower interactions vary over time is crucial in the conservation of bees, and in the continuation of their pollination services. Moreover, climate change can result in fluctuating flowering times, thereafter indirectly sabotaging bee-flower interactions. \\
-     Understanding how and why plant-pollinator networks (e.g., bee-flower) interactions vary over time is crucial in the conservation of pollinators, and in the continuation of their pollination services. Moreover, climate change can result in fluctuating flowering times, therefore affecting or driving turnover in plant-pollinator interactions. The structure of bee-flower interaction networks are likely to differ between seasons or even shorter timescales of weeks to months. However, this interaction turnover has been largely been ignored by previous research on plant-pollinator networks, which assume a static picture of pollination networks. \\
+     Understanding how and why plant-pollinator networks (e.g. bee-flower interactions) vary over time is crucial in the conservation of pollinators, and in the continuation of their pollination services. Moreover, climate change can result in fluctuating flowering times, therefore affecting or driving turnover in plant-pollinator interactions. The structure of bee-flower interaction networks is likely to differ between seasons or even shorter timescales of weeks to months. However, this interaction turnover has been largely ignored by previous research on plant-pollinator networks, which assume a static picture of pollination networks. \\
   
-  \begin{minipage}[]{0.57\linewidth}
+  \begin{minipage}[]{0.5\linewidth}
     \vspace{-13pt}
-    \subsection*{I ask...}
+    \subsection*{I would like to find out...}
      %research plan
     \begin{itemize}[itemsep=5pt,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=20pt]
-    \item Does temperature, precipitation or humidity affect bee-flower interaction turnover?
+    \item Does temperature, precipitation or humidity affect bee-flower \\interaction turnover?
     \item Does bee-flower interaction turnover differ between seasons?
-    \item Does bee-flower interaction turnover of the tropics differ from those of the temperate regions?
+    \item Does bee-flower interaction turnover of the tropics differ from \\ those of the temperate regions?
     \end{itemize}
 
   \end{minipage}   
   \hspace{.8cm}    
-  \begin{minipage}[]{0.40\linewidth}
+  \begin{minipage}[]{0.45\linewidth}
      \vspace{-15pt}
    \subsection*{Data}
    %Materials and methods
     \begin{itemize}[itemsep=5pt,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=20pt]
-    \item \textit {Species level:} More than 200 different species of plants and bees
-    \item \textit{Interactions level:} More than 600 unique interactions and more than 3500 recorded interactions across 39 months
+    \item \textit{Species level:} 153 plant and 184 bee species were observed.
+    \item \textit{Interactions level:} 820 unique interactions and 2647 recorded interactions across 39 months.
+    \item \textit{Locations:} Cerrado, a tropical savanna and  a subalpine habitat in the Gunnison National Forest.
     \end {itemize}
     \end{minipage}
 
@@ -148,48 +149,46 @@
    %A clear statement of the project aim or aims
  }
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{columns}
-\column{0.25}
-  \block{\Large \hspace{3pt}Calculating turnover}{
+\column{0.3}
+  \block{\Large \hspace{3pt}Calculating turnover}{ \vspace{-5pt}
     \normalsize
-    \vspace{20pt}
-Whittaker's dissimilarity index, $\boldsymbol{ \beta_{int}}$, reflects the difference between two successive monthly networks.
-	\vspace{0pt} \\
+In networks, nodes (species) are linked by edges (bee-flower interactions). Differences between networks are reflected by the Whittaker's dissimilarity index, $\boldsymbol{ \beta_{int}}$, given by:
+\vspace{-50pt} \\
 	
     \begin{align*}
       \boldsymbol{ \beta_{int}} & = \frac{a + b + c}{(2a + b + c)/2} - 1
     \end{align*}\\
 
-    \vspace{0pt}
+    \vspace{-50pt}
     where:    
-    \begin{itemize}
-     \item $a$ is the number of interactions shared between the two networks  
-    \item $b$ and $c$ are the number of unique interactions in the two networks
+    \begin{itemize}[itemsep=5pt,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=*]
+     \item $a$ is the number of interactions shared between the two networks.
+    \item $b$ and $c$ are the number of unique \\ interactions in the two networks.
     \end{itemize}
- \vspace{20pt}
+ \vspace{10pt}
+ For example, when comparing between April and May networks in Figure A:
+     \vspace{-5pt}
+ 	    \begin{align*}
+      \boldsymbol{ \beta_{int}} & = \frac{11 + 55 + 79}{(2\times11 + 55 + 79)/2} - 1 \\
+& = 0.859
+    \end{align*} 
+    \vspace{-24pt} \\
  $\boldsymbol{ \beta_{int}}$ ranges from 0 to 1. \\
- A higher $\boldsymbol{ \beta_{int}}$ reflects a higher difference between monthly networks.
-
-
+ A higher $\boldsymbol{ \beta_{int}}$ reflects a higher \\difference between monthly networks.
   }
 
-\column{0.75}
-  \block{\Large \hspace{17pt} Preliminary Results}{ 
-  \vspace{-30pt}
+\column{0.7}
+  \block{\Large \hspace{17pt} Preliminary Results}{ \vspace{-10pt}
+  \vspace{-40pt}
     \flushright
-    \includegraphics[width=\linewidth]{network4.pdf} 
-     \vspace{-50pt}
-\flushleft \footnotesize Figure 1: Monthly bee pollinator networks from April 1995 to Mar 1996. \\
- Average monthly precipitation sum = 22.84 mm(Dry Season), 239.6mm (Wet Season) \\
- \vspace{-155pt}
-    \centering
-    \includegraphics[width=\linewidth]{turnover.pdf}
-    \footnotesize 
-   \vspace{-185pt}
+    \includegraphics[width=\linewidth]{drawing7.pdf} 
+   \vspace{-60pt}
+  \flushleft \footnotesize Figure A: Monthly bee pollinator networks from April 1996 to Mar 1997. \\
+Figure B: Bee-flower interaction turnover and species turnover from April 1996 to Mar 1997. \\
+ Average monthly precipitation sum = 25.3 mm (Dry Season), 239.6mm (Wet Season) \\
     %If you include your own results (nice if available but not necessary given the early stage of the project) make sure data clearly explained
     
   }
@@ -200,26 +199,27 @@ Whittaker's dissimilarity index, $\boldsymbol{ \beta_{int}}$, reflects the diffe
 \begin{columns}
 
 
-  \column{0.6}
-  \block{\Large \hspace{17pt}Conclusions and Ongoing work}{ 
+  \column{0.65}
+  \block{\Large \hspace{17pt}Conclusions and Ongoing work}{ \vspace{-5pt}
   \normalsize	
 
     \begin{itemize}[itemsep=5pt,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=*]
-    \item Monthly bee-flower interaction turnover is higher than ever reported before. Mean turnover rate is 
-    \item There are no significant differences between turnover rates within seasons and between seasons.
-    \item There is a periodic pattern in turnover of bee-flower interactions.
-    \item Currently determining if precipitation and temperature are strong drivers of bee-flower interaction turnover.
+    \item Bee-flower interaction turnover is higher than ever reported before (CaraDonna, Petry, Brennan, et al., 2017).
+    \item There are no significant differences between turnover within seasons and between seasons.
+    \item Periodic pattern in turnover of bee-flower interactions is not primarily driven by species turnover.
+    \item Currently determining if precipitation and temperature are strong drivers of bee-flower \\ interaction turnover.
     \end{itemize}      
 %Conclusions that can be drawn and future directions
 }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \column{0.4}
-  \block{\Large \hspace{17pt}Possible challenges}{
+  \column{0.35}
+  \block{\Large \hspace{17pt}Possible challenges}{ \vspace{-5pt}
     \normalsize
-    \begin{itemize}[itemsep=5pt,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=*]
-    \item Insufficient data; However, $\boldsymbol{\beta_{int}}$ is rarely affected by small sample sizes.
-    \item If climate does not affect bee-flower interaction turnover, other factors to be considered include bee body size and lifespan.
+    \begin{itemize}[itemsep=15pt,topsep=7pt,parsep=2pt,partopsep=1pt, leftmargin=*]
+    \item Insufficient data.\\ However, $\boldsymbol{\beta_{int}}$ is rarely affected by small sample sizes.
+    \item If climate does not affect bee-flower interaction turnover, other factors to be considered include body size and lifespan of bees.
     \end{itemize}    
+    \vspace{2pt}
     %Discussion of research strategy (identification of potential problems and how these will be overcome)
 }
   
