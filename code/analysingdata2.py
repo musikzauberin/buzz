@@ -3,7 +3,7 @@
 '''Analysing visitation data'''
 
 __author__ = 'Jia Le Lim'
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 import csv
 import operator
@@ -17,7 +17,7 @@ from operator import div
 
 ########## Script starts here ##########
 
-filename = 'OldCerradoAllData.csv'
+filename = 'NewCerradoAllData.csv'
 pathname = '../data/rearranged/' + filename
 h = open(pathname,'rb')
 data = csv.reader(h)
@@ -26,11 +26,9 @@ data = csv.reader(h)
 ########## Inputting data into lists ##########
 
 # copy and paste all headers in data twice
-[indexes, systems, seasons, months, days, years, bees, plants, \
-visits, precip, tempmax, tempmin, humid] = ([] for i in range(len(next(data))))
+[seasons, months, bees, plants, days, years] = ([] for i in range(len(next(data))))
 
-headers2 = [indexes, systems, seasons, months, days, years, bees, plants, \
-visits, precip, tempmax, tempmin, humid]
+headers2 = [seasons, months, bees, plants, days, years]
 
 for column in data:
   for j, i in enumerate(headers2):
@@ -63,18 +61,6 @@ def findstartindex(values, timescale_str):
 
 startofmonths = findstartindex(months, 'months')
 
-def monthlysum1(values, startofmonths):
-  'find sum of value per month'
-  measures = []
-  for x in range(len(startofmonths)-1):
-    startindex = startofmonths[x]
-    endindex = startofmonths[x + 1]
-    measure = 0
-    for i in range(startindex, endindex):
-      measure += int(values[i])
-    measures.append(measure)
-  return measures
-
 def nodaysinmonth(days, startofmonths):
   'find number of observed days in each month'
   nodays = []
@@ -97,9 +83,15 @@ def dailyavgpermonth(divisor, values, decimalplaces):
   print 'Average daily for each month: ' + str(avgvalues)
   return avgvalues
 
-sumvisits = monthlysum1(visits, startofmonths)
 nodays = nodaysinmonth(days, startofmonths)
+
+sumvisits = []
+for i in range(1, len(startofmonths)):
+  sumvisit = startofmonths[i] - startofmonths[i-1]
+  sumvisits.append(sumvisit)
+
 avgvisits = dailyavgpermonth(nodays, sumvisits, 2)
+
 
 ########## Writing Data ##########
 def timelabels(timeinterval, startofmonths):
@@ -128,4 +120,4 @@ def writenewdata(filename_str, headers, values):
 
 newheaders = 'Season, Year, Month, NoDaysInMonth, AverageDailyVisits'
 newvalues = [seasonlabels, yearlabels, monthlabels, nodays, avgvisits]
-writenewdata('AvgVisits', newheaders, newvalues)
+writenewdata('NewCerradoAvgVisits', newheaders, newvalues)

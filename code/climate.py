@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+
+'''Analysing temperature data'''
+
+__author__ = 'Jia Le Lim'
+__version__ = '0.0.1'
+
 import csv
 import operator
 import decimal
@@ -80,38 +87,59 @@ def monthlysum(values, startofmonths, decimalplaces):
     measures.append(measure)
   return measures
 
-def nodaysinmonth(days, startofmonths):
-  'find number of observed days in each month'
-  nodays = []
+def dailyavgpermonth(values, startofmonths, decimalplaces):
+  'find sum of value per month'
+  avgmeasures = []
   for x in range(len(startofmonths)-1):
     startindex = startofmonths[x]
     endindex = startofmonths[x + 1]
-    noday = 1
-    for i in range(startindex + 1, endindex):
-      if days[i] != days[i-1]:
+    measure = 0
+    noday = 0
+    for i in range(startindex, endindex):
+      if values[i] != '':
+        measure += float(values[i])
         noday += 1
-    nodays.append(noday)
-  return nodays
-
-def dailyavgpermonth(divisor, values, decimalplaces):
-  'Finding daily average of values for each month'
-  values = [float(value) for value in values]
-  avgvalues = map(div, values, divisor)
-  avgvalues[:] = [round(avgvalue, decimalplaces) for avgvalue in avgvalues]
-  print 'Average daily for each month: ' + str(avgvalues)
-  return avgvalues
+    avgmeasure = round(measure/noday, decimalplaces)
+    avgmeasures.append(avgmeasure)
+  return avgmeasures
 
 # find monthly sum of precipitation
 sumprecips = monthlysum(precips, startofmonths, 2)
 
 # find average daily humidity for each month
-sumhumids = monthlysum(humids, startofmonths, 0)
-nodays = nodaysinmonth(days, startofmonths)
-avghumids = dailyavgpermonth(nodays, sumhumids, 2)
+avghumids = dailyavgpermonth(humids, startofmonths, 2)
 
-# find max temperature for each month
-# find average temperature range for each month
+# find average max temperature for each month
+avgtempmaxs = dailyavgpermonth(tempmaxs, startofmonths, 2)
+
 # find average daily temperature for each month
+avgtemps = []
+
+for x in range(len(startofmonths)-1):
+  startindex = startofmonths[x]
+  endindex = startofmonths[x + 1]
+  dailytemp = 0
+  noday = 0
+  for i in range(startindex, endindex):
+    if tempmaxs[i] != '' and tempmins[i] != '':
+      dailytemp += (float(tempmaxs[i]) + float(tempmins[i]))/2
+      noday += 1
+  avgtemp = round(dailytemp/noday, 2)
+  avgtemps.append(avgtemp)
+
+# find average range of temperature
+tempranges = []
+for x in range(len(startofmonths)-1):
+  startindex = startofmonths[x]
+  endindex = startofmonths[x + 1]
+  dailytemprange = 0
+  noday = 0
+  for i in range(startindex, endindex):
+    if tempmaxs[i] != '' and tempmins[i] != '':
+      dailytemprange += float(tempmaxs[i]) - float(tempmins[i])
+      noday += 1
+  temprange = round(dailytemprange/noday, 2)
+  tempranges.append(temprange)
 
 
 ########## Writing Data ##########
@@ -130,7 +158,7 @@ def writenewdata(filename_str, headers, values):
   headers = headers.split(', ')
   for i in range(len(headers)):
     values[i].insert(0, headers[i])
-  pathname = '../data/rearranged/' + filename_str + '.csv'
+  pathname = '../data/rearranged/new/' + filename_str + '.csv'
   g = open(pathname, 'wb')
   csvwrite = csv.writer(g)
   tobewritten = zip(*values)
@@ -138,6 +166,6 @@ def writenewdata(filename_str, headers, values):
     csvwrite.writerow(row)
   g.close()
 
-newheaders = 'Year, Month, SumPrecips, AvgHumidity'
-newvalues = [yearlabels, monthlabels, sumprecips, avghumids]
+newheaders = 'Year, Month, SumPrecips, AvgHumidity, AvgMaxTemp, AvgTemp, AvgTempRange'
+newvalues = [yearlabels, monthlabels, sumprecips, avghumids, avgtempmaxs, avgtemps, tempranges]
 writenewdata('ClimaData', newheaders, newvalues)
