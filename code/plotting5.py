@@ -8,162 +8,120 @@ import calendar
 import sys
 import os.path
 
-h = open('../results/MonthlyTurnoverPlotData2.csv','rb')
-data = csv.reader(h)
+h1 = open('../data/rearranged/new/TurnoverOldCerrado.csv','rb')
+data1 = csv.reader(h1)
 
-months = []
-bints = []
-bbints = []
-pbints = []
+h2 = open('../data/rearranged/new/TurnoverNewCerrado.csv','rb')
+data2 = csv.reader(h2)
 
-for column in data:
-  months.append(column[0])
-  bints.append(column[1])
-  bbints.append(column[2])
-  pbints.append(column[3])
 
-h.close()
+########## Inputting data into lists ##########
 
-#remove header
-for i in [months, bints, bbints, pbints]:
-  del i[0]
+# copy and paste all headers in data twice
+[years1, months1, bints1] = ([] for i in range(len(next(data1))))
+headers1 = [years1, months1, bints1]
 
-print bints
+for column in data1:
+  for j, i in enumerate(headers1):
+    i.append(column[j])
+h1.close()
 
-upperbound = len(months)*2 -2
-bintsdisplay = [None for i in range(0, upperbound)]
-e = 0
-for i in range(1, upperbound, 2):
-    bintsdisplay[i] = bints[e]
-    e += 1
+# copy and paste all headers in data twice
+[years2, months2, bints2] = ([] for i in range(len(next(data2))))
+headers2 = [years2, months2, bints2]
 
-bbintsdisplay = [None for i in range(0, upperbound)]
-e = 0
-for i in range(1, upperbound, 2):
-    bbintsdisplay[i] = bbints[e]
-    e += 1
+for column in data2:
+  for j, i in enumerate(headers2):
+    i.append(column[j])
+h2.close()
 
-pbintsdisplay = [None for i in range(0, upperbound)]
-e = 0
-for i in range(1, upperbound, 2):
-    pbintsdisplay[i] = pbints[e]
-    e += 1
 
-monthsdisplay = range(0,24)
-e = 0
-for i in range(0, 24, 2):
-  monthsdisplay[i] = months[e]
-  e += 1
-for i in range(1, 24, 2):
-  monthsdisplay[i] = ''
+########## Plotting data ##########
 
-bintsline = [0 for i in range(0, upperbound)]
-e = 01
-for i in range(2, upperbound, 2):
-  bintsline[i] = (float(bints[e]) + float(bints[e-1])) / 2
-  e += 1
-e = 0
-for i in range(1, upperbound, 2):
-  bintsline[i] = bints[e]
-  e += 1
-
-bbintsline = [0 for i in range(0, upperbound)]
-e = 01
-for i in range(2, upperbound, 2):
-  bbintsline[i] = (float(bbints[e]) + float(bbints[e-1])) / 2
-  e += 1
-e = 0
-for i in range(1, upperbound, 2):
-  bbintsline[i] = bbints[e]
-  e += 1
-
-pbintsline = [0 for i in range(0, upperbound)]
-e = 01
-for i in range(2, upperbound, 2):
-  pbintsline[i] = (float(pbints[e]) + float(pbints[e-1])) / 2
-  e += 1
-e = 0
-for i in range(1, upperbound, 2):
-  pbintsline[i] = pbints[e]
-  e += 1
-
-print bintsline
-print monthsdisplay
-print bints
-print bintsdisplay
 import brewer2mpl
 
-# plotting plotting plotting
 pl.figure(figsize=(20,5))
+pl.axis([0.5, 15.5, 0.7, 1.1])
 
 dotcolours = brewer2mpl.get_map('RdYlGn', 'diverging', 11).mpl_colors
 
-bintsline[0] = None
-pl.plot(bintsdisplay, 'bo', label = 'Interaction', markersize=8)
-pl.plot(bintsline, 'b', label = None)
+xvalues1 = range(1, 13) 
 
-bbintsline[0] = None
-pl.plot(bbintsdisplay, 'o', color = dotcolours[2], label = 'Bee', markersize=8)
-pl.plot(bbintsline, color = dotcolours[2], label = None)
+pl.plot(xvalues1, bints1[0:12], 'bo', markersize=8, label = '1995-1996')
+pl.plot(xvalues1, bints1[0:12], 'b', label = None)
 
-pbintsline[0] = None
-pl.plot(pbintsdisplay, 'o', color = dotcolours[10], label = 'Plant', markersize=8)
-pl.plot(pbintsline, color = dotcolours[10], label = None)
+pl.plot(xvalues1, bints1[12:24], 'go', markersize=8, label = '1996-1997')
+pl.plot(xvalues1, bints1[12:24], 'g', label = None)
 
-pl.xticks(range(len(monthsdisplay)), monthsdisplay, size = 18)
+xvalues2 = range(5, 16)
+pl.plot(xvalues2, bints2, 'ro', markersize=8, label = '2008-2009')
+pl.plot(xvalues2, bints2, 'r', label = None)
 
-# bintsline[30] = None
-# pl.plot(bintsdisplay[30:48], 'ro', label = '1996-1997')
-# pl.plot(bintsline[30:48], 'k', label = None)
+# pl.plot(bints1, 'o', color = dotcolours[2], label = '1995-1996', markersize=8)
+# pl.plot(bints1, color = dotcolours[2], label = None)
 
-pl.axis([-1, 23, 0, 1.1])
+# pbintsline[0] = None
+# pl.plot(pbintsdisplay, 'o', color = dotcolours[10], label = 'Plant', markersize=8)
+# pl.plot(pbintsline, color = dotcolours[10], label = None)
+#
+# pl.xticks(range(len(monthsdisplay)), monthsdisplay, size = 18)
+#
+# # bintsline[30] = None
+# # pl.plot(bintsdisplay[30:48], 'ro', label = '1996-1997')
+# # pl.plot(bintsline[30:48], 'k', label = None)
+#
+
 pl.grid(True)
-
-pl.axvspan(-1, 11, facecolor='r', alpha=0.1)
-pl.axvspan(11, 23, facecolor='c', alpha=0.1)
-pl.text(4, 1.04, 'Dry Season', size = 16)
-pl.text(16, 1.04, 'Wet Season', size = 16)
-
-legend = pl.legend(loc='lower right', frameon=True, numpoints=1)
-
+#
+pl.axvspan(0.5, 4.5, facecolor='r', alpha=0.1)
+pl.axvspan(4.5, 10.5, facecolor='c', alpha=0.1)
+pl.axvspan(10.5, 15.5, facecolor='r', alpha=0.1)
+pl.text(2, 1.04, 'Dry Season', size = 16)
+pl.text(7, 1.04, 'Wet Season', size = 16)
+pl.text(12, 1.04, 'Dry Season', size = 16)
+#
+legend = pl.legend(loc='upper right', frameon=True, numpoints=1)
 light_grey = np.array([float(248)/float(255)]*3)
-
 legend.get_frame().set_linewidth(0.0)
 legend.get_frame().set_color(light_grey)
-
+#
 # remove borders
 pl.gca().spines['top'].set_visible(False)
 pl.gca().spines['right'].set_visible(False)
 pl.gca().xaxis.set_ticks_position('bottom')
 pl.gca().yaxis.set_ticks_position('left')
 
-minor_ticks = np.arange(0, 24, 2)
-major_ticks = np.arange(1, 24, 2)
+
+monthlabels = 'Jun, Jul, Aug, Sep, Oct, Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep'
+monthlabels = monthlabels.split(', ')
+
+minor_ticks = np.arange(0.5, 16, 1)
+print minor_ticks
+major_ticks = np.arange(1, 16, 1)
 pl.tick_params(axis = 'x', which = 'major', length = 0 )
 pl.tick_params(axis = 'x', which = 'minor', length = 10, direction = 'inout')
 pl.gca().set_xticks(minor_ticks, minor=True)
-pl.gca().grid(True, axis = 'x', which='minor', linestyle='-', alpha=0.3) 
-pl.gca().grid(False, which='major', axis = 'x') 
+pl.gca().grid(True, axis = 'x', which='minor', linestyle='-', alpha=0.3)
+pl.gca().grid(False, which='major', axis = 'x')
+pl.xticks(minor_ticks, monthlabels)
+#
+# ymajor_ticks = np.arange(0, 1.1, 0.1)
+# yminor_ticks = np.arange(0, 1.1, 0.02)
+# pl.gca().set_yticks(ymajor_ticks)
+#
+# pl.gca().set_yticks(yminor_ticks, minor = True)
+# pl.yticks(size = 16)
+# pl.tick_params(axis = 'y', length = 10, direction = 'inout')
+# pl.gca().grid(True, axis = 'y', which='major', linestyle='-', alpha=0.3)
+# pl.gca().grid(True, axis = 'y', which='minor', linestyle='-', alpha=0.1)
 
-
-ymajor_ticks = np.arange(0, 1.1, 0.1)
-yminor_ticks = np.arange(0, 1.1, 0.02)
-pl.gca().set_yticks(ymajor_ticks)
-
-pl.gca().set_yticks(yminor_ticks, minor = True)
-pl.yticks(size = 16)
-pl.tick_params(axis = 'y', length = 10, direction = 'inout')
-pl.gca().grid(True, axis = 'y', which='major', linestyle='-', alpha=0.3) 
-pl.gca().grid(True, axis = 'y', which='minor', linestyle='-', alpha=0.1) 
 # titles and axis labels
-# pl.title('Monthly Turnover in a Tropical Savanna', size = 20)
+pl.title('Monthly Turnover in Cerrado', size = 20)
 
 pl.ylabel('Turnover', size=22) # , fontweight='bold'
 
-pl.text(1, .87 , r'$\beta_{int} = 0.859$', size = 18)
 
-
-plotpath = '../results/' + 'turnover2' + '.pdf'
+plotpath = '../results/' + 'allturnover' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()
