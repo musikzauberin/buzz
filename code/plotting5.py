@@ -11,7 +11,7 @@ import os.path
 h1 = open('../data/rearranged/new/TurnoverOldCerrado.csv','rb')
 data1 = csv.reader(h1)
 
-h2 = open('../data/rearranged/new/TurnoverNewCerrado.csv','rb')
+h2 = open('../data/rearranged/new/OldCerradoAvgVisitsClimaData.csv','rb')
 data2 = csv.reader(h2)
 
 
@@ -27,13 +27,24 @@ for column in data1:
 h1.close()
 
 # copy and paste all headers in data twice
-[years2, months2, bints2] = ([] for i in range(len(next(data2))))
-headers2 = [years2, months2, bints2]
+[seasons, years, months, nodays, avgvisits, \
+sumprecips, avghumids, avgmaxtemps, avgtemps, avgtempranges] = ([] for i in range(len(next(data2))))
+headers2 = [seasons, years, months, nodays, avgvisits, \
+sumprecips, avghumids, avgmaxtemps, avgtemps, avgtempranges]
 
 for column in data2:
   for j, i in enumerate(headers2):
     i.append(column[j])
 h2.close()
+
+minavgv = min(float(t) for t in avgtempranges)
+maxavgv = max(float(t) for t in avgtempranges)
+
+# shifting data downwards into the same range
+avgtempranges[:] = [float(t) - (minavgv - 1) for t in avgtempranges]
+avgtempranges_set = set(avgtempranges)
+avgtemprange_dict = dict(zip(avgtempranges_set, np.linspace(0.5, 0.7, len(avgtempranges_set), endpoint = True)))
+avgtempranges = [avgtemprange_dict[t] for t in avgtempranges]
 
 
 ########## Plotting data ##########
@@ -41,7 +52,7 @@ h2.close()
 import brewer2mpl
 
 pl.figure(figsize=(20,5))
-pl.axis([0.5, 15.5, 0.7, 1.1])
+pl.axis([0.55, 15.5, 0.49, 1.1])
 
 dotcolours = brewer2mpl.get_map('RdYlGn', 'diverging', 11).mpl_colors
 
@@ -53,9 +64,15 @@ pl.plot(xvalues1, bints1[0:12], 'b', label = None)
 pl.plot(xvalues1, bints1[12:24], 'go', markersize=8, label = '1996-1997')
 pl.plot(xvalues1, bints1[12:24], 'g', label = None)
 
-xvalues2 = range(5, 16)
-pl.plot(xvalues2, bints2, 'ro', markersize=8, label = '2008-2009')
-pl.plot(xvalues2, bints2, 'r', label = None)
+xvalues2 = np.arange(0.5, 12, 1)
+pl.plot(xvalues2, avgtempranges[0:12], 'ko', markersize=8, label = '95-96 avg temp range')
+pl.plot(xvalues2, avgtempranges[0:12], 'k', label = None)
+
+pl.plot(xvalues2, avgtempranges[12:24], 'mo', markersize=8, label = '96-97 avg temp range')
+pl.plot(xvalues2, avgtempranges[12:24], 'm', label = None)
+#
+# pl.plot(xvalues1, bints1[12:24], 'go', markersize=8, label = '1996-1997')
+# pl.plot(xvalues1, bints1[12:24], 'g', label = None)
 
 # pl.plot(bints1, 'o', color = dotcolours[2], label = '1995-1996', markersize=8)
 # pl.plot(bints1, color = dotcolours[2], label = None)
@@ -121,7 +138,7 @@ pl.title('Monthly Turnover in Cerrado', size = 20)
 pl.ylabel('Turnover', size=22) # , fontweight='bold'
 
 
-plotpath = '../results/' + 'allturnover' + '.pdf'
+plotpath = '../results/' + 'avgtemprange&turnover(old)' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()
