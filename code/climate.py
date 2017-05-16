@@ -114,7 +114,6 @@ avgtempmaxs = dailyavgpermonth(tempmaxs, startofmonths, 2)
 
 # find average daily temperature for each month
 avgtemps = []
-
 for x in range(len(startofmonths)-1):
   startindex = startofmonths[x]
   endindex = startofmonths[x + 1]
@@ -141,6 +140,18 @@ for x in range(len(startofmonths)-1):
   temprange = round(dailytemprange/noday, 2)
   tempranges.append(temprange)
 
+# find median temperature
+tempmedians = []
+for x in range(len(startofmonths)-1):
+  startindex = startofmonths[x]
+  endindex = startofmonths[x + 1]
+  dailytemps = []
+  for i in range(startindex, endindex):
+    if tempmaxs[i] != '' and tempmins[i] != '':
+      dailytemp = (float(tempmaxs[i]) + float(tempmins[i]))/2
+    dailytemps.append(dailytemp)
+  tempmedians.append(round(np.median(dailytemps), 5))
+
 
 ########## Writing Data ##########
 def timelabels(timeinterval, startofmonths):
@@ -166,6 +177,6 @@ def writenewdata(filename_str, headers, values):
     csvwrite.writerow(row)
   g.close()
 
-newheaders = 'Year, Month, SumPrecips, AvgHumidity, AvgMaxTemp, AvgTemp, AvgTempRange'
-newvalues = [yearlabels, monthlabels, sumprecips, avghumids, avgtempmaxs, avgtemps, tempranges]
+newheaders = 'Year, Month, SumPrecips, AvgHumidity, AvgMaxTemp, AvgTemp, AvgTempRange, TempMedian'
+newvalues = [yearlabels, monthlabels, sumprecips, avghumids, avgtempmaxs, avgtemps, tempranges, tempmedians]
 writenewdata('ClimaData', newheaders, newvalues)

@@ -255,15 +255,11 @@ for m in range(len(monthsindices) - 2):
   else:
     osturnovers[m] = round((alist2[m] + blist2[m] + clist2[m]) / ((2*alist2[m] + blist2[m] + clist2[m])/2.0) - 1.0, 5)
 # check osturnover values
-print alist2
-print blist2
-print clist2
 
 # Bst
 stturnovers = [0] * (len(monthsindices) - 2)
 for m in range(len(monthsindices) - 2):
   stturnovers[m] = round(bints[m] - osturnovers[m], 5)
-print stturnovers
 
 ########## Writing Turnover Data into new file ##########
 
