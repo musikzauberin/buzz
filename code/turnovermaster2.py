@@ -74,18 +74,22 @@ def findstartindex(values, timescale_str):
 def delete_duplicates(months, days, years, bees, plants, noofmonths, startofmonths):
   'deletes duplicates within noofmonths intervals'
   monthsindices = startofmonths[0::noofmonths] # pick the appropriate numbers from startofmonths to get the list of startindex and nextindex
+  print monthsindices
   for m in reversed(range(len(monthsindices) - 1)): # doing it in reverse allows me to delete directly from the list without any maddening indexing issues!
     startindex = monthsindices[m]
     nextindex = monthsindices[m + 1]
     # nextindex is bigger than startindex
     for i in reversed(range(startindex, nextindex)):
-      for j in reversed(range(startindex, i - 1)):
+      for j in reversed(range(startindex, i)):
         if bees[i] == bees[j] and plants[i] == plants[j]:
+          print (i, months[i], days[i], years[i], bees[i], plants[i]), \
+                'matches with', (j, months[j], days[j], years[j], bees[j], plants[j])
           months.pop(i) # remove duplicate element
           days.pop(i)
           years.pop(i)
           bees.pop(i)
           plants.pop(i)
+          print bees
           break
 
 def writenewdata(filename_str, headers, values):

@@ -140,7 +140,7 @@ def calc_turnover(months, days, years, bees, plants, noofmonths):
 print "Data file must have the following columns in the order: Month Day Year Bee Plant"
 #filename = raw_input('Enter your data file name in rearranged folder: ')
 filename = 'OldCerradoData.csv'
-pathname = os.path.join("../data/rearranged/", filename)
+pathname = os.path.join("../../data/rearranged/", filename)
 
 
 header, months, days, years, bees, plants = extract_data(pathname)
