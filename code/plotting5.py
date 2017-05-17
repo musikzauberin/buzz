@@ -8,7 +8,7 @@ import calendar
 import sys
 import os.path
 
-h1 = open('../data/rearranged/new/TurnoverOldCerrado.csv','rb')
+h1 = open('../data/rearranged/new/AllTurnoverOldCerrado.csv','rb')
 data1 = csv.reader(h1)
 
 h2 = open('../data/rearranged/new/OldCerradoAvgVisitsClimaData.csv','rb')
@@ -18,33 +18,33 @@ data2 = csv.reader(h2)
 ########## Inputting data into lists ##########
 
 # copy and paste all headers in data twice
-[years1, months1, bints1] = ([] for i in range(len(next(data1))))
-headers1 = [years1, months1, bints1]
+[cyears, cmonths, bints1, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, sumprecips, avghumids, maxtemps, avgtemps, tempranges, tempmedians] = ([] for i in range(len(next(data1))))
+headers1 = [cyears, cmonths, bints1, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, sumprecips, avghumids, maxtemps, avgtemps, tempranges, tempmedians]
 
 for column in data1:
   for j, i in enumerate(headers1):
     i.append(column[j])
 h1.close()
 
-# copy and paste all headers in data twice
-[seasons, years, months, nodays, avgvisits, \
-sumprecips, avghumids, avgmaxtemps, avgtemps, avgtempranges] = ([] for i in range(len(next(data2))))
-headers2 = [seasons, years, months, nodays, avgvisits, \
-sumprecips, avghumids, avgmaxtemps, avgtemps, avgtempranges]
+# # copy and paste all headers in data twice
+# [seasons, years, months, nodays, avgvisits, \
+# sumprecips, avghumids, avgmaxtemps, avgtemps, avgtempranges] = ([] for i in range(len(next(data2))))
+# headers2 = [seasons, years, months, nodays, avgvisits, \
+# sumprecips, avghumids, avgmaxtemps, avgtemps, avgtempranges]
+#
+# for column in data2:
+#   for j, i in enumerate(headers2):
+#     i.append(column[j])
+# h2.close()
 
-for column in data2:
-  for j, i in enumerate(headers2):
-    i.append(column[j])
-h2.close()
-
-minavgv = min(float(t) for t in avgtempranges)
-maxavgv = max(float(t) for t in avgtempranges)
+minavgv = min(float(t) for t in tempmedians)
+maxavgv = max(float(t) for t in tempmedians)
 
 # shifting data downwards into the same range
-avgtempranges[:] = [float(t) - (minavgv - 1) for t in avgtempranges]
-avgtempranges_set = set(avgtempranges)
-avgtemprange_dict = dict(zip(avgtempranges_set, np.linspace(0.5, 0.7, len(avgtempranges_set), endpoint = True)))
-avgtempranges = [avgtemprange_dict[t] for t in avgtempranges]
+tempmedians[:] = [float(t) - (minavgv - 1) for t in tempmedians]
+tempmedians_set = set(tempmedians)
+tempmedian_dict = dict(zip(tempmedians_set, np.linspace(0.5, 0.7, len(tempmedians_set), endpoint = True)))
+tempmedians = [tempmedian_dict[t] for t in tempmedians]
 
 
 ########## Plotting data ##########
@@ -64,12 +64,12 @@ pl.plot(xvalues1, bints1[0:12], 'b', label = None)
 pl.plot(xvalues1, bints1[12:24], 'go', markersize=8, label = '1996-1997')
 pl.plot(xvalues1, bints1[12:24], 'g', label = None)
 
-xvalues2 = np.arange(0.5, 12, 1)
-pl.plot(xvalues2, avgtempranges[0:12], 'ko', markersize=8, label = '95-96 avg temp range')
-pl.plot(xvalues2, avgtempranges[0:12], 'k', label = None)
+xvalues2 = np.arange(1, 13)
+pl.plot(xvalues2, tempmedians[0:12], 'ko', markersize=8, label = '95-96 median temp')
+pl.plot(xvalues2, tempmedians[0:12], 'k', label = None)
 
-pl.plot(xvalues2, avgtempranges[12:24], 'mo', markersize=8, label = '96-97 avg temp range')
-pl.plot(xvalues2, avgtempranges[12:24], 'm', label = None)
+pl.plot(xvalues2, tempmedians[12:24], 'mo', markersize=8, label = '96-97 median temp')
+pl.plot(xvalues2, tempmedians[12:24], 'm', label = None)
 #
 # pl.plot(xvalues1, bints1[12:24], 'go', markersize=8, label = '1996-1997')
 # pl.plot(xvalues1, bints1[12:24], 'g', label = None)
@@ -113,7 +113,6 @@ monthlabels = 'Jun, Jul, Aug, Sep, Oct, Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, 
 monthlabels = monthlabels.split(', ')
 
 minor_ticks = np.arange(0.5, 16, 1)
-print minor_ticks
 major_ticks = np.arange(1, 16, 1)
 pl.tick_params(axis = 'x', which = 'major', length = 0 )
 pl.tick_params(axis = 'x', which = 'minor', length = 10, direction = 'inout')
@@ -138,7 +137,7 @@ pl.title('Monthly Turnover in Cerrado', size = 20)
 pl.ylabel('Turnover', size=22) # , fontweight='bold'
 
 
-plotpath = '../results/' + 'avgtemprange&turnover(old)' + '.pdf'
+plotpath = '../results/' + 'mediantemp&turnover(old)' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()
