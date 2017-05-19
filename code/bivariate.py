@@ -46,3 +46,18 @@ for i in range(len(turnoverlist)):
     plotpath = '../results/' + str(climatelist[c][1]) + '-' + str(turnoverlist[i][1]) + '.pdf'
     pl.savefig(plotpath)
     pl.close()
+
+#
+# pl.plot(avgtemps, sumprecips, 'bo')
+# pl.xlabel('sumprecips', size=16)
+# pl.ylabel('avgtemps', size=16)
+# plotpath = '../results/sumprecips-avgtemps.pdf'
+# pl.savefig(plotpath)
+# pl.close
+#
+# pl.plot(tempmedians, sumprecips, 'bo')
+# pl.xlabel('sumprecips', size=16)
+# pl.ylabel('tempmedians', size=16)
+# plotpath = '../results/sumprecips-tempmedians.pdf'
+# pl.savefig(plotpath)
+# pl.close()

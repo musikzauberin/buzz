@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Analysing temperature data(histogram)"""
+"""Analysing climate data (histogram)"""
 
 import csv
 import operator
@@ -29,7 +29,7 @@ def CheckInt(s):
   except ValueError:
     return False
 
-h = open('../data/CerradoBoaVentura/Clima.csv','rb')
+h = open('../data/CerradoBoaVentura/NewCerradoClima.csv','rb')
 data = csv.reader(h)
 
 ########## Inputting data into lists ##########
@@ -120,45 +120,86 @@ avgtempmaxs = dailyavgpermonth(tempmaxs, startofmonths, 2)
 
 # find average daily temperature for each month
 avgtemps = []
+dailytemps = []
 
 for x in range(len(startofmonths)-1):
   startindex = startofmonths[x]
   endindex = startofmonths[x + 1]
-  dailytemp = 0
+  sumtemp = 0
   noday = 0
   for i in range(startindex, endindex):
     if tempmaxs[i] != '' and tempmins[i] != '':
-      dailytemp += (float(tempmaxs[i]) + float(tempmins[i]))/2
+      dailytemp = (float(tempmaxs[i]) + float(tempmins[i]))/2
+      sumtemp += dailytemp
       noday += 1
-  avgtemp = round(dailytemp/noday, 2)
+    dailytemps.append(round(dailytemp, 2))
+  avgtemp = round(sumtemp/noday, 2)
   avgtemps.append(avgtemp)
 
 # find average range of temperature
 tempranges = []
+dailytempranges = []
 for x in range(len(startofmonths)-1):
   startindex = startofmonths[x]
   endindex = startofmonths[x + 1]
-  dailytemprange = 0
+  sumtemprange = 0
   noday = 0
   for i in range(startindex, endindex):
     if tempmaxs[i] != '' and tempmins[i] != '':
-      dailytemprange += float(tempmaxs[i]) - float(tempmins[i])
+      dailytemprange = float(tempmaxs[i]) - float(tempmins[i])
+      sumtemprange += dailytemprange
       noday += 1
-  temprange = round(dailytemprange/noday, 2)
+    dailytempranges.append(round(dailytemprange, 2))
+  temprange = round(sumtemprange/noday, 2)
   tempranges.append(temprange)
+
+
+########## Plotting data ##########
 
 # newvalues = [yearlabels, monthlabels, sumprecips, avghumids, avgtempmaxs, avgtemps, tempranges]
 # [years, months, days, precips, tempmaxs, tempmins, humids]
 # bins = np.arange(0, 40, 0.1)
 
-tempmaxs = filter(None, tempmaxs)
-tempmaxs = np.array(tempmaxs).astype(np.float)
-print tempmaxs[0:30]
-pl.hist(tempmaxs[30:59])
+def makeHistall(values, startofmonths, valuetitle_str, plotname_str, color_str):
+  values = filter(None, values)
+  values = np.array(values).astype(np.float)
+  for i in range(len(startofmonths)-1):
+    startindex = startofmonths[i]
+    endindex = startofmonths[i+1]
+    plottitle = valuetitle_str + ' in Cerrado'
+    pl.title(plottitle, size = 18)
+    pl.hist(values[startindex:endindex], histtype='bar', color = color_str)
+    # color = 'crimson', 'blue'
+    plotpath = '../results/ClimateDistribution/NewCerrado/' + plotname_str + '.pdf'
+    pl.savefig(plotpath)
+  pl.close()
 
-pl.title('Temperature data(2 month) in Cerrado', size = 18)
+def makeHist(values, startofmonths, valuetitle_str, plotname_str, color_str):
+  values = filter(None, values)
+  values = np.array(values).astype(np.float)
+  for i in range(len(startofmonths)-1):
+    startindex = startofmonths[i]
+    endindex = startofmonths[i+1]
+    plottitle = valuetitle_str + months[startindex] + '/' + years[startindex] + 'in Cerrado'
+    pl.title(plottitle, size = 18)
+    pl.hist(values[startindex:endindex], histtype='bar', color = color_str)
+    # color = 'crimson', 'blue'
+    plotpath = '../results/ClimateDistribution/NewCerrado/' + plotname_str + years[startindex] + ',' + months[startindex] + '.pdf'
+    pl.savefig(plotpath) 
+    pl.close()
 
-plotpath = '../results/' + 'Tempmax' + '.pdf'
-pl.savefig(plotpath)
+makeHistall(dailytempranges, startofmonths, 'Temperature Ranges', 'TempRange', 'burlywood')
+makeHist(dailytempranges, startofmonths, 'Temperature Ranges', 'TempRange', 'burlywood')
 
-pl.show()
+
+#' + months[startindex] + '/' + years[startindex] + ' 
+#' + years[startindex] + ',' + months[startindex] + '
+
+
+# plottitle = 'Temperature range in Cerrado'
+# pl.title(plottitle, size = 18)
+# pl.hist(tempranges, normed=1, histtype='bar', color = 'burlywood')
+# # color = 'crimson', 'blue'
+# plotpath = '../results/TempDistributions/' + 'TempRangeDistributionAll' + '.pdf'
+# pl.savefig(plotpath)
+
