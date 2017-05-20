@@ -185,7 +185,6 @@ print 'Done!'
 startofmonths2 = findstartindex(months, 'months')
 bints = calc_turnover(months, days, years, bees, plants, noofmonths, startofmonths2)
 
-
 # create list of unique plants and bees in each month
 monthlyplants = []
 monthlybees = []

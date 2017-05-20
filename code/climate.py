@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-'''Analysing temperature data'''
+'''Analysing climate data and outputting monthly values'''
 
 __author__ = 'Jia Le Lim'
 __version__ = '0.0.1'
@@ -23,10 +23,12 @@ def CheckInt(s):
   except ValueError:
     return False
 
+
+########## Inputting data into lists ##########
+
 h = open('../data/CerradoBoaVentura/Clima.csv','rb')
 data = csv.reader(h)
 
-########## Inputting data into lists ##########
 # copy and paste all headers in data three times
 headers = 'years, months, days, precips, tempmaxs, tempmins, humids'
 
@@ -39,8 +41,6 @@ for column in data:
     i.append(column[j])
 
 h.close()
-
-# header was not deleted, somehow it is not read into file...
 
 
 ########## Analysing data ##########

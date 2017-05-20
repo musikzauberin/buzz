@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 """Analysing climate data (histogram)"""
 
+__author__ = 'Jia Le Lim'
+__version__ = '0.0.1'
+
 import csv
 import operator
 import decimal
