@@ -1,0 +1,10 @@
+x-axis,y-axis,DryCoefficient,DryP-value,WetCoefficient,WetP-value,AllCoefficient,AllP-value
+AvgTemps,AvgPrecips,0.5,0.391,-0.25714,0.62279,0.69091,0.01857
+AvgMaxTemps,AvgPrecips,-0.5,0.391,-0.77143,0.0724,0.22727,0.50154
+AvgTempRanges,AvgPrecips,-0.8,0.10409,-0.94286,0.0048,-0.97273,0.0
+AvgHumids,AvgPrecips,0.7,0.18812,0.40584,0.42466,0.83372,0.00143
+AvgMaxTemps,AvgTemps,0.5,0.391,0.48571,0.32872,0.73636,0.00976
+AvgTempRanges,AvgTemps,-0.6,0.28476,0.14286,0.78717,-0.71818,0.0128
+AvgHumids,AvgTemps,-0.1,0.87289,-0.17393,0.74173,0.47836,0.13665
+AvgTempRanges,AvgMaxTemps,0.2,0.74706,0.82857,0.04156,-0.29091,0.38546
+AvgHumids,AvgMaxTemps,-0.8,0.10409,-0.69573,0.12479,0.00456,0.98939
