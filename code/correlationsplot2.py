@@ -3,7 +3,7 @@
 '''Plot correlation coefficients for easy visualisation'''
 
 __author__ = 'Jia Le Lim'
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 import csv
 import operator
@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../results/BivariatePlots/OldCerrado/turnovers/TurnoverCoefficients(old).csv','rb')
+h = open('../results/BivariatePlots/OldCerrado/monthlyaverage/AvgClimateCoefficients(Old).csv','rb')
 data = csv.reader(h)
 
 
@@ -83,8 +83,8 @@ def makesubplotnice():
 
 # plot subplots
 # label each dot as the x measure compared to the y measure on the xaxis
-dotmeasures = ['Bst', 'Bos', 'SpeciesTurnovers', 'BeeTurnovers', 'PlantTurnovers']
-dotlabels = ['Bst', 'Bos', 'Bs', 'Bbee', 'Bplant']
+dotmeasures = ['AvgPrecips', 'AvgTemps', 'AvgMaxTemps', 'AvgTempRanges', 'AvgHumids']
+dotlabels = ['AvgPrecips', 'AvgTemps', 'AvgMaxTemps', 'AvgTempRanges', 'AvgHumids']
 
 pl.figure(figsize=(20, 8))
 for i in range(len(ystarts)-1):
@@ -116,7 +116,7 @@ for i in range(len(ystarts)-1):
 # finishing touches on subplots
 plotdimensions = [ (1, 3, 1), (1, 3, 2), (1, 3, 3)]
 # bints, osturnovers, stturnovers, specturnovers, beeturnovers, plantturnovers
-xlabels = 'Bwn, Bos, Bst, Bs, Bbee, Bplant'
+xlabels = 'AvgPrecips, AvgTemps, AvgMaxTemp'
 xlabels = xlabels.split(', ')
 ylabels = 'Correlation Coefficient, Correlation Coefficient, Correlation Coefficient'
 ylabels = ylabels.split(', ')
@@ -161,7 +161,7 @@ for nrows, ncols, plot_number in plotdimensions:
 # pl.gca().add_artist(legend)
 
 # save plot and show
-plotname = 'TurnoverCoefficients(old)'
+plotname = 'AvgClimateCoefficients(Old)'
 plotpath = '../results/BivariatePlots/' + plotname + '.pdf'
 pl.savefig(plotpath)
 
