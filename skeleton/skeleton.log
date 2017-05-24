@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  24 MAY 2017 02:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  24 MAY 2017 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1500,7 +1500,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--130
 
  []
 
-<PlantTurnovers-BeeTurnovers(old).pdf, id=47, 578.16pt x 433.62pt>
+<PlantTurnovers-BeeTurnovers(old).pdf, id=42, 578.16pt x 433.62pt>
 File: PlantTurnovers-BeeTurnovers(old).pdf Graphic file (type pdf)
 
 <use PlantTurnovers-BeeTurnovers(old).pdf>
@@ -1508,7 +1508,7 @@ Package pdftex.def Info: PlantTurnovers-BeeTurnovers(old).pdf used on input lin
 e 136.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<PlantTurnovers-BeeTurnovers(new).pdf, id=48, 578.16pt x 433.62pt>
+<PlantTurnovers-BeeTurnovers(new).pdf, id=43, 578.16pt x 433.62pt>
 File: PlantTurnovers-BeeTurnovers(new).pdf Graphic file (type pdf)
 
 <use PlantTurnovers-BeeTurnovers(new).pdf>
@@ -1526,7 +1526,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--143
 
  []
 
-<BeeTurnovers-SpeciesTurnovers(old).pdf, id=83, 578.16pt x 433.62pt>
+<BeeTurnovers-SpeciesTurnovers(old).pdf, id=78, 578.16pt x 433.62pt>
 File: BeeTurnovers-SpeciesTurnovers(old).pdf Graphic file (type pdf)
 
 <use BeeTurnovers-SpeciesTurnovers(old).pdf>
@@ -1534,7 +1534,7 @@ Package pdftex.def Info: BeeTurnovers-SpeciesTurnovers(old).pdf used on input l
 ine 149.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<PlantTurnovers-SpeciesTurnovers(old).pdf, id=84, 578.16pt x 433.62pt>
+<PlantTurnovers-SpeciesTurnovers(old).pdf, id=79, 578.16pt x 433.62pt>
 File: PlantTurnovers-SpeciesTurnovers(old).pdf Graphic file (type pdf)
 
 <use PlantTurnovers-SpeciesTurnovers(old).pdf>
@@ -1542,7 +1542,7 @@ Package pdftex.def Info: PlantTurnovers-SpeciesTurnovers(old).pdf used on input
  line 149.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<BeeTurnovers-SpeciesTurnovers(new).pdf, id=85, 578.16pt x 433.62pt>
+<BeeTurnovers-SpeciesTurnovers(new).pdf, id=80, 578.16pt x 433.62pt>
 File: BeeTurnovers-SpeciesTurnovers(new).pdf Graphic file (type pdf)
 
 <use BeeTurnovers-SpeciesTurnovers(new).pdf>
@@ -1550,7 +1550,7 @@ Package pdftex.def Info: BeeTurnovers-SpeciesTurnovers(new).pdf used on input l
 ine 158.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<PlantTurnovers-SpeciesTurnovers(new).pdf, id=86, 578.16pt x 433.62pt>
+<PlantTurnovers-SpeciesTurnovers(new).pdf, id=81, 578.16pt x 433.62pt>
 File: PlantTurnovers-SpeciesTurnovers(new).pdf Graphic file (type pdf)
 
 <use PlantTurnovers-SpeciesTurnovers(new).pdf>
@@ -1558,14 +1558,14 @@ Package pdftex.def Info: PlantTurnovers-SpeciesTurnovers(new).pdf used on input
  line 158.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<SpeciesTurnovers-Bos(old).pdf, id=87, 578.16pt x 433.62pt>
+<SpeciesTurnovers-Bos(old).pdf, id=82, 578.16pt x 433.62pt>
 File: SpeciesTurnovers-Bos(old).pdf Graphic file (type pdf)
 
 <use SpeciesTurnovers-Bos(old).pdf>
 Package pdftex.def Info: SpeciesTurnovers-Bos(old).pdf used on input line 169.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<SpeciesTurnovers-Bos(new).pdf, id=88, 578.16pt x 433.62pt>
+<SpeciesTurnovers-Bos(new).pdf, id=83, 578.16pt x 433.62pt>
 File: SpeciesTurnovers-Bos(new).pdf Graphic file (type pdf)
 
 <use SpeciesTurnovers-Bos(new).pdf>
@@ -1600,14 +1600,14 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./SpeciesTurnovers-Bos(new).
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <SpeciesTurnovers-Bst(old).pdf, id=164, 578.16pt x 433.62pt>
+>] <SpeciesTurnovers-Bst(old).pdf, id=159, 578.16pt x 433.62pt>
 File: SpeciesTurnovers-Bst(old).pdf Graphic file (type pdf)
 
 <use SpeciesTurnovers-Bst(old).pdf>
 Package pdftex.def Info: SpeciesTurnovers-Bst(old).pdf used on input line 180.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<SpeciesTurnovers-IntTurnover(old).pdf, id=165, 578.16pt x 433.62pt>
+<SpeciesTurnovers-IntTurnover(old).pdf, id=160, 578.16pt x 433.62pt>
 File: SpeciesTurnovers-IntTurnover(old).pdf Graphic file (type pdf)
 
 <use SpeciesTurnovers-IntTurnover(old).pdf>
@@ -1619,14 +1619,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--182
 
  []
 
-<SpeciesTurnovers-Bst(new).pdf, id=166, 578.16pt x 433.62pt>
+<SpeciesTurnovers-Bst(new).pdf, id=161, 578.16pt x 433.62pt>
 File: SpeciesTurnovers-Bst(new).pdf Graphic file (type pdf)
 
 <use SpeciesTurnovers-Bst(new).pdf>
 Package pdftex.def Info: SpeciesTurnovers-Bst(new).pdf used on input line 189.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
-<SpeciesTurnovers-IntTurnover(new).pdf, id=167, 578.16pt x 433.62pt>
+<SpeciesTurnovers-IntTurnover(new).pdf, id=162, 578.16pt x 433.62pt>
 File: SpeciesTurnovers-IntTurnover(new).pdf Graphic file (type pdf)
 
 <use SpeciesTurnovers-IntTurnover(new).pdf>
@@ -1634,27 +1634,22 @@ Package pdftex.def Info: SpeciesTurnovers-IntTurnover(new).pdf used on input li
 ne 189.
 (pdftex.def)             Requested size: 232.17242pt x 174.12642pt.
 
+
+Package caption Warning: \label without proper \caption on input line 290.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:climate1' on page 4 undefined on input line 194.
+
+
+Package caption Warning: \label without proper \caption on input line 316.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:climate2' on page 4 undefined on input line 194.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 194--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
@@ -1672,47 +1667,108 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./SpeciesTurnovers-IntTurnov
 er(new).pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
+>] <SpecTurnover&AvgClimate(Old).pdf, id=218, 867.24pt x 289.08pt>
+File: SpecTurnover&AvgClimate(Old).pdf Graphic file (type pdf)
+
+<use SpecTurnover&AvgClimate(Old).pdf>
+Package pdftex.def Info: SpecTurnover&AvgClimate(Old).pdf used on input line 23
+2.
+(pdftex.def)             Requested size: 241.84843pt x 80.61543pt.
+
+<SpecTurnover&AvgClimate(New).pdf, id=219, 867.24pt x 289.08pt>
+File: SpecTurnover&AvgClimate(New).pdf Graphic file (type pdf)
+
+<use SpecTurnover&AvgClimate(New).pdf>
+Package pdftex.def Info: SpecTurnover&AvgClimate(New).pdf used on input line 23
+2.
+(pdftex.def)             Requested size: 241.84843pt x 80.61543pt.
+
+<SpecTurnover&DiffClimate(Old).pdf, id=220, 867.24pt x 289.08pt>
+File: SpecTurnover&DiffClimate(Old).pdf Graphic file (type pdf)
+
+<use SpecTurnover&DiffClimate(Old).pdf>
+Package pdftex.def Info: SpecTurnover&DiffClimate(Old).pdf used on input line 2
+41.
+(pdftex.def)             Requested size: 241.84843pt x 80.61543pt.
+
+<SpecTurnover&DiffClimate(New).pdf, id=221, 867.24pt x 289.08pt>
+File: SpecTurnover&DiffClimate(New).pdf Graphic file (type pdf)
+
+<use SpecTurnover&DiffClimate(New).pdf>
+Package pdftex.def Info: SpecTurnover&DiffClimate(New).pdf used on input line 2
+41.
+(pdftex.def)             Requested size: 241.84843pt x 80.61543pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+[5 <./SpecTurnover&AvgClimate(Old).pdf> <./SpecTurnover&AvgClimate(New).pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./SpecTurnover&AvgClimate(Ne
+w).pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> <./SpecTurnover&DiffClimate(Old).pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./SpecTurnover&DiffClimate(O
+ld).pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <./SpecTurnover&DiffClimate(New).pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./SpecTurnover&DiffClimate(N
+ew).pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 213--216
+Underfull \hbox (badness 10000) in paragraph at lines 257--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--224
+Underfull \hbox (badness 10000) in paragraph at lines 262--268
 
  []
 
-[6] <network(old).pdf, id=227, 1445.4pt x 289.08pt>
+[6] <network(old).pdf, id=417, 1445.4pt x 289.08pt>
 File: network(old).pdf Graphic file (type pdf)
  <use network(old).pdf>
-Package pdftex.def Info: network(old).pdf used on input line 230.
+Package pdftex.def Info: network(old).pdf used on input line 274.
 (pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
 
-Overfull \hbox (8.53581pt too wide) in paragraph at lines 230--231
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 274--275
  [][] 
  []
 
-<seasonalnetwork(old).pdf, id=228, 1445.4pt x 289.08pt>
+<seasonalnetwork(old).pdf, id=418, 1445.4pt x 289.08pt>
 File: seasonalnetwork(old).pdf Graphic file (type pdf)
 
 <use seasonalnetwork(old).pdf>
-Package pdftex.def Info: seasonalnetwork(old).pdf used on input line 235.
+Package pdftex.def Info: seasonalnetwork(old).pdf used on input line 279.
 (pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
 
-Overfull \hbox (8.53581pt too wide) in paragraph at lines 235--236
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 279--280
  [][] 
  []
 
-<TurnoversAcrossTime(old).pdf, id=229, 867.24pt x 650.43pt>
+<TurnoversAcrossTime(old).pdf, id=419, 867.24pt x 650.43pt>
 File: TurnoversAcrossTime(old).pdf Graphic file (type pdf)
 
 <use TurnoversAcrossTime(old).pdf>
-Package pdftex.def Info: TurnoversAcrossTime(old).pdf used on input line 240.
+Package pdftex.def Info: TurnoversAcrossTime(old).pdf used on input line 284.
 (pdftex.def)             Requested size: 711.3189pt x 533.51485pt.
  [7
 
@@ -1725,22 +1781,22 @@ Overfull \vbox (49.81798pt too high) has occurred while \output is active []
 
 
 [8 <./TurnoversAcrossTime(old).pdf>]
-<AvgClimateAcrossTime(Old).pdf, id=396, 867.24pt x 650.43pt>
+<AvgClimateAcrossTime(Old).pdf, id=587, 867.24pt x 650.43pt>
 File: AvgClimateAcrossTime(Old).pdf Graphic file (type pdf)
 
 <use AvgClimateAcrossTime(Old).pdf>
-Package pdftex.def Info: AvgClimateAcrossTime(Old).pdf used on input line 245.
+Package pdftex.def Info: AvgClimateAcrossTime(Old).pdf used on input line 289.
 (pdftex.def)             Requested size: 711.3189pt x 533.51485pt.
 
 Overfull \vbox (49.81798pt too high) has occurred while \output is active []
 
 
 [9 <./AvgClimateAcrossTime(Old).pdf>]
-<DiffClimateAcrossTime(Old).pdf, id=462, 867.24pt x 650.43pt>
+<DiffClimateAcrossTime(Old).pdf, id=652, 867.24pt x 650.43pt>
 File: DiffClimateAcrossTime(Old).pdf Graphic file (type pdf)
 
 <use DiffClimateAcrossTime(Old).pdf>
-Package pdftex.def Info: DiffClimateAcrossTime(Old).pdf used on input line 250.
+Package pdftex.def Info: DiffClimateAcrossTime(Old).pdf used on input line 295.
 
 (pdftex.def)             Requested size: 711.3189pt x 533.51485pt.
 
@@ -1748,34 +1804,34 @@ Overfull \vbox (49.81798pt too high) has occurred while \output is active []
 
 
 [10 <./DiffClimateAcrossTime(Old).pdf>]
-<network(new).pdf, id=528, 1445.4pt x 289.08pt>
+<network(new).pdf, id=718, 1445.4pt x 289.08pt>
 File: network(new).pdf Graphic file (type pdf)
  <use network(new).pdf>
-Package pdftex.def Info: network(new).pdf used on input line 255.
+Package pdftex.def Info: network(new).pdf used on input line 300.
 (pdftex.def)             Requested size: 725.54527pt x 145.10866pt.
 
-<seasonalnetwork(new).pdf, id=529, 1445.4pt x 289.08pt>
+<seasonalnetwork(new).pdf, id=719, 1445.4pt x 289.08pt>
 File: seasonalnetwork(new).pdf Graphic file (type pdf)
 
 <use seasonalnetwork(new).pdf>
-Package pdftex.def Info: seasonalnetwork(new).pdf used on input line 260.
+Package pdftex.def Info: seasonalnetwork(new).pdf used on input line 305.
 (pdftex.def)             Requested size: 725.54527pt x 145.10866pt.
 
-<TurnoversAcrossTime(new).pdf, id=530, 867.24pt x 325.215pt>
+<TurnoversAcrossTime(new).pdf, id=720, 867.24pt x 325.215pt>
 File: TurnoversAcrossTime(new).pdf Graphic file (type pdf)
 
 <use TurnoversAcrossTime(new).pdf>
-Package pdftex.def Info: TurnoversAcrossTime(new).pdf used on input line 265.
+Package pdftex.def Info: TurnoversAcrossTime(new).pdf used on input line 310.
 (pdftex.def)             Requested size: 711.3189pt x 266.75742pt.
  [11 <./network(new).pdf> <./seasonalnetwork(new).pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./seasonalnetwork(new).pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
->] <ClimateAcrossTime(new).pdf, id=639, 867.24pt x 650.43pt>
+>] <ClimateAcrossTime(new).pdf, id=828, 867.24pt x 650.43pt>
 File: ClimateAcrossTime(new).pdf Graphic file (type pdf)
 
 <use ClimateAcrossTime(new).pdf>
-Package pdftex.def Info: ClimateAcrossTime(new).pdf used on input line 270.
+Package pdftex.def Info: ClimateAcrossTime(new).pdf used on input line 315.
 (pdftex.def)             Requested size: 711.3189pt x 533.51485pt.
  [12 <./TurnoversAcrossTime(new).pdf>]
 Overfull \vbox (49.81798pt too high) has occurred while \output is active []
@@ -1783,38 +1839,44 @@ Overfull \vbox (49.81798pt too high) has occurred while \output is active []
 
 [13 <./ClimateAcrossTime(new).pdf>]
 No file skeleton.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
 (./skeleton.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
 Package rerunfilecheck Info: File `skeleton.out' has not changed.
-(rerunfilecheck)             Checksum: 3D9A21CFCF0D9CECEF6056582A30C977;299.
+(rerunfilecheck)             Checksum: 5E90A0507B3E4CA222B79DC468F56094;246.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
  ) 
 Here is how much of TeX's memory you used:
- 31196 strings out of 493089
- 608311 string characters out of 6134841
- 754964 words of memory out of 5000000
- 34120 multiletter control sequences out of 15000+600000
+ 31223 strings out of 493089
+ 609142 string characters out of 6134841
+ 754097 words of memory out of 5000000
+ 34141 multiletter control sequences out of 15000+600000
  12163 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,92p,10403b,808s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on skeleton.pdf (13 pages, 420559 bytes).
+pdfTeX warning (dest): name{figure.caption.19} has been referenced but does n
+ot exist, replaced by a fixed one
+
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on skeleton.pdf (13 pages, 472728 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 35 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 983 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
