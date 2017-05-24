@@ -1,0 +1,28 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Genome engineering}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Type II CRISPR-Cas system}{2}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Cas9 Variants}{3}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Project aim}{3}{subsection.1.5}
+\contentsline {section}{\numberline {2}Materials and Methods}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Materials}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Methods}{4}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Transformation}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Purification of NLS-Cas9-His \& 2NLS-Cas9}{4}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Structural analysis}{5}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}In vitro assays}{5}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}In vivo assays}{5}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}Mass Spectrometry}{5}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}Agarose Gel Electrophoresis}{5}{subsubsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.8}SDS Polyacrylamide Gel Electrophoresis (SDS-PAGE)}{5}{subsubsection.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.9}Storage of proteins}{5}{subsubsection.2.2.9}
+\contentsline {section}{\numberline {3}Results}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Purification}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Structural analysis}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Functional analysis}{7}{subsection.3.3}
+\contentsline {section}{\numberline {4}Discussion}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Purification}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Efficiency of Genome Editing}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Limitations}{9}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion}{9}{section.5}

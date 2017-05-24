@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {2}Materials and Methods}{2}{section.2}
 \contentsline {section}{\numberline {3}Results}{3}{section.3}
 \contentsline {section}{\numberline {4}Discussion}{4}{section.4}
+\contentsline {section}{\numberline {5}Supplementary Figures}{5}{section.5}

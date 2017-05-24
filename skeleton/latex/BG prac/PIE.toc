@@ -1,0 +1,20 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Methods and Results}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}\textit {pie-1} expression exponentially decreases during development.}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Identifying the genes of interest}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Heatmap and Hierarchal Cluster Analysis}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Network Construction}{4}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Genes with expression patterns that correlate strongly with \textit {pie-1}.}{6}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Postively correlated gene expressions}{6}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Negatively correlated gene expressions}{8}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Discussion}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Postively correlated genes}{9}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}OMA-1 and OMA-2 indirectly activate PIE-1}{9}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}\textit {mex-3}}{10}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Negatively correlated genes}{10}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}\textit {hdac-11} may regulate somatic neural differentiation.}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}\textit {unc-130} is responsible for the formation of olfactory neurons.}{11}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}\textit {pha-4} participates in the organogenesis of the pharynx.}{11}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Functions of \textit {ceh-27} remain unclear.}{11}{subsubsection.3.2.4}
+\contentsline {section}{\numberline {4}Further Research}{12}{section.4}

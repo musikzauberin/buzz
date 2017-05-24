@@ -1,0 +1,376 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+ 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{natbib}
+\usepackage[parfill]{parskip}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{float}
+\floatstyle{plain}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage{hyperref}
+\usepackage{comment}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue
+}
+\urlstyle{same}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{subscript}
+\usepackage{siunitx}
+\usepackage[hypcap]{caption}
+\usepackage{capt-of}
+
+%making the bloody title 
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \textbf{\@title} %the empty line is impt
+  
+  \@author
+\end{flushleft}\egroup
+}
+\makeatother
+
+%random things needed
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} %let the content table have dots to number
+\linespread{1.2}  %making one and a half spacing-sh one and half is actually 1.3
+\frenchspacing
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt} 
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}%less spacing between subsubsections
+\pagestyle{fancy}
+% Set the right side of the footer to be the page number
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage}
+\fancypagestyle{plain}{%
+    \renewcommand{\headrulewidth}{0pt}%
+    \fancyhf{}%
+    \fancyfoot[R]{\thepage}%
+}
+\setlength{\parskip}{0pt}
+\DeclareSIUnit\Molar{\textsc{m}}
+
+%insert title
+\title{\textbf{\huge{Diversity of K$^{+}$ Ion Channels and Transporters \\ \vspace{0.2cm}
+in Pollen Tube Development}}}
+\date{} 
+\author{%
+\large{ Jia Le, Lim {  } CID: 00865029 } \\
+\textnormal
+{\textit{Department of Biology, Imperial College London, South Kensington Campus, London, U.K.}} \\
+Submitted: 27 April 2015
+}
+
+\begin{document}
+\maketitle
+%space after title
+\bigskip
+\textbf{Abstract:}  \textnormal Functional diversity of potassium ion (K$^{+}$) channels and transporters is important in plant cells such as the pollen tube, with K$^{+}$ fluxes being regulated by Shaker-like K$^{+}$ channels, tandem-pore K$^{+}$ channels, nonselective cation channels and cation proton antiporters. Diverse techniques such as patch-clamping, use of heterologous systems, mutagenesis and bioinformatic analyses have been used as well to link molecular sequences of ion channels to their functions. 
+
+\begin{multicols*}{2} %two columns
+\tableofcontents
+
+\section{Introduction} 
+\subsection{Ion channels}
+Diversification of ion channels is massive in plant cells. In \textit{Arabidopsis thaliana}, 71 potassium ion (K$^{+}$) channels and transporters have already been found, each differing in their K$^{+}$ selectivity, locations in plants~(\autoref{fig:locations}) and responses to signalling factors~(\autoref{tab:summary}). 
+ %refer to some table that shows all the stuff 
+This intriguing assortment serves to manipulate ion transports across membranes. By doing so, they increase turgor pressure and facilitate the uptake of metabolic ions required for growth and development of cells such as the pollen tube~\citep{Sharma2013}. 
+
+\subsection{Pollen tube}
+The pollen tube is a captivating model of polarised cell growth, where cell elongation is restricted to the tip~\citep{Feijo1995}. As one of the fastest growing specialised cells, it can reach linear growth rates of up to 4\,$\mu$m\,sec$^{-1}$~\citep{Michard2009}. Due to its role in fertilisation of higher plants, pollen tube development is one of the best-studied models in plant cell biology, yet little is known about the ion channels responsible for the process~\citep{Becker2003}. 
+
+\subsection{Potassium ions (K$^{+}$)}
+Functions of pollen tubes depend on tight regulations of ion concentrations, namely those of potassium ions (K$^{+}$), calcium ions (Ca$^{2+}$) and protons (H$^{+}$). To maintain fast pollen tube growth, an influx of water and ion movements are required (\autoref{fig:pollen_tube}) to neutralise charged organic material, maintain turgor pressure and regulate cell signalling networks and ion channel functions~\citep{Michard2009}. 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{lebaudy2007.png}
+  \captionof{figure}{\footnotesize Plant locations of \textit{Arabidopsis} K$^{+}$ channels. Taken from~\citep{Holdaway-Clarke2003}.}
+  \label{fig:locations}
+\end{figure}
+
+Of the above ions, I find K$^{+}$ particularly interesting and fundamental to pollen tube development. Despite being scarce in environment~\citep{Ashley2006}, K$^{+}$ makes up for 2--10\,\% of plant dry weight and is necessary in many processes~\citep{Wang2013a}, including enzyme activation, membrane transport and osmoregulation~\citep{Clarkson1980}. However, much research has been focused on Ca$^{2+}$ and H$^{+}$ due to their role in signalling pathways and has hence overlooked the importance of K$^{+}$ in pollen tube development. As there are too many types of ion channels~(\autoref{tab:summary}), I will only highlight selected K$^{+}$ channels and transporters to show the complex network of ion channels and their importance. 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{holdaway-clarke2003.png}
+  \captionof{figure}{\footnotesize Summary of ion fluxes and gradients in pollen tubes. (a) Extracellular Ca$^{2+}$ accumulates at the tip. (b) Extracellular H$^{+}$ localises at the tip, with an efflux at the alkaline band. Cytoplasmic pH is slightly acidic at the tip (black shading) but alkaline at the base of the alkaline band. (c) Efflux of extracellular Cl$^{-}$ along the tube. (d) K$^{+}$ influx at the tip. Taken from~\citep{Holdaway-Clarke2003}.}
+  \label{fig:pollen_tube}
+\end{figure}
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table*}
+\centering
+\captionof{table}{\footnotesize Summary of plant K$^{+}$ channels. Modified from~\citep{Wang2013a}.}
+  \label{tab:summary}
+\begin{tabular}{llll}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}Family/ (name/\\ alt. name)\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}Organ(s)/ \\  Tissue(s)\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{ECF4FF}Functions}                                                                                                                                                          & \multicolumn{1}{l|}{\cellcolor[HTML]{ECF4FF}Reference(s)} \\ \hline
+
+\rowcolor[HTML]{BBDAFF} 
+\multicolumn{4}{l}{\cellcolor[HTML]{BBDAFF}Shaker-like K$^{+}$ Channels}  
+                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\multicolumn{1}{|l|}{AKT1}                                                                                        & \multicolumn{1}{l|}{Root, leaf}                                                                              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Inward-rectifying K$^{+}$ channel, \\ K$^{+}$ uptake into root cells\end{tabular}}                                                                                         & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Hirsch1998}\\ \cite{Lagarde1996}\\ \cite{Pyo2010} \end{tabular}}                            \\ \hline
+
+\multicolumn{1}{|l|}{AKT2}                                                                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, stem, \\ leaf, flower\end{tabular}}                     & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Weakly-rectifying K$^{+}$ channel, \\ K$^{+}$ circulation in phloemannel, \\ K$^{+}$ circulation in phloem\end{tabular}}                                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Cherel2002}\\ \cite{Michard2005a} \end{tabular}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{SPIK / AKT6}                                                                                 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Pollen, \\ pollen tubes\end{tabular}}                         & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Inward-rectifying K$^{+}$ channel, \\ K$^{+}$ uptake into pollen tubes, \\ pollen tube development \\ regulation\end{tabular}}                                             & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Dreyer2011}\\ \cite{Mouline2002} \end{tabular}}               
+\\ \hline
+
+\multicolumn{1}{|l|}{SKOR}                                                                                        & \multicolumn{1}{l|}{Root, pollen}                                                                            & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Outward-rectifying K$^{+}$ channel, \\ K$^{+}$ release into xylem, K$^{+}$ \\ translocation from roots to shoots\end{tabular}}                                                  & \multicolumn{1}{l|}{\cite{Gaymard1998}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{GORK}                                                                                        & \multicolumn{1}{l|}{Root, leaf}                                                                              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Outward-rectifying K$^{+}$ channel, \\ K$^{+}$ release from guard cells, \\ stomatal regulation\end{tabular}}                                                              & \multicolumn{1}{l|}{\cite{Ache2000}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{KAT1}                                                                                        & \multicolumn{1}{l|}{Leaf}                                                                                    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Inward-rectifying K$^{+}$ channel, \\ K$^{+}$ uptake into guard cells, \\ stomatal regulation\end{tabular}}                                                                & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Kwak2001}\\ \cite{Schachtman1992}\\ \cite{Sottocornola2006}\\ \cite{Szyroki2001} \end{tabular}}                          
+ \\ \hline
+ 
+\multicolumn{1}{|l|}{KAT2}                                                                                        & \multicolumn{1}{l|}{Leaf}                                                                                    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Inward-rectifying K$^{+}$ channel, \\ K$^{+}$ uptake into guard cells, \\ stomatal regulation\end{tabular}}                                                                & \multicolumn{1}{l|}{\cite{Pilot2001}}                            
+\\ \hline
+
+\rowcolor[HTML]{BBDAFF} 
+\multicolumn{4}{l}{\cellcolor[HTML]{BBDAFF}Tandem-Pore K$^{+}$ Channels (TPK)}                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+
+\multicolumn{1}{|l|}{TPK1 / KCO1}                                                                                 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, leaf, \\ flower\end{tabular}}                           & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Vacuolar K$^{+}$ channel, K$^{+}$ release\\  from vacuole, stomatal closure, \\ intracellular K$^{+}$ homeostasis\end{tabular}}                                                 &  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Czempinski2002}\\ \cite{Gobert2007}\\ \cite{Latz2007}\\ \cite{Voelker2006} \end{tabular}}                 
+\\ \hline
+
+\multicolumn{1}{|l|}{TPK2 / KCO2}                                                                                 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, leaf, \\ flower\end{tabular}}                           & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Vacuolar K$^{+}$ channel, \\ weakly-rectifying K$^{+}$ channel, \\ pH-gated\end{tabular}}                                                                                  & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Dreyer2011}\\ \cite{Marcel2010}\end{tabular}}      
+\\ \hline
+
+\multicolumn{1}{|l|}{TPK3 / KCO6}                                                                                 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, flower, \\ seed, leaf\end{tabular}}                     & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Vacuolar K$^{+}$ channel, \\ weakly-rectifying K$^{+}$ channel, \\ pH-gated\end{tabular}}                                                                                  & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Dreyer2011}\\ \cite{Marcel2010}\end{tabular}}      
+\\ \hline
+
+\multicolumn{1}{|l|}{TPK4 / KCO4}                                                                                 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Pollen, \\ pollen tubes\end{tabular}}                         & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}PM K$^{+}$ channel, control of pollen \\ PM voltage, weakly-rectifying \\ K$^{+}$ channel, pH-gated\end{tabular}}                                                          & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Dreyer2011}\\ \cite{Marcel2010}\\ \cite{Voelker2006} \end{tabular}}       
+\\ \hline
+
+\multicolumn{1}{|l|}{TPK5 / KCO5}                                                                                 & \multicolumn{1}{l|}{Leaf, flower}                                                                            & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Vacuolar K$^{+}$ channel, \\ weakly-rectifying K$^{+}$ channel, \\ pH-gated\end{tabular}}                                                                                  & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Dreyer2011}\\ \cite{Marcel2010}\end{tabular}}       
+\\ \hline
+
+\multicolumn{1}{|l|}{KCO3}                                                                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, leaf, \\ flower, stem\end{tabular}}                     & \multicolumn{1}{l|}{Unknown function}                                                                                                                                                                           & \multicolumn{1}{l|}{\cite{Sharma2013}}                 
+\\ \hline
+
+\end{tabular}
+\end{table*}
+
+
+\begin{table*}
+\centering
+\captionof{table}{\footnotesize (\textit{continued}) Summary of plant K$^{+}$ channels. Modified from~\citep{Wang2013a}.}
+\begin{tabular}{llll}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}Family/ (name/\\ alt. name)\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{ECF4FF}\begin{tabular}[c]{@{}l@{}}Organ(s)/ \\  Tissue(s)\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{ECF4FF}Functions}                                                                                                                                                          & \multicolumn{1}{l|}{\cellcolor[HTML]{ECF4FF}Reference(s)} \\ \hline
+
+\rowcolor[HTML]{BBDAFF} 
+\multicolumn{4}{l}{\cellcolor[HTML]{BBDAFF}KUP/HAK/KT}                                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
+
+\multicolumn{1}{|l|}{KUP1}                                                                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Stem, leaf, \\ flower\end{tabular}}                           & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Dual-affinity K$^{+}$ transporter, \\ K$^{+}$ uptake into cells\end{tabular}}                                                                                              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Fu1998}\\ \cite{Voelker2006}\end{tabular}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{KUP2}                                                                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, stem, \\ leaf\end{tabular}}                             & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Low-affinity K$^{+}$ transporter, \\ K$^{+}$-dependent cell expansion\end{tabular}}                                                                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Elumalai2002}\\ \cite{Fu1998}\end{tabular}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{KUP4}                                                                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, stem, \\ leaf, flower\end{tabular}}                     & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}High-affinity K$^{+}$ transporter, \\ K$^{+}$ translocation and root hair \\ elongation\end{tabular}}                                                                      & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Gierth2005}\\ \cite{Rigas2001}\end{tabular}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{HAK5}                                                                                        & \multicolumn{1}{l|}{Root}                                                                                    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}High-affinity K$^{+}$ transporter, \\ K$^{+}$ uptake into root cells\end{tabular}}                                                                                         & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Gierth2005}\\ \cite{Pyo2010}\\ \cite{Qi2008} \end{tabular}}                            \\ \hline
+
+\rowcolor[HTML]{BBDAFF} 
+\multicolumn{4}{l}{\cellcolor[HTML]{BBDAFF}NHX}                                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+
+\multicolumn{1}{|l|}{NHX1 / NHX2}                                                                                 & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Stem, leaf, \\ flower, \\ silique\end{tabular}}               & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Vacuolar Na$^{+}$(K$^{+}$)/H$^{+}$ antiporter, \\ vacuolar pH and K$^{+}$ homeostasis, \\ turgor regulation, plant growth, \\ flower development, stomatal \\ function\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Apse2003}\\ \cite{Barragan2012}\\ \cite{Bassil2011} \end{tabular}}                          
+ \\ \hline
+ 
+\rowcolor[HTML]{BBDAFF} 
+\multicolumn{4}{l}{\cellcolor[HTML]{BBDAFF}CHX}                                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+
+\multicolumn{1}{|l|}{CHX13}                                                                                       & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, \\ flower, \\ pollen\end{tabular}}                      & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}High-affinity K$^{+}$ transporter, \\ K$^{+}$ uptake into root cells\end{tabular}}                                                                                         & \multicolumn{1}{l|}{\cite{Zhao2008}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{CHX17}                                                                                       & \multicolumn{1}{l|}{Root}                                                                                    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Na$^{+}$(K$^{+}$)/H$^{+}$ antiporter, \\ K$^{+}$ uptake into root cells and \\ K$^{+}$ homeostasis\end{tabular}}                                                                          & \multicolumn{1}{l|}{\cite{Cellier2004}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{CHX20}                                                                                       & \multicolumn{1}{l|}{Leaf}                                                                                    & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Na$^{+}$(K$^{+}$)/H$^{+}$ antiporter, \\ K$^{+}$ homeostasis and pH regulation, \\ guard cell osmoregulation\end{tabular}}                                                           & \multicolumn{1}{l|}{\cite{Bouche2005}}                            
+\\ \hline
+
+\multicolumn{1}{|l|}{CHX21}                                                                                       & \multicolumn{1}{l|}{Pollen}                                                                                  & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Na$^{+}$(K$^{+}$)/H$^{+}$ antiporter, \\ pollen tube targeting to ovules\end{tabular}}                                                                                          & \multicolumn{1}{l|}{\cite{Lu2011}}  
+\\ \hline
+
+\multicolumn{1}{|l|}{CHX23}                                                                                       & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Root, stem, \\ leaf, \\ flower, pollen\end{tabular}}          & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Na$^{+}$(K$^{+}$)/H$^{+}$ antiporter, \\ pH homeostasis and chloroplast \\ development, pollen tube targeting \\ to ovules\end{tabular}}                                        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\cite{Lu2011}\\ \cite{Song2004} \end{tabular}}                           
+\\ \hline
+
+\rowcolor[HTML]{BBDAFF} 
+\multicolumn{4}{l}{\cellcolor[HTML]{BBDAFF}CNGC}                                                                                                                                                                                                                                                                                                                                                                                                                                                               \\ \hline
+
+\multicolumn{1}{|l|}{CNGC18}                                                                                      & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Pollen, \\ pollen tubes\end{tabular}}                         & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Cyclic nucleotide-gated channel, \\ possible involvement in Ca$^{2+}$ and \\ K$^{+}$ homeostasis\end{tabular}}                                                             & \multicolumn{1}{l|}{\cite{Frietsch2007}}               
+\\ \hline
+
+\end{tabular}
+\end{table*}
+
+\section{Ion Channels}
+\subsection{K$^{+}$ Channels}
+K$^{+}$ channels are placed into 2 major groups: Shaker-like and Tandem-Pore K$^{+}$ (TPK) Channels~(\autoref{fig:phylogeny})\citep{Voelker2010}. K$^{+}$ channels are tetramers, each consisting of four pore domains (PD), which form the hydrophobic pore required for K$^{+}$ to pass through the plasma membrane. Each PD comprises of an $\alpha$-helical domain named pore-helix, an irregular loop sequence named turret, and a characteristic TxxTxGYGD motif, which determines the K$^{+}$ selectivity of the channel~\citep{Schachtman1991}.
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{hedrich2012.png}
+  \captionof{figure}{\footnotesize Phylogenetic tree of \textit{Arabidopsis} K$^{+}$ channels. Taken from~\citep{Hedrich2012}.}
+  \label{fig:phylogeny}
+\end{figure}
+
+\subsubsection{Shaker-like K$^{+}$ Channels}
+Being the first cloned K$^{+}$ channels~\citep{Anderson1992}, Shaker-like channels are voltage-gated ion channels, named for its similarity to animal Shaker channels. The \textit{Arabidopsis} Shaker-like channel family is currently the most well-known plant transport system as it is easily expressed in heterologous systems such as \textit{Xenopus} oocytes and yeast~\citep{Dreyer2009,Ros1999}. Each Shaker-like subunit consists of six transmembrane domains (TMD) called S1--S6 and one PD. S4 consists of repetitive voltage-detecting basic residues while the cytosolic C-terminal region contains regulatory domains~(\autoref{fig:structure})\citep{Very2003}. \newline
+
+\begin{figure*}
+  \centering
+    \includegraphics[width=16.2cm]{sharma2013.png}
+  \captionof{figure}{\footnotesize Structures and functions of \textit{Arabidopsis} K$^{+}$ channels. Abbreviations: extra, extracellular; intra, intracellular; SU, subunit; ${+++}$, positively charged basic amino acids; cNBD, cyclic nucleotide binding domain; anky, ankyrin repeat domain; K(T)/HA, acidic domain; EF, EF hand domain. Taken from~\citep{Sharma2013}.}
+  \label{fig:structure}
+\end{figure*}
+
+As four PDs are required to assemble the hydrophobic core, four similar or different Shaker-like subunits form homotetramers or heterotetramers respectively~(\autoref{fig:structure}). For example, AKT2/KAT2 heterotetramers have been identified by co-expression in heterologous systems, showing new hybrid properties. This increases ion channel diversity~\citep{Xicluna2007}, hence allowing plants to rapidly adapt to their changing environments. 
+\newline\newline
+Homotetrameric Shaker-like K$^{+}$ Channels are primarily classified as inward-rectifying (K$^{+}$\textsubscript{in}), outward-rectifying (K$^{+}$\textsubscript{out}) or weakly-rectifying (K$^{+}$\textsubscript{weak}) K$^{+}$ channels. K$^{+}$\textsubscript{in} channels are activated during membrane hyperpolarisation and only allow K$^{+}$ into the cell while K$^{+}$\textsubscript{out} channels activate during membrane depolarisation and only allow K$^{+}$ out of cells. They remain closed when K$^{+}$ are flowing in the opposite direction. K$^{+}$\textsubscript{weak} channels respond poorly to voltages but are able to facilitate both K$^{+}$ efflux and influx~\citep{Dreyer2009}. 
+\newline\newline
+Properties of Shaker-like K$^{+}$ channels can be further modified. For example, voltage-dependent phosphorylation can change the behaviour of AKT2 channel, whose action can be silenced or delayed depending on phosphorylation~\citep{Dreyer2001,Michard2005a}. Furthermore, extracellular K$^{+}$ concentrations can influence the K$^{+}$ channel activities by altering the threshold membrane voltage at which channels open. For example, in guard cells, activation voltages of K$^{+}$\textsubscript{in} channels change at low K$^{+}$ concentrations~\citep{Schroeder1991}. This complex ion channel regulation is what makes ion channel studies ceaselessly interesting. 
+\newline\newline
+SPIK (Shaker pollen inward K$^{+}$ channel) is one of the first major pollen tube ion channels to be discovered. This K$^{+}$\textsubscript{in} channel is expressed specifically in pollen and activates independently of extracellular K$^{+}$ concentrations. Instead, it is pH-sensitive, hence allowing regulation of K$^{+}$ uptake by apoplastic pH. SPIK mutations result in reduced tube length, reduced pollen fitness and hindered competitive ability of the pollen tube as reduced K$^{+}$ availability shortened mutant pollen tubes to a greater extent than those of the wild type~(\autoref{fig:SPIKmutant}). High-affinity K$^{+}$ uptake by SPIK and the total lack of tube growth when K$^{+}$ concentration is reduced to $\approx$5\,\SI{}{\micro\Molar} shows the requirement of K$^{+}$ in pollen tube development~\citep{Mouline2002}. Other Shaker-like K$^{+}$ channels expressed in pollen include AKT5 and SKOR but their functions in pollen still remain unknown~\citep{Chen2008}. 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=7.5cm]{Mouline2002.png}
+  \captionof{figure}{\footnotesize In-vitro development of (A) wild-type, (B) mutant \textit{spik}-1 (Bar = 100\,\SI{}{\micro\meter}) and (C) non-developed \textit{spik}-1 pollen tubes (Bar = 15\,\SI{}{\micro\meter}) germinated on 0.1\,\SI{}{\micro\Molar} K$^{+}$ medium. Taken from~\citep{Mouline2002}.}
+  \label{fig:SPIKmutant}
+\end{figure}
+
+\subsubsection{Tandem-Pore K$^{+}$ Channels (TPK)}
+The Tandem-pore K$^{+}$ channels~(TPK) family consists of 6 members. Like their animal counterpart TWIK/TREK channels, they are non-voltage gated channels comprising of 4 TMD and two PD. A functional channel is hence made up of 2 TPK subunits~(\autoref{fig:structure}). TPKs are usually found on the tonoplast membrane, with the exception of TPK4, which is expressed on pollen tube membranes and contain Ca$^{2+}$ binding sites in the cytosolic C-terminal~\citep{Czempinski1997}. Activation triggers include Ca$^{2+}$, cytosolic pH~\citep{Latz2007}, osmolarity~\citep{Maathuis2011}, mechanical stress~\citep{Bagriantsev2011}, signalling molecules and phosphorylation by 14-3-3 proteins (General Regulating Factors)~\citep{Voelker2010}
+\newline\newline
+AtTPK1, a channel expressed in \textit{Arabidopsis} pollens, facilitates vacuolar K$^{+}$ influx to allow for cell elongation and the redistribution of vital minerals~\citep{Gobert2007,Maitrejean2011}. Simultaneously, AtTPK4 contributes to background K$^{+}$ influx and allows stabilisation of membrane voltages. Closure of AtTPK4 reduces background K$^{+}$ currents and causes the plasma membrane to depolarise, resulting in Ca$^{2+}$ channel activation. Although disruption of AtTPK4 had no impact on pollen tube development, it remains an important receptor of external and internal stimuli~\citep{Becker2004a}.
+
+\subsection{Nonselective Cation Channels (NSCC)}
+Nonselective cation channels (NSCC) facilitate passive cation currents. Although plant NSCC genes have been identified, the molecular basis for most NSCCs' functions is still lacking. Nonetheless, recent research suggests that they are vital receptors to reactive oxygen species, cyclic nucleotides and other signalling molecules and participate in diverse processes including the growth and development of plants and stress responses~\citep{Demidchik2007}.
+
+\subsubsection{Cyclic Nucleotide Gated Channels (CNGC)}
+20 members of the \textit{Arabidopsis} CNGC family identified in 1998 have been found thus far. Similar to Shaker-like channels, CNGCs have six TMDs with a PD between S5 and S6 and a C-terminal cyclic nucleotide-binding site that overlaps with a calmodulin-binding site~\citep{Demidchik2002}, leading to speculations that calmodulin may affect the binding of cyclic nucleotide to the channel and hence influence channel activation~\citep{Arazi2000}. Being weakly sensitive to voltage, CNGCs allow both monovalent and divalent cations to flow through~\citep{Talke2003}, making them possible downstream receptors and effectors of cyclic nucleotides. While some CNGCs function in pathogen defence and plant immunity, CNGC18 participates in pollen tube formation~\citep{Dietrich2010}. 
+
+Expressed specifically in the pollen, CNGC18 localises at the pollen tube tip and results in Ca$^{2+}$ accumulation and K$^{+}$ reduction in \textit{Escherichia coli}. Absence of CNGC18 results in complete male sterility in \textit{Arabidopsis thaliana}, as pollen tube growth is disrupted. Such mutants exhibit short, klinky and often thin pollen tubes, that sometimes burst after a short growth period. This phenotype has been displayed by other mutants, such as those lacking in cell wall-modifying proteins, but none has yet caused complete male sterility. Nonetheless, more research is needed to confirm the role of CNGC18 in pollen tube development~\citep{Frietsch2007}.
+
+%edit first sentences of paragraphs
+\subsection{Cation Proton Antiporters~(CPAs)}
+Plant cation proton antiporters (CPAs) comprise of CPA1 and CPA2 families which are further branched into subfamilies, including K$^{+}$ exchange antiporter (KEA) and cation/proton exchanger (CHX)~\citep{Maser2001}. Though still ambiguous, CPA structures are thought to contain 10 to 14 TMDs. Both CHX and KEA belong to the CPA2 family. The \textit{Arabidopsis} KEA subfamily contains six members but their transporter functions remain unknown~\citep{Chen2008}. 
+
+\subsubsection{Cation/Proton exchangers~(CHXs)}
+A total of 28 cation/proton exchanger (CHX) genes are present in \textit{Arabidopsis thaliana}, in which 18 members are preferentially or specifically expressed in pollen~\citep{Sze2004b}, leading to speculations of their involvements in microgametogenesis and pollen tube growth. Homologous to mammalian and bacterial CHXs~\citep{Grabov2007}, plant CHXs contain 10--12 TMD at the N-terminal and a 360 amino acids long hydrophilic domain at the C-terminal, which is predicted to play a regulatory role. Plant CHXs are similar in size, and the multiplicity of CHX genes from gene duplications may act to ensure completion of vital fertilisation processes~\citep{Sze2004b,Lu2011}.
+\newline\newline
+Pollen tube guidance is facilitated by CHX21 and CHX23 in \textit{Arabidopsis thaliana}. Bioinformatic analyses indicate that they are products of the same gene duplication~\citep{Sze2004b} and are speculated to contain 12 TMDs in the N-terminal. Furthermore, pollens containing mutant genes of either CHX21 or CHX23 are functional, indicating that they are functionally redundant. However, pollens with both channels absent exhibit male sterility. Despite having similar pollen tube lengths as those of the wild type, double mutant pollen tubes are unable to target the micropyle and rarely reach ovules, indicating pollen tube guidance failure~(\autoref{fig:CHXmutant})\citep{Lu2011}. 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=8cm]{Lu2011.png}
+  \captionof{figure}{\footnotesize Failure of pollen tube guidance in \textit{chx21 chx23} double mutant pollen in a semi-in vivo assay. (A) Wild-type pollen (Wt\textsubscript{GUS}) (i and iii) or \textit{chx21-s1 chx23-4} double mutant pollen (ii and iv) were used to pollinate wild-type pistils. Only Wt\textsubscript{GUS} tubes were able to penetrate ovules through micropyles marked by arrowheads. (Bar = 100\,\SI{}{\micro\meter}) (B) Percentage of targeted ovules to total ovules of Wt\textsubscript{GUS} pollen (left) or \textit{chx21-s1 chx23-4} pollen (right). Data taken from 10 experiments, each with $\approx$24 ovules. Taken from~\citep{Lu2011}.}
+  \label{fig:CHXmutant}
+\end{figure}
+
+Recent research shows that CHX23 selectively transports K$^{+}$ and is pH sensitive, indicating that it may regulate K$^{+}$ and/or H$^{+}$ homeostasis in the pollen tube. It also localises to endoplasmic reticulum  membranes in the pollen tube tip of both tobacco and \textit{Arabidopsis}. Although the mechanism of K$^{+}$ transport by CHX23 remains unknown, these results indicate that localised K$^{+}$ changes may be important in perceiving or transducing female clues and reorienting the pollen tube towards the micropyle of the ovule~\citep{Lu2011}. 
+
+\section{Discussion}
+\subsection{Current Techniques and their Limitations}
+Research on pollen tube ion channels can be broadly grouped into three categories: research on ion fluxes in the pollen tube, functional analyses and bioinformatic analyses of ion channels. Current research has focused on \textit{Arabidopsis thaliana} due to its short life cycle, small size and large number of offsprings, hence making it an ideal model organism in pollen tube studies~\citep{Arabidopsis2000}. 
+
+\subsubsection{Research on ion fluxes in the pollen tube}
+Majority of the early research focused on ion fluxes and membrane voltages found throughout the pollen tube. One of the favourite techniques used is patch-clamping, which is still applied today with added modifications~\citep{Chen2009}. Patch-clamping uses glass micropipettes called patch pipettes to measure membrane voltages. The heat-polished patch pipette is pressed against the membrane, creating a seal. Pipettes are then filled with saline other suitable solutions. Varied modifications of membranes were then performed to adjust to different configurations~(\autoref{fig:patchy})\citep{Sakmann1984}. 
+\newline\newline
+The patch-clamp whole-cell technique is useful in indicating presence of channels that regulate certain ions. Simultaneously, patch-clamp single-channel recordings investigate ion channel functions in heterologous systems~\citep{Hedrich2012}. Nonetheless, patch-clamping requires cell wall removal, which may result in unknown changes to channel activities~\citep{Dutta2004}. Hence, ion-specific vibrating probes were created to measure specific ion fluxes in intact pollen tubes and continues to characterise functions of unknown transporters~\citep{Kunkel2006}.
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{Sakmann1984.png}
+  \captionof{figure}{\footnotesize Step-by-step illustrations of manipulations to acquire different patch-clamping configurations. Taken from~\citep{Sakmann1984}.}
+  \label{fig:patchy}
+\end{figure}
+
+\subsubsection{Functional analysis of ion channels}
+Functions of pollen tube ion channels have been difficult to decipher. One of the best known methods is the use of heterologous systems, where genes of interest are isolated and expressed in tissues of other organisms, including yeast~\citep{Latz2007}, \textit{Escherichia coli}~\citep{Uozumi1998}, \textit{Xenopus} oocytes~\citep{Leng1999} and mammalian COS cells~\citep{Mouline2002}. Heterologous systems allow functional analyses of genes with no available mutants or screening phenotypes. Unlike plants, heterologous systems do not contain dysfunctional K$^{+}$ transport systems. Any K$^{+}$ concentration changes within the cell will hence be due to transgenes, enabling easy measurements of K$^{+}$ movements~\citep{Frommer1995}.
+\newline\newline
+Nonetheless, heterologous systems have failed to work with many channels, including the TPK family and K$^{+}$ transporters. Reasons include misguided translocations~\citep{Marcel2010}, presence of calmodulin and absence of phosphorylation and signalling factors~\citep{Lebaudy2007a}. Moreover, regulatory and metabolic processes of living cells may interfere with ion channel expressions. Genes of living cells may also compensate for mutant phenotypes of targeted genes~\citep{Frommer1995}. 
+\newline\newline
+Another method of analysing ion channel functions is through the use of mutants. \textit{Arabidopsis thaliana} mutant pollens with absence of targeted ion channels are able to exhibit mutant phenotypes. From these phenotypes, ion channel functions are predicted and further confirmed with other techniques, such as in the cases of SPIK, CNGC18, CHX21 and CHX23~\citep{Frietsch2007,Mouline2002}. Nonetheless, multiplicity of genes and compensatory effects by other genes can easily mask or alter mutant phenotypes, rendering this method ineffective at times~\citep{Lu2011}.
+\newline\newline
+Lastly, ion channel structures have been elucidated with insertional, random and site-directed mutagenesis. For example, outward rectifier SKOR can be significantly modified into an inward rectifier with few amino acid changes~\citep{Li2008}. Functions of motifs, including SNARE and K$^{+}$ selectivity filter, and functions of specific domains, including PDs and TMDs, have been identified as well through mutagenesis~\citep{Gajdanowicz2009,Gobert2007,Grefen2010,Very2003}. Modern techniques, including the use of florescent tagging molecules, electron and florescence microscopy and x-ray crystallography, have also been applied to exhibit pollen tube ion channel structures. Nonetheless, these are often tedious and slow, requiring much computational analyses and manual manipulations~\citep{Doyle1998,Ondrus2012,Schutz2000}.  
+
+\subsubsection{Bioinformatic Analysis}
+Recent advances in genome sequencing have identified many novel ion channel genes. With the complete sequencing of the \textit{Arabidopsis} genome, more than 800 possible transporters have been identified~\citep{Arabidopsis2000} while pollen transcriptomes by the use of whole-genome \textit{Arabidopsis} ATH1 chips have revealed the molecular identities of many pollen-specific ion channels and transporters~\citep{Bock2006,Expression2005,Honys2004}. Several phylogenetic and bioinformatic analyses have also been done on the unique transcriptional profile of the pollen. Molecular genes have been grouped according to their functions and similarities, such that the bioinformatic data gathered can be used in subsequent functional analyses~(\autoref{fig:transcriptome}). Nonetheless, much work still needs to be carried out to link the molecular sequences with their respective ion channel functions~\citep{Becker2007,Noir2005}. 
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{Becker2007.png}
+  \captionof{figure}{\footnotesize Categorisation of biological activities using transcriptome and proteome data. 8463 genes which were represented on the ATH1 GeneChip and grouped into at least one gene ontology category (biological process terms as of September 2003) were classified into 14 different biological activities.  Proportion of genes in each data set categorised to the different activities is represented.Taken from~\citep{Becker2007}.}
+  \label{fig:transcriptome}
+\end{figure}
+In the past, pollen tube research was conducted without bioinformatic analyses due to the lack of convenient and fast sequencing techniques that were only invented in the last decade~\citep{Kircher2010}. Nonetheless, recent studies are still often focused upon either function, structure or bioinformatic analyses of a single or type of ion channel~\citep{Li2008,Liu2006,Marcel2010}. This may be due to departmental separations, with bioinformaticians, biochemists, and biologists working in their own separate field. 
+\newline\newline
+Although categorically distinct research is deeply insightful, I feel that research that combines two or more of these categories are able to expose many more eye-opening fundamental ion channel details that are applicable to not only the targeted ion channel, but to entire ion channel families as well. By combining different perspectives of the same ion channel in a study, highly conserved residues such as the K$^{+}$\textsubscript{weak}-specific lysine residue~(\autoref{fig:lysine})\citep{Michard2005b}, roles of specific domains, including the last TMD in \textit{Arabidopsis} K$^{+}$ ion channels~\citep{Gajdanowicz2009} and similarities between ion channels of different organisms~\citep{Cellier2004} have been found. This is an improvement over other research in the field, which mainly focused on properties and domains specific to targeted ion channels~\citep{Becker2003,Li2008,Liu2006}. Increasing interdisciplinary research will hence unearth more general plant ion channel properties.
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{Michard2005b.png}
+  \captionof{figure}{\footnotesize K\textsubscript{weak}-specific lysine residue is highlighted in S4. Sequence alignment of putative voltage-sensing segments of plant K$^{+}$ channels with marked charged residues. Taken from~\citep{Michard2005b}.}
+  \label{fig:lysine}
+\end{figure}
+
+\subsection{Future research}
+In the last decade, fast technical advancement in both sequencing and measuring techniques have made it possible to identify ion channel genes in genomes as well as to accurately detect ion fluxes and intracellular gradients in the pollen tube~\citep{Holdaway-Clarke2003,Kircher2010}. These have led to the discovery of many new ion channels present specifically in the pollen tube and the linking of molecular sequences to the functions of these channels and thereafter their role in pollen tube development~\citep{Arabidopsis2000,Bock2006}. Nonetheless, such progress has been hindered by slow functional analysis done on a gene-by-gene basis and by problems with expressing ion channel genes in heterologous systems~\citep{Becker2007,Lebaudy2007a,Marcel2010}.   
+\newline\newline
+New techniques or heterologous systems with a high success rate of expressing pollen tube ion channels need to be developed. This would enable the determination of functions of many novel ion channels, which can only be done at the protein level~\citep{Becker2007}. Simultaneously, further detailed molecular physiological and bioinformatic analyses could help in identifying evolutionarily conservative domains and highlight their importance in ion transportation. 
+\newline\newline
+Areas that have been previously overlooked, including K$^{+}$ channels and transporters as well as nonselective cation channels~\citep{Holdaway-Clarke2003}, require more attention to give a fuller picture of the mechanisms behind pollen tube development. Moreover, much attention has been focused on the pollen tube tip, where growth occurs. However, ion channel distributions along the pollen tube and on the pollen grain may play an equally important role in pollen tube development and such ion channels, especially those of K$^{+}$, have not been thoroughly studied~\citep{Dutta2004}. Lastly, many heterotetramers, which are still unknown, may be responsible for a large part of the functional diversity of pollen tube ion channels~\citep{Rocchetti2012} and is a fascinating area that should not be ignored. 
+\newline\newline
+In conclusion, the large diversity of K$^{+}$ channels and transporters plays a vital part in pollen tube development ~\citep{Hedrich2012} and more research is essential in unearthing the complex networks and functions of plant ion channels and their roles in plant development. 
+\newline\newline\newline
+\textbf{\Large{Acknowledgements}}
+\newline\newline
+I would like to thank Dr Giovanni Sena for his guidance in writing this tutored dissertation. 
+
+\bibliography{library}
+\bibliographystyle{myauthordate1}
+
+\end{multicols*}
+\end{document}
+
+%things to do: add in tables, edit references 
+%check printability
+
+%latex bibtex latex latex ( typeset -> which is command t)
+%for tables, type in excel then copy and past to tablesgenerator.com and copy and paste code =D
+%pictures use pdf
+%texcount /Users/jialelim/Desktop/latex\ annoying\ stuff/TD\ 2015/Ion\ channels\ and\ K$^{+}$.tex in terminal (command 9)

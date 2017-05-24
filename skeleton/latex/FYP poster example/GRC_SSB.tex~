@@ -1,0 +1,151 @@
+\documentclass[25pt,margin=20mm, innermargin=15mm]{tikzposter}
+\usepackage[utf8]{inputenc}
+\geometry{paperwidth=84.1cm,paperheight=118.9cm}
+% \usetheme{Simple}
+\usecolorstyle{Spain}
+% \usebackgroundstyle{Empty}
+% \usetitlestyle{Filled}
+%y\useblockstyle{Basic}
+\tikzposterlatexaffectionproofoff
+
+\usetheme{Rays}
+\usepackage{adjustbox}
+\usetitlestyle{Envelope}
+\useblockstyle{Slide}
+\renewcommand*\familydefault{cabin}
+\usepackage[sfdefault,condensed]{cabin}
+\usepackage[T1]{fontenc}
+
+
+\makeatletter %To make columns scale to custom width 
+\setlength{\TP@visibletextwidth}{\textwidth-2\TP@innermargin}
+\setlength{\TP@visibletextheight}{\textheight-2\TP@innermargin}
+\makeatother
+
+\graphicspath{{images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\parbox{\linewidth}{\centering \semiHuge Scaling up individual metabolism to ecosystem fluxes
+}}
+
+\author{\vspace{20pt} 
+  {\begin{minipage}{9em}
+      \hfill
+      \flushright
+          { \large Sofia Sal \& Samraat Pawar |\\
+           s.sal-bregua@imperial.ac.uk.co | }
+  \end{minipage}
+  \vspace{-20pt}}
+  {\begin{minipage}{8em}
+    \hfill
+    \centering 
+    \includegraphics[height=2em]{Imperial_Color1.pdf}
+  \end{minipage}
+  \vspace{-20pt}}}
+% \institute{Imperial College London}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\begin{document}
+ 
+\maketitle
+
+\begin{columns}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \column{0.6}
+  \block{Is the thermal response of local ecosystems a simple up-scaling of species-level (intra-specific) thermal performance curves (TPCs)?}{
+
+    \begin{minipage}[]{0.5\linewidth}
+      \makebox[\textwidth][c]{\includegraphics[trim=5cm 0.2cm 5cm 5cm,clip,width=22cm]{EcoModelFigure.pdf}}
+  \end{minipage}
+  \hspace{.8cm}
+  \begin{minipage}[]{0.33\linewidth}
+    
+    
+    {\bf Scaling up} is a linear mapping (strictly what geometric scaling means) between the lower-level phenomenon (here,individual-level or intra-specific thermal responses) and the emergent one of ecosystem functioning. \\
+
+    \begin{equation}
+      F \propto \sum_{n}F_{n}
+        \end{equation}
+
+    
+      \textit{ where {\bf F} is the ecosystem metabolic rate arising from the metabolic rates of {\bf n} individuals}
+
+  \end{minipage}
+
+}
+ 
+  \column{0.4}
+  \block{Data \& Theory}{
+    \normalsize
+    To investigate the mapping between individual and ecosystem metabolism we combine new theory and data on the temperature dependence of key metabolic traits (photosynthesis and respiration rates) at both:
+\begin{itemize} \itemsep15pt 
+\item Species level: where we use the thermal dependance of more than 300 different species of terrestrial plants (\textit {Biotraits Database})
+\item Ecosystem level: using a global data on metabolic fluxes of 118 local terrestrial ecosystems across the world (\textit{Fluxnet Database})
+  \end {itemize}
+  
+  We've performed a preliminary analysis of the data, to get at patterns necessary for parameterizing the model, and also validating it.
+
+
+    \begin{equation}
+	F = F_0\sum_{i=1}^{k} n_i m_i f(m_i)g(T,\theta_i^{1,2,...j})	
+    \end{equation}
+
+    \begin{equation}
+		F = F_{0} \sum_{i=1}^{k} {x_i \left(f_{P}(m_i) g_P(T) - f_{R}(m_i) g_R(T)\right)}
+    \end{equation}
+
+    \begin{equation}
+	f_{P}(m_i) g_P(T) = P_{0,i} m_i^{a_P} e^{\frac{-E_{P,i}}{kT}} h(T_{pk_{P,i}}, E_{D_{P,i}})	
+    \end{equation}
+
+        \begin{equation}
+	f_{R}(m_i) g_R(T) = R_{0,i} m_i^{a_R} e^{\frac{-E_{R,i}}{kT}} h(T_{pk_{R,i}}, 
+	E_{D_{R,i}})	
+    \end{equation}
+}
+
+   \end{columns}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \block{How do species-level thermal performance curves (TPCs) give rise to an emergent thermal-dependence of the whole ecosystem?}{
+     \centering
+   \begin{minipage}[]{0.250\linewidth}
+     \centering
+     \includegraphics[width=\linewidth]{IntraspPlots.pdf}
+     \caption{\footnotesize Representative set of individual-level plot pairs for R (left) and NP (right). Each pair of R-NP corresponds to the same experiment and species. These species are associated to temperate regions.}
+   \end{minipage}
+	\hspace{.8cm}
+	\begin{minipage}[]{0.20\linewidth}
+               \centering
+			\begin{itemize} \itemsep15pt \normalsize
+				\item Are differences in species-level temperature-dependence of photosynthesis and respiration reflected in the ecosystem thermal response?. 
+				\item Does the full unimodal thermal responses of metabolic rates matter for mapping individual TPCs to ecosystem-level fluxes?
+. 
+				\item Is simple scaling (as defined above) from species-level thermal responses sufficient to predict ecosystem-level responses?.
+			\end{itemize}
+		\end{minipage}
+	\hspace{.5cm}
+	\begin{minipage}[]{0.25\linewidth}
+               \centering
+	       \includegraphics[width=\linewidth]{EcosystemPlots.pdf}
+               \caption{\footnotesize Representative set of ecosystem flux responses to temperature for different sites from tropical and temperate regions. Y axis show respiration in log scale.}
+		\end{minipage}
+}
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \block{Are taxon-specific differences in thermal response parameters reflected in the ecosystem level response??}{ \centering \LARGE 	
+    	\begin{minipage}[]{.40\linewidth}\centering
+			
+          \includegraphics[width=\textwidth]{Terr_EaPairHistNPP.pdf}
+          \caption{\footnotesize Distributions of activation energies for R  NP at intraspecific-level (TOP), and for R, NPP and GPP at ecosystem level (bottom).}
+  \end{minipage}
+	}
+
+
+    
+ 
+\end{document}

@@ -1,0 +1,98 @@
+\documentclass[20pt,margin=5mm, innermargin=6mm, blockverticalspace=6mm, colspace=6mm]{tikzposter}
+\usepackage[utf8]{inputenc}
+\geometry{paperwidth=42.0cm,paperheight=59.4cm}
+% \usetheme{Simple}
+% \usecolorstyle{Spain}
+% \usebackgroundstyle{Empty}
+% \usetitlestyle{Filled}
+% \useblockstyle{Basic}
+\tikzposterlatexaffectionproofoff
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+
+\useblockstyle[titleinnersep=4mm, bodyinnersep = 5.5mm]{Slide}
+\renewcommand*\familydefault{cabin}
+\usepackage[sfdefault,condensed]{cabin}
+\usepackage[T1]{fontenc}
+\usepackage{fix-cm}
+\usepackage{tikz,multicol}
+\usepackage{capt-of}
+\usepackage{titlesec}
+
+%change color by changing the {RGB}{21,40,70}
+\definecolor{greenone}{RGB}{21,40,70}
+\definecolor{greentwo}{RGB}{25,50,80}
+\definecolor{greenthree}{RGB}{16,20,60}
+\definecolor{mygray}{RGB}{203,203,203}
+\definecolorstyle{myColorStyle} {
+    \colorlet{colorOne}{greenone}
+    \colorlet{colorTwo}{greentwo}
+    \colorlet{colorThree}{greenthree}
+    \colorlet{colorFour}{mygray}
+    }{
+    % Background Colors
+    \colorlet{backgroundcolor}{colorOne}
+    \colorlet{framecolor}{colorOne}
+    % Title Colors
+    \colorlet{titlefgcolor}{white}
+    \colorlet{titlebgcolor}{colorTwo}
+    % Block Colors
+    \colorlet{blocktitlebgcolor}{colorFour}
+    \colorlet{blocktitlefgcolor}{colorTwo}
+    \colorlet{blockbodybgcolor}{white}
+    \colorlet{blockbodyfgcolor}{black}
+    % Innerblock Colors
+    \colorlet{innerblocktitlebgcolor}{white}
+    \colorlet{innerblocktitlefgcolor}{black}
+    \colorlet{innerblockbodybgcolor}{white}
+    \colorlet{innerblockbodyfgcolor}{black}
+    % Note colors
+    \colorlet{notefgcolor}{black}
+    \colorlet{notebgcolor}{white}
+    \colorlet{notefrcolor}{white}
+}
+
+\usecolorstyle{myColorStyle}
+
+\usebackgroundstyle{Rays}
+\usepackage{adjustbox}
+\usetitlestyle{Empty}
+
+\makeatletter %To make columns scale to custom width 
+\setlength{\TP@visibletextwidth}{\textwidth-2\TP@innermargin}
+\setlength{\TP@visibletextheight}{\textheight-2\TP@innermargin}
+\makeatother
+
+\titlespacing*{\subsection}{0pt}{10pt}{0pt}
+
+%shifts bullets to left margin for all document
+%\setitemize{itemsep=10pt,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin= 20pt}
+
+%only for a list
+%\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+ 
+%\graphicspath{{images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand\semiHUGE{\@setfontsize\semiHUGE{40}{27.38}}
+\makeatother
+
+\begin{document}
+
+
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Introduction in form of a question?
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}

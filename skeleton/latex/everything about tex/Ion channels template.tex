@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+ 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{tocloft}
+
+
+\usepackage[parfill]{parskip}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{float}
+\floatstyle{plain}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage{natbib}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue
+}
+\urlstyle{same}
+
+%making the bloody title
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \textbf{\@title} %the empty line is impt
+  
+  \@author
+\end{flushleft}\egroup
+}
+\makeatother
+
+%random things needed
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} %let the content table have dots to number
+\linespread{1.2}  %making one and a half spacing-sh one and half is actually 1.3
+\frenchspacing
+
+%insert title
+\title{\textbf{\huge{Diversity of Ion Channels that Regulate K$^{+}$ \\ \vspace{0.2cm}
+Ions in Pollen Tube Development}}}
+\date{} 
+\author{%
+\large{ Jia Le, Lim {  } CID: 00865029 } \\
+\textnormal
+{\textit{Department of Biology, Imperial College London, South Kensington Campus, London, U.K.}} \\
+Submitted: 27 April 2015
+}
+
+\begin{document}
+\maketitle
+%space after title
+\bigskip
+\begin{multicols}{2} %two columns
+\tableofcontents    
+
+\section{Introduction} 
+\subsection{Ion channels}
+The diversification of ion channels is immense not just in animals, but also in plant cells. In potassium transport systems of \textit{Arabidopsis thaliana} alone, there exist more than 35 genes, each differing in their affinities for potassium ions (K$^{+}$), locations in the plant and responses to different signals and environmental factors~\citep{Maser2001}. 
+ %refer to some table that shows all the stuff 
+This intriguing wide assortment of ion channels serves to regulate cellular ion concentrations, and more importantly, to control and manipulate the transport of ions across membranes~\citep{Maathuis1997}. By doing so, ion channels create the increasing turgor pressure as well as facilitate the uptake of crucial metabolic ions required for the growth and development of cells such as the pollen tube~\citep{Benkert1997}. 
+
+\subsection{Pollen tube}
+The pollen tube is one of the fastest growing specialised cells, reaching linear growth rates of up to 4\,$\mu$m.sec$^{-1}$~\citep{Michard2009}. This rapid process is restricted to the tip of the pollen tube, a narrow apical zone, resulting in cell polarity and directionality and hence, makes the pollen tube a captivating model of cell growth~\citep{Feijo1995}. Furthermore, due to its role in fertilisation of higher plants, the development of the pollen tube from the stigma to the ovule is one of the best-studied models in plant cell biology. However, in stark contrast, there exists scarce knowledge  about the genetic basis of this process until recently~\citep{Becker2003}. Even less is known about the genes that code for the ion channels responsible, due to slow genetic and functional analysis done on a gene-by-gene scale and low success rates of reverse genetic techniques~\citep{Lebaudy2007a}. Nonetheless, some of these ion channels, once mutated, severely hindered the development of the pollen tube due to its inability to take in ions~\citep{Mouline2002}. 
+%figure of pollen tube with directionality and flow of ions in and out? and where ion channels exists.
+
+\subsection{Potassium ions (K$^{+}$)}
+Ions 
+
+As there is an overwhelming number of ion channels involved in the growth of the pollen tube~\citep{Michard2009}, I will only highlight in this dissertation, a few ion channels that regulate and are regulated by K$^{+}$ to show the amazing complexity and network of known ion channels and thereafter, discuss some of the limitations of current research technologies in this field. 
+
+\newpage 
+\bibliography{library}
+\bibliographystyle{myauthordate1}
+
+\end{multicols}
+\end{document}
+
+%latex bibtex latex latex ( typeset -> which is command t)
+%for tables, type in excel then copy and past to tablesgenerator.com and copy and paste code =D
+%pictures use pdf
+%texcount /Users/jialelim/Desktop/latex\ annoying\ stuff/TD\ 2015/Ion\ channels\ and\ K+.tex in terminal (command 9)
