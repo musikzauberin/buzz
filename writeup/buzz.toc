@@ -1,6 +1,15 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Materials and Methods}{2}{section.2}
-\contentsline {section}{\numberline {3}Results}{3}{section.3}
-\contentsline {section}{\numberline {4}Discussion}{4}{section.4}
-\contentsline {section}{\numberline {5}Supplementary Figures}{5}{section.5}
+\contentsline {subsection}{\numberline {2.1}Study area and climate information}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Sampling methods and species identification}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Data Analyses}{3}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Turnover Analyses}{3}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Climate Analyses}{3}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Correlation Analyses}{3}{subsubsection.2.3.3}
+\contentsline {section}{\numberline {3}Results}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Community composition}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}High turnover}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Climatic factors influence turnover}{4}{subsection.3.3}
+\contentsline {section}{\numberline {4}Discussion}{5}{section.4}
+\contentsline {section}{\numberline {5}Supplementary Figures}{6}{section.5}
