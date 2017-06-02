@@ -41,6 +41,8 @@
 \usepackage{cleveref}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
 
 %abstract setup
 \renewenvironment{abstract}
@@ -70,7 +72,7 @@
 	{\Large \textsc{Lim} Jia Le  {    }  CID: 00865029}
 	\\ 	\vspace{0.5cm}
 	{Department of Biology, Imperial College London, \\Silwood Campus, London, U.K.} \\ \vspace{0.5cm}
-	{Submitted in part fulfilment of the requirements for the \\ Bachelor of Science degree in Biology with German for Science \\ of Imperial College London.} \\
+	{Submitted in part fulfilment of the requirements for the \\ Bachelor of Science degree in Biology with German for Science \\ at Imperial College London.} \\
 	\vspace*{\fill}
 	{\large Supervised by\par
 	Dr.~Samraat \textsc{Pawar}}
@@ -79,17 +81,7 @@
 	{\large Last updated: \today\par}
 \end{titlepage}
 
-%% acknowledgement page
-%\newpage 
-%\pagenumbering{gobble}
-%\vspace*{\fill}
-%{\huge\bfseries Acknowledgements} \\
-%\\
-%\\
-%\large{I would like to thank }
-%\vfill
-
-
+% abstract page
 \newpage
 \pagenumbering{gobble}
 \vspace*{\fill}
@@ -110,7 +102,7 @@ abstracting abstracting abstracting
 
 \doublespacing
 
-% abbreviations page?
+% abbreviations page
 \newpage 
 \vspace*{\fill}
 {\huge\bfseries Abbreviations} \\
@@ -128,53 +120,141 @@ abstracting abstracting abstracting
 \pagenumbering{arabic}
 
 %%% Start writing
-\section{Introduction} 
+\section{Introduction} % 800 words
 
 
 
 
 \newpage
-\section{Materials and Methods} 
-\subsection{Study area and climate information}
+\section{Materials and Methods} % 1200 words
+\subsection{Study area}
 The Cerrado spans across most of Central Brazil while extending marginally into Bolivia and Paraguay. It comprises of vegetation ranging from open grasslands to scrublands with a sparse distribution of trees, and smaller regions of gallery and close canopy forests. These patches exist side-by-side, resulting in a highly heterogeneous ecosystem~\citep{Gottsberger2006}. \\
 \\
-Plant-pollinator interactions were surveyed in the Reserva Ecol\'ogica do IBGE (hereafter `IBGE') and in the Protected Area of the Jardim Bot\^anico de Bras\'ilia (Bras\'ilia's Botanical Garden Protected Area; hereafter `BBG'). The two study sites are located on the Brazilian plateau (1,100m a.s.l.), within the federally protected conservation site ``APA-Gama-Cabe\c ca-de-Viado,'', located approximately 30km south of Bras\'ilia (15\degree56'S, 47\degree53'W). This region is characterized by a well-defined wet summer season that lasts from November until March followered by a dry winter period that extends from May until September.  \\
+Plant-pollinator interactions were surveyed in the Reserva Ecol\'ogica do IBGE (hereafter `IBGE') and in the Protected Area of the Jardim Bot\^anico de Bras\'ilia (Bras\'ilia's Botanical Garden Protected Area; hereafter `BBG'). The two study sites are located on the Brazilian plateau (1,100m a.s.l.), within the federally protected conservation site ``APA-Gama-Cabe\c ca-de-Viado'', located approximately 30km south of Bras\'ilia (15\degree56'S, 47\degree53'W). This region is characterized by a well-defined wet summer season that lasts from November until March followed by a dry winter period that extends from May until September~\citep{Gottsberger2006a}.\\
 \\
-Data from the IBGE's weather station was used to obtain monthly median temperature and precipitation sum for the past 30 years (1980-2010). Monthly precipitation sum from June 1995 to June 1997 ranged from ? to ? while median temperatures varied between ? to ?. From October 2008 until September 2009, monthly precipitation sum ranged from ? to ? with median temperatures of ? to ?.\\
+The IBGE site consisted of a 8-hectare plot (200 x 400m) covered with mainly grasses mixed with herbaceous plants and shrubs, with a sparse distribution of lianas and trees. In contrast, the BBG site comprised of a denser type of vegetation with a predominance of large shrubs, lianas, and trees~\citep{Eiten1972}.
 
 \subsection{Sampling methods and species identification}
-Bees are the predominant pollinators in the Cerrado ($\sim$70\%) followed by moths ($\sim$12\%), hummingbirds ($\sim$3\%), bats, ($\sim$2\%) and beetles ($\sim$2\%)~\citep{Oliveira2002, Gottsberger2006a, Cappellari2011}. Hence, this study focused only on bee-flower interactions. A plant or pollinator species was included in the surveys only if the flowering plant received visits or if the bee was seen foraging on flowers. For every interaction observed, the plant was tagged with a unique identification number, photographed and vouchered. Plant vouchers were identified by using comparative herbarium material, a checklist of local angiosperms and local botanical expertise.  In both sites, bees were collected with an entomological net and killed either in individual vials with paper pellets moistened with ethyl acetate or frozen after each observation. Insect vouchers were thereafter mounted, preserved, and identified to species level by comparison with reference collections, taxonomic literature, local records~\citep{Moure1962, Silveira2002, Moure2007} and by local entomological experts. 
+Bees are the predominant pollinators in the Cerrado ($\sim$70\%) followed by moths ($\sim$12\%), hummingbirds ($\sim$3\%), bats, ($\sim$2\%) and beetles ($\sim$2\%)~\citep{Oliveira2002, Gottsberger2006a, Cappellari2011}. Hence, this study focused only on bee-flower interactions. A plant or pollinator species was included in the surveys only if the flowering plant received visits or if the bee was seen foraging on flowers. For every interaction observed, the plant was tagged with a unique identification number, photographed and vouchered. Plant vouchers were identified by using comparative herbarium material, a checklist of local angiosperms and local botanical expertise (Refer to \hyperref[sec: acknowledgements]{Acknowledgements}).  In both sites, bees were collected with an entomological net and killed either in individual vials with paper pellets moistened with ethyl acetate or frozen after each observation. Insect vouchers were thereafter mounted, preserved, and identified to species level by comparison with reference collections, taxonomic literature, local records~\citep{Moure1962, Silveira2002, Michener2007, Moure2007} and by local entomological experts (Refer to \hyperref[sec: acknowledgements]{Acknowledgements}). \\
+\\
+The IBGE study site was sampled by S.C. Rabeling by walking transects covering the entire area for a full day (0800h to 1700h) at a weekly basis from November 2008 to October 2009. In total, there was 47 sampling days over a 12-month period (mean = 3.91 days/month). The BBG area was sampled weekly (0730h to 1700h) by M. C. Boaventura from June 1995 to June 1997 using two predefined transects (5,280m and 4,130m in length) located 4 km apart~\citep{Boaventura1998}. Sampling in this site totaled 125 days over 25 months (mean = 5 days/month). Interactions involving the introduced honey bee (\textit{Apis mellifera}) were not included in the BBG data set.
+% why wasnt the honey bee added
 
+\subsection{Climate information}
 
+Data from the IBGE's weather station was used to obtain monthly median temperature and precipitation sum for the past 30 years (1980 - 2010). Median temperature was adopted as monthly distributions of daily average temperatures were skewed. Humidity was not considered as only relative humidity data of IBGE was available.\\
+\\
+Monthly precipitation sum from June 1995 to June 1997 ranged from 0 mm to 358 mm while median temperatures varied between 18.4\degree C to 23.5\degree C. From October 2008 until September 2009, monthly precipitation sum ranged from 0 mm to 270.6 mm with median temperatures of 18\degree C to 24\degree C. For analytical purposes, the interactions recorded in the transitional months of April and October were assigned to the dry and rainy seasons respectively. Periods specified for each season are in concordance with patterns reported for other Cerrado areas~\citep{Gottsberger2006a}. 
 
+\subsection{Data analysis}
+Due to both temporal and spatial differences between the IBGE and BBG datasets, the two datasets were hence analysed separately. 
 
-\subsection{Data Analyses}
+\subsubsection{Month-to-month turnover}
+Bee-flower interaction turnover is calculated using the Whittaker's presence-based dissimilarity index~\citep{Whittaker1960}: 
+\begin{align}
+	\beta_{int} & = \frac{a + b + c}{(2a + b + c)/2} - 1 
+\label{eq: dissimilarity}
+\end{align}
+where interaction turnover (i.e. interaction dissimilarity or interaction $\beta$-diversity; $\beta_{int}$) between two successive monthly networks is calculated using the number of shared interactions present in both networks ($a$) and the number of unique interactions in each of the two networks ($b$ and $c$ respectively)~\citep{Poisot2012}. \\
+\\
+$\beta_{int}$ can be partitioned into two components; network dissimilarity due to species turnover ($\beta_{st}$) and interaction rewiring between shared species of networks ($\beta_{rw}$):
+\begin{align}
+	\beta_{int} & = \beta_{st} + \beta_{rw} 
+\label{eq: interaction}
+\end{align}
+$\beta_{int}$ and $\beta_{st}$, but not $\beta_{rw}$, covary with species turnover (differences between species composition of two networks; $\beta_{S}$). In this study, $\beta_{S}$ can be driven by either plant turnover ($\beta_{Plant}$) or bee turnover ($\beta_{Bee}$). \\
+\\
+$\beta_{rw}$, $\beta_{S}$, $\beta_{Plant}$ and $\beta_{Bee}$ are calculated using \hyperref[eq: dissimilarity]{Equation \ref{eq: dissimilarity}}, where a refers to the number of items present in both networks and b and c refer to the number of unique items present in each of the two networks~(\autoref{table: dissimilarity}). $\beta_{st}$ is obtained by subtracting $\beta_{rw}$ from $\beta_{int}$~(\hyperref[eq: interaction]{Equation \ref{eq: interaction}}). The dissimilarity index takes the value of 0 when two networks are identical and the value of 1 when two networks do not share any items in common~\citep{Poisot2012, CaraDonna2017}. \\
 
-\subsubsection{Turnover Analyses}
-\subsubsection{Climate Analyses}
-\subsubsection{Correlation Analyses}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h]
+\captionof{table}{Measures of network dissimilarity. \\ \doublespacing\footnotesize The contribution of species turnover to interaction turnover is illustrated indirectly by the fraction of interaction turnover due to species turnover alone ($\beta_{st}$). Dissimilarity measures are calculated using the respective items and ~\autoref{eq: dissimilarity}. Modified from \cite{Poisot2012}.}
+\label{table: dissimilarity}
+\doublespacing
+\resizebox{1.07\textwidth}{!}{%
+\begin{tabular}{llll}
+\hline
+\rowcolor[HTML]{FFDA6C} 
+Measure & Definition & Items & Reference \\ \hline
+$\beta_{int}$ & \begin{tabular}[c]{@{}l@{}}Dissimiliarity of interactions; \\ Interaction turnover\end{tabular} & All interactions & \begin{tabular}[c]{@{}l@{}}\cite{Canard2011}; \\ \cite{CaraDonna2017}  \end{tabular} \\
+
+\rowcolor[HTML]{FFF9F1} 
+$\beta_{rw}$ & \begin{tabular}[c]{@{}l@{}}Dissimilarity of interactions between species present in both networks; \\ Interaction rewiring\end{tabular} & \begin{tabular}[c]{@{}l@{}}Interactions of \\ shared species\end{tabular} & \begin{tabular}[c]{@{}l@{}}\cite{Canard2011};\\ \cite{CaraDonna2017} \end{tabular} \\
+
+$\beta_{st}$ & Dissimilarity of interactions due to species turnover & \autoref{eq: dissimilarity} & \cite{Poisot2012}  \\
+
+\rowcolor[HTML]{FFF9F1} 
+$\beta_{st}$/$\beta_{int}$ & Contribution of species dissimilarity to dissimilarity of interactions &  & \cite{Poisot2012} \\
+
+$\beta_{S}$ & \begin{tabular}[c]{@{}l@{}}Dissimilarity in the species composition of both networks; \\ Species turnover\end{tabular} & Species identity & e.g. \cite{Koleff2003} \\
+
+\rowcolor[HTML]{FFF9F1} 
+$\beta_{Bee}$ & \begin{tabular}[c]{@{}l@{}}Dissimilarity in the bee composition of both networks; \\ Bee turnover\end{tabular} & Bee identity & This study \\
+
+$\beta_{Plant}$ & \begin{tabular}[c]{@{}l@{}}Dissimilarity in the plant composition of both networks; \\ Plant turnover\end{tabular} & Plant identity & This study \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Correlation}
+As turnover values do not follow a normal distribution, the non-parametric Spearman's rank correlation test from the python package SciPy was utilised to investigate the relationships between the different dissimilarity indexes as well as the trends between climatic factors and dissimilarity indexes~\citep{Dehmer2011}. \\
+\\
+A Monte Carlo process was then used to generate p-values for correlation tests. P-values of Spearman's test deviate away from actual p-values due to turnovers being dependent variables. Randomised sets of plants and bees were drawn across the dataset to form 100000 simulated networks for each month. Number of bees, plants and interactions as well as connectance of each monthly network were kept constant. P-value was thereafter calculated as the total number of simulations with a correlation value higher than the value obtained in either the BBG or IBGE dataset, divided by 100000.
+
+\subsubsection{Climate}
+Two climatic models were utilised in this study. The first model uses the differences between precipitations or temperatures of two subsequent months as the explanatory variable of turnovers (hereafter known as the difference model). The alternative hypothesis of the difference model assumes that networks at a particular temperature and precipitation level are static and do not experience changes as long as climatic factors remain constant. When two networks are at the same temperature and precipitation level, interaction turnover equals to zero. Interaction turnover increases as the temperature or precipitation level difference between networks increases.\\
+\\
+The second model uses the average of precipitations or temperatures of two subsequent months as the explanatory variable of turnovers (hereafter known as the average model). The average model postulates that networks experience a particular turnover rate even as climatic factors remain constant. Two networks experiencing the same climatic factors will result in similar interaction turnover values. Interaction turnover increases as the temperature or precipitation level of networks increases.\\
+\\
+To compare the two climatic models, linear regression was used to fit precipitation, temperature and season against $\beta_{Plant}$ and $\beta_{rw}$ values of the BBG dataset. Model fitting was not carried out for the smaller IBGE dataset. The more explanatory model was thereafter used to fit climatic factors against turnovers within seasons to prevent overfitting and minimise multicollinearity.
 
 \newpage
-\section{Results} 
+\section{Results} % 1800 words
 \subsection{Community composition}
 93 species of plants and 111 species of bees were recorded over the 12-month study period at IBGE. In total, 968 bee-flower interactions, which comprised of 434 unique interactions, were observed. The bee community composition in IBGE was similar to those previously observed in other Cerrado areas~\citep{Silveira1995, Pinheiro-Machado2002} with Apidae being the richest group (77 spp.) followed by Halictidae (19 spp.), Megachilidae (13 spp.), Andrenidae (1 sp.), and Colletidae (1sp.). Plant species recorded at this site consisted of mainly herbs and shrubs, and belonged to 24 families, the most species rich group being Fabaceae (18 spp.). \\
 \\
-Between June 1995 and June 1997, ? unique interactions and ? visitation events between ? plant and ? bee species were recorded in the \textit{cerrado sensu strictu} area of BBG. Although the BBG area contained a more species rich pollinator community, bee families were present in comparable proportions as those observed in IBGE: Apidae (115 spp.), Halictidae (38 spp.), Megachilidae (27 spp.), Colletidae (3 spp.), and Andrenidae (1 sp.). Plants recorded in BBG represented 41 families, consisting of mostly shrubs, some trees, and a few herbs. Similar to IBGE, Fabaceae was the most species rich group in this area (31 spp.), followered by Asteraceae (20 spp.) and Malpighiaceae (17 spp.). 
+Between June 1995 and June 1997, 1050 unique interactions and 1616 visitation events between 182 plant and 203 bee species were recorded in the \textit{cerrado sensu strictu} area of BBG. Although the BBG area contained a more species rich pollinator community, bee families were present in comparable proportions as those observed in IBGE: Apidae (115 spp.), Halictidae (38 spp.), Megachilidae (27 spp.), Colletidae (3 spp.), and Andrenidae (1 sp.). Plants recorded in BBG represented 41 families, consisting of mostly shrubs, some trees, and a few herbs. Similar to IBGE, Fabaceae was the most species rich group in this area (31 spp.), followered by Asteraceae (20 spp.) and Malpighiaceae (17 spp.). 
+% generalised?
 
-\subsection{High turnover}
+\subsection{Month-to-month turnover}
+
+Month-to-month interaction turnover ($\beta_{int}$) was consistently high, ranging from 0.747 to 1 in BBG and 0.753 to 1 in IBGE. As expected, $\beta_{int}$ and $\beta_{st}$ are positively correlated with $\beta_{S}$ ($\beta_{int}\&\beta_{S}$ IBGE: $r_{s}=$0.80909, $p=$0.012289 ;BBG: $r_{s}=$, $p=$ ) as an increase in species composition differences between two networks will result in more differences between networks due to species turnover, $\beta_{st}$, as well as an increase in whole-network dissimilarity, $\beta_{int}$. \\
+\\
+Nonetheless, the weak correlation between $\beta_{rw}$ and $\beta_{S}$ was statistically non-significant (IBGE: $r_{s}=$ , $p=$ ; BBG: $r_{s}=$ , $p=$ ). This result indicates that factors driving interaction rewiring are different from those that drive species turnover. \\
+\\
+Although there is a high correlation value between turnover of bees and plants ($\beta_{Bee}$, $\beta_{Plant}$), these relationships occur by chance and are statistically non-significant. At the BBG site, neither bees nor plants seem to be the main driver behind $\beta_{S}$. However, $\beta_{S}$ has a strong positive correlation with $\beta_{Plant}$ at the IBGE site.\\
+\\
+At both sites, $\beta_{int}$ is positively correlated with $\beta_{S}$ and $\beta_{Plant}$. Interestingly, $\beta_{Bee}$ has a stronger correlation relationship with $\beta_{st}$ than plants in the BBG dataset while $\beta_{Plant}$ seems to be the stronger driver of $\beta_{st}$ than bees at the IBGE site.
+
+
 \subsection{Climatic factors influence turnover}
 
-\newpage
-\section{Discussion} 
-
 
 \newpage
-\bibliography{CRISPR2}
+\section{Discussion} % 1800 words
+Discuss results, why climatic factor would explain turnover \\
+Limitations: Correlation does not relate to causation, but diff to conduct such experiments,  \\
+Future Research: more data, artic temperature comparisons \\
+
+% acknowledgement page
+\newpage 
+\vspace*{\fill}
+
+{\huge\bfseries Acknowledgements} \label{sec: acknowledgements} \\
+\\
+\\
+\large{I would like to thank Dr. Samraat Pawar for his supervision and guidance throughout this project, as well as  all of my friends who have helped me in one way or another with Python programming. Finally, I would like to thank M. C. Boaventura and S. C. Cappellari for making their datasets available. Field data collection at IBGE was made possible with the support of P. H. Pinheiro, the staff of Reserva Ecol\'{o}gica do IBGE and the graduate program in Ecology at the University of Brasilia. The following experts contributed towards the identification of plants: M. A. da Silva, M. C. Mamede, C. Proen\c{c}a, A. L. Prado, S. L. Silva, L. P. Queiroz, A. Krapovikas, L. F. Oliveira, T. B. Cavalcante, K. Calago, A. E. Ramos, C. Munhoz, F. Silva, M. G. N\'{o}brega, R. C. Martins, and R. C. Oliveira, and the following experts for bee identifications: A. J. C. Aguiar, A. Raw, M. C. Boaventura, G. A. R. Melo, F. Vivallo, and D. Urban.}
+\vfill
+
+\newpage
+\bibliography{buzz}
 \bibliographystyle{cell}
 
+\newpage
 \section{Supplementary Figures}
 
-%Appendices/Supplementary Information (optional)
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}

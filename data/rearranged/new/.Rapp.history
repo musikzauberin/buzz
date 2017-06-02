@@ -1,0 +1,3 @@
+load("/Users/jialelim/Documents/buzz/data/rearranged/new/plantavgmodelfinal.Rda")
+load("/Users/jialelim/Documents/buzz/data/rearranged/new/plantdiffmodelfinalOld.Rda")
+load("/Users/jialelim/Documents/buzz/data/rearranged/new/osavgmodelfinalNew.Rda")

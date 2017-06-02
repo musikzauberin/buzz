@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-'''Plot correlation coefficients for easy visualisation'''
+'''Plot correlation coefficients for easy visualisation(five turnovers with temperature and precipitation)'''
 
 __author__ = 'Jia Le Lim'
 __version__ = '0.0.2'
@@ -19,9 +19,11 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../results/BivariatePlots/OldCerrado/monthlyaverage/AvgClimateCoefficients(Old).csv','rb')
+h = open('../results/BivariatePlots/NewCerrado/monthavg&turnover/Turnover&ClimateAvg(New).csv','rb')
 data = csv.reader(h)
 
+h1 = open('../results/BivariatePlots/NewCerrado/monthdiff&turnover/Turnover&ClimateDiff(New).csv','rb')
+data1 = csv.reader(h1)
 
 ########## Inputting data into lists ##########
 
@@ -32,6 +34,17 @@ headers = [xmeasures, ymeasures, dryrs, dryps, wetrs, wetps, allrs, allps]
 
 for column in data:
   for j, i in enumerate(headers):
+    i.append(column[j])
+
+h.close()
+
+# copy and paste all headers in data twice, extra d infront stands for diff
+[dxmeasures, dymeasures, ddryrs, ddryps, dwetrs, dwetps, dallrs, dallps] = ([] for i in range(len(next(data1))))
+
+headers1 = [dxmeasures, dymeasures, ddryrs, ddryps, dwetrs, dwetps, dallrs, dallps]
+
+for column in data1:
+  for j, i in enumerate(headers1):
     i.append(column[j])
 
 h.close()
@@ -83,57 +96,61 @@ def makesubplotnice():
 
 # plot subplots
 # label each dot as the x measure compared to the y measure on the xaxis
-dotmeasures = ['AvgPrecips', 'AvgTemps', 'AvgMaxTemps', 'AvgTempRanges', 'AvgHumids']
-dotlabels = ['AvgPrecips', 'AvgTemps', 'AvgMaxTemps', 'AvgTempRanges', 'AvgHumids']
 
-pl.figure(figsize=(20, 8))
+pl.figure(figsize=(12, 8))
+pl.subplot(1, 2, 1)
 for i in range(len(ystarts)-1):
-  x = [i] * (ystarts[i+1] - ystarts[i])
-  pl.subplot(1, 3, 1)
-  pl.plot(x, dryrs[ystarts[i]:ystarts[i+1]], 'ro')
+  print i
   for j in range(ystarts[i],ystarts[i+1]):
-    for dotmeasure in dotmeasures:
-      if xmeasures[j] == dotmeasure:
-        h = dotmeasures.index(dotmeasure)
-        pl.text(i+0.1, dryrs[j], dotlabels[h], size = 10)
-
-  pl.subplot(1, 3, 2)
-  pl.plot(x, wetrs[ystarts[i]:ystarts[i+1]], 'bo')
-  for j in range(ystarts[i],ystarts[i+1]):
-    for dotmeasure in dotmeasures:
-      if xmeasures[j] == dotmeasure:
-        h = dotmeasures.index(dotmeasure)
-        pl.text(i+0.1, wetrs[j], dotlabels[h], size = 10)
-  
-  pl.subplot(1, 3, 3)
-  pl.plot(x, allrs[ystarts[i]:ystarts[i+1]], 'ko')
-  for j in range(ystarts[i],ystarts[i+1]):
-    for dotmeasure in dotmeasures:
-      if xmeasures[j] == dotmeasure:
-        h = dotmeasures.index(dotmeasure)
-        pl.text(i+0.1, allrs[j], dotlabels[h], size = 10)
+    if xmeasures[j] == 'AvgPrecips':
+      pl.plot(i, allrs[j], 'bo')
+      pl.text(i+0.1, allrs[j], 'AvgPrecips', size = 12)
+    if xmeasures[j] == 'AvgTemps':
+      pl.plot(i, allrs[j], 'ko')
+      pl.text(i+0.1, allrs[j], 'AvgTemps', size = 12)
 
 # finishing touches on subplots
-plotdimensions = [ (1, 3, 1), (1, 3, 2), (1, 3, 3)]
 # bints, osturnovers, stturnovers, specturnovers, beeturnovers, plantturnovers
-xlabels = 'AvgPrecips, AvgTemps, AvgMaxTemp'
+xlabels = 'bints, Brw, Bs, Bbee, Bplant'
 xlabels = xlabels.split(', ')
-ylabels = 'Correlation Coefficient, Correlation Coefficient, Correlation Coefficient'
-ylabels = ylabels.split(', ')
-titles = 'Dry Season, Wet Season, All'
-titles = titles.split(', ')
+ylabels = 'Correlation Coefficient'
 
-for nrows, ncols, plot_number in plotdimensions:
-  pl.subplot(nrows, ncols, plot_number)
-  makesubplotnice()
+makesubplotnice()
 
-  # x labels
-  major_ticks = np.arange(0, len(ystarts)-1)
-  pl.xticks(major_ticks, xlabels)
-  # y labels
-  pl.ylabel(ylabels[plot_number - 1], size=16)
-  # title
-  pl.title(titles[plot_number - 1], size = 18)
+# x labels
+major_ticks = np.arange(0, len(ystarts)-1)
+pl.xticks(major_ticks, xlabels)
+# y labels
+pl.ylabel(ylabels, size=16)
+
+
+pl.subplot(1, 2, 2)
+for i in range(len(ystarts)-1):
+  print i
+  for j in range(ystarts[i],ystarts[i+1]):
+    if dxmeasures[j] == 'PrecipsDiff':
+      pl.plot(i, dallrs[j], 'bo')
+      pl.text(i+0.1, dallrs[j], 'PrecipsDiff', size = 12)
+    if dxmeasures[j] == 'TempsDiff':
+      pl.plot(i, dallrs[j], 'ko')
+      pl.text(i+0.1, dallrs[j], 'TempsDiff', size = 12)
+
+# finishing touches on subplots
+# bints, osturnovers, stturnovers, specturnovers, beeturnovers, plantturnovers
+xlabels = 'bints, Brw, Bs, Bbee, Bplant'
+xlabels = xlabels.split(', ')
+ylabels = 'Correlation Coefficient'
+
+makesubplotnice()
+
+# x labels
+major_ticks = np.arange(0, len(ystarts)-1)
+pl.xticks(major_ticks, xlabels)
+# y labels
+pl.ylabel(ylabels, size=16)
+
+# # title
+# pl.title(titles, size = 18)
 
 # # legends
 # light_grey = np.array([float(248)/float(255)]*3)
@@ -161,7 +178,7 @@ for nrows, ncols, plot_number in plotdimensions:
 # pl.gca().add_artist(legend)
 
 # save plot and show
-plotname = 'testing'
+plotname = 'Climate&Turnover(New)'
 plotpath = '../results/BivariatePlots/thesisplots/' + plotname + '.pdf'
 pl.savefig(plotpath)
 

@@ -1,0 +1,39 @@
+import random
+
+filename = 'OldCerradoData1-monthly(New).csv'
+pathname = '../data/rearranged/new/' + filename
+h = open(pathname,'rb')
+data = csv.reader(h)
+
+
+########## Inputting data into lists ##########
+
+# copy and paste all headers in data three times
+headers = 'months, days, years, bees, plants'
+
+[months, days, years, bees, plants] = ([] for i in range(len(next(data))))
+
+headers2 = [months, days, years, bees, plants]
+
+for column in data:
+  for j, i in enumerate(headers2):
+    i.append(column[j])
+
+h.close()
+
+
+## returns 2 lists: a list of bees, and a list of plants, both of length noofinteractions, where the 2 lists combine to form interactions
+def gen_rand_interactions(bees, plants, noofinteractions):
+  all_beeplants = [(bee, plant) for bee in set(bees) for plant in set(plants)]
+  interactions = random.sample(all_beeplants, min(noofinteractions, len(all_beeplants)))
+  print interactions
+  samp_bees, samp_plants = map(list, zip(*interactions))
+  return samp_bees, samp_plants
+  
+random.seed(314159265358979) ## seed is used for replicating pseudo-random data when running the same script multiple times, very useful when you want to keep a desirable data set!
+
+bees = [34, 65, 34, 45, 12, 98]
+plants = [214, 875, 134, 214]
+samp_bees, samp_plants = gen_rand_interactions(bees, plants, 123)
+print samp_bees
+print samp_plants

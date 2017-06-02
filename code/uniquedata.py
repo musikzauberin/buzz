@@ -8,7 +8,7 @@ import sys
 import os.path
 
 #finding amt of data
-h = open('../data/rearranged/OldCerradoData1-monthly.csv','rb')
+h = open('../data/rearranged/OldCerradoData.csv','rb')
 data = csv.reader(h)
 
 months = []
@@ -36,16 +36,18 @@ duplicates = []
 
 uniqueint = []
 for i in range(datalen):
-  e = i + 1
-  while e < datalen:
-    if bees[i] == bees[e]:
-      if plants[i] == plants[e]:
-        if str(i) + str(e) not in uniqueint:
-          uniqueint.append(str(i) + str(e))
-          e += 1
-      else:
-        e += 1
-    else:
-      e += 1
+  if [bees[i], plants[i]] not in uniqueint:
+    uniqueint.append([bees[i], plants[i]])
 
 print len(uniqueint)
+print uniqueint
+
+noofdays = 0
+for i in range(len(days)):
+  if days[i] != days[i-1]:
+    noofdays += 1
+
+print noofdays
+print len(bees)
+print len(set(bees))
+print len(set(plants))
