@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  2 JUN 2017 04:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  3 JUN 2017 05:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -936,30 +936,459 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(./buzz.aux)
-Runaway argument?
-{{1}{5}{Measures of network dissimilarity. \\ \doublespacing \footnotesize \ETC
-.
-./buzz.tex:64: File ended while scanning use of \@newl@bel.
-<inserted text> 
-                \par 
-l.64 \begin{document}
-                     
-? 
-./buzz.tex:64: Emergency stop.
-<inserted text> 
-                \par 
-l.64 \begin{document}
-                     
-End of file on the terminal!
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box78
+\UL@hyphenbox=\box79
+\UL@skip=\skip118
+\UL@hook=\toks30
+\UL@height=\dimen188
+\UL@pe=\count175
+\UL@pixel=\dimen189
+\ULC@box=\box80
+Package: ulem 2012/05/18
+\ULdepth=\dimen190
+) (./buzz.aux)
+\openout1 = `buzz.aux'.
 
- 
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count176
+\scratchdimen=\dimen191
+\scratchbox=\box81
+\nofMPsegments=\count177
+\nofMParguments=\count178
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count179
+\MPscratchDim=\dimen192
+\MPnumerator=\count180
+\makeMPintoPDFobject=\count181
+\everyMPtoPDFconversion=\toks32
+) ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 66.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 66.
+Package gensymb Info: Math companion symbols declared on input line 66.
+LaTeX Info: Redefining \degree on input line 66.
+LaTeX Info: Redefining \celsius on input line 66.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 66.
+LaTeX Info: Redefining \ohm on input line 66.
+Package gensymb Info: Using \textohm for \ohm on input line 66.
+Package gensymb Info: Using \textmu for \micro on input line 66.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translato
+r-basic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box82
+Package hyperref Info: Link coloring ON on input line 66.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count182
+)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+
+(./buzz.out) (./buzz.out)
+\@outlinefile=\write3
+\openout3 = `buzz.out'.
+
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 66.
+\c__siunitx_mathsf_int=\count183
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+\c__siunitx_mathtt_int=\count184
+ [1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./
+buzz.toc)
+\tf@toc=\write4
+\openout4 = `buzz.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108 \newpage
+               [1]
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.117 \newpage
+               [2]pdfTeX warning (ext4): destination with the same identifier (
+name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.130 \newpage
+               [1]
+
+Package natbib Warning: Citation `Gottsberger2006' on page 2 undefined on input
+ line 133.
+
+
+Package natbib Warning: Citation `Gottsberger2006a' on page 2 undefined on inpu
+t line 135.
+
+
+Package natbib Warning: Citation `Eiten1972' on page 2 undefined on input line 
+137.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
+
+ []
+
+
+Package natbib Warning: Citation `Oliveira2002' on page 2 undefined on input li
+ne 140.
+
+
+Package natbib Warning: Citation `Gottsberger2006a' on page 2 undefined on inpu
+t line 140.
+
+
+Package natbib Warning: Citation `Cappellari2011' on page 2 undefined on input 
+line 140.
+
+
+Package natbib Warning: Citation `Moure1962' on page 2 undefined on input line 
+140.
+
+
+Package natbib Warning: Citation `Silveira2002' on page 2 undefined on input li
+ne 140.
+
+
+Package natbib Warning: Citation `Michener2007' on page 2 undefined on input li
+ne 140.
+
+
+Package natbib Warning: Citation `Moure2007' on page 2 undefined on input line 
+140.
+
+
+Package natbib Warning: Citation `Boaventura1998' on page 2 undefined on input 
+line 142.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
+
+ []
+
+[2]
+
+Package natbib Warning: Citation `Gottsberger2006a' on page 3 undefined on inpu
+t line 149.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--150
+
+ []
+
+[3]
+
+Package natbib Warning: Citation `Whittaker1960' on page 4 undefined on input l
+ine 155.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 4 undefined on input line
+ 160.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
+
+ []
+
+
+Package natbib Warning: Citation `Poisot2012' on page 4 undefined on input line
+ 169.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 4 undefined on input l
+ine 169.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
+
+ []
+
+
+Package natbib Warning: Citation `Poisot2012' on page 4 undefined on input line
+ 173.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 4 undefined on input line
+ 173.
+
+
+Package natbib Warning: Citation `Canard2011' on page 4 undefined on input line
+ 198.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 4 undefined on input l
+ine 198.
+
+
+Package natbib Warning: Citation `Canard2011' on page 4 undefined on input line
+ 198.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 4 undefined on input l
+ine 198.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 4 undefined on input line
+ 198.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 4 undefined on input line
+ 198.
+
+
+Package natbib Warning: Citation `Koleff2003' on page 4 undefined on input line
+ 198.
+
+
+Overfull \hbox (31.88367pt too wide) in paragraph at lines 176--199
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Dehmer2011' on page 4 undefined on input line
+ 204.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--207
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 209--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--214
+
+ []
+
+[5] [6]
+
+Package natbib Warning: Citation `Silveira1995' on page 7 undefined on input li
+ne 218.
+
+
+Package natbib Warning: Citation `Pinheiro-Machado2002' on page 7 undefined on 
+input line 218.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--222
+
+ []
+
+
+Package natbib Warning: Citation `Poisot2012' on page 7 undefined on input line
+ 231.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--232
+
+ []
+
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--251
+
+ []
+
+[10]
+No file buzz.bbl.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 324.
+
+
+LaTeX Warning: Float too large for page by 17.42159pt on input line 374.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: There were undefined citations.
+
+
+AED: lastpage setting LastPage
+[11] [12] [13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+ (./buzz.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package rerunfilecheck Info: File `buzz.out' has not changed.
+(rerunfilecheck)             Checksum: D04056F574222FC4D9B83D588595A6C9;977.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
+ ) 
 Here is how much of TeX's memory you used:
- 18366 strings out of 493089
- 350668 string characters out of 6134841
- 460980 words of memory out of 5000000
- 21684 multiletter control sequences out of 15000+600000
- 3940 words of font info for 15 fonts, out of 8000000 for 9000
+ 20065 strings out of 493089
+ 382803 string characters out of 6134841
+ 522523 words of memory out of 5000000
+ 23258 multiletter control sequences out of 15000+600000
+ 20069 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,0n,43p,10399b,129s stack positions out of 5000i,500n,10000p,200000b,80000s
-./buzz.tex:64:  ==> Fatal error occurred, no output PDF file produced!
+ 42i,17n,43p,10399b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on buzz.pdf (18 pages, 204760 bytes).
+PDF statistics:
+ 276 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+

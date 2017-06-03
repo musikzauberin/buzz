@@ -9,6 +9,8 @@ SpeciesTurnovers,Bst,0.7,0.18812,0.02857,0.95715,0.38182,0.24656
 BeeTurnovers,Bst,0.9,0.03739,0.2,0.704,0.55455,0.07665
 PlantTurnovers,Bst,0.5,0.391,0.02857,0.95715,0.47273,0.142
 SpeciesTurnovers,Bos,-0.35909,0.55281,0.08571,0.87174,-0.16439,0.6291
+BeeTurnovers,Bos,-0.87208,0.05385,-0.02857,0.95715,-0.4201,0.1983
+PlantTurnovers,Bos,-0.2052,0.74058,0.08571,0.87174,-0.25114,0.45632
 BeeTurnovers,SpeciesTurnovers,0.6,0.28476,0.94286,0.0048,0.7,0.01647
 PlantTurnovers,SpeciesTurnovers,0.9,0.03739,1.0,0.0,0.96364,0.0
 PlantTurnovers,BeeTurnovers,0.3,0.62384,0.94286,0.0048,0.58182,0.06042

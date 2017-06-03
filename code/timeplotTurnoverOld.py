@@ -65,7 +65,7 @@ def makesubplotnice():
   pl.gca().yaxis.set_ticks_position('left')
   
   # background color
-  pl.axvspan(-0.5, 3.5, facecolor='r', alpha=0.1)
+  pl.axvspan(-1, 3.5, facecolor='r', alpha=0.1)
   pl.axvspan(3.5, 9.5, facecolor='c', alpha=0.1)
   pl.axvspan(9.5, 13.5, facecolor='r', alpha=0.1)
 
@@ -98,35 +98,35 @@ pl.figure(figsize=(12,9))
 # first plot (1995-1996), Bint, Bos, Bst
 pl.subplot(4, 1, 1)
 pl.axis([-1, 13, -0.05, 1.05])
-pl.plot(bints[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bint'], label = 'Bint', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(osturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bos'], label = 'Bos', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(stturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bst'], label = 'Bst', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.title('Networks in Cerrado (1995-1996)', size = 16)
+pl.plot(bints[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bint'], label = r'$\beta_{int}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(osturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bos'], label = r'$\beta_{rw}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(stturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bst'], label = r'$\beta_{st}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.title('BBG site in Cerrado (1995-1996)', size = 16)
 makesubplotnice()
 
 # second plot (1995-1996), Bs, Bplant, Bbee
 pl.subplot(4, 1, 2)
-pl.axis([-1, 13, -0.05, 1.05])
-pl.plot(specturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bs'], label = 'Bs', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(beeturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bbee'], label = 'Bbee', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(plantturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bplant'], label = 'Bplant', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.axis([-1, 13, 0.4, 1.05])
+pl.plot(specturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bs'], label = r'$\beta_{S}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(beeturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bbee'], label = r'$\beta_{Bee}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(plantturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bplant'], label = r'$\beta_{Plant}$', markeredgewidth=0.5, markeredgecolor=almost_black)
 makesubplotnice()
 
 # third plot (1996-1997), Bint, Bos, Bst
 pl.subplot(4, 1, 3)
 pl.axis([-1, 13, -0.05, 1.05])
-pl.plot(bints[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bint'], label = 'Bint', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(osturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bos'], label = 'Bos', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(stturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bst'], label = 'Bst', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.title('Networks in Cerrado (1996-1997)', size = 16)
+pl.plot(bints[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bint'], label = r'$\beta_{int}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(osturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bos'], label = r'$\beta_{rw}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(stturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bst'], label = r'$\beta_{st}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.title('BBG site in Cerrado (1996-1997)', size = 16)
 makesubplotnice()
 
 # fourth plot (1996-1997), Bs, Bplant, Bbee
 pl.subplot(4, 1, 4)
-pl.axis([-1, 13, -0.05, 1.05])
-pl.plot(specturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bs'], label = 'Bs', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(beeturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bbee'], label = 'Bbee', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(plantturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bplant'], label = 'Bplant', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.axis([-1, 13, 0.4, 1.05])
+pl.plot(specturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bs'], label = r'$\beta_{S}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(beeturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bbee'], label = r'$\beta_{Bee}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(plantturnovers[intervals[1]:intervals[2]], marker = 'o', color = colordict['Bplant'], label = r'$\beta_{Plant}$', markeredgewidth=0.5, markeredgecolor=almost_black)
 makesubplotnice()
 
 print bints[12], osturnovers[12], stturnovers[12], specturnovers[12], beeturnovers[12], plantturnovers[12]
@@ -135,7 +135,7 @@ print bints[12], osturnovers[12], stturnovers[12], specturnovers[12], beeturnove
 # overall
 pl.tight_layout()
 
-plotpath = '../results/' + 'TurnoversAcrossTime(old)' + '.pdf'
+plotpath = '../' + 'TimeplotTurnovers(old)' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

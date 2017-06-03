@@ -269,6 +269,8 @@ for m in range(len(monthsindices) - 2):
     osturnovers[m] = round((alist2[m] + blist2[m] + clist2[m]) / ((2*alist2[m] + blist2[m] + clist2[m])/2.0) - 1.0, 5)
 # check osturnover values
 
+print alist2[1], blist2[1], clist2[1], osturnovers[1]
+
 # Bst
 stturnovers = [0] * (len(monthsindices) - 2)
 for m in range(len(monthsindices) - 2):
@@ -318,7 +320,7 @@ newvalues2 = [yearlabels, monthlabels, bints, beeturnovers, plantturnovers, spec
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
 diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids]
 
-filename3 = 'AllTurnoverOldCerrado'
+filename3 = 'AllTurnoverOldCerradox'
 writenewdata(filename3, newheaders2, newvalues2)
 print 'Find edited data file in rearranged/new folder! \nFile saved as ' + filename3 + '.csv'
 print 'Done!'
