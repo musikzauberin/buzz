@@ -4,11 +4,11 @@ setwd("~/Documents/buzz/data/rearranged/new/")
 getwd()
 
 
-d <- read.csv('AllTurnoverOldCerrado.csv', header = TRUE, check.names=FALSE)
+d <- read.csv('AllTurnoverOldCerradox.csv', header = TRUE, check.names=FALSE)
 
 head(d)
 str(d)
-# X11()
+X11()
 # plant turnover vs avgprecips*avgtemps
 plot.new()
 plantavgmodel<- lm(PlantTurnover ~ Avgprecips*Avgtemps*Season, data= d)
@@ -25,6 +25,7 @@ plantavgmodel2 <- update(plantavgmodel, .~. -Avgprecips:Avgtemps:Season)
 anova(plantavgmodel, plantavgmodel2)
 anova(plantavgmodel2)
 summary(plantavgmodel2)
+
 
 drop.scope(plantavgmodel2)
 plantavgmodel3 <- update(plantavgmodel2, .~. -Avgprecips:Season)
@@ -48,7 +49,6 @@ drop.scope(plantavgmodel5)
 plantavgmodel6 <- update(plantavgmodel5, .~. -Avgtemps:Season)
 anova(plantavgmodel5, plantavgmodel6)
 vif(plantavgmodel5)
-summary(plantavgmodel6)
 save(plantavgmodel5, file='plantavgmodelfinalOld.Rda')
 
 # plant turnover vs diffprecips*difftemps*Season

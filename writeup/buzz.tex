@@ -45,6 +45,9 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[normalem]{ulem}
 \useunder{\uline}{\ul}{}
+\usepackage{pdflscape}
+\usepackage{multirow}
+
 
 %abstract setup
 \renewenvironment{abstract}
@@ -89,7 +92,6 @@
 \vspace*{\fill}
 \begin{abstract}  
 \doublespacing
-abstracting abstracting abstracting
 
 \end{abstract}
 \vfill
@@ -122,13 +124,28 @@ abstracting abstracting abstracting
 \pagenumbering{arabic}
 
 %%% Start writing
-\section{Introduction} % 800 words
+\section{Introduction} % 745 words
 
-
+Interactions between plants and pollinators contribute significantly towards the diversity of ecosystems by maintaining plant reproduction and communities~\citep{Olesen2008}. Moreover, pollination services constitute a major part of our global economy by supporting the crop industry~\citep{Allsopp2008} and has therefore attracted much attention in recent years. In plant-pollinator networks, a link is created between a pollinator and a plant when a pollinator visits the flowers of the plant. The pollinator and plant species are represented by the nodes of the networks, where every link between nodes constitute a pollination event~\citep{Olesen2008, Burkle2011, Poisot2012}.\\
+\\
+Studies of plant-pollinator networks have provided much insight into the structure of ecosystems and their function. Nonetheless, previous studies have frequently assumed a static picture of plant-pollinator networks and ignored the dynamic nature of interactions and its variation across temporal networks. Recently, compelling evidence has surfaced, demonstrating that interaction networks vary between days, weeks, within seasons and even across decades or centuries~\citep{Olesen2008, Burkle2013, Yeakel2014, CaraDonna2017}. However, there remains a lack of interest in temporal networks, which is likely due to the significant amount of sampling effort required to build multiple networks across seasons~\citep{Burkle2011}. \\
+\\
+Research on temporal plant-pollinator networks have likewise been largely restricted to peak flowering seasons and temperate ecosystems. These research have mainly focused on the robustness, stability and structure of networks over time. Others have aimed their attention at the factors that constrained interactions across time and are generally in agreement that abundance and phenology are the key constraints to the assembly of interaction networks~\citep{BASILIO2006, Olesen2008, CaraDonna2017}. However, relatively little is known about the factors that result in the high temporal variability of interactions~\citep{Burkle2011}.\\
+\\
+Understanding the drivers of interaction turnover can provide new insight into the impact of climate change on plant-pollinator networks. Increases in global temperature result in drastic shifts in flowering, which can lead to disruptions of spatial and temporal co-occurrences of flowers and pollinators in temperature regions~\citep{Schweiger2010}. However, in tropical regions, where most pollinators are active for periods longer than the flowering timescale of most individual plant species~\citep{Biesmeijer2006}, the impact of rising temperatures and harsher weather conditions on pollination services remain unknown. By investigating the factors that drive interaction turnover at a tropical site, we can better understand, at a finer resolution, how plant-pollinator interactions will be affected by climate change in the near future and be better informed when drawing up counter measures to maintain pollination services~\citep{Schweiger2010}. \\
+\\
+Neotropical habitats are mostly characterised by drastic seasonal changes between dry and rainy seasons that influence the dynamics of species interactions~\citep{Kricher2011}. Seasonally dry forests and savannas of neotropical habitats cover a large region of the tropical and subtropical Americas and are recognised for their species rich fauna and highly diverse flora, which includes many endemic plant species~\citep{Myers2000, KLINK2005, Pennington2006}. Understanding the variability of interactions in these habitats is crucial in maintaining pollination interactions in the face of climate change, and thereby ensuring that diversity of plant communities is conserved and protected. \\
+\\
+The Brazilian Cerrado is a seasonally dry savanna that consists of a variety of pollinators with bees as its major pollinating agent. Many Cerrado bees are active throughout the year as they live in colonies or produce multiple generations annually. However, seasonal changes in precipitation can constrain dry season flowering in plants with shallow root systems, such as herbs and shrubs~\citep{Gibbs2002, TobyPennington2006, Gottsberger2006}. \\
+\\
+Besides being a highly seasonal habitat, the Cerrado acts as an important model system for studies on temporal plant-pollinator networks as it sustains a significant percentage of the Neotropical angiosperm diversity. The Cerrado is the second largest tropical biome in South America and is viewed as one of the most threatened tropical ecosystems due to excessive deforestation and poor conservation policies, which have already caused more than 50 \% of its area to be degraded~\citep{Myers2000, KLINK2005}. Unfortunately, data of the region is scarce and the ecological networks of this region are poorly understood.\\
+\\
+In this study, I propose a framework for investigating how climatic factors can influence interaction turnover using two dataset collected in the Cerrado. Firstly, differences between subsequent temporal networks, also known as $\beta$-diversity, was quantified using a number of $\beta$-dissimilarity measures, which reflect interaction, species, plant and bee changes over time. Correlations between $\beta$-dissimilarity measures were then investigated and compared to theoretical and previously published trends. Lastly, to provide a macroscopic view, relationships between climatic factors and temporal dissimilarity in plant communities were examined. \\
+\\
 
 
 \newpage
-\section{Materials and Methods} % 1200 words
+\section{Materials and Methods} % 1428 words
 \subsection{Study area}
 The Cerrado spans across most of Central Brazil while extending marginally into Bolivia and Paraguay. It comprises of vegetation ranging from open grasslands to scrublands with a sparse distribution of trees, and smaller regions of gallery and close canopy forests. These patches exist side-by-side, resulting in a highly heterogeneous ecosystem~\citep{Gottsberger2006}. \\
 \\
@@ -146,7 +163,7 @@ The BBG area was sampled weekly (0730h to 1700h) by M. C. Boaventura from June 1
 
 Data from the IBGE's weather station was used to obtain monthly median temperature and precipitation sum for the past 30 years (1980 - 2010). Median temperature was adopted as monthly distributions of daily average temperatures were skewed. Humidity was not considered as only relative humidity data of IBGE was available.\\
 \\
-Monthly precipitation sum from June 1995 to June 1997 ranged from 0 mm to 358 mm while median temperatures varied between 18.4\degree C to 23.5\degree C~(\hyperref[table: climate]{Table S\ref{table: climate}}). From October 2008 until September 2009, monthly precipitation sum ranged from 0 mm to 270.6 mm with median temperatures of 18\degree C to 24\degree C. For analytical purposes, the interactions recorded in the transitional months of April and October were assigned to the dry and rainy seasons respectively. Periods specified for each season are in concordance with patterns reported for other Cerrado areas~\citep{Gottsberger2006a}. 
+Monthly precipitation sum from June 1995 to June 1997 ranged from 0 mm to 358 mm while median temperatures varied between 18.4\degree C to 23.5\degree C~(\hyperref[table: climate]{Table S\ref{table: climate}}). From October 2008 until September 2009, monthly precipitation sum ranged from 0 mm to 270.6 mm with median temperatures of 18\degree C to 24\degree C. For analytical purposes, the interactions recorded in the transitional months of April and October were assigned to the dry and rainy seasons respectively. Turnovers between networks of September and October and those between networks of March and April were similarly designated to the dry and rainy seasons respectively. Periods specified for each season are in concordance with patterns reported for other Cerrado areas~\citep{Gottsberger2006a}. 
 
 \subsection{Data analysis}
 Due to temporal and spatial differences between the BBG and IBGE datasets, the two datasets were hence analysed separately. 
@@ -164,7 +181,7 @@ $\beta_{int}$ can be partitioned into two components; network dissimilarity due 
 	\beta_{int} & = \beta_{st} + \beta_{rw} 
 \label{eq: interaction}
 \end{align}
-In theory, $\beta_{int}$ and $\beta_{st}$, but not $\beta_{rw}$, covary with species turnover, where species turnover reflects the differences between species composition of two networks; $\beta_{S}$. In this study, $\beta_{S}$ can be driven by either plant turnover ($\beta_{Plant}$) or bee turnover ($\beta_{Bee}$). \\
+In theory, $\beta_{int}$ and $\beta_{st}$, but not $\beta_{rw}$, covary with species turnover, where species turnover reflects the differences between species composition of two networks; $\beta_{S}$~\citep{Poisot2012}. In this study, $\beta_{S}$ can be driven by either plant turnover ($\beta_{Plant}$) or bee turnover ($\beta_{Bee}$). \\
 \\
 $\beta_{rw}$, $\beta_{S}$, $\beta_{Plant}$ and $\beta_{Bee}$ are calculated using \hyperref[eq: dissimilarity]{Equation \ref{eq: dissimilarity}}, where a refers to the number of items present in both networks and b and c refer to the number of unique items present in each of the two networks~(\autoref{table: dissimilarity}). $\beta_{st}$ is obtained by subtracting $\beta_{rw}$ from $\beta_{int}$~(\hyperref[eq: interaction]{Equation \ref{eq: interaction}}). The dissimilarity measure takes the value of 0 when two networks are identical and the value of 1 when two networks do not share any items in common~\citep{Poisot2012, CaraDonna2017}. \\
 
@@ -206,14 +223,17 @@ As turnover measures are dependent variables, the non-parametric Spearman's rank
 A Monte Carlo process was then used to generate p-values for correlation tests. p-values of Spearman's test deviate away from actual p-values due to turnovers being dependent variables~(\hyperref[table: turnoverspearman]{Table S\ref{table: turnoverspearman}}). Randomised sets of bees and plants were drawn across the dataset to form 100000 simulated networks for each month. Correlation coefficients between turnover measures for each simulation were thereafter calculated. Number of bees, plants and interactions as well as connectance of each monthly network in simulations were kept constant. p-values were obtained by dividing the total number of simulations with a correlation coefficient higher than the value obtained in either the BBG or IBGE dataset by 100000.
 
 \subsubsection{Climate}
-Two climatic models were utilised in this study. The first model uses the differences between precipitations or temperatures of two subsequent months as the explanatory variable of turnovers (hereafter known as the difference model). The alternative hypothesis of the difference model assumes that networks at a particular temperature and precipitation level are static and do not experience changes as long as climatic factors remain constant. When two networks are at the same temperature and precipitation level, interaction turnover equals to zero. Interaction turnover increases as the temperature or precipitation level difference between networks increases.\\
+The two seasons exhibit different temperature and precipitation ranges, resulting in seasonal interactions. To investigate whether precipitation and/or temperature affects turnovers, two climatic models were utilised in this study. \\
+\\
+The first model uses the differences between precipitations or temperatures of two subsequent months as the explanatory variable of turnovers (hereafter known as the difference model). The alternative hypothesis of the difference model assumes that networks at a particular temperature and precipitation level are static and do not experience changes as long as climatic factors remain constant. When two networks are at the same temperature and precipitation level, interaction turnover equals to zero. Interaction turnover increases as the temperature or precipitation level difference between networks increases.\\
 \\
 The second model uses the average of precipitations or temperatures of two subsequent months as the explanatory variable of turnovers (hereafter known as the average model). The average model postulates that two networks with identical climatic factors will yield a particular turnover rate. Interaction turnover increases as the temperature or precipitation level of networks increases.\\
 \\
-To compare the two climatic models, linear regression was used to fit precipitation, temperature and season against $\beta_{Plant}$ and $\beta_{rw}$ values of the BBG dataset. Model fitting was not carried out for the smaller IBGE dataset. The more explanatory model was thereafter used to fit climatic factors against turnovers within seasons to prevent overfitting and to minimise multicollinearity.
+To compare the two climatic models, linear regression was used to fit $\beta_{Plant}$ and $\beta_{rw}$ against precipitation, temperature and season and their interactions. Due to its small size, the IBGE dataset was not utilised in model fitting. The more explanatory model was thereafter used to fit turnovers against climatic factors within seasons to prevent overfitting and to minimise multicollinearity.
+% climate models comparison
 
 \newpage
-\section{Results} % 1800 words
+\section{Results} % 1148 words
 \subsection{Community composition}
 111 species of bees and 93 species of plants were recorded over the 12-month study period at IBGE. In total, 968 bee-flower interactions, which comprised of 434 unique interactions, were observed. The bee community composition in IBGE was similar to those previously observed in other Cerrado areas~\citep{Silveira1995, Pinheiro-Machado2002} with Apidae being the richest group (77 spp.) followed by Halictidae (19 spp.), Megachilidae (13 spp.), Andrenidae (1 sp.), and Colletidae (1sp.). Plant species recorded at this site consisted of mainly herbs and shrubs, and belonged to 24 families, the most species rich group being Fabaceae (18 spp.). \\
 \\
@@ -222,23 +242,77 @@ Between June 1995 and June 1997, 1050 unique interactions and 1616 visitation ev
 
 \subsection{Month-to-month turnover}
 
-Interaction turnover, $\beta_{int}$, is consistently high, ranging from 0.747 to 1~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}). As expected, $\beta_{int}$ is positively correlated with $\beta_{S}$~(BBG: $r_{s}$=0.698, $p$=0.0308; IBGE: $r_{s}$=0.809, $p$=0.0123) as an increase in species turnover, $\beta_{S}$, will drive an increase in $\beta_{int}$. At both sites, $\beta_{int}$ is significantly and positively correlated with $\beta_{Plant}$~(BBG: $r_{s}$=0.822, $p$=0.00008; IBGE: $r_{s}$=0.773, $p$=0.0118), suggesting that $\beta_{Plant}$ drives $\beta_{int}$.\\
+% percent of interactions present in more than 6 monthly interactions -> networks figures
+Interaction turnover, $\beta_{int}$, is consistently high, ranging from 0.747 to 1~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}). \\
 \\
-Moreover, there is a relatively weak and non-significant correlation between interaction rewiring, $\beta_{rw}$, and $\beta_{S}$~(BBG: $r_{s}$=-0.444, $p$=0.176; IBGE: $r_{s}$=0.629, $p$=0.359), indicating that factors driving $\beta_{rw}$ are different from those that drive $\beta_{S}$.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{landscape}
+\vspace*{\fill}
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=260mm]{network(old).pdf} \\
+    \vspace{1cm}
+    \includegraphics[width=260mm]{network(new).pdf}
+    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \label{fig: networks}
+\end{figure}
+	\vspace*{\fill}
+\end{landscape}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+As expected, $\beta_{int}$ is positively correlated with $\beta_{S}$~(BBG: $r_{s}$=0.698, $p$=0.0308; IBGE: $r_{s}$=0.809, $p$=0.0123)(\autoref{fig: turnoversbivariate}) as an increase in species turnover, $\beta_{S}$, will drive an increase in $\beta_{int}$. At both sites, $\beta_{int}$ is significantly and positively correlated with $\beta_{Plant}$ (BBG: $r_{s}$=0.822, $p$=0.00008; IBGE: $r_{s}$=0.773, $p$=0.0118), suggesting that $\beta_{Plant}$ drives $\beta_{int}$~(\autoref{fig: plantturnover}).\\
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\textwidth]{plantturnover.pdf}
+     \captionof{figure}{  \setstretch{1.3} Plant turnover~($\beta_{Plant}$) drives interaction turnover~($\beta_{int}$). \\ \footnotesize
+     A high $\beta_{Plant}$ and/or $\beta_{int}$ indicates a high dissimilarity between interactions and/or plant communities of two networks.
+     ( $r_{s}$: Spearman's rank correlation coefficient; p: values generated using Monte Carlo simulations.)}
+       \label{fig: plantturnover}
+\end{figure}
+
+Moreover, there is a relatively weak and non-significant correlation between interaction rewiring, $\beta_{rw}$, and $\beta_{S}$~(BBG: $r_{s}$=-0.444, $p$=0.176; IBGE: $r_{s}$=0.629, $p$=0.359)(\autoref{fig: turnoversbivariate}), indicating that factors driving $\beta_{rw}$ are different from those that drive $\beta_{S}$.\\
 \\
 Although there is a high correlation value between bee turnover, $\beta_{Bee}$, and plant turnover, $\beta_{Plant}$, both trends occur by chance and are statistically non-significant. At the BBG site, neither $\beta_{Bee}$ nor $\beta_{Plant}$ drives $\beta_{S}$~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}). However, $\beta_{S}$ has a strong and significant positive correlation with $\beta_{Plant}$ at the IBGE site~($r_{s}$=0.964, $p$=0.0021), suggesting that plants are the main driver of species turnover, $\beta_{S}$, at this site.\\
 \\
-Surprisingly, $\beta_{st}$ does not associate with $\beta_{S}$ at both sites~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}). $\beta_{st}$ indirectly reflects the contribution of $\beta_{S}$ to $\beta_{int}$ and will theoretically increase as $\beta_{S}$ increases. However, due to insufficient sampling and climate conditions, interactions were unequally sampled across time, resulting in inflated $\beta_{rw}$ values. As $\beta_{st}$ is obtained by subtracting $\beta_{rw}$ from $\beta_{int}$, this results in $\beta_{st}$ values being underestimated and the lack of relationship between $\beta_{st}$ and $\beta_{S}$. Hence, $\beta_{rw}$ and $\beta_{st}$ will hereafter not be used for analysis. Nonetheless, $\beta_{int}$, $\beta_{S}$, $\beta_{Plant}$ and $\beta_{Bee}$ accumulate less error than $\beta_{rw}$ and are more robust to sampling efforts, allowing these measures to be appropriate for further analysis~\citep{Poisot2012}.\\
-
+\\
+Surprisingly, $\beta_{st}$ does not associate with $\beta_{S}$ at both sites~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}})(\autoref{fig: turnoversbivariate}). $\beta_{st}$ indirectly reflects the contribution of $\beta_{S}$ to $\beta_{int}$ and will theoretically increase as $\beta_{S}$ increases. However, due to insufficient sampling and climate conditions, interactions were unequally sampled across time, resulting in inflated $\beta_{rw}$ values. As $\beta_{st}$ is obtained by subtracting $\beta_{rw}$ from $\beta_{int}$, this results in $\beta_{st}$ values being underestimated and the lack of relationship between $\beta_{st}$ and $\beta_{S}$. Thus, $\beta_{rw}$ and $\beta_{st}$ will hereafter not be used for analysis. Nonetheless, $\beta_{int}$, $\beta_{S}$, $\beta_{Plant}$ and $\beta_{Bee}$ accumulate less error than $\beta_{rw}$ and are more robust to sampling efforts~\citep{Poisot2012}. These measures are hence utilised for further analysis. \\
+\\
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=1.1\textwidth]{turnoversbivariate(old).pdf}
+    \includegraphics[width=1.1\textwidth]{turnoversbivariate(new).pdf}
+     \captionof{figure}{\setstretch{1.3}Trends between species turnover~($\beta_{S}$) and interaction turnover~($\beta_{int}$), interaction rewiring~($\beta_{rw}$) and network dissimilarity due to $\beta_{S}$~($\beta_{st}$). \\   \footnotesize  ( $r_{s}$: Spearman's rank correlation coefficient; p: values generated using Monte Carlo simulations.)}
+       \label{fig: turnoversbivariate}
+\end{figure}
 
 \subsection{Climatic factors influence turnover}
-
+Spearman's correlation coefficients indicate that there exist a seasonal effect on the trends between climatic factors and $\beta_{Plant}$ and $\beta_{int}$~(\hyperref[table: climaticturnover]{Table S\ref{table: climaticturnover}}). Hence, a linear regression model was used to predict $\beta_{Plant}$ using temperature, precipitation, season and their interactions. Temperature difference and precipitation difference between months do not explain $\beta_{Plant}$ as the null model was obtained after minimising the linear regression model (intercept=0.706$\pm$0.0284, p$<$0.0001, df=23, res.s.e.=0.139). \\
+\\
+By contrast, under the average model, networks experience a lower $\beta_{Plant}$ during the wet season and $\beta_{Plant}$ increases as average temperature increases during the wet season~(adj.r$^{2}$=0.122, F$_{3,20}$=2.07, p=0.137)(\hyperref[table: lm]{Table S\ref{table: lm}}). This indicates that the average model is a better model for $\beta_{Plant}$ than the difference model. Nonetheless, the variation inflation factor (VIF) for variables in this minimal model exceeds the recommended value of 3~\citep{Zuur2010}. $\beta_{Plant}$ was hence fitted against average temperature and precipitation within seasons to reduce multicollinearity. \\
+\\
+Within the dry season, average temperature and average precipitation levels do not explain $\beta_{Plant}$ as the null model was acquired as the minimal model (intercept=0.700$\pm$0.0447, p$<$0.0001, df=11, res.s.e.=0.155). However, within the wet season, minimal model shows that average temperature explains significant variation in $\beta_{Plant}$ (adj.r$^{2}$=0.504, F$_{1,10}$=12.18, p= 0.00583) and $\beta_{Plant}$ increases as average temperature increases (intercept: -4.57, s.e.=1.51, p=0.0129; slope: 0.239, s.e.=0.0685, p=0.00583). \\
+\\
+Under both models, the null model was obtained as the minimal model when using temperature, precipitation, season and their interactions to explain $\beta_{int}$ (intercept=0.891$\pm$0.0146, p$<$0.0001, df=23, res.s.e.=0.0714). As expected from previous results, $\beta_{Plant}$ explains significant variation in $\beta_{int}$ (adj.r$^{2}$=0.653, F$_{1,22}$=44.35, p$<$0.0001). $\beta_{Plant}$ increases as $\beta_{int}$ increases (intercept: 0.594, s.e.=0.0453, p$<$0.0001; slope: 0.421, s.e.=0.0631, p$<$0.0001). \\
 
 \newpage
 \section{Discussion} % 1800 words
-Discuss results, why climatic factor would explain turnover \\
-Limitations: Correlation does not relate to causation, but diff to conduct such experiments,  \\
-Future Research: more data, artic temperature comparisons \\
+consistently high turnover, higher than in caradona
+probably becos within season, temperate, lower plant turnover, week to week
+but maybe due to inaccurate sampling
+species turnover drives int turnover(shown before)
+plant turnover drives int turnover expected 
+temperature drives expected
+surprisingly precipitation does not 
+
+Limitations: Correlation does not relate to causation, but diff to conduct such empirical experiments, diff to hold variables constant \\
+small dataset, 
+Future Research: more data-> databank, 
+artic temperature comparisons
+across sites comparisons \\
 
 % acknowledgement page
 \newpage 
@@ -268,6 +342,52 @@ Future Research: more data, artic temperature comparisons \\
 \renewcommand{\citenumfont}[1]{S#1}
 %%%%%%%%%% Prefix a "S" to all equations, figures, tables and reset the counter %%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{landscape}
+
+\vspace*{\fill}
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=260mm]{seasonalnetwork(old).pdf} \\
+    \vspace{1cm}
+    \includegraphics[width=260mm]{seasonalnetwork(new).pdf}
+    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \label{fig: seasonalnetworks}
+\end{figure}
+	\vspace*{\fill}
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=200mm]{TimeplotTurnovers(old).pdf} \\
+    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \label{fig: turnovertimeplotold}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=200mm]{Climate(old).pdf} \\
+    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \label{fig: climatetimeplotnew}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=180mm, height = 65mm]{TimeplotTurnovers(New).pdf} \\
+    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \label{fig: turnovertimeplotnew}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=185mm, height = 68mm]{Climate(new).pdf} \\
+    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \label{fig: climatetimeplotnew}
+\end{figure}
+
+\end{landscape}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h]
 \centering
@@ -387,17 +507,17 @@ Year & Month & Precipitation / mm & Temperature / \degree C \\ \hline
 \cline{1-5} \cline{7-11}
 \multicolumn{5}{|c|}{\cellcolor[HTML]{EFEFEF}BBG site, Cerrado (1995-1997)} &  & \multicolumn{5}{c|}{\cellcolor[HTML]{EFEFEF}IBGE site, Cerrado (2008-2009)} \\ \cline{1-5} \cline{7-11} 
 \multicolumn{2}{|c|}{\cellcolor[HTML]{EFEFEF}Measures} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}p-value} &  & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Measures} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}p-value} \\ \cline{1-5} \cline{7-11} 
-$\beta_{int}$ & $\beta_{st}$ & 0.140 & 0.514 & 0.145 &  & $\beta_{int}$ & $\beta_{st}$ & 0.140 & 0.514 & 0.037 \\ \cline{1-5} \cline{7-11} 
-$\beta_{int}$ & $\beta_{rw}$ & 0.156 & 0.468 & 0.509 &  & $\beta_{int}$ & $\beta_{rw}$ & 0.156 & 0.468 & 0.844 \\ \cline{1-5} \cline{7-11} 
-$\beta_{int}$ & $\beta_{S}$ & 0.698 & 0 & 0.031 &  & $\beta_{int}$ & $\beta_{S}$ & 0.698 & 0.000 & 0.012 \\ \cline{1-5} \cline{7-11} 
-$\beta_{int}$ & $\beta_{Bee}$ & 0.568 & 0.004 & 0.150 &  & $\beta_{int}$ & $\beta_{Bee}$ & 0.568 & 0.004 & 0.364 \\ \cline{1-5} \cline{7-11} 
-$\beta_{int}$ & $\beta_{Plant}$ & 0.822 & 0 & 0.0001 &  & $\beta_{int}$ & $\beta_{Plant}$ & 0.822 & 0 & 0.012 \\ \cline{1-5} \cline{7-11} 
-$\beta_{st}$ & $\beta_{S}$ & 0.678 & 0.0003 & 0.177 &  & $\beta_{st}$ & $\beta_{S}$ & 0.678 & 0.0003 & 0.379 \\ \cline{1-5} \cline{7-11} 
-$\beta_{st}$ & $\beta_{Bee}$ & 0.732 & 0.0001 & 0.056 &  & $\beta_{st}$ & $\beta_{Bee}$ & 0.732 & 0.0001 & 0.158 \\ \cline{1-5} \cline{7-11} 
-$\beta_{st}$ & $\beta_{Plant}$ & 0.425 & 0.038 & 0.640 &  & $\beta_{st}$ & $\beta_{Plant}$ & 0.425 & 0.038 & 0.191 \\ \cline{1-5} \cline{7-11} 
-$\beta_{S}$ & $\beta_{Bee}$ & 0.955 & 0 & 0.097 &  & $\beta_{S}$ & $\beta_{Bee}$ & 0.955 & 0 & 0.873 \\ \cline{1-5} \cline{7-11} 
-$\beta_{S}$ & $\beta_{Plant}$ & 0.791 & 0 & 0.391 &  & $\beta_{S}$ & $\beta_{Plant}$ & 0.791 & 0 & 0.002 \\ \cline{1-5} \cline{7-11} 
-$\beta_{Plant}$ & $\beta_{Bee}$ & 0.610 & 0.002 & 0.242 &  & $\beta_{Plant}$ & $\beta_{Bee}$ & 0.610 & 0.002 & 0.116 \\ \cline{1-5} \cline{7-11} 
+$\beta_{int}$ & $\beta_{st}$ & 0.140 & 0.514 & 0.145 &  & $\beta_{int}$ & $\beta_{st}$ & -0.027 & 0.937 & 0.037 \\ \cline{1-5} \cline{7-11} 
+$\beta_{int}$ & $\beta_{rw}$ & 0.156 & 0.468 & 0.509 &  & $\beta_{int}$ & $\beta_{rw}$ & 0.228 & 0.500 & 0.844 \\ \cline{1-5} \cline{7-11} 
+$\beta_{int}$ & $\beta_{S}$ & 0.698 & 0 & 0.031 &  & $\beta_{int}$ & $\beta_{S}$ & 0.809 & 0.003 & 0.012 \\ \cline{1-5} \cline{7-11} 
+$\beta_{int}$ & $\beta_{Bee}$ & 0.568 & 0.004 & 0.150 &  & $\beta_{int}$ & $\beta_{Bee}$ & 0.436 & 0.180 & 0.364 \\ \cline{1-5} \cline{7-11} 
+$\beta_{int}$ & $\beta_{Plant}$ & 0.822 & 0 & 0.0001 &  & $\beta_{int}$ & $\beta_{Plant}$ & 0.773 & 0.005 & 0.012 \\ \cline{1-5} \cline{7-11} 
+$\beta_{st}$ & $\beta_{S}$ & 0.678 & 0.0003 & 0.177 &  & $\beta_{st}$ & $\beta_{S}$ & 0.382 & 0.247 & 0.379 \\ \cline{1-5} \cline{7-11} 
+$\beta_{st}$ & $\beta_{Bee}$ & 0.732 & 0.0001 & 0.056 &  & $\beta_{st}$ & $\beta_{Bee}$ & 0.555 & 0.077 & 0.158 \\ \cline{1-5} \cline{7-11} 
+$\beta_{st}$ & $\beta_{Plant}$ & 0.425 & 0.038 & 0.640 &  & $\beta_{st}$ & $\beta_{Plant}$ & 0.473 & 0.142 & 0.191 \\ \cline{1-5} \cline{7-11} 
+$\beta_{S}$ & $\beta_{Bee}$ & 0.955 & 0 & 0.097 &  & $\beta_{S}$ & $\beta_{Bee}$ & 0.7 & 0.016 & 0.873 \\ \cline{1-5} \cline{7-11} 
+$\beta_{S}$ & $\beta_{Plant}$ & 0.791 & 0 & 0.391 &  & $\beta_{S}$ & $\beta_{Plant}$ & 0.964 & 0 & 0.002 \\ \cline{1-5} \cline{7-11} 
+$\beta_{Plant}$ & $\beta_{Bee}$ & 0.610 & 0.002 & 0.242 &  & $\beta_{Plant}$ & $\beta_{Bee}$ & 0.582 & 0.060 & 0.116 \\ \cline{1-5} \cline{7-11} 
 \end{tabular}%
 }
 \end{table}
@@ -448,6 +568,77 @@ $\beta_{Plant}$ & $\beta_{Bee}$ & 0.610 & 0.002 & 0.242 &  & $\beta_{Plant}$ & $
 %%}
 %\end{table}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h]
+\centering
+\captionof{table}{Relationships between turnover measures and climatic factors. \\
+(\footnotesize $r_{s}$: Spearman's correlation coefficient; $p_{s}$: p-value of Spearman's test)}
+\label{table: climaticturnover}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|r|r|r|r|r|r|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}Average Model (BBG site)} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Dry Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Wet Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Aseasonal} \\ \cline{3-8} 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Turnover}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Climatic Factor \\ (Average of two months)\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} \\ \hline
+$\beta_{int}$ & Temperature & 0.399 & 0.199 & 0.613 & 0.034 & 0.362 & 0.082 \\ \hline
+$\beta_{int}$ & Precipitation & -0.120 & 0.711 & -0.144 & 0.656 & -0.076 & 0.723 \\ \hline
+$\beta_{Plant}$ & Temperature & 0.296 & 0.350 & 0.797 & 0.002 & 0.378 & 0.068 \\ \hline
+$\beta_{Plant}$ & Precipitation & 0.146 & 0.652 & 0.014 & 0.966 & 0.107 & 0.620 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}Difference Model (BBG site)} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Dry Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Wet Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Aseasonal} \\ \cline{3-8} 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Turnover}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Climatic Factor \\ (Difference between two months)\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} \\ \hline
+$\beta_{int}$ & Temperature & 0.622 & 0.031 & -0.281 & 0.377 & 0.349 & 0.094 \\ \hline
+$\beta_{int}$ & Precipitation & 0.324 & 0.304 & 0.571 & 0.053 & 0.409 & 0.047 \\ \hline
+$\beta_{Plant}$ & Temperature & 0.413 & 0.182 & 0.011 & 0.974 & 0.302 & 0.152 \\ \hline
+$\beta_{Plant}$ & Precipitation & 0.188 & 0.558 & 0.671 & 0.017 & 0.455 & 0.026 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}Average Model (IBGE site)} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Dry Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Wet Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Aseasonal} \\ \cline{3-8} 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Turnover}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Climatic Factor \\ (Average of two months)\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} \\ \hline
+$\beta_{int}$ & Temperature & 0.3 & 0.624 & 0.029 & 0.957 & 0.391 & 0.235 \\ \hline
+$\beta_{int}$ & Precipitation & 0.9 & 0.037 & -0.543 & 0.266 & 0.309 & 0.355 \\ \hline
+$\beta_{Plant}$ & Temperature & 0.7 & 0.188 & -0.086 & 0.872 & 0.209 & 0.537 \\ \hline
+$\beta_{Plant}$ & Precipitation & 0.6 & 0.285 & -0.486 & 0.329 & 0.018 & 0.958 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{8}{|c|}{\cellcolor[HTML]{EFEFEF}Difference Model (IBGE site)} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Dry Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Wet Season} & \multicolumn{2}{c|}{\cellcolor[HTML]{EFEFEF}Aseasonal} \\ \cline{3-8} 
+\rowcolor[HTML]{EFEFEF} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Turnover}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}c@{}}Climatic Factor \\ (Difference between two months)\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$r_{s}$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$p_{s}$} \\ \hline
+$\beta_{int}$ & Temperature & -0.6 & 0.285 & -0.486 & 0.329 & -0.636 & 0.035 \\ \hline
+$\beta_{int}$ & Precipitation & -0.2 & 0.747 & 0.543 & 0.266 & 0.327 & 0.326 \\ \hline
+$\beta_{Plant}$ & Temperature & 0.1 & 0.873 & -0.6 & 0.208 & -0.491 & 0.125 \\ \hline
+$\beta_{Plant}$ & Precipitation & 0.2 & 0.747 & 0.771 & 0.072 & 0.273 & 0.417 \\ \hline
+\end{tabular}%
+}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h]
+\centering
+\setstretch{1.3}
+\captionof{table}{Coefficients from a linear regression model of temperature and season as predictors of plant turnover, $\beta_{Plant}$.}
+\label{table: lm}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrr}
+\hline
+ & \multicolumn{1}{l}{Estimate} & \multicolumn{1}{l}{Std. Error} & \multicolumn{1}{l}{t value} & \multicolumn{1}{l}{p} \\ \hline
+(Intercept) & 0.375 & 0.543 & 0.691 & 0.497 \\
+Average Temperature & 0.016 & 0.027 & 0.600 & 0.555 \\
+Season (wet) & -4.945 & 2.262 & -2.186 & 0.041 \\
+Average Temperature : Season (wet) & 0.223 & 0.103 & 2.170 & 0.042 \\ \hline
+\end{tabular}%
+}
+\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

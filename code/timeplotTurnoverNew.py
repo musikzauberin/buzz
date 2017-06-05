@@ -19,11 +19,11 @@ data = csv.reader(h)
 # copy and paste all headers in data twice
 [years, months, bints, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, \
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
-diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids] = ([] for i in range(len(next(data))))
+diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids, season] = ([] for i in range(len(next(data))))
 
 headers2 = [years, months, bints, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, \
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
-diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids]
+diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids, season]
 
 for column in data:
   for j, i in enumerate(headers2):
@@ -65,7 +65,7 @@ def makesubplotnice():
   pl.gca().yaxis.set_ticks_position('left')
   
   # background color
-  pl.axvspan(-0.5, 4.5, facecolor='c', alpha=0.1)
+  pl.axvspan(-1, 4.5, facecolor='c', alpha=0.1)
   pl.axvspan(4.5, 12.5, facecolor='r', alpha=0.1)
   # pl.text(1.5, 1.04, 'Dry Season', size = 12)
   # pl.text(7, 1.04, 'Wet Season', size = 12)
@@ -99,25 +99,25 @@ pl.figure(figsize=(12,4.5))
 # first plot Bint, Bos, Bst
 pl.subplot(2, 1, 1)
 pl.axis([-1, 12, -0.05, 1.05])
-pl.plot(bints[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bint'], label = 'Bint', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(osturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bos'], label = 'Bos', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(stturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bst'], label = 'Bst', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.title('Networks in Cerrado (2008-2009)', size = 16)
+pl.plot(bints[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bint'], label = r'$\beta_{int}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(osturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bos'], label = r'$\beta_{os}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(stturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bst'], label = r'$\beta_{st}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.title('IBGE site in Cerrado (2008-2009)', size = 16)
 makesubplotnice()
 
 # second plot Bs, Bplant, Bbee
 pl.subplot(2, 1, 2)
-pl.axis([-1, 12, -0.05, 1.05])
-pl.plot(specturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bs'], label = 'Bs', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(beeturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bbee'], label = 'Bbee', markeredgewidth=0.5, markeredgecolor=almost_black)
-pl.plot(plantturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bplant'], label = 'Bplant', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.axis([-1, 12, 0.35, 1.05])
+pl.plot(specturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bs'], label = r'$\beta_{S}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(beeturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bbee'], label = r'$\beta_{Bee}$', markeredgewidth=0.5, markeredgecolor=almost_black)
+pl.plot(plantturnovers[intervals[0]:intervals[1]], marker = 'o', color = colordict['Bplant'], label = r'$\beta_{Plant}$', markeredgewidth=0.5, markeredgecolor=almost_black)
 makesubplotnice()
 
 
 # overall
 pl.tight_layout()
 
-plotpath = '../results/' + 'TurnoversAcrossTime(New)' + '.pdf'
+plotpath = '../' + 'TimeplotTurnovers(new)' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

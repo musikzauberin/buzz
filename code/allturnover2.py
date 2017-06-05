@@ -320,7 +320,7 @@ newvalues2 = [yearlabels, monthlabels, bints, beeturnovers, plantturnovers, spec
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
 diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids]
 
-filename3 = 'AllTurnoverOldCerradox'
+filename3 = 'AllTurnoverOldCerrado'
 writenewdata(filename3, newheaders2, newvalues2)
 print 'Find edited data file in rearranged/new folder! \nFile saved as ' + filename3 + '.csv'
 print 'Done!'
