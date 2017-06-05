@@ -92,6 +92,7 @@
 \vspace*{\fill}
 \begin{abstract}  
 \doublespacing
+Analysing the factors that drive of interaction turnover can provide new insight into the impact of climate change on plant-pollinator networks. Global climate changes result in shifts in flowering timinings, which ead to disruptions of spatial and temporal co-occurrences of flowers and pollinators, thereby indirectly affecting species interactions. However, the extent of the impact of harsher weather conditions on plant-pollinator interactions remain unknown. In this study, I propose a framework for investigating how climatic factors can influence interaction turnover using two datasets collected in the Cerrado and report that month-to-month interaction turnover, $\beta_{int}$, is consistently high throughout the year. Moreover, plant turnover, $\beta_{Plant}$ is a strong driver of $\beta_{int}$. Temperature in the wet season is also positively correlated with plant turnover, $\beta_{Plant}$, indicating that a rise in temperature may indirectly increase $\beta_{int}$. 
 
 \end{abstract}
 \vfill
@@ -112,7 +113,22 @@
 {\huge\bfseries Abbreviations} \\
 \\
 \\
-\large{maybe a table}
+\begin{table}[h]
+\centering
+\large
+\setstretch{1.3}
+\label{my-label}
+\begin{tabular}{lll}
+BBG:            &  & Bras\'ilia's Botanical Garden Protected Area             \\
+IBGE:           &  & Reserva Ecol\'ogica do IBGE                              \\
+$\beta{int}$:   &  & Interaction turnover                                     \\
+$\beta{rw}$:    &  & Interaction rewiring                                     \\
+$\beta{st}$:    &  & Contribution of species turnover to interaction turnover \\
+$\beta{S}$:     &  & Species turnover                                         \\
+$\beta{Bee}$:   &  & Bee turnover                                             \\
+$\beta{Plant}$: &  & Plant turnover                                          
+\end{tabular}
+\end{table}
 \vfill
 
 % Page number
@@ -132,17 +148,24 @@ Studies of plant-pollinator networks have provided much insight into the structu
 \\
 Research on temporal plant-pollinator networks have likewise been largely restricted to peak flowering seasons and temperate ecosystems. These research have mainly focused on the robustness, stability and structure of networks over time. Others have aimed their attention at the factors that constrained interactions across time and are generally in agreement that abundance and phenology are the key constraints to the assembly of interaction networks~\citep{BASILIO2006, Olesen2008, CaraDonna2017}. However, relatively little is known about the factors that result in the high temporal variability of interactions~\citep{Burkle2011}.\\
 \\
-Understanding the drivers of interaction turnover can provide new insight into the impact of climate change on plant-pollinator networks. Increases in global temperature result in drastic shifts in flowering, which can lead to disruptions of spatial and temporal co-occurrences of flowers and pollinators in temperature regions~\citep{Schweiger2010}. However, in tropical regions, where most pollinators are active for periods longer than the flowering timescale of most individual plant species~\citep{Biesmeijer2006}, the impact of rising temperatures and harsher weather conditions on pollination services remain unknown. By investigating the factors that drive interaction turnover at a tropical site, we can better understand, at a finer resolution, how plant-pollinator interactions will be affected by climate change in the near future and be better informed when drawing up counter measures to maintain pollination services~\citep{Schweiger2010}. \\
+Understanding the drivers of interaction turnover can provide new insight into the impact of climate change on plant-pollinator networks. Increases in global temperature result in drastic shifts in flowering, which can lead to disruptions of spatial and temporal co-occurrences of flowers and pollinators in temperature regions~\citep{Schweiger2010}. However, in tropical regions, where most pollinators are active for periods longer than the flowering timescale of most individual plant species~\citep{Biesmeijer2006}, the impact of rising temperatures and harsher weather conditions on pollination services remain unknown~\citep{Schweiger2010, Poisot2015}. \\
 \\
 Neotropical habitats are mostly characterised by drastic seasonal changes between dry and rainy seasons that influence the dynamics of species interactions~\citep{Kricher2011}. Seasonally dry forests and savannas of neotropical habitats cover a large region of the tropical and subtropical Americas and are recognised for their species rich fauna and highly diverse flora, which includes many endemic plant species~\citep{Myers2000, KLINK2005, Pennington2006}. Understanding the variability of interactions in these habitats is crucial in maintaining pollination interactions in the face of climate change, and thereby ensuring that diversity of plant communities is conserved and protected. \\
 \\
 The Brazilian Cerrado is a seasonally dry savanna that consists of a variety of pollinators with bees as its major pollinating agent. Many Cerrado bees are active throughout the year as they live in colonies or produce multiple generations annually. However, seasonal changes in precipitation can constrain dry season flowering in plants with shallow root systems, such as herbs and shrubs~\citep{Gibbs2002, TobyPennington2006, Gottsberger2006}. \\
 \\
-Besides being a highly seasonal habitat, the Cerrado acts as an important model system for studies on temporal plant-pollinator networks as it sustains a significant percentage of the Neotropical angiosperm diversity. The Cerrado is the second largest tropical biome in South America and is viewed as one of the most threatened tropical ecosystems due to excessive deforestation and poor conservation policies, which have already caused more than 50 \% of its area to be degraded~\citep{Myers2000, KLINK2005}. Unfortunately, data of the region is scarce and the ecological networks of this region are poorly understood.\\
+Besides being a highly seasonal habitat, the Cerrado acts as an important model system for studies on temporal plant-pollinator networks as it sustains a significant percentage of the Neotropical angiosperm diversity. The Cerrado is the second largest tropical biome in South America and is viewed as one of the most threatened tropical ecosystems due to excessive deforestation and poor conservation policies, which have already caused more than 50 \% of its area to be degraded. Unfortunately, data of the region is scarce and the ecological networks of this region are poorly understood~\citep{Myers2000, KLINK2005}.\\
 \\
-In this study, I propose a framework for investigating how climatic factors can influence interaction turnover using two dataset collected in the Cerrado. Firstly, differences between subsequent temporal networks, also known as $\beta$-diversity, was quantified using a number of $\beta$-dissimilarity measures, which reflect interaction, species, plant and bee changes over time. Correlations between $\beta$-dissimilarity measures were then investigated and compared to theoretical and previously published trends. Lastly, to provide a macroscopic view, relationships between climatic factors and temporal dissimilarity in plant communities were examined. \\
-\\
+In this study, I propose a framework for investigating how climatic factors can influence interaction turnover using two dataset collected in the Cerrado~(\autoref{fig: flowchart}). Firstly, differences between subsequent temporal networks, also known as $\beta$-diversity, was quantified using a number of $\beta$-dissimilarity measures, which reflect interaction, species, plant and bee changes over time. Correlations between $\beta$-dissimilarity measures were then investigated and compared to theoretical and previously published trends. Lastly, to provide a macroscopic view, relationships between climatic factors and temporal dissimilarity in plant communities were examined. 
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.8\textwidth]{flowchart.pdf} \\
 
+    \captionof{figure}{\setstretch{1.3} Framework demonstrating the effect of climatic factors on the different measures of turnovers.}
+    \label{fig: flowchart}
+\end{figure}
+
+By applying this framework to two different datasets collected in the tropical Cerrado habitat, I report a strong and positive correlation between interaction turnover, $\beta_{int}$ and species turnover, $\beta_{S}$. To the best of my knowledge, this is the first study to investigate the effect of climatic factors on temporal $\beta_{int}$ and $\beta_{Plant}$. Temperature in the wet season is positively correlated with plant turnover, $\beta_{Plant}$ while $\beta_{Plant}$ drives $\beta_{int}$ and can be used to estimate $\beta_{int}$, indicating that a rise in temperature may indirectly increase $\beta_{int}$. 
 
 \newpage
 \section{Materials and Methods} % 1428 words
@@ -183,7 +206,7 @@ $\beta_{int}$ can be partitioned into two components; network dissimilarity due 
 \end{align}
 In theory, $\beta_{int}$ and $\beta_{st}$, but not $\beta_{rw}$, covary with species turnover, where species turnover reflects the differences between species composition of two networks; $\beta_{S}$~\citep{Poisot2012}. In this study, $\beta_{S}$ can be driven by either plant turnover ($\beta_{Plant}$) or bee turnover ($\beta_{Bee}$). \\
 \\
-$\beta_{rw}$, $\beta_{S}$, $\beta_{Plant}$ and $\beta_{Bee}$ are calculated using \hyperref[eq: dissimilarity]{Equation \ref{eq: dissimilarity}}, where a refers to the number of items present in both networks and b and c refer to the number of unique items present in each of the two networks~(\autoref{table: dissimilarity}). $\beta_{st}$ is obtained by subtracting $\beta_{rw}$ from $\beta_{int}$~(\hyperref[eq: interaction]{Equation \ref{eq: interaction}}). The dissimilarity measure takes the value of 0 when two networks are identical and the value of 1 when two networks do not share any items in common~\citep{Poisot2012, CaraDonna2017}. \\
+$\beta_{rw}$, $\beta_{S}$, $\beta_{Plant}$ and $\beta_{Bee}$ are calculated using \hyperref[eq: dissimilarity]{Equation \ref{eq: dissimilarity}}, where a refers to the number of items present in both networks and b and c refer to the number of unique items present in each of the two networks~(\autoref{table: dissimilarity}). $\beta_{st}$ is obtained by subtracting $\beta_{rw}$ from $\beta_{int}$~(\hyperref[eq: interaction]{Equation \ref{eq: interaction}}). The dissimilarity measure takes the value of 0 when two networks are identical and the value of 1 when two networks do not share any items in common~\citep{Poisot2012, CaraDonna2017}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[h]
@@ -233,7 +256,8 @@ To compare the two climatic models, linear regression was used to fit $\beta_{Pl
 % climate models comparison
 
 \newpage
-\section{Results} % 1148 words
+\section{Results}
+\label{sec:Results} % 1148 words
 \subsection{Community composition}
 111 species of bees and 93 species of plants were recorded over the 12-month study period at IBGE. In total, 968 bee-flower interactions, which comprised of 434 unique interactions, were observed. The bee community composition in IBGE was similar to those previously observed in other Cerrado areas~\citep{Silveira1995, Pinheiro-Machado2002} with Apidae being the richest group (77 spp.) followed by Halictidae (19 spp.), Megachilidae (13 spp.), Andrenidae (1 sp.), and Colletidae (1sp.). Plant species recorded at this site consisted of mainly herbs and shrubs, and belonged to 24 families, the most species rich group being Fabaceae (18 spp.). \\
 \\
@@ -241,9 +265,10 @@ Between June 1995 and June 1997, 1050 unique interactions and 1616 visitation ev
 % generalised?
 
 \subsection{Month-to-month turnover}
+\label{subsec: turnover} 
 
 % percent of interactions present in more than 6 monthly interactions -> networks figures
-Interaction turnover, $\beta_{int}$, is consistently high, ranging from 0.747 to 1~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}). \\
+Interaction turnover, $\beta_{int}$, is consistently high, ranging from 0.747 to 1~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}, \hyperref[fig: turnovertimeplotold]{Figure \ref{fig: turnovertimeplotold}}, \hyperref[fig: turnovertimeplotnew]{Figure \ref{fig: turnovertimeplotnew}}). Surprisingly, only 8.19\% of all unique interactions appeared in three or more monthly networks~(\autoref{fig: networks}).\\
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -255,7 +280,7 @@ Interaction turnover, $\beta_{int}$, is consistently high, ranging from 0.747 to
     \includegraphics[width=260mm]{network(old).pdf} \\
     \vspace{1cm}
     \includegraphics[width=260mm]{network(new).pdf}
-    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).\\ \footnotesize Every node in a monthly network represents a distinct plant or bee species. Each link between plant and bee nodes represent a unique pollination visit in the corresponding month. Links between monthly networks show interactions recorded in both monthly networks. Background of plot is colour-coded to reflect the seasons: blue - wet season; red - dry season. Colour of links represent the number of monthly networks the link was found. \\ (BBG: Total no. of unique interactions: 1050, No. of interactions present in 4-6 months: 20, 7-9 months: 3, 10-13 months: 1; IBGE: Total no. of unique interactions: 434, No. of interactions present in 1-2 months: 414, 3 months: 18, 4 months: 2)}
     \label{fig: networks}
 \end{figure}
 	\vspace*{\fill}
@@ -290,6 +315,7 @@ Surprisingly, $\beta_{st}$ does not associate with $\beta_{S}$ at both sites~(\h
 \end{figure}
 
 \subsection{Climatic factors influence turnover}
+\label{subsec: climate}
 Spearman's correlation coefficients indicate that there exist a seasonal effect on the trends between climatic factors and $\beta_{Plant}$ and $\beta_{int}$~(\hyperref[table: climaticturnover]{Table S\ref{table: climaticturnover}}). Hence, a linear regression model was used to predict $\beta_{Plant}$ using temperature, precipitation, season and their interactions. Temperature difference and precipitation difference between months do not explain $\beta_{Plant}$ as the null model was obtained after minimising the linear regression model (intercept=0.706$\pm$0.0284, p$<$0.0001, df=23, res.s.e.=0.139). \\
 \\
 By contrast, under the average model, networks experience a lower $\beta_{Plant}$ during the wet season and $\beta_{Plant}$ increases as average temperature increases during the wet season~(adj.r$^{2}$=0.122, F$_{3,20}$=2.07, p=0.137)(\hyperref[table: lm]{Table S\ref{table: lm}}). This indicates that the average model is a better model for $\beta_{Plant}$ than the difference model. Nonetheless, the variation inflation factor (VIF) for variables in this minimal model exceeds the recommended value of 3~\citep{Zuur2010}. $\beta_{Plant}$ was hence fitted against average temperature and precipitation within seasons to reduce multicollinearity. \\
@@ -300,19 +326,32 @@ Under both models, the null model was obtained as the minimal model when using t
 
 \newpage
 \section{Discussion} % 1800 words
-consistently high turnover, higher than in caradona
-probably becos within season, temperate, lower plant turnover, week to week
-but maybe due to inaccurate sampling
-species turnover drives int turnover(shown before)
-plant turnover drives int turnover expected 
-temperature drives expected
-surprisingly precipitation does not 
+Ecological networks have previously been assumed to be invariant across long time periods, leading to species interactions being largely ignored~\citep{Poisot2015}. However, this study demonstrates, in agreement with previous studies on temporal networks, that dissimilarity between monthly networks is consistently high~\citep{Olesen2008, Burkle2013, CaraDonna2017}. Surprisingly, there are no apparent differences between turnover values within seasons and between seasons~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}, \hyperref[fig: turnovertimeplotold]{Figure \ref{fig: turnovertimeplotold}}, \hyperref[fig: turnovertimeplotnew]{Figure \ref{fig: turnovertimeplotnew}}). \\
+\\
+Furthermore, this study shows that $\beta_{Plant}$ is a major contributor of $\beta_{int}$ and can be used to estimate $\beta_{int}$~(\autoref{subsec: turnover}). \cite{Alarcon2008} utilised the Bray-Curtis dissimilarity index and used a different approach to compare species turnover to plant?pollinator interactions in a montane meadow system in California, United States. Unexpectedly, the study has likewise demonstrated that the degree of similarity between flowering plant compositions of two weekly networks mirrors the extent of similarity between the two corresponding interaction networks~\citep{Alarcon2008}. In contrast, \cite{Poisot2015} and \cite{CaraDonna2017} argue that interaction rewiring is indispensable in estimating interaction turnover. \cite{CaraDonna2017} postulates that $\beta_{st}$ only coincides with $\beta_{int}$ when both values are elevated at seasonal transitions. Within seasons, $\beta_{st}$ falls while $\beta_{rw}$ rises~\citep{CaraDonna2017}. Due to inflated $\beta_{st}$ values, the presence of such a trend in the Cerrado datasets cannot be determined. Nonetheless, randomising networks using the Monte Carlo process has illustrated that the strong collinearity between $\beta_{Plant}$ and $\beta_{int}$ did not occur by chance and strengthens the case that $\beta_{Plant}$ is a major driver of $\beta_{int}$~(\autoref{subsec: turnover}). \\
+\\
+Last but not least, to the best of my knowledge, this is the first study to investigate the effect of climatic factors on temporal $\beta_{int}$ and $\beta_{Plant}$. Previous studies have mainly focused on how temperature affects shifts and lengths of flowering times and have thereafter indirectly linked the effect to the uncoupling of interactions~\citep{Hegland2009, MartinGonzalez2009, Schweiger2010}. \\
+\\
+Average climatic values of two subsequent months proved to be a better explanatory variable of $\beta_{Plant}$ than the use of differences between climatic values of two networks. This further supports the hypothesis that two networks experiencing the same climate will still yield a positive $\beta_{int}$. This is a logical scenario as networks constantly experience turnover across time even if temperature and all other climatic factors were kept constant~(\autoref{subsec: climate}). \\
+\\
+Unexpectedly, despite the drastic difference between the precipitation level of dry and wet seasons, precipitation was an insignificant factor in explaining $\beta_{Plant}$~(\autoref{subsec: climate}). This could be due to the adaptation of organisms in the Cerrado to extreme seasonal rain changes. As a result, plants have evolved mechanisms to survive cycles of extreme drought and are less sensitive to changes in precipitation~\citep{Pennington2006}. In contrast, despite the range of temperatures being less than 5$\degree$C, temperature explains significant variance in $\beta_{Plant}$ during the wet season~(\autoref{subsec: turnover}). Although $\beta_{int}$ is consistently high throughout the year, there appears to be a seasonal difference in factors that drive turnover.
 
-Limitations: Correlation does not relate to causation, but diff to conduct such empirical experiments, diff to hold variables constant \\
-small dataset, 
-Future Research: more data-> databank, 
-artic temperature comparisons
-across sites comparisons \\
+\subsection{Limitations}
+
+$\beta_{int}$ in the Cerrado was higher than previously reported week-to-week and year-to-year $\beta_{int}$ values~\citep{CaraDonna2017}. In ~\cite{CaraDonna2017}, sampling only took place during the flowering period as the area is mostly covered by snow for the rest of the year. $\beta_{int}$ values could therefore be relatively lower due to climatic factors remaining relatively similar throughout the flowering season in the temperate region. As plants can only be pollinated during the three short months annually, temperate plant communities have a longer mean flowering time than those in the tropics, resulting in a lower $\beta_{Plant}$. A smaller $\beta_{Plant}$ will thereafter lead to a smaller $\beta_{int}$~\citep{Bawa1990}. However, as no month-to-month $\beta_{int}$ values or $\beta_{Plant}$ were made available, no direct comparison of $\beta$-diversity between temperate and tropic regions can be made~\citep{CaraDonna2017}. \\
+\\
+Moreover, other studies of temporal plant-pollinator networks utilises one of the other 23 $\beta$-diversity measures, making it highly difficult for any direct comparisons~\citep{BASILIO2006, Alarcon2008, Olesen2008, Burkle2013}. Little consensus has yet been reached as to which $\beta$-dissimilarity measure best reflects temporal and spatial $\beta$-diversity, resulting in a large number of different approaches and contradictory results~\citep{Koleff2003, Poisot2015}. \\
+\\
+Insufficient sampling is yet another problem, which can lead to inflated $\beta_{rw}$ values, as networks falsely appear to be more dissimilar than in reality due to missing interactions~\citep{Vazquez2007, Dormann2009, Poisot2012a}. This problem is sometimes unavoidable due to existing weather conditions and can be illustrated by the abnormally high $\beta_{st}$ and $\beta_{int}$ between the months of November 1995 to January 1996 at the BBG site~(\hyperref[table: turnovers]{Table S\ref{table: turnovers}}, \hyperref[fig: turnovertimeplotold]{Figure \ref{fig: turnovertimeplotold}}). Removing these datapoints would have significantly reduced the sample size of the BBG dataset. As $\beta_{int}$, $\beta_{S}$, $\beta_{plant}$ and $\beta_{bee}$ are more robust to sampling error, I decided to include these points as the Spearman correlation coefficient test is robust against outliers. Monte Carlo simulation was thereafter carried out to reduce sampling bias.\\
+\\
+8.19\% and 4.61\% of all unique interactions appeared in three or more monthly networks at the BBG and IBGE sites respectively~(\autoref{fig: networks}). Although this may have been in part due to insufficient sampling efforts, another plausible cause is the high levels of biodiversity found in the tropics. 45 flowering plants and 74 pollinators were observed over 3 years of study in ~\cite{CaraDonna2017}. Comparatively, within the 12-month study period at IBGE, 111 species of bees and 93 species of plants were already recorded and yet it is apparent that there exist many missing interactions. $\beta_{int}$ values may hence be higher in the tropics than in the temperate regions due to the species richness found in the tropical biome. Due to the lack of temporal network data in the tropics, there is no support for this hypothesis yet.
+
+\subsection{Conclusion and Future Research}
+Understanding temporal interaction networks is crucial in the conservation of ecosystems as protecting or restoring an ecosystem requires approaches that restores its interaction and functions for its long term stability. Climate change has already influenced plant phenology, resulting in plants blooming earlier than ever before~\citep{Cleland2007,Miller-Rushing2008}. Hence, there is an urgent need to investigate and validate the drivers of dissimilarity of temporal networks, in order to understand the extent to which climate and plant phenology can affect species interaction. A decrease in pollination visits globally will result in decreased plant diversity and stability of plant communities. In return, this will adversely affect our ecosystems and food security~\citep{Schweiger2010, Burkle2011}. \\
+\\
+Moreover, correlation of variables does not relate to causation. To determine the factors driving dissimilarity of temporal networks, experimental approaches are required to test out these predictions on small artificially manipulated ecosystems. If the spatial and temporal scale of experiments are not large enough to significantly affect network turnover, available datasets across different ecosystems with varying climates can be compared to support these predictions~\citep{Burkle2009, Burkle2011}.\\
+\\
+Lastly, before considerable progress can be made in this field of study, it is crucial to establish a definition and measure of $\beta$-diversity that most researchers can come to a consensus to. Alternatively, future research should either utilise more than one measure of $\beta$-diversity, publish their original datasets or release the a, b and c values commonly used for most $\beta$-dissimilarity measures. This will enable comparison of results across different datasets and reveal more insights into characteristics of interaction turnover. Collecting temporal network data is time-consuming and require large amounts of sampling to prevent inflated values of network dissimilarity~\citep{Koleff2003, Burkle2011, Poisot2015}. Hence, gathering all available data and resources is the next step forward in understanding interaction networks. 
 
 % acknowledgement page
 \newpage 
@@ -325,7 +364,7 @@ across sites comparisons \\
 \vfill
 
 \newpage
-\bibliography{buzz}
+\bibliography{buzz2}
 \bibliographystyle{cell}
 
 \newpage
@@ -352,7 +391,7 @@ across sites comparisons \\
     \includegraphics[width=260mm]{seasonalnetwork(old).pdf} \\
     \vspace{1cm}
     \includegraphics[width=260mm]{seasonalnetwork(new).pdf}
-    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \captionof{figure}{\setstretch{1.3} \setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).\\ \footnotesize Every node in a monthly network represents a distinct plant or bee species. Each link between plant and bee nodes represent a unique pollination visit in the corresponding month. Links between monthly networks show interactions recorded in both monthly networks. Background of plot is colour-coded to reflect the seasons: blue - wet season; red - dry season. Each link is colour-coded to reflect its period of activity: blue ? only present during the wet season; red ? only present during the dry season; black ? present in both seasons.}
     \label{fig: seasonalnetworks}
 \end{figure}
 	\vspace*{\fill}
@@ -360,28 +399,30 @@ across sites comparisons \\
 \begin{figure}[H]
   \centering
     \includegraphics[width=200mm]{TimeplotTurnovers(old).pdf} \\
-    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \captionof{figure}{\setstretch{1.3} Time series plot of turnover measures from Jun 1995 to Jun 1997 (BBG site).}
     \label{fig: turnovertimeplotold}
 \end{figure}
 
 \begin{figure}[H]
   \centering
     \includegraphics[width=200mm]{Climate(old).pdf} \\
-    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \captionof{figure}{\setstretch{1.3} Time series plot of climatic factors from Jun 1995 to Jun 1997 (BBG site). \\ \footnotesize
+    (Average model: average of precipitation/temperature of two subsequent months; Difference model: difference between precipitation/temperature of two subsequent months)}
     \label{fig: climatetimeplotnew}
 \end{figure}
 
 \begin{figure}[H]
   \centering
     \includegraphics[width=180mm, height = 65mm]{TimeplotTurnovers(New).pdf} \\
-    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \captionof{figure}{\setstretch{1.3} Time series plot of turnover measures from Oct 2008 to Sep 2009 (IBGE site).}
     \label{fig: turnovertimeplotnew}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
-    \includegraphics[width=185mm, height = 68mm]{Climate(new).pdf} \\
-    \captionof{figure}{\setstretch{1.3} Monthly bee pollinator networks from Jun 1995 to Jun 1997 (BBG site) and from Oct 2008 to Sep 2009 (IBGE site).}
+    \includegraphics[width=185mm, height = 65mm]{Climate(new).pdf} \\
+    \captionof{figure}{Time series plot of climatic factors from Oct 2008 to Sep 2009 (IBGE site). \\ \footnotesize
+    (Average model: average of precipitation/temperature of two subsequent months; Difference model: difference between precipitation/temperature of two subsequent months)}
     \label{fig: climatetimeplotnew}
 \end{figure}
 

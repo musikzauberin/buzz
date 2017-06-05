@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  5 JUN 2017 08:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  5 JUN 2017 15:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1109,14 +1109,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 \newpage
+l.111 \newpage
                [1]
-Underfull \hbox (badness 10000) in paragraph at lines 112--116
+Underfull \hbox (badness 10000) in paragraph at lines 113--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--116
+Underfull \hbox (badness 10000) in paragraph at lines 113--132
 
  []
 
@@ -1124,154 +1124,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \newpage
-               [2]
+l.135 \newpage
+               [2] <flowchart.pdf, id=168, 465.74396pt x 293.21254pt>
+File: flowchart.pdf Graphic file (type pdf)
 
-Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
- 129.
+<use flowchart.pdf>
+Package pdftex.def Info: flowchart.pdf used on input line 162.
+(pdftex.def)             Requested size: 364.19667pt x 229.29094pt.
 
-
-Package natbib Warning: Citation `Allsopp2008' on page 1 undefined on input lin
-e 129.
-
-
-Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
- 129.
-
-
-Package natbib Warning: Citation `Burkle2011' on page 1 undefined on input line
- 129.
-
-
-Package natbib Warning: Citation `Poisot2012' on page 1 undefined on input line
- 129.
-
-
-Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
- 131.
-
-
-Package natbib Warning: Citation `Burkle2013' on page 1 undefined on input line
- 131.
-
-
-Package natbib Warning: Citation `Yeakel2014' on page 1 undefined on input line
- 131.
-
-
-Package natbib Warning: Citation `CaraDonna2017' on page 1 undefined on input l
-ine 131.
-
-
-Package natbib Warning: Citation `Burkle2011' on page 1 undefined on input line
- 131.
-
-
-Package natbib Warning: Citation `BASILIO2006' on page 1 undefined on input lin
-e 133.
-
-
-Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
- 133.
-
-
-Package natbib Warning: Citation `CaraDonna2017' on page 1 undefined on input l
-ine 133.
-
-
-Package natbib Warning: Citation `Burkle2011' on page 1 undefined on input line
- 133.
-
-
-Package natbib Warning: Citation `Schweiger2010' on page 1 undefined on input l
-ine 135.
-
-
-Package natbib Warning: Citation `Biesmeijer2006' on page 1 undefined on input 
-line 135.
-
-
-Package natbib Warning: Citation `Schweiger2010' on page 1 undefined on input l
-ine 135.
-
-
-Package natbib Warning: Citation `Kricher2011' on page 1 undefined on input lin
-e 137.
-
-
-Package natbib Warning: Citation `Myers2000' on page 1 undefined on input line 
-137.
-
-
-Package natbib Warning: Citation `KLINK2005' on page 1 undefined on input line 
-137.
-
-
-Package natbib Warning: Citation `Pennington2006' on page 1 undefined on input 
-line 137.
-
-
-Package natbib Warning: Citation `Gibbs2002' on page 1 undefined on input line 
-139.
-
-
-Package natbib Warning: Citation `TobyPennington2006' on page 1 undefined on in
-put line 139.
-
-
-Package natbib Warning: Citation `Gottsberger2006' on page 1 undefined on input
- line 139.
-
-
-Package natbib Warning: Citation `Myers2000' on page 1 undefined on input line 
-141.
-
-
-Package natbib Warning: Citation `KLINK2005' on page 1 undefined on input line 
-141.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--145
+Underfull \hbox (badness 10000) in paragraph at lines 145--167
 
  []
 
@@ -1279,151 +1170,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 
-       [1] [2] [3]
-
-Package natbib Warning: Citation `Gottsberger2006' on page 4 undefined on input
- line 150.
-
-
-Package natbib Warning: Citation `Gottsberger2006a' on page 4 undefined on inpu
-t line 152.
-
-
-Package natbib Warning: Citation `Eiten1972' on page 4 undefined on input line 
-154.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--155
+l.167 
+       [1] [2] [3 <./flowchart.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 173--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--155
+Underfull \hbox (badness 10000) in paragraph at lines 173--178
 
  []
 
 
-Package natbib Warning: Citation `Oliveira2002' on page 4 undefined on input li
-ne 157.
-
-
-Package natbib Warning: Citation `Gottsberger2006a' on page 4 undefined on inpu
-t line 157.
-
-
-Package natbib Warning: Citation `Cappellari2011' on page 4 undefined on input 
-line 157.
-
-
-Package natbib Warning: Citation `Moure1962' on page 4 undefined on input line 
-157.
-
-
-Package natbib Warning: Citation `Silveira2002' on page 4 undefined on input li
-ne 157.
-
-
-Package natbib Warning: Citation `Michener2007' on page 4 undefined on input li
-ne 157.
-
-
-Package natbib Warning: Citation `Moure2007' on page 4 undefined on input line 
-157.
-
-
-Package natbib Warning: Citation `Boaventura1998' on page 4 undefined on input 
-line 159.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
+Underfull \hbox (badness 10000) in paragraph at lines 180--184
 
  []
 
 [4]
-
-Package natbib Warning: Citation `Gottsberger2006a' on page 5 undefined on inpu
-t line 166.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
 
  []
 
 [5]
-
-Package natbib Warning: Citation `Whittaker1960' on page 6 undefined on input l
-ine 172.
-
-
-Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
- 177.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--180
+Underfull \hbox (badness 10000) in paragraph at lines 199--203
 
  []
 
 
-Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
- 184.
-
-
-Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
- 186.
-
-
-Package natbib Warning: Citation `CaraDonna2017' on page 6 undefined on input l
-ine 186.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--187
+Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--187
-
- []
-
-
-Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
- 190.
-
-
-Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
- 190.
-
-
-Package natbib Warning: Citation `Canard2011' on page 6 undefined on input line
- 215.
-
-
-Package natbib Warning: Citation `CaraDonna2017' on page 6 undefined on input l
-ine 215.
-
-
-Package natbib Warning: Citation `Canard2011' on page 6 undefined on input line
- 215.
-
-
-Package natbib Warning: Citation `CaraDonna2017' on page 6 undefined on input l
-ine 215.
-
-
-Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
- 215.
-
-
-Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
- 215.
-
-
-Package natbib Warning: Citation `Koleff2003' on page 6 undefined on input line
- 215.
-
-
-Overfull \hbox (31.88367pt too wide) in paragraph at lines 193--216
+Overfull \hbox (31.88283pt too wide) in paragraph at lines 216--239
 [][] 
  []
 
@@ -1431,76 +1210,57 @@ Overfull \hbox (31.88367pt too wide) in paragraph at lines 193--216
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package natbib Warning: Citation `Dehmer2011' on page 6 undefined on input line
- 221.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--224
+Underfull \hbox (badness 10000) in paragraph at lines 244--247
 
  []
 
 [6]
-Overfull \hbox (13.77965pt too wide) in paragraph at lines 226--234
-\OT1/cmr/m/n/12 sonal in-ter-ac-tions. To in-ves-ti-gate whether pre-cip-i-ta-t
-ion and/or tem-per-a-ture af-fects turnovers,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--234
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--234
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--234
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
 
  []
 
 [7] [8]
-
-Package natbib Warning: Citation `Silveira1995' on page 9 undefined on input li
-ne 238.
-
-
-Package natbib Warning: Citation `Pinheiro-Machado2002' on page 9 undefined on 
-input line 238.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--242
+Underfull \hbox (badness 10000) in paragraph at lines 262--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
-[9] <network(old).pdf, id=182, 1445.4pt x 289.08pt>
+[9] <network(old).pdf, id=377, 1445.4pt x 289.08pt>
 File: network(old).pdf Graphic file (type pdf)
  <use network(old).pdf>
-Package pdftex.def Info: network(old).pdf used on input line 255.
+Package pdftex.def Info: network(old).pdf used on input line 280.
 (pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 255--255
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 280--280
  [][] 
  []
 
-<network(new).pdf, id=183, 1445.4pt x 289.08pt>
+<network(new).pdf, id=378, 1445.4pt x 289.08pt>
 File: network(new).pdf Graphic file (type pdf)
  <use network(new).pdf>
-Package pdftex.def Info: network(new).pdf used on input line 257.
+Package pdftex.def Info: network(new).pdf used on input line 282.
 (pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 257--258
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 282--283
  [][] 
  []
 
@@ -1511,104 +1271,83 @@ Overfull \hbox (36.98857pt too wide) in paragraph at lines 257--258
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./network(new).pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
-<plantturnover.pdf, id=300, 578.16pt x 289.08pt>
+<plantturnover.pdf, id=497, 578.16pt x 289.08pt>
 File: plantturnover.pdf Graphic file (type pdf)
  <use plantturnover.pdf>
-Package pdftex.def Info: plantturnover.pdf used on input line 270.
+Package pdftex.def Info: plantturnover.pdf used on input line 295.
 (pdftex.def)             Requested size: 455.24411pt x 227.62082pt.
 
-
-Package natbib Warning: Citation `Poisot2012' on page 11 undefined on input lin
-e 282.
-
-<turnoversbivariate(old).pdf, id=307, 867.24pt x 289.08pt>
+<turnoversbivariate(old).pdf, id=506, 867.24pt x 289.08pt>
 File: turnoversbivariate(old).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(old).pdf>
-Package pdftex.def Info: turnoversbivariate(old).pdf used on input line 286.
+Package pdftex.def Info: turnoversbivariate(old).pdf used on input line 311.
 (pdftex.def)             Requested size: 500.77129pt x 166.92546pt.
 
-<turnoversbivariate(new).pdf, id=308, 867.24pt x 289.08pt>
+<turnoversbivariate(new).pdf, id=507, 867.24pt x 289.08pt>
 File: turnoversbivariate(new).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(new).pdf>
-Package pdftex.def Info: turnoversbivariate(new).pdf used on input line 287.
+Package pdftex.def Info: turnoversbivariate(new).pdf used on input line 312.
 (pdftex.def)             Requested size: 500.77129pt x 166.92546pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 286--288
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 311--313
  [][] 
  []
 
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 286--288
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 311--313
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 302--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 302--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 302--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 302--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--290
+Underfull \hbox (badness 10000) in paragraph at lines 302--315
 
  []
 
 [11
 
  <./plantturnover.pdf>]
-
-Package natbib Warning: Citation `Zuur2010' on page 12 undefined on input line 
-295.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--300
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--300
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
 
  []
 
 
-Overfull \hbox (3.44788pt too wide) in paragraph at lines 293--300
-\OT1/cmr/m/n/12 that av-er-age tem-per-a-ture ex-plains sig-nif-i-cant vari-a-t
-ion in $\OML/cmm/m/it/12 ^^L[]$ \OT1/cmr/m/n/12 (adj.r$[]$=0.504, F$[]$=12.18,
- []
-
-
-Overfull \hbox (13.21785pt too wide) in paragraph at lines 293--300
-\OT1/cmr/m/n/12 p= 0.00583) and $\OML/cmm/m/it/12 ^^L[]$ \OT1/cmr/m/n/12 in-cre
-ases as av-er-age tem-per-a-ture in-creases (in-ter-cept: -4.57, s.e.=1.51,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--300
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--300
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
 
  []
 
@@ -1617,51 +1356,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--300
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./turnoversbivariate(new).pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 311--316
+Underfull \hbox (badness 10000) in paragraph at lines 329--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--338
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 321--325
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--325
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
 
  []
 
 [15]
-No file buzz.bbl.
-[16] <seasonalnetwork(old).pdf, id=413, 1445.4pt x 289.08pt>
+Underfull \hbox (badness 10000) in paragraph at lines 350--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--355
+
+ []
+
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 360--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--364
+
+ []
+
+[18] (./buzz.bbl [19] [20] [21]) [22] [23]
+<seasonalnetwork(old).pdf, id=757, 1445.4pt x 289.08pt>
 File: seasonalnetwork(old).pdf Graphic file (type pdf)
 
 <use seasonalnetwork(old).pdf>
-Package pdftex.def Info: seasonalnetwork(old).pdf used on input line 352.
+Package pdftex.def Info: seasonalnetwork(old).pdf used on input line 391.
 (pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 352--352
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 391--391
  [][] 
  []
 
-<seasonalnetwork(new).pdf, id=414, 1445.4pt x 289.08pt>
+<seasonalnetwork(new).pdf, id=758, 1445.4pt x 289.08pt>
 File: seasonalnetwork(new).pdf Graphic file (type pdf)
 
 <use seasonalnetwork(new).pdf>
-Package pdftex.def Info: seasonalnetwork(new).pdf used on input line 354.
+Package pdftex.def Info: seasonalnetwork(new).pdf used on input line 393.
 (pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 354--355
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 393--394
  [][] 
  []
 
-<TimeplotTurnovers(old).pdf, id=415, 867.24pt x 650.43pt>
+<TimeplotTurnovers(old).pdf, id=759, 867.24pt x 650.43pt>
 File: TimeplotTurnovers(old).pdf Graphic file (type pdf)
 
 <use TimeplotTurnovers(old).pdf>
-Package pdftex.def Info: TimeplotTurnovers(old).pdf used on input line 362.
+Package pdftex.def Info: TimeplotTurnovers(old).pdf used on input line 401.
 (pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
- [17
+ [24
 
  <./seasonalnetwork(old).pdf> <./seasonalnetwork(new).pdf
 
@@ -1671,26 +1449,31 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./seasonalnetwork(new).pdf):
 Overfull \vbox (18.39377pt too high) has occurred while \output is active []
 
 
-[18 <./TimeplotTurnovers(old).pdf>]
-<Climate(old).pdf, id=592, 867.24pt x 650.43pt>
+[25 <./TimeplotTurnovers(old).pdf>]
+<Climate(old).pdf, id=938, 867.24pt x 650.43pt>
 File: Climate(old).pdf Graphic file (type pdf)
  <use Climate(old).pdf>
-Package pdftex.def Info: Climate(old).pdf used on input line 369.
+Package pdftex.def Info: Climate(old).pdf used on input line 408.
 (pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
 
-<TimeplotTurnovers(New).pdf, id=593, 867.24pt x 325.215pt>
+Overfull \vbox (9.67978pt too high) has occurred while \output is active []
+
+
+[26 <./Climate(old).pdf>]
+<TimeplotTurnovers(New).pdf, id=1005, 867.24pt x 325.215pt>
 File: TimeplotTurnovers(New).pdf Graphic file (type pdf)
 
 <use TimeplotTurnovers(New).pdf>
-Package pdftex.def Info: TimeplotTurnovers(New).pdf used on input line 376.
+Package pdftex.def Info: TimeplotTurnovers(New).pdf used on input line 416.
 (pdftex.def)             Requested size: 512.17003pt x 184.94771pt.
- [19 <./Climate(old).pdf>]
-<Climate(new).pdf, id=660, 867.24pt x 361.35pt>
+
+<Climate(new).pdf, id=1006, 867.24pt x 361.35pt>
 File: Climate(new).pdf Graphic file (type pdf)
  <use Climate(new).pdf>
-Package pdftex.def Info: Climate(new).pdf used on input line 383.
-(pdftex.def)             Requested size: 526.39551pt x 193.47748pt.
- [20 <./TimeplotTurnovers(New).pdf> <./Climate(new).pdf
+Package pdftex.def Info: Climate(new).pdf used on input line 423.
+(pdftex.def)             Requested size: 526.39551pt x 184.9422pt.
+
+[27 <./TimeplotTurnovers(New).pdf> <./Climate(new).pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Climate(new).pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
@@ -1700,13 +1483,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 444.
+               Default added (so using `tbp') on input line 485.
 
 
-LaTeX Warning: Float too large for page by 17.42159pt on input line 494.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Float too large for page by 17.42159pt on input line 535.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1715,55 +1495,54 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package natbib Warning: There were undefined citations.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 AED: lastpage setting LastPage
-[21] [22] [23] [24]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 645.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 645.
+[28] [29] [30] [31]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 686.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 686.
  (./buzz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 645.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 645.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 686.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 686.
 Package rerunfilecheck Info: File `buzz.out' has not changed.
-(rerunfilecheck)             Checksum: D04056F574222FC4D9B83D588595A6C9;977.
+(rerunfilecheck)             Checksum: 7851005F69AF8A4AAFAB1692431ED50A;1118.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 645.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 686.
  ) 
 Here is how much of TeX's memory you used:
- 20216 strings out of 493089
- 385955 string characters out of 6134841
- 543723 words of memory out of 5000000
- 23368 multiletter control sequences out of 15000+600000
- 20069 words of font info for 76 fonts, out of 8000000 for 9000
+ 20392 strings out of 493089
+ 389295 string characters out of 6134841
+ 544723 words of memory out of 5000000
+ 23485 multiletter control sequences out of 15000+600000
+ 20107 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,19n,43p,10399b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,19n,44p,10399b,901s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on buzz.pdf (28 pages, 578330 bytes).
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on buzz.pdf (35 pages, 635250 bytes).
 PDF statistics:
- 886 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 57 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1237 PDF objects out of 1440 (max. 8388607)
+ 749 compressed objects within 8 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

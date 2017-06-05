@@ -301,15 +301,43 @@ pl.xticks(major_ticks, monthdisplay, size = 12)
 pl.gca().grid(True, which='minor', linestyle='--', alpha=0.3)
 
 ## titles and axis labels
-title = pl.title('Pollinator Networks in Cerrado (1995-1997)', size = 18)
+title = pl.title('Pollinator Networks at BBG site in Cerrado (1995-1997)', size = 18)
 title.set_position([.37, 1.05])
 
 # colour background according to season
-pl.axvspan(-1, 7.5, facecolor='r', alpha=0.08)
-pl.axvspan(7.5, 19.5, facecolor='c', alpha=0.08)
-pl.axvspan(19.5, 31.5, facecolor='r', alpha=0.08)
-pl.axvspan(31.5, 43.5, facecolor='c', alpha=0.08)
-pl.axvspan(43.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
+# colour background according to season
+for i in np.arange(-1, 6.5, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
+for i in np.arange(0, 6.5, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+  
+pl.axvspan(7, 7.5, facecolor='r', alpha=0.2)
+pl.axvspan(7.5, 8, facecolor='c', alpha=0.2)
+for i in np.arange(8, 19, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
+for i in np.arange(9, 19, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
+
+pl.axvspan(19, 19.5, facecolor='c', alpha=0.2)
+pl.axvspan(19.5, 20, facecolor='r', alpha=0.2)
+for i in np.arange(20, 31, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+for i in np.arange(21, 31, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
+pl.axvspan(31, 31.5, facecolor='r', alpha=0.2)
+
+pl.axvspan(31.5, 32, facecolor='c', alpha=0.2)
+for i in np.arange(32, 43, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
+for i in np.arange(33, 43, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
+pl.axvspan(43, 43.5, facecolor='c', alpha=0.2)
+
+pl.axvspan(43.5, 44, facecolor='r', alpha=0.2)
+for i in np.arange(44, len(startofmonths)*2-2, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+for i in np.arange(45, len(startofmonths)*2-2, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
 pl.text(2.5, 220, 'Dry Season', size = 12)
 pl.text(11.5, 220, 'Wet Season', size = 12)
 pl.text(23.5, 220, 'Dry Season', size = 12)
@@ -363,7 +391,7 @@ pl.gca().add_artist(second_legend)
 
 pl.tight_layout()
 plotname = 'seasonalnetwork(old)'
-plotpath = '../results/' + plotname + '.pdf'
+plotpath = '../' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

@@ -11,6 +11,7 @@ import sys
 import os.path
 import brewer2mpl
 import matplotlib.cm as cm
+import matplotlib.image as image
 
 def longest(listoflists):
   'find length of longest list in list of lists'
@@ -39,6 +40,10 @@ for column in data:
     i.append(column[j])
 
 h.close()
+
+im = image.imread('../bee.png')
+
+
 
 
 ########## Adjusting data for plotting ##########
@@ -168,12 +173,18 @@ beeplants = []
 for i in range(len(bees)):
   beeplants.append((bees[i], plants[i]))
 
+appearnos = []
 appearmax = 0
 for i in range(len(uniqueints)):
   appearno = beeplants.count(uniqueints[i])
+  appearnos.append(appearno)
   if appearno > appearmax:
     appearmax = appearno
 print 'Max number of appearances: ' + str(appearmax)
+
+for i in range(appearmax+1):
+  print i, appearnos.count(i)
+print len(appearnos)
 
 # define colours, alpha and widths for lines dependent on number of int appearances
 colours2 = [colours[i] for i in [0, 0, 2, 3]]
@@ -251,7 +262,7 @@ maxplant2 = max(int(plant) for plant in plants)
 upperylimit = maxbee2
 if maxbee2 < maxplant2:
   upperylimit = maxplant2
-pl.axis([-1, len(startofmonths)*2-2, 0, upperylimit + 35])
+pl.axis([-1, len(startofmonths)*2-2, 0, upperylimit + 50])
 
 ## axis ticks
 # major ticks at where labels are, minor ticks at where dots are plotted
@@ -268,20 +279,32 @@ pl.tick_params(axis = 'x', which = 'minor', length = 5 )
 pl.tick_params( axis='y', which='both', left='off', right='off', labelleft='off')
 
 # x axis labels
-pl.xticks(major_ticks, monthdisplay, size = 12)
+pl.xticks(major_ticks, monthdisplay, size = 14)
 
 ## set grid
 pl.gca().grid(True, which='minor', linestyle='--', alpha=0.3)
 
 ## titles and axis labels
-title = pl.title('Pollinator Networks in Cerrado (2008-2009)', size = 18)
+title = pl.title('Pollinator Networks at the IBGE site in Cerrado (2008-2009)', size = 18)
 title.set_position([.37, 1.05])
 
 # colour background according to season
-pl.axvspan(-1, 11.5, facecolor='c', alpha=0.08)
-pl.axvspan(11.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
-pl.text(4.5, 220, 'Wet Season', size = 12)
-pl.text(16.5, 220, 'Dry Season', size = 12)
+for i in np.arange(-1, 11.0, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
+for i in np.arange(0, 11.5, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
+pl.axvspan(11, 11.5, facecolor='c', alpha=0.2)
+
+pl.axvspan(11.5, 12, facecolor='r', alpha=0.2)
+for i in np.arange(12, len(startofmonths)*2-2, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+for i in np.arange(13, len(startofmonths)*2-2, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
+
+
+# pl.axvspan(11.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
+pl.text(4.5, 230, 'Wet Season', size = 14)
+pl.text(16.5, 230, 'Dry Season', size = 14)
 
 # remove borders
 pl.gca().spines['top'].set_visible(False)
@@ -326,12 +349,11 @@ second_legend.get_frame().set_linewidth(0.0)
 second_legend.get_frame().set_color(light_grey)
 pl.gca().add_artist(second_legend)
 
-
 ########## Save plot ##########
 
 pl.tight_layout()
 plotname = 'network(New)'
-plotpath = '../results/' + plotname + '.pdf'
+plotpath = '../' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()
