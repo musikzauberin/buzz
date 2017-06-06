@@ -32,10 +32,10 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=black,
     filecolor=magenta,      
     urlcolor=cyan,
-    citecolor=blue
+    citecolor=black
 }
 \urlstyle{same}
 \usepackage{cleveref}
@@ -436,16 +436,16 @@ In conclusion, this study presents evidence that month-to-month interaction netw
 \end{table}
 \vspace{-1cm}
 %fix numbers
+
 \begin{align*}
 	& \textnormal{Whittaker's dissimilarity measure: } & \beta_{W} & = \frac{a + b + c}{(2a + b + c)/2} - 1 \\
 	 &\textnormal{Interaction turnover: } & \beta_{int} & = \frac{2 + 19 + 15}{(2*(2) + 19 + 15)/2} - 1 & = 0.895\\
 	 &\textnormal{Interaction rewiring: } & \beta_{rw} & = \frac{2 + 1 + 1}{(2*(2) + 1 + 1)/2} - 1 & = 0.333\\
-	 &\textnormal{Dissimilarity of interactions due to species turnover: } & \beta_{st} & = 0.89474 - 0.33333 & = 0.561 \\
+	 &\textnormal{Dissimilarity of interactions due to $\beta_{S}$: } & \beta_{st} & = 0.89474 - 0.33333 & = 0.561 \\
 	 \\
-	 &\textnormal{Species turnover: } & \beta_{S} & = \frac{2 + 1 + 1}{(2*(2) + 1 + 1)/2} - 1 & = 0.333\\
-	 &\textnormal{Bee turnover: } & \beta_{Bee} & = \frac{2 + 1 + 1}{(2*(2) + 1 + 1)/2} - 1 & = 0.333\\
-	 &\textnormal{Plant turnover: } & \beta_{Plant} & = \frac{3 + 8 + 8}{(2*(3) + 10 + 8)/2} - 1 & = 0.727\\
-
+	 &\textnormal{Species turnover: } & \beta_{S} & = \frac{9 + 19 + 16}{(2*(9) + 19 + 16)/2} - 1 & = 0.660\\
+	 &\textnormal{Bee turnover: } & \beta_{Bee} & = \frac{6 + 11 + 8}{(2*(6) + 11 + 8)/2} - 1 & = 0.613\\
+	 &\textnormal{Plant turnover: } & \beta_{Plant} & = \frac{3 + 8 + 8}{(2*(3) + 8 + 8)/2} - 1 & = 0.727\\
 \end{align*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -538,7 +538,7 @@ Year & Months  & \multicolumn{1}{c|}{$\beta_{int}$}   & \multicolumn{1}{c|}{$\be
 2009 & Jan-Feb & 0.836 & 0.474 & 0.362 & 0.567  & 0.433  & 0.582 & 0.576 & 0.591 & IBGE \\ \hline
 2009 & Feb-Mar & 0.934 & 0.613 & 0.321 & 0.656  & 0.344  & 0.659 & 0.636 & 0.692 & IBGE \\ \hline
 2009 & Mar-Apr & 0.966 & 0.829 & 0.138 & 0.858  & 0.142  & 0.701 & 0.703 & 0.698 & IBGE \\ \hline
-2009 & Apr-May & 0.895 & 0.333 & 0.561 & 0.373  & 0.627  & 0.66  & 0.613 & 0.727 & IBGE \\ \hline
+2009 & Apr-May & 0.895 & 0.333 & 0.561 & 0.373  & 0.627  & 0.660  & 0.613 & 0.727 & IBGE \\ \hline
 2009 & May-Jun & 0.902 & 0.5   & 0.402 & 0.555  & 0.445  & 0.667 & 0.6   & 0.75  & IBGE \\ \hline
 2009 & Jun-Jul & 0.753 & 0.333 & 0.42  & 0.442  & 0.558  & 0.564 & 0.707 & 0.405 & IBGE \\ \hline
 2009 & Jul-Aug & 0.761 & 0.429 & 0.333 & 0.563  & 0.437  & 0.514 & 0.529 & 0.5   & IBGE \\ \hline
