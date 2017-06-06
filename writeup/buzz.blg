@@ -3,9 +3,13 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: buzz.aux
 The style file: cell.bst
 Database file #1: buzz2.bib
+Warning--I didn't find a database entry for "Scaven2013"
+Warning--I didn't find a database entry for "Hughes2000"
+Warning--I didn't find a database entry for "Parmesan2003"
+Warning--I didn't find a database entry for "Gallai2009"
 You've used 44 entries,
             2116 wiz_defined-function locations,
-            822 strings with 13066 characters,
+            830 strings with 13150 characters,
 and the built_in function-call counts, 16592 in all, are:
 = -- 1660
 > -- 856
@@ -44,3 +48,4 @@ warning$ -- 0
 while$ -- 135
 width$ -- 0
 write$ -- 549
+(There were 4 warnings)

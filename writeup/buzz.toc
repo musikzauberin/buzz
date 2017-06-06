@@ -13,6 +13,6 @@
 \contentsline {subsection}{\numberline {3.2}Month-to-month turnover}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Climatic factors influence turnover}{12}{subsection.3.3}
 \contentsline {section}{\numberline {4}Discussion}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Limitations}{15}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Conclusion and Future Research}{16}{subsection.4.2}
-\contentsline {section}{\numberline {5}Supplementary Figures}{23}{section.5}
+\contentsline {subsection}{\numberline {4.1}Limitations}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Conclusion and Future Research}{18}{subsection.4.2}
+\contentsline {section}{\numberline {5}Supplementary Figures}{24}{section.5}
