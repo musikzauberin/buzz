@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  6 JUN 2017 03:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  6 JUN 2017 04:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -959,7 +959,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen191
 )
-(./buzz.aux)
+No file buzz.aux.
 \openout1 = `buzz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -976,7 +976,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 69.
@@ -1071,8 +1071,6 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 69.
 LaTeX Info: Redefining \pageref on input line 69.
 LaTeX Info: Redefining \nameref on input line 69.
-
-(./buzz.out) (./buzz.out)
 \@outlinefile=\write3
 \openout3 = `buzz.out'.
 
@@ -1093,8 +1091,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \c__siunitx_mathtt_int=\count184
  [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] (./
-buzz.toc)
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1]
 \tf@toc=\write4
 \openout4 = `buzz.toc'.
 
@@ -1118,10 +1115,126 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.134 \newpage
-               [2] <flowchart.pdf, id=169, 465.74396pt x 293.21254pt>
-File: flowchart.pdf Graphic file (type pdf)
+               [2]
 
-<use flowchart.pdf>
+Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
+ 144.
+
+
+Package natbib Warning: Citation `Allsopp2008' on page 1 undefined on input lin
+e 144.
+
+
+Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
+ 144.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 1 undefined on input line
+ 144.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 1 undefined on input line
+ 144.
+
+
+Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
+ 146.
+
+
+Package natbib Warning: Citation `Burkle2013' on page 1 undefined on input line
+ 146.
+
+
+Package natbib Warning: Citation `Yeakel2014' on page 1 undefined on input line
+ 146.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 1 undefined on input l
+ine 146.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 1 undefined on input line
+ 146.
+
+
+Package natbib Warning: Citation `BASILIO2006' on page 1 undefined on input lin
+e 148.
+
+
+Package natbib Warning: Citation `Olesen2008' on page 1 undefined on input line
+ 148.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 1 undefined on input l
+ine 148.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 1 undefined on input line
+ 148.
+
+
+Package natbib Warning: Citation `Schweiger2010' on page 1 undefined on input l
+ine 150.
+
+
+Package natbib Warning: Citation `Scaven2013' on page 1 undefined on input line
+ 150.
+
+
+Package natbib Warning: Citation `Biesmeijer2006' on page 1 undefined on input 
+line 150.
+
+
+Package natbib Warning: Citation `Schweiger2010' on page 1 undefined on input l
+ine 150.
+
+
+Package natbib Warning: Citation `Poisot2015' on page 1 undefined on input line
+ 150.
+
+
+Package natbib Warning: Citation `Myers2000' on page 1 undefined on input line 
+152.
+
+
+Package natbib Warning: Citation `KLINK2005' on page 1 undefined on input line 
+152.
+
+
+Package natbib Warning: Citation `Pennington2006' on page 1 undefined on input 
+line 152.
+
+
+Package natbib Warning: Citation `Kricher2011' on page 1 undefined on input lin
+e 152.
+
+
+Package natbib Warning: Citation `Gibbs2002' on page 1 undefined on input line 
+154.
+
+
+Package natbib Warning: Citation `TobyPennington2006' on page 1 undefined on in
+put line 154.
+
+
+Package natbib Warning: Citation `Gottsberger2006' on page 1 undefined on input
+ line 154.
+
+
+Package natbib Warning: Citation `Myers2000' on page 1 undefined on input line 
+156.
+
+
+Package natbib Warning: Citation `KLINK2005' on page 1 undefined on input line 
+156.
+
+
+LaTeX Warning: Reference `fig: flowchart' on page 1 undefined on input line 158
+.
+
+<flowchart.pdf, id=26, 465.74396pt x 293.21254pt>
+File: flowchart.pdf Graphic file (type pdf)
+ <use flowchart.pdf>
 Package pdftex.def Info: flowchart.pdf used on input line 161.
 (pdftex.def)             Requested size: 364.19667pt x 229.29094pt.
 
@@ -1159,12 +1272,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--166
 
  []
 
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 166.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.166 
-       [1] [2] [3 <./flowchart.pdf>]
+       [1]
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 166.
+
+[2]
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 169.
+
+[3 <./flowchart.pdf>]
+
+Package natbib Warning: Citation `Gottsberger2006' on page 4 undefined on input
+ line 172.
+
+
+Package natbib Warning: Citation `Gottsberger2006a' on page 4 undefined on inpu
+t line 174.
+
+
+Package natbib Warning: Citation `Eiten1972' on page 4 undefined on input line 
+176.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 172--177
 
  []
@@ -1173,18 +1310,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--177
 Underfull \hbox (badness 10000) in paragraph at lines 172--177
 
  []
+
+
+Package natbib Warning: Citation `Oliveira2002' on page 4 undefined on input li
+ne 179.
+
+
+Package natbib Warning: Citation `Gottsberger2006a' on page 4 undefined on inpu
+t line 179.
+
+
+Package natbib Warning: Citation `Cappellari2011' on page 4 undefined on input 
+line 179.
+
+
+LaTeX Warning: Hyper reference `sec: acknowledgements' on page 4 undefined on i
+nput line 179.
+
+
+Package natbib Warning: Citation `Moure1962' on page 4 undefined on input line 
+179.
+
+
+Package natbib Warning: Citation `Silveira2002' on page 4 undefined on input li
+ne 179.
+
+
+Package natbib Warning: Citation `Michener2007' on page 4 undefined on input li
+ne 179.
+
+
+Package natbib Warning: Citation `Moure2007' on page 4 undefined on input line 
+179.
+
+
+LaTeX Warning: Hyper reference `sec: acknowledgements' on page 4 undefined on i
+nput line 179.
+
+
+Package natbib Warning: Citation `Boaventura1998' on page 4 undefined on input 
+line 181.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
  []
 
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 183.
+
 [4]
+
+LaTeX Warning: Hyper reference `table: climate' on page 5 undefined on input li
+ne 188.
+
+
+LaTeX Warning: Reference `table: climate' on page 5 undefined on input line 188
+.
+
+
+Package natbib Warning: Citation `Gottsberger2006a' on page 5 undefined on inpu
+t line 188.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 186--189
 
  []
 
+
+Package natbib Warning: Citation `Whittaker1960' on page 5 undefined on input l
+ine 194.
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 198.
+
 [5]
+
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 199.
+
+
+Package natbib Warning: Citation `Koleff2003' on page 6 undefined on input line
+ 201.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 201.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 198--204
 
  []
@@ -1195,6 +1408,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--204
  []
 
 
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 209.
+
+
+LaTeX Warning: Hyper reference `eq: dissimilarity' on page 6 undefined on input
+ line 212.
+
+
+LaTeX Warning: Reference `eq: dissimilarity' on page 6 undefined on input line 
+212.
+
+
+LaTeX Warning: Reference `table: dissimilarity' on page 6 undefined on input li
+ne 212.
+
+
+LaTeX Warning: Hyper reference `fig: calculationex' on page 6 undefined on inpu
+t line 212.
+
+
+LaTeX Warning: Reference `fig: calculationex' on page 6 undefined on input line
+ 212.
+
+
+LaTeX Warning: Hyper reference `eq: interaction' on page 6 undefined on input l
+ine 212.
+
+
+LaTeX Warning: Reference `eq: interaction' on page 6 undefined on input line 21
+2.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 212.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 6 undefined on input l
+ine 212.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 207--213
 
  []
@@ -1209,43 +1462,167 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--213
 
  []
 
-[6]
-Overfull \hbox (31.88283pt too wide) in paragraph at lines 219--242
+
+LaTeX Warning: Reference `eq: dissimilarity' on page 6 undefined on input line 
+216.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 216.
+
+
+LaTeX Warning: Reference `eq: dissimilarity' on page 6 undefined on input line 
+216.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 216.
+
+
+Package natbib Warning: Citation `Canard2011' on page 6 undefined on input line
+ 241.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 6 undefined on input l
+ine 241.
+
+
+Package natbib Warning: Citation `Canard2011' on page 6 undefined on input line
+ 241.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 6 undefined on input l
+ine 241.
+
+
+LaTeX Warning: Reference `eq: dissimilarity' on page 6 undefined on input line 
+241.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 241.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 6 undefined on input line
+ 241.
+
+
+Package natbib Warning: Citation `Koleff2003' on page 6 undefined on input line
+ 241.
+
+
+Overfull \hbox (31.88367pt too wide) in paragraph at lines 219--242
 [][] 
  []
+
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 242.
+
+[6]
+
+Package natbib Warning: Citation `Dehmer2011' on page 7 undefined on input line
+ 247.
+
+
+LaTeX Warning: Hyper reference `table: turnoverspearman' on page 7 undefined on
+ input line 249.
+
+
+LaTeX Warning: Reference `table: turnoverspearman' on page 7 undefined on input
+ line 249.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
  []
 
+
+LaTeX Warning: Hyper reference `fig: seasonalnetworks' on page 7 undefined on i
+nput line 252.
+
+
+LaTeX Warning: Reference `fig: seasonalnetworks' on page 7 undefined on input l
+ine 252.
+
+
+Overfull \hbox (2.62572pt too wide) in paragraph at lines 252--260
+\OT1/cmr/m/n/10.95 ter-ac-tions (Fig-ure []). To in-ves-ti-gate whether pre-cip
+-i-ta-tion and/or tem-per-a-ture af-fects turnovers,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--260
+
+ []
+
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 260.
+
 [7]
-Overfull \hbox (2.29124pt too wide) in paragraph at lines 252--260
-\OT1/cmr/m/n/10.95 ter-ac-tions ([][]Fig-ure [][]S2[][][][]). To in-ves-ti-gate
- whether pre-cip-i-ta-tion and/or tem-per-a-ture af-fects turnovers,
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--260
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--260
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--260
-
- []
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 261.
 
 [8]
+
+Package natbib Warning: Citation `Silveira1995' on page 9 undefined on input li
+ne 265.
+
+
+Package natbib Warning: Citation `Pinheiro-Machado2002' on page 9 undefined on 
+input line 265.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 265--269
 
  []
 
 
+LaTeX Warning: Hyper reference `table: turnovers' on page 9 undefined on input 
+line 274.
+
+
+LaTeX Warning: Reference `table: turnovers' on page 9 undefined on input line 2
+74.
+
+
+LaTeX Warning: Hyper reference `fig: turnovertimeplotold' on page 9 undefined o
+n input line 274.
+
+
+LaTeX Warning: Reference `fig: turnovertimeplotold' on page 9 undefined on inpu
+t line 274.
+
+
+LaTeX Warning: Hyper reference `fig: turnovertimeplotnew' on page 9 undefined o
+n input line 274.
+
+
+LaTeX Warning: Reference `fig: turnovertimeplotnew' on page 9 undefined on inpu
+t line 274.
+
+
+LaTeX Warning: Reference `fig: networks' on page 9 undefined on input line 274.
+
+
+
+LaTeX Warning: Reference `fig: turnoversbivariate' on page 9 undefined on input
+ line 276.
+
+
+LaTeX Warning: Reference `fig: plantturnover' on page 9 undefined on input line
+ 276.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
@@ -1255,7 +1632,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
 
-[9] <network(old).pdf, id=395, 1445.4pt x 289.08pt>
+
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 280.
+
+[9] <network(old).pdf, id=113, 1445.4pt x 289.08pt>
 File: network(old).pdf Graphic file (type pdf)
  <use network(old).pdf>
 Package pdftex.def Info: network(old).pdf used on input line 285.
@@ -1265,7 +1645,7 @@ Overfull \hbox (36.98857pt too wide) in paragraph at lines 285--285
  [][] 
  []
 
-<network(new).pdf, id=396, 1445.4pt x 289.08pt>
+<network(new).pdf, id=114, 1445.4pt x 289.08pt>
 File: network(new).pdf Graphic file (type pdf)
  <use network(new).pdf>
 Package pdftex.def Info: network(new).pdf used on input line 287.
@@ -1275,20 +1655,40 @@ Overfull \hbox (36.98857pt too wide) in paragraph at lines 287--288
  [][] 
  []
 
+
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 292.
+
 [10
 
  <./network(old).pdf> <./network(new).pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./network(new).pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->] <turnoversbivariate(old).pdf, id=518, 867.24pt x 289.08pt>
+>]
+
+LaTeX Warning: Reference `fig: turnoversbivariate' on page 11 undefined on inpu
+t line 296.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 11 undefined on input lin
+e 296.
+
+
+LaTeX Warning: Hyper reference `table: turnovers' on page 11 undefined on input
+ line 298.
+
+
+LaTeX Warning: Reference `table: turnovers' on page 11 undefined on input line 
+298.
+
+<turnoversbivariate(old).pdf, id=231, 867.24pt x 289.08pt>
 File: turnoversbivariate(old).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(old).pdf>
 Package pdftex.def Info: turnoversbivariate(old).pdf used on input line 302.
 (pdftex.def)             Requested size: 500.77129pt x 166.92546pt.
 
-<turnoversbivariate(new).pdf, id=519, 867.24pt x 289.08pt>
+<turnoversbivariate(new).pdf, id=232, 867.24pt x 289.08pt>
 File: turnoversbivariate(new).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(new).pdf>
@@ -1320,6 +1720,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--306
  []
 
 
+LaTeX Warning: Hyper reference `table: turnovers' on page 11 undefined on input
+ line 309.
+
+
+LaTeX Warning: Reference `table: turnovers' on page 11 undefined on input line 
+309.
+
+
+LaTeX Warning: Reference `fig: turnoversbivariate' on page 11 undefined on inpu
+t line 309.
+
+
+LaTeX Warning: Reference `fig: networks' on page 11 undefined on input line 309
+.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 11 undefined on input lin
+e 309.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
@@ -1328,6 +1748,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--311
 Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
+
+
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 311.
 
 [11
 
@@ -1335,12 +1758,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./turnoversbivariate(new).pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
->] <plantturnover.pdf, id=573, 578.16pt x 289.08pt>
+>] <plantturnover.pdf, id=280, 578.16pt x 289.08pt>
 File: plantturnover.pdf Graphic file (type pdf)
  <use plantturnover.pdf>
 Package pdftex.def Info: plantturnover.pdf used on input line 314.
 (pdftex.def)             Requested size: 455.24411pt x 227.62082pt.
 
+
+LaTeX Warning: Hyper reference `table: climaticturnover' on page 12 undefined o
+n input line 323.
+
+
+LaTeX Warning: Reference `table: climaticturnover' on page 12 undefined on inpu
+t line 323.
+
+
+LaTeX Warning: Hyper reference `table: lm' on page 12 undefined on input line 3
+26.
+
+
+LaTeX Warning: Reference `table: lm' on page 12 undefined on input line 326.
+
+
+Package natbib Warning: Citation `Zuur2010' on page 12 undefined on input line 
+326.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 323--331
 
  []
@@ -1365,7 +1808,231 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--331
 
  []
 
-[12 <./plantturnover.pdf>] [13]
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 331.
+
+[12 <./plantturnover.pdf>]
+
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 332.
+
+[13]
+
+Package natbib Warning: Citation `Poisot2015' on page 14 undefined on input lin
+e 334.
+
+
+Package natbib Warning: Citation `Olesen2008' on page 14 undefined on input lin
+e 334.
+
+
+Package natbib Warning: Citation `Burkle2013' on page 14 undefined on input lin
+e 334.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 14 undefined on input 
+line 334.
+
+
+LaTeX Warning: Hyper reference `table: turnovers' on page 14 undefined on input
+ line 334.
+
+
+LaTeX Warning: Reference `table: turnovers' on page 14 undefined on input line 
+334.
+
+
+LaTeX Warning: Hyper reference `fig: turnovertimeplotold' on page 14 undefined 
+on input line 334.
+
+
+LaTeX Warning: Reference `fig: turnovertimeplotold' on page 14 undefined on inp
+ut line 334.
+
+
+LaTeX Warning: Hyper reference `fig: turnovertimeplotnew' on page 14 undefined 
+on input line 334.
+
+
+LaTeX Warning: Reference `fig: turnovertimeplotnew' on page 14 undefined on inp
+ut line 334.
+
+
+LaTeX Warning: Hyper reference `subsec: turnover' on page 14 undefined on input
+ line 336.
+
+
+LaTeX Warning: Reference `subsec: turnover' on page 14 undefined on input line 
+336.
+
+
+Package natbib Warning: Citation `Alarcon2008' on page 14 undefined on input li
+ne 336.
+
+
+Package natbib Warning: Citation `Alarcon2008' on page 14 undefined on input li
+ne 336.
+
+
+Package natbib Warning: Citation `Poisot2015' on page 14 undefined on input lin
+e 338.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 14 undefined on input 
+line 338.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 14 undefined on input 
+line 338.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 14 undefined on input 
+line 338.
+
+
+LaTeX Warning: Hyper reference `subsec: turnover' on page 14 undefined on input
+ line 338.
+
+
+LaTeX Warning: Reference `subsec: turnover' on page 14 undefined on input line 
+338.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 14 undefined on input lin
+e 340.
+
+
+Package natbib Warning: Citation `Scaven2013' on page 14 undefined on input lin
+e 340.
+
+
+Package natbib Warning: Citation `Hughes2000' on page 14 undefined on input lin
+e 340.
+
+
+Package natbib Warning: Citation `Parmesan2003' on page 14 undefined on input l
+ine 340.
+
+
+Package natbib Warning: Citation `BASILIO2006' on page 14 undefined on input li
+ne 340.
+
+
+Package natbib Warning: Citation `Alarcon2008' on page 14 undefined on input li
+ne 340.
+
+
+Package natbib Warning: Citation `MartinGonzalez2009' on page 14 undefined on i
+nput line 340.
+
+
+Package natbib Warning: Citation `Schweiger2010' on page 14 undefined on input 
+line 340.
+
+
+Package natbib Warning: Citation `Hegland2009' on page 14 undefined on input li
+ne 340.
+
+
+Package natbib Warning: Citation `Scaven2013' on page 14 undefined on input lin
+e 340.
+
+
+Package natbib Warning: Citation `Olesen2008' on page 14 undefined on input lin
+e 342.
+
+
+Package natbib Warning: Citation `Scaven2013' on page 14 undefined on input lin
+e 342.
+
+
+Package natbib Warning: Citation `Gallai2009' on page 14 undefined on input lin
+e 342.
+
+
+Package natbib Warning: Citation `Scaven2013' on page 14 undefined on input lin
+e 342.
+
+
+LaTeX Warning: Hyper reference `subsec: climate' on page 14 undefined on input 
+line 344.
+
+
+LaTeX Warning: Reference `subsec: climate' on page 14 undefined on input line 3
+44.
+
+
+LaTeX Warning: Hyper reference `subsec: climate' on page 14 undefined on input 
+line 346.
+
+
+LaTeX Warning: Reference `subsec: climate' on page 14 undefined on input line 3
+46.
+
+
+Package natbib Warning: Citation `Scaven2013' on page 14 undefined on input lin
+e 348.
+
+
+LaTeX Warning: Hyper reference `subsec: climate' on page 14 undefined on input 
+line 348.
+
+
+LaTeX Warning: Reference `subsec: climate' on page 14 undefined on input line 3
+48.
+
+
+LaTeX Warning: Hyper reference `fig: climatetimeplotold' on page 14 undefined o
+n input line 348.
+
+
+LaTeX Warning: Reference `fig: climatetimeplotold' on page 14 undefined on inpu
+t line 348.
+
+
+Package natbib Warning: Citation `Oliveira2002' on page 14 undefined on input l
+ine 348.
+
+
+Package natbib Warning: Citation `Gottsberger2006' on page 14 undefined on inpu
+t line 348.
+
+
+LaTeX Warning: Hyper reference `subsec: turnover' on page 14 undefined on input
+ line 348.
+
+
+LaTeX Warning: Reference `subsec: turnover' on page 14 undefined on input line 
+348.
+
+
+LaTeX Warning: Hyper reference `subsec: climate' on page 14 undefined on input 
+line 350.
+
+
+LaTeX Warning: Reference `subsec: climate' on page 14 undefined on input line 3
+50.
+
+
+Package natbib Warning: Citation `Oliveira2002' on page 14 undefined on input l
+ine 350.
+
+
+Package natbib Warning: Citation `Gottsberger2006' on page 14 undefined on inpu
+t line 350.
+
+
+LaTeX Warning: Hyper reference `subsec: turnover' on page 14 undefined on input
+ line 352.
+
+
+LaTeX Warning: Reference `subsec: turnover' on page 14 undefined on input line 
+352.
+
+
+Package natbib Warning: Citation `Eiten1972' on page 14 undefined on input line
+ 352.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 334--353
 
  []
@@ -1410,7 +2077,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--353
 
  []
 
-[14] [15]
+
+LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 353.
+
+[14]
+
+LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 353.
+
+[15]
+
+Package natbib Warning: Citation `CaraDonna2017' on page 16 undefined on input 
+line 356.
+
+
+LaTeX Warning: Hyper reference `table: turnovers' on page 16 undefined on input
+ line 356.
+
+
+LaTeX Warning: Reference `table: turnovers' on page 16 undefined on input line 
+356.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 16 undefined on input 
+line 356.
+
+
+Package natbib Warning: Citation `Bawa1990' on page 16 undefined on input line 
+356.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 16 undefined on input 
+line 356.
+
+
+Package natbib Warning: Citation `BASILIO2006' on page 16 undefined on input li
+ne 358.
+
+
+Package natbib Warning: Citation `Alarcon2008' on page 16 undefined on input li
+ne 358.
+
+
+Package natbib Warning: Citation `Olesen2008' on page 16 undefined on input lin
+e 358.
+
+
+Package natbib Warning: Citation `Burkle2013' on page 16 undefined on input lin
+e 358.
+
+
+Package natbib Warning: Citation `Koleff2003' on page 16 undefined on input lin
+e 358.
+
+
+Package natbib Warning: Citation `Poisot2015' on page 16 undefined on input lin
+e 358.
+
+
+Package natbib Warning: Citation `Vazquez2007' on page 16 undefined on input li
+ne 360.
+
+
+Package natbib Warning: Citation `Dormann2009' on page 16 undefined on input li
+ne 360.
+
+
+Package natbib Warning: Citation `Poisot2012a' on page 16 undefined on input li
+ne 360.
+
+
+LaTeX Warning: Hyper reference `table: turnovers' on page 16 undefined on input
+ line 360.
+
+
+LaTeX Warning: Reference `table: turnovers' on page 16 undefined on input line 
+360.
+
+
+LaTeX Warning: Hyper reference `fig: turnovertimeplotold' on page 16 undefined 
+on input line 360.
+
+
+LaTeX Warning: Reference `fig: turnovertimeplotold' on page 16 undefined on inp
+ut line 360.
+
+
+LaTeX Warning: Reference `fig: networks' on page 16 undefined on input line 362
+.
+
+
+Package natbib Warning: Citation `CaraDonna2017' on page 16 undefined on input 
+line 362.
+
 
 LaTeX Warning: Hyper reference `sec: results' on page 16 undefined on input lin
 e 362.
@@ -1434,7 +2192,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 356--363
 
  []
 
+
+LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 363.
+
 [16]
+
+Package natbib Warning: Citation `Cleland2007' on page 17 undefined on input li
+ne 365.
+
+
+Package natbib Warning: Citation `Miller-Rushing2008' on page 17 undefined on i
+nput line 365.
+
+
+Package natbib Warning: Citation `Schweiger2010' on page 17 undefined on input 
+line 365.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 17 undefined on input lin
+e 365.
+
+
+Package natbib Warning: Citation `Burkle2009' on page 17 undefined on input lin
+e 367.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 17 undefined on input lin
+e 367.
+
+
+Package natbib Warning: Citation `MartinGonzalez2009' on page 17 undefined on i
+nput line 367.
+
+
+Package natbib Warning: Citation `Koleff2003' on page 17 undefined on input lin
+e 369.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 17 undefined on input lin
+e 369.
+
+
+Package natbib Warning: Citation `Poisot2015' on page 17 undefined on input lin
+e 369.
+
+
+Package natbib Warning: Citation `Poisot2012' on page 17 undefined on input lin
+e 371.
+
+
+Package natbib Warning: Citation `Petanidou1991' on page 17 undefined on input 
+line 371.
+
+
+Package natbib Warning: Citation `Burkle2011' on page 17 undefined on input lin
+e 372.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 365--375
 
  []
@@ -1454,7 +2268,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--375
 
  []
 
-[17] [18] [19]
+
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 375.
+
+[17]
+
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 377.
+
+[18]
+
+LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 377.
+
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 380--384
 
  []
@@ -1464,143 +2289,5 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--384
 
  []
 
-[20] (./buzz.bbl [21] [22] [23] [24]) [25]
-Overfull \hbox (79.73615pt too wide) in paragraph at lines 449--449
-[] 
- []
 
-[26] <seasonalnetwork(old).pdf, id=861, 1445.4pt x 289.08pt>
-File: seasonalnetwork(old).pdf Graphic file (type pdf)
-
-<use seasonalnetwork(old).pdf>
-Package pdftex.def Info: seasonalnetwork(old).pdf used on input line 459.
-(pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
-
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 459--459
- [][] 
- []
-
-<seasonalnetwork(new).pdf, id=862, 1445.4pt x 289.08pt>
-File: seasonalnetwork(new).pdf Graphic file (type pdf)
-
-<use seasonalnetwork(new).pdf>
-Package pdftex.def Info: seasonalnetwork(new).pdf used on input line 461.
-(pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
-
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 461--462
- [][] 
- []
-
-<TimeplotTurnovers(old).pdf, id=863, 867.24pt x 650.43pt>
-File: TimeplotTurnovers(old).pdf Graphic file (type pdf)
-
-<use TimeplotTurnovers(old).pdf>
-Package pdftex.def Info: TimeplotTurnovers(old).pdf used on input line 469.
-(pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
- [27
-
- <./seasonalnetwork(old).pdf> <./seasonalnetwork(new).pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./seasonalnetwork(new).pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (18.39377pt too high) has occurred while \output is active []
-
-
-[28 <./TimeplotTurnovers(old).pdf>]
-<Climate(old).pdf, id=1042, 867.24pt x 650.43pt>
-File: Climate(old).pdf Graphic file (type pdf)
- <use Climate(old).pdf>
-Package pdftex.def Info: Climate(old).pdf used on input line 476.
-(pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
-
-Overfull \vbox (9.67978pt too high) has occurred while \output is active []
-
-
-[29 <./Climate(old).pdf>]
-<TimeplotTurnovers(New).pdf, id=1108, 867.24pt x 325.215pt>
-File: TimeplotTurnovers(New).pdf Graphic file (type pdf)
-
-<use TimeplotTurnovers(New).pdf>
-Package pdftex.def Info: TimeplotTurnovers(New).pdf used on input line 484.
-(pdftex.def)             Requested size: 512.17003pt x 184.94771pt.
-
-<Climate(new).pdf, id=1109, 867.24pt x 361.35pt>
-File: Climate(new).pdf Graphic file (type pdf)
- <use Climate(new).pdf>
-Package pdftex.def Info: Climate(new).pdf used on input line 491.
-(pdftex.def)             Requested size: 526.39551pt x 184.9422pt.
-
-[30 <./TimeplotTurnovers(New).pdf> <./Climate(new).pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Climate(new).pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
->]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 553.
-
-
-LaTeX Warning: Float too large for page by 17.42159pt on input line 603.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-AED: lastpage setting LastPage
-[31] [32] [33] [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 754.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 754.
- (./buzz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 754.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 754.
-Package rerunfilecheck Info: File `buzz.out' has not changed.
-(rerunfilecheck)             Checksum: 7851005F69AF8A4AAFAB1692431ED50A;1118.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 754.
- ) 
-Here is how much of TeX's memory you used:
- 20422 strings out of 493089
- 389821 string characters out of 6134841
- 543723 words of memory out of 5000000
- 23506 multiletter control sequences out of 15000+600000
- 20107 words of font info for 76 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 42i,19n,44p,10399b,923s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on buzz.pdf (38 pages, 647787 bytes).
-PDF statistics:
- 1344 PDF objects out of 1440 (max. 8388607)
- 849 compressed objects within 9 object streams
- 122 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+LaTeX Warning: R
