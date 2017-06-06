@@ -300,16 +300,16 @@ title.set_position([.37, 1.05])
 
 # colour background according to season
 for i in np.arange(-1, 11.0, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.1)
 for i in np.arange(0, 11.5, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
-pl.axvspan(11, 11.5, facecolor='c', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.05)
+pl.axvspan(11, 11.5, facecolor='c', alpha=0.1)
 
-pl.axvspan(11.5, 12, facecolor='r', alpha=0.2)
+pl.axvspan(11.5, 12, facecolor='r', alpha=0.1)
 for i in np.arange(12, len(startofmonths)*2-2, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.05)
 for i in np.arange(13, len(startofmonths)*2-2, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.1)
 
 # pl.axvspan(11.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
 pl.text(4.5, 230, 'Wet Season', size = 14)

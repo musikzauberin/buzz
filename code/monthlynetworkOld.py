@@ -11,7 +11,7 @@ import sys
 import os.path
 import brewer2mpl
 import matplotlib.cm as cm
-import matplotlib.image as img
+import matplotlib.image as mpimg
 
 def longest(listoflists):
   'find length of longest list in list of lists'
@@ -40,6 +40,8 @@ for column in data:
     i.append(column[j])
 
 h.close()
+
+img=mpimg.imread('../bee.png')
 
 
 ########## Adjusting data for plotting ##########
@@ -280,6 +282,9 @@ pl.xticks(major_ticks, monthdisplay, size = 13)
 ## set grid
 pl.gca().grid(True, which='minor', linestyle='--', alpha=0.3)
 
+
+pl.figimage(img, .5, .5, alpha=.15, zorder=1)
+
 ## titles and axis labels
 title = pl.title('Pollinator Networks at BBG site in Cerrado (1995-1997)', size = 18)
 title.set_position([.37, 1.05])
@@ -297,39 +302,38 @@ pl.text(36.3, 230, 'Wet Season', size = 13)
 
 
 
-# colour background according to season
 for i in np.arange(-1, 6.5, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.1)
 for i in np.arange(0, 6.5, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.05)
   
-pl.axvspan(7, 7.5, facecolor='r', alpha=0.2)
-pl.axvspan(7.5, 8, facecolor='c', alpha=0.2)
+pl.axvspan(7, 7.5, facecolor='r', alpha=0.1)
+pl.axvspan(7.5, 8, facecolor='c', alpha=0.1)
 for i in np.arange(8, 19, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.05)
 for i in np.arange(9, 19, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.1)
 
-pl.axvspan(19, 19.5, facecolor='c', alpha=0.2)
-pl.axvspan(19.5, 20, facecolor='r', alpha=0.2)
+pl.axvspan(19, 19.5, facecolor='c', alpha=0.1)
+pl.axvspan(19.5, 20, facecolor='r', alpha=0.1)
 for i in np.arange(20, 31, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.05)
 for i in np.arange(21, 31, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
-pl.axvspan(31, 31.5, facecolor='r', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.1)
+pl.axvspan(31, 31.5, facecolor='r', alpha=0.1)
 
-pl.axvspan(31.5, 32, facecolor='c', alpha=0.2)
+pl.axvspan(31.5, 32, facecolor='c', alpha=0.1)
 for i in np.arange(32, 43, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.05)
 for i in np.arange(33, 43, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
-pl.axvspan(43, 43.5, facecolor='c', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.1)
+pl.axvspan(43, 43.5, facecolor='c', alpha=0.1)
 
-pl.axvspan(43.5, 44, facecolor='r', alpha=0.2)
+pl.axvspan(43.5, 44, facecolor='r', alpha=0.1)
 for i in np.arange(44, len(startofmonths)*2-2, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.05)
 for i in np.arange(45, len(startofmonths)*2-2, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.1)
 
 
 # remove borders
@@ -379,7 +383,7 @@ pl.gca().add_artist(second_legend)
 ########## Save plot ##########
 
 pl.tight_layout()
-plotname = 'network(old)'
+plotname = 'network(old)test'
 plotpath = '../' + plotname + '.pdf'
 pl.savefig(plotpath)
 

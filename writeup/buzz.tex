@@ -402,6 +402,54 @@ In conclusion, this study presents evidence that month-to-month interaction netw
 %%%%%%%%%% Prefix a "S" to all equations, figures, tables and reset the counter %%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[h]
+\centering
+\captionof{figure}{\setstretch{1.3}Example of calculating turnover measures of the networks of April and May 2009. \footnotesize Each number represents a bee or plant species and is represented by a node in \autoref{fig: networks} and \hyperref[fig: seasonalnetworks]{Figure \ref{fig: seasonalnetworks}}. Unique interactions of both networks are shown here. Boxes are color coded to show bee and plant species common to both networks.}
+\label{my-label}
+\begin{tabular}{|l|l|lll}
+\cline{1-2} \cline{4-5}
+\multicolumn{2}{|l|}{\cellcolor[HTML]{EFEFEF}April 2009} & \multicolumn{1}{l|}{} & \multicolumn{2}{l|}{\cellcolor[HTML]{EFEFEF}May 2009} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{EFEFEF}Bee & \cellcolor[HTML]{EFEFEF}Plant & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{EFEFEF}Bee} & \multicolumn{1}{l|}{\cellcolor[HTML]{EFEFEF}Plant} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}6 & 132 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{49} & \multicolumn{1}{l|}{\cellcolor[HTML]{DDF4DC}147} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}22 & 132 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{65} & \multicolumn{1}{l|}{\cellcolor[HTML]{DDF4DC}147} \\ \cline{1-2} \cline{4-5} 
+32 & 148 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{109} & \multicolumn{1}{l|}{178} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}90 & 155 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}91} & \multicolumn{1}{l|}{\cellcolor[HTML]{DDF4DC}185} \\ \cline{1-2} \cline{4-5} 
+72 & 164 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{28} & \multicolumn{1}{l|}{117} \\ \cline{1-2} \cline{4-5} 
+57 & 166 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{16} & \multicolumn{1}{l|}{159} \\ \cline{1-2} \cline{4-5} 
+57 & \cellcolor[HTML]{DDF4DC}168 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}22} & \multicolumn{1}{l|}{169} \\ \cline{1-2} \cline{4-5} 
+71 & \cellcolor[HTML]{DDF4DC}168 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}90} & \multicolumn{1}{l|}{\cellcolor[HTML]{DDF4DC}185} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}84 & \cellcolor[HTML]{DDF4DC}168 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}17} & \multicolumn{1}{l|}{159} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}91 & 205 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}90} & \multicolumn{1}{l|}{159} \\ \cline{1-2} \cline{4-5} 
+102 & 205 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}6} & \multicolumn{1}{l|}{165} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}91 & \cellcolor[HTML]{DDF4DC}147 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{106} & \multicolumn{1}{l|}{201} \\ \cline{1-2} \cline{4-5} 
+41 & 138 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}90} & \multicolumn{1}{l|}{117} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}17 & 138 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}90} & \multicolumn{1}{l|}{139} \\ \cline{1-2} \cline{4-5} 
+\cellcolor[HTML]{E3E5F9}91 & 164 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{70} & \multicolumn{1}{l|}{159} \\ \cline{1-2} \cline{4-5} 
+9 & 166 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{37} & \multicolumn{1}{l|}{161} \\ \cline{1-2} \cline{4-5} 
+13 & 166 & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{\cellcolor[HTML]{E3E5F9}84} & \multicolumn{1}{l|}{\cellcolor[HTML]{DDF4DC}168} \\ \cline{1-2} \cline{4-5} 
+76 & 166 &  &  &  \\ \cline{1-2}
+\cellcolor[HTML]{E3E5F9}91 & \cellcolor[HTML]{DDF4DC}185 &  &  &  \\ \cline{1-2}
+101 & \cellcolor[HTML]{DDF4DC}185 &  &  &  \\ \cline{1-2}
+30 & 118 &  &  &  \\ \cline{1-2}
+\end{tabular}
+\end{table}
+\vspace{-1cm}
+%fix numbers
+\begin{align*}
+	& \textnormal{Whittaker's dissimilarity measure: } & \beta_{W} & = \frac{a + b + c}{(2a + b + c)/2} - 1 \\
+	 &\textnormal{Interaction turnover: } & \beta_{int} & = \frac{2 + 19 + 15}{(2*(2) + 19 + 15)/2} - 1 & = 0.895\\
+	 &\textnormal{Interaction rewiring: } & \beta_{rw} & = \frac{2 + 1 + 1}{(2*(2) + 1 + 1)/2} - 1 & = 0.333\\
+	 &\textnormal{Dissimilarity of interactions due to species turnover: } & \beta_{st} & = 0.895 - 0.333 & = 0.562 \\
+	 \\
+	 &\textnormal{Species turnover: } & \beta_{S} & = \frac{2 + 1 + 1}{(2*(2) + 1 + 1)/2} - 1 & = 0.333\\
+	 &\textnormal{Plant turnover: } & \beta_{Plant} & = \frac{3 + 10 + 8}{(2*(3) + 10 + 8)/2} - 1 & = 0.75\\
+	 &\textnormal{Bee turnover: } & \beta_{Bee} & = \frac{2 + 1 + 1}{(2*(2) + 1 + 1)/2} - 1 & = 0.333\\
+\label{eq: dissimilarity}
+\end{align*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newpage
 \begin{landscape}
 
