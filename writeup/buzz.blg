@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: buzz.aux
 The style file: cell.bst
 Database file #1: buzz2.bib
-You've used 49 entries,
+You've used 47 entries,
             2118 wiz_defined-function locations,
-            896 strings with 17425 characters,
-and the built_in function-call counts, 18426 in all, are:
-= -- 1864
-> -- 919
-< -- 27
-+ -- 316
-- -- 314
-* -- 1790
-:= -- 3063
-add.period$ -- 146
-call.type$ -- 49
-change.case$ -- 255
-chr.to.int$ -- 47
-cite$ -- 175
-duplicate$ -- 583
-empty$ -- 1168
-format.name$ -- 385
-if$ -- 3562
+            886 strings with 16923 characters,
+and the built_in function-call counts, 17858 in all, are:
+= -- 1822
+> -- 888
+< -- 26
++ -- 306
+- -- 304
+* -- 1749
+:= -- 2960
+add.period$ -- 140
+call.type$ -- 47
+change.case$ -- 246
+chr.to.int$ -- 45
+cite$ -- 170
+duplicate$ -- 556
+empty$ -- 1123
+format.name$ -- 371
+if$ -- 3450
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 50
-newline$ -- 247
-num.names$ -- 147
-pop$ -- 314
+missing$ -- 45
+newline$ -- 237
+num.names$ -- 141
+pop$ -- 288
 preamble$ -- 1
-purify$ -- 304
+purify$ -- 293
 quote$ -- 0
-skip$ -- 495
+skip$ -- 477
 stack$ -- 0
-substring$ -- 1104
-swap$ -- 46
+substring$ -- 1105
+swap$ -- 44
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 272
+type$ -- 266
 warning$ -- 0
-while$ -- 153
+while$ -- 151
 width$ -- 0
-write$ -- 624
+write$ -- 601

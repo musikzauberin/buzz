@@ -33,6 +33,11 @@ Boaventura, M. (1998{\rm{}}).
   Bras{\'{i}}lia.}}
 \newblock PhD thesis, Universidade de Brasilia, Distrito Federal.
 
+\bibitem[Brown, 2014]{Brown2014}
+Brown, J.~H. (2014{\rm{}}).
+\newblock {Why are there so many species in the tropics?}
+\newblock {\rm Journal of Biogeography } \emph{41}, 8--22.
+
 \bibitem[Burkle and Irwin, 2009]{Burkle2009}
 Burkle, L. and Irwin, R. (2009{\rm{}}).
 \newblock {The importance of interannual variation and bottom-up nitrogen
@@ -191,23 +196,11 @@ Olesen, J.~M., Bascompte, J., Elberling, H.  and Jordano, P. (2008{\rm{}}).
 \newblock {Temporal dynamics in a pollination network}.
 \newblock {\rm Ecology } \emph{89}, 1573--1582.
 
-\bibitem[{Oliveira, P.E., Gibbs}, 2002]{Gibbs2002}
-{Oliveira, P.E., Gibbs}, P.~E. (2002{\rm{}}).
-\newblock {\rm {Pollination and reproductive biology in cerrado plant
-  communities}}.
-\newblock Columbia University Press.
-
 \bibitem[Parmesan and Yohe, 2003]{Parmesan2003}
 Parmesan, C. and Yohe, G. (2003{\rm{}}).
 \newblock {A globally coherent fingerprint of climate change impacts across
   natural systems}.
 \newblock {\rm Nature } \emph{421}, 37--42.
-
-\bibitem[Pennington and Ratter, 2010]{Pennington2006}
-Pennington, R.~T. and Ratter, J.~A. (2010{\rm{}}).
-\newblock {\rm {Neotropical Savannas and Seasonally Dry Forests: Plant
-  Diversity, Biogeography, and Conservation}}.
-\newblock CRC/Taylor {\&} Francis.
 
 \bibitem[Petanidou, 1991]{Petanidou1991}
 Petanidou, T. (1991{\rm{}}).
@@ -266,12 +259,6 @@ Silveira, F.~A., Melo, G. A.~R.  and Almeida, E. A.~B. (2002{\rm{}}).
 \newblock {\rm {ABELHAS BRASILEIRAS Sistem{\'{a}}tica e
   Identifica{\c{c}}{\~{a}}o}}.
 \newblock [Fernando A. Silveira].
-
-\bibitem[{Toby Pennington} {\rm et~al.}, 2006]{TobyPennington2006}
-{Toby Pennington}, R., Lewis, G.  and Ratter, J. (2006{\rm{}}).
-\newblock {\rm {An Overview of the Plant Diversity, Biogeography and
-  Conservation of Neotropical Savannas and Seasonally Dry Forests}}.
-\newblock CRC Press Book.
 
 \bibitem[{V{\'{a}}zquez, Meli{\'{a}}n, Williamns, Bluthgen, Krasnov},
   2007]{Vazquez2007}
