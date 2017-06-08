@@ -1,7 +1,7 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {section}{\numberline {2}Materials and Methods}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Study area}{4}{subsection.2.1}
+\contentsline {section}{\numberline {2}Materials and Methods}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Study area}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Sampling methods and species identification}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Climate information}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Data analysis}{5}{subsection.2.4}
@@ -14,5 +14,5 @@
 \contentsline {subsection}{\numberline {3.3}The effect of climatic factors on plant and interaction turnover.}{12}{subsection.3.3}
 \contentsline {section}{\numberline {4}Discussion}{14}{section.4}
 \contentsline {subsection}{\numberline {4.1}Limitations}{16}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Conclusion and Future Research}{17}{subsection.4.2}
-\contentsline {section}{\numberline {5}Supplementary Figures}{21}{section.5}
+\contentsline {subsection}{\numberline {4.2}Conclusion and Future Research}{18}{subsection.4.2}
+\contentsline {section}{\numberline {5}Supplementary Figures}{26}{section.5}
