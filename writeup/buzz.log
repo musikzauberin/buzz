@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  9 JUN 2017 05:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  9 JUN 2017 10:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1239,12 +1239,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--256
  []
 
 [7]
-Overfull \hbox (2.29124pt too wide) in paragraph at lines 259--266
-\OT1/cmr/m/n/10.95 ter-ac-tions ([][]Fig-ure [][]S2[][][][]). To in-ves-ti-gate
- whether pre-cip-i-ta-tion and/or tem-per-a-ture af-fects turnovers,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 259--266
 
  []
@@ -1265,10 +1259,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--266
 
  []
 
-[8] <Climate(old).pdf, id=345, 867.24pt x 650.43pt>
-File: Climate(old).pdf Graphic file (type pdf)
- <use Climate(old).pdf>
-Package pdftex.def Info: Climate(old).pdf used on input line 271.
+[8] <Climate(old)1.pdf, id=350, 867.24pt x 650.43pt>
+File: Climate(old)1.pdf Graphic file (type pdf)
+ <use Climate(old)1.pdf>
+Package pdftex.def Info: Climate(old)1.pdf used on input line 271.
 (pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
 
 
@@ -1277,7 +1271,7 @@ LaTeX Warning: Float too large for page by 31.75385pt on input line 274.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./Climate(old).pdf>]
+[9 <./Climate(old)1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 282--286
 
  []
@@ -1295,21 +1289,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--294
 [10
 
 
-] <network(old)1.pdf, id=435, 1454.59917pt x 289.08pt>
-File: network(old)1.pdf Graphic file (type pdf)
+] <network(old)3.png, id=440, 1454.5542pt x 289.08pt>
+File: network(old)3.png Graphic file (type png)
 
-<use network(old)1.pdf>
-Package pdftex.def Info: network(old)1.pdf used on input line 300.
-(pdftex.def)             Requested size: 739.77165pt x 147.01862pt.
+<use network(old)3.png>
+Package pdftex.def Info: network(old)3.png used on input line 300.
+(pdftex.def)             Requested size: 739.77165pt x 147.02744pt.
 
 Overfull \hbox (36.98857pt too wide) in paragraph at lines 300--300
  [][] 
  []
 
-<network(new)1.pdf, id=436, 1454.756pt x 289.08pt>
-File: network(new)1.pdf Graphic file (type pdf)
- <use network(new)1.pdf>
-Package pdftex.def Info: network(new)1.pdf used on input line 302.
+<network(new)3.png, id=442, 1454.7951pt x 289.08pt>
+File: network(new)3.png Graphic file (type png)
+ <use network(new)3.png>
+Package pdftex.def Info: network(new)3.png used on input line 302.
 (pdftex.def)             Requested size: 739.77165pt x 147.00098pt.
 
 Overfull \hbox (36.98857pt too wide) in paragraph at lines 302--303
@@ -1318,11 +1312,8 @@ Overfull \hbox (36.98857pt too wide) in paragraph at lines 302--303
 
 [11
 
- <./network(old)1.pdf> <./network(new)1.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./network(new)1.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->] <plantturnover.pdf, id=22284, 578.16pt x 289.08pt>
+ <./network(old)3.png> <./network(new)3.png>]
+<plantturnover.pdf, id=451, 578.16pt x 289.08pt>
 File: plantturnover.pdf Graphic file (type pdf)
  <use plantturnover.pdf>
 Package pdftex.def Info: plantturnover.pdf used on input line 314.
@@ -1346,14 +1337,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--325
 [12
 
  <./plantturnover.pdf>]
-<turnoversbivariate(old).pdf, id=22327, 867.24pt x 289.08pt>
+<turnoversbivariate(old).pdf, id=496, 867.24pt x 289.08pt>
 File: turnoversbivariate(old).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(old).pdf>
 Package pdftex.def Info: turnoversbivariate(old).pdf used on input line 331.
 (pdftex.def)             Requested size: 455.24411pt x 151.74721pt.
 
-<turnoversbivariate(new).pdf, id=22328, 867.24pt x 289.08pt>
+<turnoversbivariate(new).pdf, id=497, 867.24pt x 289.08pt>
 File: turnoversbivariate(new).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(new).pdf>
@@ -1489,29 +1480,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--403
  []
 
 [21] (./buzz.bbl [22] [23] [24]) [25] [26]
-<seasonalnetwork(old)1.pdf, id=22632, 1453.82822pt x 289.08pt>
-File: seasonalnetwork(old)1.pdf Graphic file (type pdf)
+<seasonalnetwork(old)3.png, id=801, 1453.8315pt x 289.08pt>
+File: seasonalnetwork(old)3.png Graphic file (type png)
 
-<use seasonalnetwork(old)1.pdf>
-Package pdftex.def Info: seasonalnetwork(old)1.pdf used on input line 473.
+<use seasonalnetwork(old)3.png>
+Package pdftex.def Info: seasonalnetwork(old)3.png used on input line 473.
 (pdftex.def)             Requested size: 739.77165pt x 147.0936pt.
 
 Overfull \hbox (36.98857pt too wide) in paragraph at lines 473--473
  [][] 
  []
 
-<seasonalnetwork(new)1.pdf, id=22633, 1454.67293pt x 289.08pt>
-File: seasonalnetwork(new)1.pdf Graphic file (type pdf)
+<seasonalnetwork(new)3.png, id=802, 1454.5542pt x 289.08pt>
+File: seasonalnetwork(new)3.png Graphic file (type png)
 
-<use seasonalnetwork(new)1.pdf>
-Package pdftex.def Info: seasonalnetwork(new)1.pdf used on input line 475.
-(pdftex.def)             Requested size: 739.77165pt x 147.0142pt.
+<use seasonalnetwork(new)3.png>
+Package pdftex.def Info: seasonalnetwork(new)3.png used on input line 475.
+(pdftex.def)             Requested size: 739.77165pt x 147.02744pt.
 
 Overfull \hbox (36.98857pt too wide) in paragraph at lines 475--476
  [][] 
  []
 
-<TimeplotTurnovers(old).pdf, id=22634, 867.24pt x 650.43pt>
+<TimeplotTurnovers(old).pdf, id=803, 867.24pt x 650.43pt>
 File: TimeplotTurnovers(old).pdf Graphic file (type pdf)
 
 <use TimeplotTurnovers(old).pdf>
@@ -1519,38 +1510,25 @@ Package pdftex.def Info: TimeplotTurnovers(old).pdf used on input line 483.
 (pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
  [27
 
- <./seasonalnetwork(old)1.pdf> <./seasonalnetwork(new)1.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./seasonalnetwork(new)1.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (14.0738pt too high) has occurred while \output is active []
+ <./seasonalnetwork(old)3.png> <./seasonalnetwork(new)3.png>]
+Overfull \vbox (31.75385pt too high) has occurred while \output is active []
 
 
 [28 <./TimeplotTurnovers(old).pdf>]
-<TimeplotTurnovers(New).pdf, id=44841, 867.24pt x 325.215pt>
+<TimeplotTurnovers(New).pdf, id=884, 867.24pt x 325.215pt>
 File: TimeplotTurnovers(New).pdf Graphic file (type pdf)
 
 <use TimeplotTurnovers(New).pdf>
 Package pdftex.def Info: TimeplotTurnovers(New).pdf used on input line 492.
-(pdftex.def)             Requested size: 739.77165pt x 277.42653pt.
+(pdftex.def)             Requested size: 682.86613pt x 256.08832pt.
+ [29 <./TimeplotTurnovers(New).pdf>]
+<Climate(new)1.pdf, id=958, 867.24pt x 361.35pt>
+File: Climate(new)1.pdf Graphic file (type pdf)
+ <use Climate(new)1.pdf>
+Package pdftex.def Info: Climate(new)1.pdf used on input line 501.
+(pdftex.def)             Requested size: 682.86613pt x 284.54257pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 492--492
- [][] 
- []
-
-[29 <./TimeplotTurnovers(New).pdf>]
-<Climate(new).pdf, id=44915, 867.24pt x 361.35pt>
-File: Climate(new).pdf Graphic file (type pdf)
- <use Climate(new).pdf>
-Package pdftex.def Info: Climate(new).pdf used on input line 501.
-(pdftex.def)             Requested size: 739.77165pt x 308.2517pt.
-
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 501--501
- [][] 
- []
-
-[30 <./Climate(new).pdf>] [31
+[30 <./Climate(new)1.pdf>] [31
 
 ]
 Overfull \vbox (16.80836pt too high) has occurred while \output is active []
@@ -1576,8 +1554,8 @@ Package rerunfilecheck Info: File `buzz.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
  ) 
 Here is how much of TeX's memory you used:
- 20412 strings out of 493089
- 389645 string characters out of 6134841
+ 20413 strings out of 493089
+ 389659 string characters out of 6134841
  512585 words of memory out of 5000000
  23496 multiletter control sequences out of 15000+600000
  21243 words of font info for 78 fonts, out of 8000000 for 9000
@@ -1602,10 +1580,10 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on buzz.pdf (38 pages, 6907950 bytes).
+Output written on buzz.pdf (38 pages, 9636050 bytes).
 PDF statistics:
- 45085 PDF objects out of 45951 (max. 8388607)
- 29932 compressed objects within 300 object streams
+ 1127 PDF objects out of 1200 (max. 8388607)
+ 818 compressed objects within 9 object streams
  116 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

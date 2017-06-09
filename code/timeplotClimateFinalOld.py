@@ -116,7 +116,7 @@ par1.axis["left"].major_ticks.set_color(p2.get_color())
 par1.axis["left"].major_ticklabels.set_color(p2.get_color())
 
 pl.draw()
-pl.title('Average climate model at BBG site in Cerrado (1995-1996)')
+pl.title('Average climate-turnover model at BBG site in Cerrado (1995-1996)')
 makesubplotnice()
 
 # grid lines
@@ -164,7 +164,7 @@ par1.axis["left"].major_ticks.set_color(p2.get_color())
 par1.axis["left"].major_ticklabels.set_color(p2.get_color())
 
 pl.draw()
-pl.title('Average climate model at BBG site in Cerrado (1996-1997)')
+pl.title('Average climate-turnover model at BBG site in Cerrado (1996-1997)')
 makesubplotnice()
 
 # grid lines
@@ -212,7 +212,7 @@ par1.axis["left"].major_ticks.set_color(p2.get_color())
 par1.axis["left"].major_ticklabels.set_color(p2.get_color())
 
 pl.draw()
-pl.title('Difference climate model at BBG site in Cerrado (1995-1996)')
+pl.title('Difference climate-turnover model at BBG site in Cerrado (1995-1996)')
 makesubplotnice()
 
 # grid lines
@@ -260,7 +260,7 @@ par1.axis["left"].major_ticks.set_color(p2.get_color())
 par1.axis["left"].major_ticklabels.set_color(p2.get_color())
 
 pl.draw()
-pl.title('Difference climate model at BBG site in Cerrado (1996-1997)')
+pl.title('Difference climate-turnover model at BBG site in Cerrado (1996-1997)')
 makesubplotnice()
 
 # grid lines
@@ -278,7 +278,7 @@ legend.get_frame().set_color(light_grey)
 # overall
 pl.tight_layout()
 
-plotpath = '../' + 'Climate(Old)' + '.pdf'
+plotpath = '../' + 'Climate(Old)1' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

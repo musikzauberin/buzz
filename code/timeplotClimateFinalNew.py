@@ -115,7 +115,7 @@ par1.axis["left"].major_ticks.set_color(p2.get_color())
 par1.axis["left"].major_ticklabels.set_color(p2.get_color())
 
 pl.draw()
-pl.title('Average climate model at IBGE site in Cerrado (2008-2009)')
+pl.title('Average climate-turnover model at IBGE site in Cerrado (2008-2009)')
 makesubplotnice()
 
 # grid lines
@@ -161,7 +161,7 @@ par1.axis["left"].major_ticklabels.set_color(p2.get_color())
 par1.set_ylim(-2.01, 1.01)
 
 pl.draw()
-pl.title('Difference climate model at IBGE site in Cerrado (2008-2009)')
+pl.title('Difference climate-turnover model at IBGE site in Cerrado (2008-2009)')
 makesubplotnice()
 
 # grid lines
@@ -224,7 +224,7 @@ legend.get_frame().set_color(light_grey)
 # overall
 pl.tight_layout()
 
-plotpath = '../' + 'Climate(New)' + '.pdf'
+plotpath = '../' + 'Climate(New)1' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()
