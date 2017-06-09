@@ -41,8 +41,6 @@ for column in data:
 
 h.close()
 
-img=mpimg.imread('../bee.png')
-
 
 ########## Adjusting data for plotting ##########
 
@@ -186,8 +184,8 @@ print len(appearnos)
 
 # define colours, alpha and widths for lines dependent on number of int appearances
 colours2 = [colours[i] for i in [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3]]
-alphanos = [0.2, 0.2, 0.2, 0.5, 0.5, 0.5, 0.9, 0.9, 0.9, 1.0, 1.0, 1.0, 1.0]
-widths = [0.5, 0.5, 0.5, 1.0, 1.0, 1.0, 1.4, 1.4, 1.4, 1.4, 1.4, 1.4, 1.4]
+alphanos = [0.4, 0.4, 0.4, 0.7, 0.7, 0.7, 0.9, 0.9, 0.9, 0.9, 1.0, 1.0, 1.0]
+widths = [0.5, 0.5, 0.5, 1.0, 1.0, 1.0, 1.2, 1.2, 1.2, 1.2, 1.4, 1.4, 1.4]
 
 # Assign colour , alpha and width to each interaction
 colourdict = {}
@@ -260,7 +258,7 @@ maxplant2 = max(int(plant) for plant in plants)
 upperylimit = maxbee2
 if maxbee2 < maxplant2:
   upperylimit = maxplant2
-pl.axis([-1, len(startofmonths)*2-2, 0, upperylimit + 50])
+pl.axis([-1, len(startofmonths)*2-2, 0, upperylimit + 60])
 
 ## axis ticks
 # major ticks at where labels are, minor ticks at where dots are plotted
@@ -280,10 +278,7 @@ pl.tick_params( axis='y', which='both', left='off', right='off', labelleft='off'
 pl.xticks(major_ticks, monthdisplay, size = 13)
 
 ## set grid
-pl.gca().grid(True, which='minor', linestyle='--', alpha=0.3)
-
-
-pl.figimage(img, .5, .5, alpha=.15, zorder=1)
+pl.gca().grid(True, which='minor', linestyle='-', alpha=0.5)
 
 ## titles and axis labels
 title = pl.title('Pollinator Networks at BBG site in Cerrado (1995-1997)', size = 18)

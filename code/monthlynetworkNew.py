@@ -41,8 +41,6 @@ for column in data:
 
 h.close()
 
-im = image.imread('../bee.png')
-
 
 
 
@@ -188,7 +186,7 @@ print len(appearnos)
 
 # define colours, alpha and widths for lines dependent on number of int appearances
 colours2 = [colours[i] for i in [0, 0, 2, 3]]
-alphanos = [0.2, 0.2, 1.0, 1.0]
+alphanos = [0.4, 0.4, 1.0, 1.0]
 widths = [0.5, 0.5, 1.4, 1.4]
 
 # Assign colour , alpha and width to each interaction
@@ -282,7 +280,7 @@ pl.tick_params( axis='y', which='both', left='off', right='off', labelleft='off'
 pl.xticks(major_ticks, monthdisplay, size = 14)
 
 ## set grid
-pl.gca().grid(True, which='minor', linestyle='--', alpha=0.3)
+pl.gca().grid(True, which='minor', linestyle='-', alpha=0.5)
 
 ## titles and axis labels
 title = pl.title('Pollinator Networks at the IBGE site in Cerrado (2008-2009)', size = 18)

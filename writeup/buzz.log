@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  9 JUN 2017 00:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.28)  9 JUN 2017 04:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1171,11 +1171,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-<flowchart.pdf, id=179, 465.74396pt x 293.21254pt>
-File: flowchart.pdf Graphic file (type pdf)
- <use flowchart.pdf>
-Package pdftex.def Info: flowchart.pdf used on input line 173.
-(pdftex.def)             Requested size: 364.19667pt x 229.29094pt.
+<flowchart2.pdf, id=180, 457.2473pt x 286.51573pt>
+File: flowchart2.pdf Graphic file (type pdf)
+ <use flowchart2.pdf>
+Package pdftex.def Info: flowchart2.pdf used on input line 173.
+(pdftex.def)             Requested size: 437.0374pt x 273.86719pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 180--185
 
@@ -1186,271 +1186,309 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--185
 
  []
 
-[3 <./flowchart.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 188--194
+[3 <./flowchart2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--194
+Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
+ []
+
+
+Overfull \hbox (13.75107pt too wide) in paragraph at lines 188--193
+\OT1/cmr/m/n/10.95 June 1997 us-ing two pre-de-fined tran-sects (5,280m and 4,1
+30m in length) lo-cated 4km apart ([][]Boaven-
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 197--200
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 209--215
+Underfull \hbox (badness 10000) in paragraph at lines 208--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--215
+Underfull \hbox (badness 10000) in paragraph at lines 208--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--222
+Underfull \hbox (badness 10000) in paragraph at lines 217--247
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 253--258
+Underfull \hbox (badness 10000) in paragraph at lines 251--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--258
+Overfull \hbox (10.10226pt too wide) in paragraph at lines 251--256
+\OT1/cmr/m/n/10.95 fect both March-April and April-May plant and in-ter-ac-tion
+ turnover, re-sult-ing in non-independence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--256
 
  []
 
 [7]
-Overfull \hbox (2.29124pt too wide) in paragraph at lines 261--268
+Overfull \hbox (2.29124pt too wide) in paragraph at lines 259--266
 \OT1/cmr/m/n/10.95 ter-ac-tions ([][]Fig-ure [][]S2[][][][]). To in-ves-ti-gate
  whether pre-cip-i-ta-tion and/or tem-per-a-ture af-fects turnovers,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--268
+Underfull \hbox (badness 10000) in paragraph at lines 259--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--268
+Underfull \hbox (badness 10000) in paragraph at lines 259--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--268
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 273--277
-
+Overfull \hbox (8.30647pt too wide) in paragraph at lines 259--266
+\OT1/cmr/m/n/10.95 quent months as the ex-plana-tory vari-able of turnovers (he
+re-after known as the av-er-age model) ([][]Fig-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--277
+Underfull \hbox (badness 10000) in paragraph at lines 259--266
+
+ []
+
+[8] <Climate(old).pdf, id=352, 867.24pt x 650.43pt>
+File: Climate(old).pdf Graphic file (type pdf)
+ <use Climate(old).pdf>
+Package pdftex.def Info: Climate(old).pdf used on input line 271.
+(pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
+
+
+LaTeX Warning: Float too large for page by 31.75385pt on input line 274.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <./Climate(old).pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 282--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--285
+Underfull \hbox (badness 10000) in paragraph at lines 282--286
 
  []
 
-[9] <network(old).pdf, id=372, 1445.4pt x 289.08pt>
-File: network(old).pdf Graphic file (type pdf)
- <use network(old).pdf>
-Package pdftex.def Info: network(old).pdf used on input line 291.
-(pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 291--291
- [][] 
- []
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
-<network(new).pdf, id=373, 1445.4pt x 289.08pt>
-File: network(new).pdf Graphic file (type pdf)
- <use network(new).pdf>
-Package pdftex.def Info: network(new).pdf used on input line 293.
-(pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
-
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 293--294
- [][] 
  []
 
 [10
 
- <./network(old).pdf> <./network(new).pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./network(new).pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
->] <plantturnover.pdf, id=491, 578.16pt x 289.08pt>
-File: plantturnover.pdf Graphic file (type pdf)
- <use plantturnover.pdf>
-Package pdftex.def Info: plantturnover.pdf used on input line 305.
-(pdftex.def)             Requested size: 455.24411pt x 227.62082pt.
+] <network(old)1.pdf, id=445, 1454.59917pt x 289.08pt>
+File: network(old)1.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
+<use network(old)1.pdf>
+Package pdftex.def Info: network(old)1.pdf used on input line 300.
+(pdftex.def)             Requested size: 739.77165pt x 147.01862pt.
 
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 300--300
+ [][] 
+ []
+
+<network(new)1.pdf, id=446, 1454.756pt x 289.08pt>
+File: network(new)1.pdf Graphic file (type pdf)
+ <use network(new)1.pdf>
+Package pdftex.def Info: network(new)1.pdf used on input line 302.
+(pdftex.def)             Requested size: 739.77165pt x 147.00098pt.
+
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 302--303
+ [][] 
  []
 
 [11
 
+ <./network(old)1.pdf> <./network(new)1.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./network(new)1.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>] <plantturnover.pdf, id=22294, 578.16pt x 289.08pt>
+File: plantturnover.pdf Graphic file (type pdf)
+ <use plantturnover.pdf>
+Package pdftex.def Info: plantturnover.pdf used on input line 314.
+(pdftex.def)             Requested size: 455.24411pt x 227.62082pt.
+
+Overfull \hbox (18.94186pt too wide) in paragraph at lines 321--325
+\OML/cmm/m/it/10.95 ^^L[]$\OT1/cmr/m/n/10.95 , and species turnover, $\OML/cmm/
+m/it/10.95 ^^L[]$ \OT1/cmr/m/n/10.95 (BBG: $\OML/cmm/m/it/10.95 r[] \OT1/cmr/m/
+n/10.95 = \OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/
+cmr/m/n/10.95 444$, $[] = 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 176$; IBGE: 
+$\OML/cmm/m/it/10.95 r[] \OT1/cmr/m/n/10.95 = 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/
+n/10.95 629$, $[] = 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 359$)([][]Figure 5
+[][][]),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+
+ []
+
+[12
+
  <./plantturnover.pdf>]
-<turnoversbivariate(old).pdf, id=535, 867.24pt x 289.08pt>
+<turnoversbivariate(old).pdf, id=22337, 867.24pt x 289.08pt>
 File: turnoversbivariate(old).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(old).pdf>
-Package pdftex.def Info: turnoversbivariate(old).pdf used on input line 322.
+Package pdftex.def Info: turnoversbivariate(old).pdf used on input line 331.
 (pdftex.def)             Requested size: 455.24411pt x 151.74721pt.
 
-<turnoversbivariate(new).pdf, id=536, 867.24pt x 289.08pt>
+<turnoversbivariate(new).pdf, id=22338, 867.24pt x 289.08pt>
 File: turnoversbivariate(new).pdf Graphic file (type pdf)
 
 <use turnoversbivariate(new).pdf>
-Package pdftex.def Info: turnoversbivariate(new).pdf used on input line 323.
+Package pdftex.def Info: turnoversbivariate(new).pdf used on input line 332.
 (pdftex.def)             Requested size: 455.24411pt x 151.74721pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--327
+Underfull \hbox (badness 10000) in paragraph at lines 327--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--339
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
 
  []
 
 
-Overfull \hbox (4.61545pt too wide) in paragraph at lines 332--339
-\OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 ^^L[]$ \OT1/cmr/m/n/10.95 in-crease
-s as av-er-age me-dian tem-per-a-ture in-creases dur-ing the wet sea-son (adj.r
-$[]$=0.122,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--339
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--339
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--339
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
 
  []
 
-[12 <./turnoversbivariate(old).pdf> <./turnoversbivariate(new).pdf
+[13 <./turnoversbivariate(old).pdf> <./turnoversbivariate(new).pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./turnoversbivariate(new).pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
->] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+>] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--367
+Underfull \hbox (badness 10000) in paragraph at lines 351--376
 
  []
 
-[14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 370--373
+[15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 379--382
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 375--384
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--384
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 384--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--384
+Underfull \hbox (badness 10000) in paragraph at lines 384--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--384
-
- []
-
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 389--393
+Underfull \hbox (badness 10000) in paragraph at lines 384--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--393
+Underfull \hbox (badness 10000) in paragraph at lines 384--393
 
  []
 
-[20] (./buzz.bbl [21]
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 398--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--403
+
+ []
+
+[21] (./buzz.bbl [22]
 Underfull \hbox (badness 10000) in paragraph at lines 80--84
 []\OT1/cmr/m/n/12 Cleland, E. E., Chuine, I., Men-zel, A., Mooney, H. A. and Sc
 hwartz,
@@ -1474,7 +1512,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--134
 -ter-ac-tions?
  []
 
-[22]
+[23]
 Underfull \hbox (badness 7907) in paragraph at lines 181--187
 []\OT1/cmr/m/n/12 Moure, J. S., Melo, G. A. R. and Vi-vallo, F. (2012).  Cat-a-
 logue of
@@ -1492,74 +1530,65 @@ Overfull \hbox (185.36517pt too wide) in paragraph at lines 181--187
 of[]Bees[]Hymenoptera[]Apoidea[]in[]the[]Neotropical[]Region
  []
 
-[23] [24]) [25] [26] <seasonalnetwork(old).pdf, id=847, 1445.4pt x 289.08pt>
-File: seasonalnetwork(old).pdf Graphic file (type pdf)
+[24] [25]) [26] [27]
+<seasonalnetwork(old)1.pdf, id=22650, 1453.82822pt x 289.08pt>
+File: seasonalnetwork(old)1.pdf Graphic file (type pdf)
 
-<use seasonalnetwork(old).pdf>
-Package pdftex.def Info: seasonalnetwork(old).pdf used on input line 463.
-(pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
+<use seasonalnetwork(old)1.pdf>
+Package pdftex.def Info: seasonalnetwork(old)1.pdf used on input line 473.
+(pdftex.def)             Requested size: 739.77165pt x 147.0936pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 463--463
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 473--473
  [][] 
  []
 
-<seasonalnetwork(new).pdf, id=848, 1445.4pt x 289.08pt>
-File: seasonalnetwork(new).pdf Graphic file (type pdf)
+<seasonalnetwork(new)1.pdf, id=22651, 1454.67293pt x 289.08pt>
+File: seasonalnetwork(new)1.pdf Graphic file (type pdf)
 
-<use seasonalnetwork(new).pdf>
-Package pdftex.def Info: seasonalnetwork(new).pdf used on input line 465.
-(pdftex.def)             Requested size: 739.77165pt x 147.95375pt.
+<use seasonalnetwork(new)1.pdf>
+Package pdftex.def Info: seasonalnetwork(new)1.pdf used on input line 475.
+(pdftex.def)             Requested size: 739.77165pt x 147.0142pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 465--466
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 475--476
  [][] 
  []
 
-<TimeplotTurnovers(old).pdf, id=849, 867.24pt x 650.43pt>
+<TimeplotTurnovers(old).pdf, id=22652, 867.24pt x 650.43pt>
 File: TimeplotTurnovers(old).pdf Graphic file (type pdf)
 
 <use TimeplotTurnovers(old).pdf>
-Package pdftex.def Info: TimeplotTurnovers(old).pdf used on input line 473.
+Package pdftex.def Info: TimeplotTurnovers(old).pdf used on input line 483.
 (pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
- [27
+ [28
 
- <./seasonalnetwork(old).pdf> <./seasonalnetwork(new).pdf
+ <./seasonalnetwork(old)1.pdf> <./seasonalnetwork(new)1.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./seasonalnetwork(new).pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./seasonalnetwork(new)1.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Overfull \vbox (14.0738pt too high) has occurred while \output is active []
 
 
-[28 <./TimeplotTurnovers(old).pdf>]
-<Climate(old).pdf, id=1028, 867.24pt x 650.43pt>
-File: Climate(old).pdf Graphic file (type pdf)
- <use Climate(old).pdf>
-Package pdftex.def Info: Climate(old).pdf used on input line 480.
-(pdftex.def)             Requested size: 569.05511pt x 426.81386pt.
-
-Overfull \vbox (31.75385pt too high) has occurred while \output is active []
-
-
-[29 <./Climate(old).pdf>]
-<TimeplotTurnovers(New).pdf, id=1094, 867.24pt x 325.215pt>
+[29 <./TimeplotTurnovers(old).pdf>]
+<TimeplotTurnovers(New).pdf, id=44857, 867.24pt x 325.215pt>
 File: TimeplotTurnovers(New).pdf Graphic file (type pdf)
 
 <use TimeplotTurnovers(New).pdf>
-Package pdftex.def Info: TimeplotTurnovers(New).pdf used on input line 488.
+Package pdftex.def Info: TimeplotTurnovers(New).pdf used on input line 492.
 (pdftex.def)             Requested size: 739.77165pt x 277.42653pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 488--488
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 492--492
  [][] 
  []
 
 [30 <./TimeplotTurnovers(New).pdf>]
-<Climate(new).pdf, id=1168, 867.24pt x 361.35pt>
+<Climate(new).pdf, id=44931, 867.24pt x 361.35pt>
 File: Climate(new).pdf Graphic file (type pdf)
  <use Climate(new).pdf>
-Package pdftex.def Info: Climate(new).pdf used on input line 497.
+Package pdftex.def Info: Climate(new).pdf used on input line 501.
 (pdftex.def)             Requested size: 739.77165pt x 308.2517pt.
 
-Overfull \hbox (36.98857pt too wide) in paragraph at lines 497--497
+Overfull \hbox (36.98857pt too wide) in paragraph at lines 501--501
  [][] 
  []
 
@@ -1579,44 +1608,53 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 AED: lastpage setting LastPage
 [34] [35]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 760.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 760.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
  (./buzz.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 760.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 760.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
 Package rerunfilecheck Info: File `buzz.out' has not changed.
 (rerunfilecheck)             Checksum: FF8480E7FE25CAC58512834281BD376E;1144.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 760.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
  ) 
 Here is how much of TeX's memory you used:
- 20430 strings out of 493089
- 389929 string characters out of 6134841
+ 20431 strings out of 493089
+ 389961 string characters out of 6134841
  512585 words of memory out of 5000000
  23509 multiletter control sequences out of 15000+600000
  21243 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,19n,43p,10399b,917s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on buzz.pdf (39 pages, 637012 bytes).
+pdfTeX warning (dest): name{page.37} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on buzz.pdf (39 pages, 6902531 bytes).
 PDF statistics:
- 1333 PDF objects out of 1440 (max. 8388607)
- 840 compressed objects within 9 object streams
- 121 named destinations out of 1000 (max. 500000)
+ 45103 PDF objects out of 45951 (max. 8388607)
+ 29949 compressed objects within 300 object streams
+ 122 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

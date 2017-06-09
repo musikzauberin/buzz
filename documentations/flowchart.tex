@@ -9,28 +9,38 @@
  }
 \usepackage{tikz}
 \usetikzlibrary{arrows,snakes,backgrounds}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkpurple}{rgb}{.3,0,.7}
+\definecolor{lightpurple}{rgb}{.8,.5,.9}
+\definecolor{green}{rgb}{0,.5,.2}
+\definecolor{lightbrown}{rgb}{.9,.7,.1}
+\definecolor{darkbrown}{rgb}{.5,.4,.3}
 
 \begin{document}
 
-
+% draw=blue!80, fill=blue!20, 
 \tikzstyle{circle}=[circle ,draw=blue!50, fill=blue!20, thick]
-\tikzstyle{rec}=[rectangle, draw=blue!80, fill=blue!20, thick]
+\tikzstyle{rec}=[rectangle, thick]
 \tikzstyle{pre}=[<-, shorten <=2pt, >=stealth, thick]
 \tikzstyle{post}=[->, shorten >=2pt, >=stealth, thick]
 
 \begin{tikzpicture}[inner sep=3mm]
-  \node at (0.5, 0) [rec] (Climate) {Climate: Precipitation, Temperature};
-  \node at (0, -2) [rec] (Bee) {Bee turnover ($\beta_{Bee}$)};
-  \node at (-5, -2) [rec] (Plant) {Plant turnover ($\beta_{Plant}$)}
+  \node at (0.5, 0) [rec, minimum width=8cm, minimum height = 1.3cm, draw= black] (Climate) {\parbox{8cm}{Climate: }};
+  \node[draw=darkblue ,fill=darkblue!5, thick] at ([xshift=-2em]Climate.center){Precipitation};
+\node[draw=darkred ,fill=darkred!5, thick] at ([xshift=-5em]Climate.east){Temperature};
+
+  \node at (0, -2) [rec, draw=lightpurple, fill=lightpurple!5] (Bee) {Bee turnover ($\beta_{Bee}$)};
+  \node at (-5, -2) [rec, draw=green, fill=green!5] (Plant) {Plant turnover ($\beta_{Plant}$)}
   	edge [pre, bend left = 10] (Climate);
-  \node at (5, -2) [rec] (rw) {Interaction rewiring ($\beta_{rw}$)}
+  \node at (5, -2) [rec, draw=darkbrown, fill=darkbrown!5] (rw) {Interaction rewiring ($\beta_{rw}$)}
   	edge [pre, bend right = 10] (Climate);
-  \node at (-3, -4) [rec] (s) {Species turnover ($\beta_{S}$)}
+  \node at (-3, -4) [rec, draw=darkpurple, fill=darkpurple!5] (s) {Species turnover ($\beta_{S}$)}
   	edge [pre] (Plant)
 	edge [pre] (Bee);
-  \node at (-2, -6) [rec] (st) {Dissimilarity between networks due to species turnover ($\beta_{st}$)}
+  \node at (-2, -6) [rec, draw=lightbrown, fill=lightbrown!5] (st) {Dissimilarity between networks due to species turnover ($\beta_{st}$)}
   	edge [pre] (s);
-  \node at (0, -8) [rec] (int) {Interaction turnover ($\beta_{int}$)}
+  \node at (0, -8) [rec, draw=black, fill = black!5] (int) {Interaction turnover ($\beta_{int}$)}
   	edge [pre, bend left = 3] (st)
 	edge [pre, bend right = 40] (rw);
 %    \draw [->] (Plant) to                 (Bee);

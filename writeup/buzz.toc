@@ -8,11 +8,11 @@
 \contentsline {subsubsection}{\numberline {2.4.1}Month-to-month turnover}{6}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Correlations}{7}{subsubsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.3}Climate}{8}{subsubsection.2.4.3}
-\contentsline {section}{\numberline {3}Results}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Community composition}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Month-to-month turnover}{9}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Effect of climatic factors on plant and interaction turnover}{13}{subsection.3.3}
-\contentsline {section}{\numberline {4}Discussion}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Limitations}{17}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Conclusion and Future Research}{18}{subsection.4.2}
-\contentsline {section}{\numberline {5}Supplementary Figures}{26}{section.5}
+\contentsline {section}{\numberline {3}Results}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Community composition}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Month-to-month turnover}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Effect of climatic factors on plant and interaction turnover}{14}{subsection.3.3}
+\contentsline {section}{\numberline {4}Discussion}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Limitations}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Conclusion and Future Research}{19}{subsection.4.2}
+\contentsline {section}{\numberline {5}Supplementary Figures}{27}{section.5}

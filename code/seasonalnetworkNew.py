@@ -190,7 +190,7 @@ print drybeeplants
 
 # define colours, alpha and widths for lines dependent on number of int appearances
 colours2 = [colours[i] for i in [0, 2, 3]]
-alphanos = [0.2, 1.0, 1.0]
+alphanos = [0.5, 1.0, 1.0]
 widths = [0.5, 1.0, 1.0]
 
 # Assign colour , alpha and width to each interaction
@@ -292,7 +292,7 @@ pl.tick_params( axis='y', which='both', left='off', right='off', labelleft='off'
 pl.xticks(major_ticks, monthdisplay, size = 12)
 
 ## set grid
-pl.gca().grid(True, which='minor', linestyle='--', alpha=0.3)
+pl.gca().grid(True, which='minor', linestyle='-', alpha=0.5)
 
 ## titles and axis labels
 title = pl.title('Pollinator Networks at IBGE site in Cerrado (2008-2009)', size = 18)
