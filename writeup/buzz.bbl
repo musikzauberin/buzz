@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{43}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Alarc{\'{o}}n \emph{et~al.}(2008)Alarc{\'{o}}n, Waser \&
@@ -250,26 +250,14 @@ Schweiger, O., Biesmeijer, J.C., Bommarco, R., Hickler, T., Hulme, P.E., Klotz,
   Settele, J. (2010).
 \newblock {Multiple stressors on biotic interactions: How climate change and
   alien species interact to affect pollination}.
-
-\bibitem[{Silveira \& Campos(1995)}]{Silveira1995}
-Silveira, F.A. \& Campos, M.J.O. (1995).
-\newblock {A melissofauna de Corumbata{\'{i}} (SP) e Paraopeba (MG) e uma
-  an{\'{a}}lise da biogeografia das abelhas do Cerrado Brasileiro (Hymenoptera,
-  Apoidea)}.
-\newblock \emph{Revista Brasileira de Entomologia}, 39, 371--401.
-
-\bibitem[{Silveira \emph{et~al.}(2002)Silveira, Melo \& Almeida}]{Silveira2002}
-Silveira, F.A., Melo, G.A.R. \& Almeida, E.A.B. (2002).
-\newblock \emph{{ABELHAS BRASILEIRAS Sistem{\'{a}}tica e
-  Identifica{\c{c}}{\~{a}}o}}.
-\newblock [Fernando A. Silveira].
+\newblock \emph{Biological Reviews}, 85, 777--795.
 
 \bibitem[{{V{\'{a}}zquez, Meli{\'{a}}n, Williamns, Bluthgen,
   Krasnov}(2007)}]{Vazquez2007}
 {V{\'{a}}zquez, Meli{\'{a}}n, Williamns, Bluthgen, Krasnov}, P. (2007).
 \newblock {Species abundance and asymmetric interaction strength in ecological
-  networks - mat supp}.
-\newblock \emph{OIkos}, 116, 1120--1127.
+  networks.}
+\newblock \emph{Oikos}, 116, 1120--1127.
 
 \bibitem[{Whittaker(1960)}]{Whittaker1960}
 Whittaker, R.H. (1960).
