@@ -168,7 +168,6 @@ ENTRY  % declare variables that have a value for each entry on the list
     type
     volume
     year
-    url
   }
   {}
   { label extra.label sort.label }
@@ -940,7 +939,6 @@ FUNCTION {misc}
   howpublished output
   new.block
   note output
-  url output
   fin.entry
 }
 

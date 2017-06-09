@@ -1,288 +1,293 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{45}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[Alarc{\'{o}}n {\rm et~al.}, 2008]{Alarcon2008}
-Alarc{\'{o}}n, R., Waser, N.~M.  and Ollerton, J. (2008{\rm{}}).
+\bibitem[{Alarc{\'{o}}n \emph{et~al.}(2008)Alarc{\'{o}}n, Waser \&
+  Ollerton}]{Alarcon2008}
+Alarc{\'{o}}n, R., Waser, N.M. \& Ollerton, J. (2008).
 \newblock {Year-to-year variation in the topology of a plant-pollinator
   interaction network}.
-\newblock {\rm Oikos } \emph{117}, 1796--1807.
+\newblock \emph{Oikos}, 117, 1796--1807.
 
-\bibitem[Allsopp {\rm et~al.}, 2008]{Allsopp2008}
-Allsopp, M.~H., de~Lange, W.~J.  and Veldtman, R. (2008{\rm{}}).
+\bibitem[{Allsopp \emph{et~al.}(2008)Allsopp, de~Lange \&
+  Veldtman}]{Allsopp2008}
+Allsopp, M.H., de~Lange, W.J. \& Veldtman, R. (2008).
 \newblock {Valuing insect pollination services with cost of replacement}.
-\newblock {\rm PLoS ONE } \emph{3}, e3128.
+\newblock \emph{PLoS ONE}, 3, e3128.
 
-\bibitem[Basilio {\rm et~al.}, 2006]{BASILIO2006}
-Basilio, A.~M., Medan, D., Torretta, J.~P.  and Bartoloni, N.~J. (2006{\rm{}}).
+\bibitem[{Basilio \emph{et~al.}(2006)Basilio, Medan, Torretta \&
+  Bartoloni}]{BASILIO2006}
+Basilio, A.M., Medan, D., Torretta, J.P. \& Bartoloni, N.J. (2006).
 \newblock {A year-long plant-pollinator network}.
-\newblock {\rm Austral Ecology } \emph{31}, 975--983.
+\newblock \emph{Austral Ecology}, 31, 975--983.
 
-\bibitem[Bawa, 1990]{Bawa1990}
-Bawa, K.~S. (1990{\rm{}}).
+\bibitem[{Bawa(1990)}]{Bawa1990}
+Bawa, K.S. (1990).
 \newblock {Plant-pollinator interactions in tropical rain forests}.
-\newblock {\rm Annual Review of Ecology and Systematics } \emph{21}, 399--422.
+\newblock \emph{Annual Review of Ecology and Systematics}, 21, 399--422.
 
-\bibitem[Biesmeijer and Slaa, 2006]{Biesmeijer2006}
-Biesmeijer, J.~C. and Slaa, E.~J. (2006{\rm{}}).
+\bibitem[{Biesmeijer \& Slaa(2006)}]{Biesmeijer2006}
+Biesmeijer, J.C. \& Slaa, E.J. (2006).
 \newblock {The structure of eusocial bee assemblages in Brazil}.
-\newblock {\rm Apidologie } \emph{37}, 240--258.
+\newblock \emph{Apidologie}, 37, 240--258.
 
-\bibitem[Boaventura, 1998]{Boaventura1998}
-Boaventura, M. (1998{\rm{}}).
-\newblock {\rm {Sazonalidade e estrutura de uma comunidade de abelhas
-  silvestres numa {\'{a}}rea de Cerrado do Jardim Bot{\^{a}}nico de
+\bibitem[{Boaventura(1998)}]{Boaventura1998}
+Boaventura, M. (1998).
+\newblock \emph{\textnormal{Sazonalidade e estrutura de uma comunidade de
+  abelhas silvestres numa {\'{a}}rea de Cerrado do Jardim Bot{\^{a}}nico de
   Bras{\'{i}}lia.}}
-\newblock PhD thesis, Universidade de Brasilia, Distrito Federal.
+\newblock Master's thesis, Universidade de Brasilia, Distrito Federal.
 
-\bibitem[Brown, 2014]{Brown2014}
-Brown, J.~H. (2014{\rm{}}).
+\bibitem[{Brown(2014)}]{Brown2014}
+Brown, J.H. (2014).
 \newblock {Why are there so many species in the tropics?}
-\newblock {\rm Journal of Biogeography } \emph{41}, 8--22.
+\newblock \emph{Journal of Biogeography}, 41, 8--22.
 
-\bibitem[Burkle and Irwin, 2009]{Burkle2009}
-Burkle, L. and Irwin, R. (2009{\rm{}}).
+\bibitem[{Burkle \& Irwin(2009)}]{Burkle2009}
+Burkle, L. \& Irwin, R. (2009).
 \newblock {The importance of interannual variation and bottom-up nitrogen
   enrichment for plant-pollinator networks}.
-\newblock {\rm Oikos } \emph{118}, 1816--1829.
+\newblock \emph{Oikos}, 118, 1816--1829.
 
-\bibitem[Burkle {\rm et~al.}, 2011]{Burkle2011}
-Burkle, L.~A., Alarc{\'{o}}n, R.  and Alarcon, R. (2011{\rm{}}).
+\bibitem[{Burkle \emph{et~al.}(2011)Burkle, Alarc{\'{o}}n \&
+  Alarcon}]{Burkle2011}
+Burkle, L.A., Alarc{\'{o}}n, R. \& Alarcon, R. (2011).
 \newblock {The future of plant-pollinator diversity: Understanding interaction
   networks across time, space, and global change}.
-\newblock {\rm American Journal of Botany } \emph{98}, 528--538.
+\newblock \emph{American Journal of Botany}, 98, 528--538.
 
-\bibitem[Burkle {\rm et~al.}, 2013]{Burkle2013}
-Burkle, L.~A., Marlin, J.~C.  and Knight, T.~M. (2013{\rm{}}).
+\bibitem[{Burkle \emph{et~al.}(2013)Burkle, Marlin \& Knight}]{Burkle2013}
+Burkle, L.A., Marlin, J.C. \& Knight, T.M. (2013).
 \newblock {Plant-Pollinator Interactions over 120 Years: Loss of Species,
   Co-Occurrence, and Function}.
-\newblock {\rm Science } \emph{339}, 1611--1615.
+\newblock \emph{Science}, 339, 1611--1615.
 
-\bibitem[Canard, 2011]{Canard2011}
-Canard, E. (2011{\rm{}}).
-\newblock {\rm {Espace et neutralite dans les reseaux d'interactions
-  ecologiques. PhD thesis.}}
-\newblock PhD thesis, Universite Montpellier 2.
+\bibitem[{Cappellari(2011)}]{Cappellari2011}
+Cappellari, S.C. (2011).
+\newblock \emph{\textnormal{Evolutionary Ecology of Malpighiaceae Pollination
+  at the Species and Community Levels}}.
+\newblock Ph.D. thesis, The University of Texas at Austin.
 
-\bibitem[Cappellari, 2011]{Cappellari2011}
-Cappellari, S.~C. (2011{\rm{}}).
-\newblock {\rm {Evolutionary Ecology of Malpighiaceae Pollination at the
-  Species and Community Levels}}.
-\newblock PhD thesis, The University of Texas at 660 The University of Texas at
-  Austin.
-
-\bibitem[CaraDonna {\rm et~al.}, 2017]{CaraDonna2017}
-CaraDonna, P.~J., Petry, W.~K., Brennan, R.~M., Cunningham, J.~L., Bronstein,
-  J.~L., Waser, N.~M.  and Sanders, N.~J. (2017{\rm{}}).
+\bibitem[{CaraDonna \emph{et~al.}(2017)CaraDonna, Petry, Brennan, Cunningham,
+  Bronstein, Waser \& Sanders}]{CaraDonna2017}
+CaraDonna, P.J., Petry, W.K., Brennan, R.M., Cunningham, J.L., Bronstein, J.L.,
+  Waser, N.M. \& Sanders, N.J. (2017).
 \newblock {Interaction rewiring and the rapid turnover of plant-pollinator
   networks}.
-\newblock {\rm Ecology Letters } \emph{20}, 385--394.
+\newblock \emph{Ecology Letters}, 20, 385--394.
 
-\bibitem[Cleland {\rm et~al.}, 2007]{Cleland2007}
-Cleland, E.~E., Chuine, I., Menzel, A., Mooney, H.~A.  and Schwartz, M.~D.
-  (2007{\rm{}}).
+\bibitem[{Cleland \emph{et~al.}(2007)Cleland, Chuine, Menzel, Mooney \&
+  Schwartz}]{Cleland2007}
+Cleland, E.E., Chuine, I., Menzel, A., Mooney, H.A. \& Schwartz, M.D. (2007).
 \newblock {Shifting plant phenology in response to global change}.
-\newblock http://www.sciencedirect.com/science/article/pii/S0169534707001309.
+\newblock \emph{Trends in Ecology and Evolution}, 22, 357--365.
 
-\bibitem[Dehmer {\rm et~al.}, 2011]{Dehmer2011}
-Dehmer, M., Emmert-streib, F., Graber, A.  and Salvador, A. (2011{\rm{}}).
-\newblock {\rm {Applied Statistics for Network Biology: Methods in Systems
-  Biology}}, vol.~1,.
+\bibitem[{Dehmer \emph{et~al.}(2011)Dehmer, Emmert-streib, Graber \&
+  Salvador}]{Dehmer2011}
+Dehmer, M., Emmert-streib, F., Graber, A. \& Salvador, A. (2011).
+\newblock \emph{Applied Statistics for Network Biology: Methods in Systems
+  Biology}.
 \newblock Wiley-Blackwell.
 
-\bibitem[Dormann {\rm et~al.}, 2009]{Dormann2009}
-Dormann, C.~F., Frund, J., Bluthgen, N.  and Gruber, B. (2009{\rm{}}).
+\bibitem[{Dormann \emph{et~al.}(2009)Dormann, Frund, Bluthgen \&
+  Gruber}]{Dormann2009}
+Dormann, C.F., Frund, J., Bluthgen, N. \& Gruber, B. (2009).
 \newblock {Indices, Graphs and Null Models: Analyzing Bipartite Ecological
   Networks}.
-\newblock {\rm The Open Ecology Journal } \emph{2}, 7--24.
+\newblock \emph{The Open Ecology Journal}, 2, 7--24.
 
-\bibitem[Eiten, 1972]{Eiten1972}
-Eiten, G. (1972{\rm{}}).
-\newblock {\rm {The Cerrado Vegetation Of Brazil. }}, vol. 38,.
-\newblock The Botanical Review.
+\bibitem[{Eiten(1972)}]{Eiten1972}
+Eiten, G. (1972).
+\newblock {The Cerrado Vegetation Of Brazil.}
+\newblock \emph{The Botanical Review}, 38, 201--327.
 
-\bibitem[Gallai {\rm et~al.}, 2009]{Gallai2009}
-Gallai, N., Salles, J.~M., Settele, J.  and Vaissi{\`{e}}re, B.~E.
-  (2009{\rm{}}).
+\bibitem[{Gallai \emph{et~al.}(2009)Gallai, Salles, Settele \&
+  Vaissi{\`{e}}re}]{Gallai2009}
+Gallai, N., Salles, J.M., Settele, J. \& Vaissi{\`{e}}re, B.E. (2009).
 \newblock {Economic valuation of the vulnerability of world agriculture
   confronted with pollinator decline}.
-\newblock {\rm Ecological Economics } \emph{68}, 810--821.
+\newblock \emph{Ecological Economics}, 68, 810--821.
 
-\bibitem[Gonz{\'{a}}lez {\rm et~al.}, 2009]{MartinGonzalez2009}
-Gonz{\'{a}}lez, A. M.~M., Dalsgaard, B., Ollerton, J., Timmermann, A., Olesen,
-  J.~M., Andersen, L.  and Tossas, A.~G. (2009{\rm{}}).
+\bibitem[{Gonz{\'{a}}lez \emph{et~al.}(2009)Gonz{\'{a}}lez, Dalsgaard,
+  Ollerton, Timmermann, Olesen, Andersen \& Tossas}]{MartinGonzalez2009}
+Gonz{\'{a}}lez, A.M.M., Dalsgaard, B., Ollerton, J., Timmermann, A., Olesen,
+  J.M., Andersen, L. \& Tossas, A.G. (2009).
 \newblock {Effects of climate on pollination networks in the West Indies}.
-\newblock {\rm Journal of Tropical Ecology } \emph{25}, 493--506.
+\newblock \emph{Journal of Tropical Ecology}, 25, 493--506.
 
-\bibitem[Gottsberger and Silberbauer-Gottsberger,
-  2006{\rm{a}}]{Gottsberger2006}
-Gottsberger, G. and Silberbauer-Gottsberger, I. (2006{\rm{a}}).
-\newblock {\rm {Life in the Cerrado, a South American Tropical Seasonal
+\bibitem[{Gottsberger \&
+  Silberbauer-Gottsberger(2006{\natexlab{a}})}]{Gottsberger2006}
+Gottsberger, G. \& Silberbauer-Gottsberger, I. (2006{\natexlab{a}}).
+\newblock \emph{{Life in the Cerrado, a South American Tropical Seasonal
   Ecosystem. Origin, Structure, Dynamics and Plant Use (vol. 1)}}.
 \newblock Reta Verlag.
 
-\bibitem[Gottsberger and Silberbauer-Gottsberger,
-  2006{\rm{b}}]{Gottsberger2006a}
-Gottsberger, G. and Silberbauer-Gottsberger, I. (2006{\rm{b}}).
-\newblock {\rm {Life in the Cerrado, a South American Tropical Seasonal
+\bibitem[{Gottsberger \&
+  Silberbauer-Gottsberger(2006{\natexlab{b}})}]{Gottsberger2006a}
+Gottsberger, G. \& Silberbauer-Gottsberger, I. (2006{\natexlab{b}}).
+\newblock \emph{{Life in the Cerrado, a South American Tropical Seasonal
   Ecosystem. Pollination and Seed Dispersal (vol. 2)}}.
 \newblock Reta Verlag.
 
-\bibitem[Hegland {\rm et~al.}, 2009]{Hegland2009}
-Hegland, S.~J., Nielsen, A., L{\'{a}}zaro, A., Bjerknes, A.~L.  and Totland,
-  {\O}. (2009{\rm{}}).
+\bibitem[{Hegland \emph{et~al.}(2009)Hegland, Nielsen, L{\'{a}}zaro, Bjerknes
+  \& Totland}]{Hegland2009}
+Hegland, S.J., Nielsen, A., L{\'{a}}zaro, A., Bjerknes, A.L. \& Totland, {\O}.
+  (2009).
 \newblock {How does climate warming affect plant-pollinator interactions?}
-\newblock http://doi.wiley.com/10.1111/j.1461-0248.2008.01269.x.
+\newblock \emph{Ecology Letters}, 12, 184--195.
 
-\bibitem[Hughes, 2000]{Hughes2000}
-Hughes, L. (2000{\rm{}}).
+\bibitem[{Hughes(2000)}]{Hughes2000}
+Hughes, L. (2000).
 \newblock {Biological consequences of global warming: is the signal already
   apparent?}
-\newblock {\rm Trends in Ecology {\&} Evolution } \emph{15}, 56--61.
+\newblock \emph{Trends in Ecology {\&} Evolution}, 15, 56--61.
 
-\bibitem[Klink and Machado, 2005]{KLINK2005}
-Klink, C.~A. and Machado, R.~B. (2005{\rm{}}).
+\bibitem[{Klink \& Machado(2005)}]{KLINK2005}
+Klink, C.A. \& Machado, R.B. (2005).
 \newblock {Conservation of the Brazilian Cerrado}.
-\newblock http://doi.wiley.com/10.1111/j.1523-1739.2005.00702.x.
+\newblock \emph{Conservation Biology}, 19, 707--713.
 
-\bibitem[Klink and Moreira, 2002]{Oliveira2002}
-Klink, C.~a. and Moreira, A.~G. (2002{\rm{}}).
-\newblock {The Cerrados of Brasil: Ecology and Natural History of a Neotropical
-  Savanna}.
-\newblock {\rm The Cerrados of Brasil: Ecology and Natural History of a
-  Neotropical Savanna } \emph{57}, 69--90.
-
-\bibitem[Koleff {\rm et~al.}, 2003]{Koleff2003}
-Koleff, P., Gaston, K.~J.  and Lennon, J.~J. (2003{\rm{}}).
+\bibitem[{Koleff \emph{et~al.}(2003)Koleff, Gaston \& Lennon}]{Koleff2003}
+Koleff, P., Gaston, K.J. \& Lennon, J.J. (2003).
 \newblock {Measuring beta diversity for presence-absence data}.
-\newblock {\rm Journal of Animal Ecology } \emph{72}, 367--382.
+\newblock \emph{Journal of Animal Ecology}, 72, 367--382.
 
-\bibitem[Kricher, 2011]{Kricher2011}
-Kricher, J.~C. (2011{\rm{}}).
-\newblock {\rm {Tropical ecology}}.
+\bibitem[{Kricher(2011)}]{Kricher2011}
+Kricher, J.C. (2011).
+\newblock \emph{{Tropical ecology}}.
 \newblock Princeton University Press.
 
-\bibitem[Michener, 2000]{Michener2007}
-Michener, C.~D. (2000{\rm{}}).
-\newblock {\rm {The bees of the world}}, vol. 85,.
+\bibitem[{Michener(2000)}]{Michener2007}
+Michener, C.D. (2000).
+\newblock \emph{{The bees of the world}}.
 \newblock Johns Hopkins University Press.
 
-\bibitem[Miller-Rushing and Primack, 2008]{Miller-Rushing2008}
-Miller-Rushing, A.~J. and Primack, R.~B. (2008{\rm{}}).
+\bibitem[{Miller-Rushing \& Primack(2008)}]{Miller-Rushing2008}
+Miller-Rushing, A.J. \& Primack, R.B. (2008).
 \newblock {Global warming and flowering times in Thoreau's Concord: A community
   perspective}.
-\newblock {\rm Ecology } \emph{89}, 332--341.
+\newblock \emph{Ecology}, 89, 332--341.
 
-\bibitem[Moure, 1962]{Moure1962}
-Moure, J.~S. (1962{\rm{}}).
-\newblock {\rm {As Mamangabas Sociais do Brasil (Bombus Latr.)(Hym.,
-  Apoidea)}}.
-\newblock Editora Vozes Ltda., Rio de Janeiro.
+\bibitem[{Moure \& Melo(2012)}]{Moure2007}
+Moure, J.S. \& Melo, G.A.R. (2012).
+\newblock \emph{{Catalogue of Bees (Hymenoptera, Apoidea) in the Neotropical
+  Region}}.
+\newblock 1st edn.
+\newblock Universidade Federal do Parana, Curitiba.
 
-\bibitem[Moure {\rm et~al.}, 2012]{Moure2007}
-Moure, J.~S., Melo, G. A.~R.  and Vivallo, F. (2012{\rm{}}).
-\newblock {Catalogue of Bees (Hymenoptera, Apoidea) in the Neotropical Region -
-  online version.}
-\newblock
-  https://www.researchgate.net/publication/315495801{\_}Catalogue{\_}of{\_}Bees{\_}Hymenoptera{\_}Apoidea{\_}in{\_}the{\_}Neotropical{\_}Region
-  http://www.moure.cria.org.br/catalogue.
-
-\bibitem[Myers {\rm et~al.}, 2000]{Myers2000}
-Myers, N., Mittermeier, R.~A., Mittermeier, C.~G., da~Fonseca, G. A.~B.  and
-  Kent, J. (2000{\rm{}}).
+\bibitem[{Myers \emph{et~al.}(2000)Myers, Mittermeier, Mittermeier, da~Fonseca
+  \& Kent}]{Myers2000}
+Myers, N., Mittermeier, R.A., Mittermeier, C.G., da~Fonseca, G.A.B. \& Kent, J.
+  (2000).
 \newblock {Biodiversity hotspots for conservation priorities}.
-\newblock {\rm Nature } \emph{403}, 853--858.
+\newblock \emph{Nature}, 403, 853--858.
 
-\bibitem[Olesen {\rm et~al.}, 2008]{Olesen2008}
-Olesen, J.~M., Bascompte, J., Elberling, H.  and Jordano, P. (2008{\rm{}}).
+\bibitem[{Olesen \emph{et~al.}(2008)Olesen, Bascompte, Elberling \&
+  Jordano}]{Olesen2008}
+Olesen, J.M., Bascompte, J., Elberling, H. \& Jordano, P. (2008).
 \newblock {Temporal dynamics in a pollination network}.
-\newblock {\rm Ecology } \emph{89}, 1573--1582.
+\newblock \emph{Ecology}, 89, 1573--1582.
 
-\bibitem[Parmesan and Yohe, 2003]{Parmesan2003}
-Parmesan, C. and Yohe, G. (2003{\rm{}}).
+\bibitem[{{Oliveira, P.S. \& Marquis, R.J.}(2002)}]{Oliveira2002}
+{Oliveira, P.S. \& Marquis, R.J.} (2002).
+\newblock \emph{{The Cerrados of Brasil: Ecology and Natural History of a
+  Neotropical Savanna}}.
+\newblock Columbia University Press.
+
+\bibitem[{Parmesan \& Yohe(2003)}]{Parmesan2003}
+Parmesan, C. \& Yohe, G. (2003).
 \newblock {A globally coherent fingerprint of climate change impacts across
   natural systems}.
-\newblock {\rm Nature } \emph{421}, 37--42.
+\newblock \emph{Nature}, 421, 37--42.
 
-\bibitem[Petanidou, 1991]{Petanidou1991}
-Petanidou, T. (1991{\rm{}}).
-\newblock {\rm {Pollination ecology in a phryganic ecosystem}}.
-\newblock PhD thesis, Aristotelian University, Thessaloniki, Greece.
+\bibitem[{Petanidou(1991)}]{Petanidou1991}
+Petanidou, T. (1991).
+\newblock \emph{Pollination ecology in a phryganic ecosystem}.
+\newblock Ph.D. thesis, Aristotelian University, Thessaloniki, Greece.
 
-\bibitem[Pinheiro-Machado {\rm et~al.}, 2002]{Pinheiro-Machado2002}
-Pinheiro-Machado, C., Alves-dos Santos, I., {Imperatriz Fonseca}, V.~L.,
-  Kleinert, A. d. M.~P.  and Silveira, F.~A. (2002{\rm{}}).
-\newblock {Brazilian bee surveys: state of knowledge, conservation and
-  sustainable use}.
-\newblock {\rm Pollinating Bees: The Conservation Link Between Agriculture and
-  Nature } \emph{{ }}, 115--129.
+\bibitem[{Pinheiro-Machado \emph{et~al.}(2002)Pinheiro-Machado, Alves-dos
+  Santos, {Imperatriz Fonseca}, Kleinert \& Silveira}]{Pinheiro-Machado2002}
+Pinheiro-Machado, C., Alves-dos Santos, I., {Imperatriz Fonseca}, V.L.,
+  Kleinert, A. \& Silveira, F.A. (2002).
+\newblock \emph{\textnormal{Brazilian bee surveys: state of knowledge,
+  conservation and sustainable use.} Pollinating Bees: The Conservation Link
+  Between Agriculture and Nature. \textnormal{(eds P. Kevan \& V.L.
+  Imperatriz-Fonseca)}}, Brazilian Ministry of Environment, Bras{\'{i}}lia.,
+  pp. 115--129.
 
-\bibitem[Poisot {\rm et~al.}, 2012{\rm{a}}]{Poisot2012}
-Poisot, T., Canard, E., Mouillot, D., Mouquet, N.  and Gravel, D.
-  (2012{\rm{a}}).
+\bibitem[{Poisot \emph{et~al.}(2012{\natexlab{a}})Poisot, Canard, Mouillot,
+  Mouquet \& Gravel}]{Poisot2012}
+Poisot, T., Canard, E., Mouillot, D., Mouquet, N. \& Gravel, D.
+  (2012{\natexlab{a}}).
 \newblock {The dissimilarity of species interaction networks}.
+\newblock \emph{Ecology Letters}, 15, 1353--1361.
 
-\bibitem[Poisot {\rm et~al.}, 2012{\rm{b}}]{Poisot2012a}
-Poisot, T., Canard, E., Mouquet, N.  and Hochberg, M.~E. (2012{\rm{b}}).
+\bibitem[{Poisot \emph{et~al.}(2012{\natexlab{b}})Poisot, Canard, Mouquet \&
+  Hochberg}]{Poisot2012a}
+Poisot, T., Canard, E., Mouquet, N. \& Hochberg, M.E. (2012{\natexlab{b}}).
 \newblock {A comparative study of ecological specialization estimators}.
-\newblock {\rm Methods in Ecology and Evolution } \emph{3}, 537--544.
+\newblock \emph{Methods in Ecology and Evolution}, 3, 537--544.
 
-\bibitem[Poisot {\rm et~al.}, 2015]{Poisot2015}
-Poisot, T., Stouffer, D.~B.  and Gravel, D. (2015{\rm{}}).
+\bibitem[{Poisot \emph{et~al.}(2015)Poisot, Stouffer \& Gravel}]{Poisot2015}
+Poisot, T., Stouffer, D.B. \& Gravel, D. (2015).
 \newblock {Beyond species: Why ecological interaction networks vary through
   space and time}.
-\newblock {\rm Oikos } \emph{124}, 243--251.
+\newblock \emph{Oikos}, 124, 243--251.
 
-\bibitem[Scaven and Rafferty, 2013]{Scaven2013}
-Scaven, V.~L. and Rafferty, N.~E. (2013{\rm{}}).
+\bibitem[{Scaven \& Rafferty(2013)}]{Scaven2013}
+Scaven, V.L. \& Rafferty, N.E. (2013).
 \newblock {Physiological effects of climate warming on flowering plants and
   insect pollinators and potential consequences for their interactions.}
-\newblock {\rm Current zoology } \emph{59}, 418--426.
+\newblock \emph{Current zoology}, 59, 418--426.
 
-\bibitem[Schweiger {\rm et~al.}, 2010]{Schweiger2010}
-Schweiger, O., Biesmeijer, J.~C., Bommarco, R., Hickler, T., Hulme, P.~E.,
-  Klotz, S., K{\"{u}}hn, I., Moora, M., Nielsen, A., Ohlem{\"{u}}ller, R.,
-  Petanidou, T., Potts, S.~G., Py{\v{s}}ek, P., Stout, J.~C., Sykes, M.~T.,
-  Tscheulin, T., Vil{\`{a}}, M., Walther, G.~R., Westphal, C., Winter, M.,
-  Zobel, M.  and Settele, J. (2010{\rm{}}).
+\bibitem[{Schweiger \emph{et~al.}(2010)Schweiger, Biesmeijer, Bommarco,
+  Hickler, Hulme, Klotz, K{\"{u}}hn, Moora, Nielsen, Ohlem{\"{u}}ller,
+  Petanidou, Potts, Py{\v{s}}ek, Stout, Sykes, Tscheulin, Vil{\`{a}}, Walther,
+  Westphal, Winter, Zobel \& Settele}]{Schweiger2010}
+Schweiger, O., Biesmeijer, J.C., Bommarco, R., Hickler, T., Hulme, P.E., Klotz,
+  S., K{\"{u}}hn, I., Moora, M., Nielsen, A., Ohlem{\"{u}}ller, R., Petanidou,
+  T., Potts, S.G., Py{\v{s}}ek, P., Stout, J.C., Sykes, M.T., Tscheulin, T.,
+  Vil{\`{a}}, M., Walther, G.R., Westphal, C., Winter, M., Zobel, M. \&
+  Settele, J. (2010).
 \newblock {Multiple stressors on biotic interactions: How climate change and
   alien species interact to affect pollination}.
-\newblock http://doi.wiley.com/10.1111/j.1469-185X.2010.00125.x.
 
-\bibitem[Silveira and Campos, 1995]{Silveira1995}
-Silveira, F.~A. and Campos, M. J.~O. (1995{\rm{}}).
+\bibitem[{Silveira \& Campos(1995)}]{Silveira1995}
+Silveira, F.A. \& Campos, M.J.O. (1995).
 \newblock {A melissofauna de Corumbata{\'{i}} (SP) e Paraopeba (MG) e uma
   an{\'{a}}lise da biogeografia das abelhas do Cerrado Brasileiro (Hymenoptera,
   Apoidea)}.
-\newblock {\rm Revista Brasileira de Entomologia } \emph{39}, 371--401.
+\newblock \emph{Revista Brasileira de Entomologia}, 39, 371--401.
 
-\bibitem[Silveira {\rm et~al.}, 2002]{Silveira2002}
-Silveira, F.~A., Melo, G. A.~R.  and Almeida, E. A.~B. (2002{\rm{}}).
-\newblock {\rm {ABELHAS BRASILEIRAS Sistem{\'{a}}tica e
+\bibitem[{Silveira \emph{et~al.}(2002)Silveira, Melo \& Almeida}]{Silveira2002}
+Silveira, F.A., Melo, G.A.R. \& Almeida, E.A.B. (2002).
+\newblock \emph{{ABELHAS BRASILEIRAS Sistem{\'{a}}tica e
   Identifica{\c{c}}{\~{a}}o}}.
 \newblock [Fernando A. Silveira].
 
-\bibitem[{V{\'{a}}zquez, Meli{\'{a}}n, Williamns, Bluthgen, Krasnov},
-  2007]{Vazquez2007}
-{V{\'{a}}zquez, Meli{\'{a}}n, Williamns, Bluthgen, Krasnov}, P. (2007{\rm{}}).
+\bibitem[{{V{\'{a}}zquez, Meli{\'{a}}n, Williamns, Bluthgen,
+  Krasnov}(2007)}]{Vazquez2007}
+{V{\'{a}}zquez, Meli{\'{a}}n, Williamns, Bluthgen, Krasnov}, P. (2007).
 \newblock {Species abundance and asymmetric interaction strength in ecological
   networks - mat supp}.
-\newblock {\rm OIkos } \emph{116}, 1120--1127.
+\newblock \emph{OIkos}, 116, 1120--1127.
 
-\bibitem[Whittaker, 1960]{Whittaker1960}
-Whittaker, R.~H. (1960{\rm{}}).
+\bibitem[{Whittaker(1960)}]{Whittaker1960}
+Whittaker, R.H. (1960).
 \newblock {Vegetation of the Siskiyou Mountains, Oregon and California}.
-\newblock {\rm Ecological Monographs } \emph{30}, 279--338.
+\newblock \emph{Ecological Monographs}, 30, 279--338.
 
-\bibitem[Yeakel {\rm et~al.}, 2014]{Yeakel2014}
-Yeakel, J.~D., Pires, M.~M., Rudolf, L., Dominy, N.~J., Koch, P.~L.,
-  Guimar{\~{a}}es, P.~R.  and Gross, T. (2014{\rm{}}).
+\bibitem[{Yeakel \emph{et~al.}(2014)Yeakel, Pires, Rudolf, Dominy, Koch,
+  Guimar{\~{a}}es \& Gross}]{Yeakel2014}
+Yeakel, J.D., Pires, M.M., Rudolf, L., Dominy, N.J., Koch, P.L.,
+  Guimar{\~{a}}es, P.R. \& Gross, T. (2014).
 \newblock {Collapse of an ecological network in Ancient Egypt}.
-\newblock {\rm Proceedings of the National Academy of Sciences of the United
-  States of America } \emph{111}, 14472--7.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 111, 14472--7.
 
-\bibitem[Zuur {\rm et~al.}, 2010]{Zuur2010}
-Zuur, A.~F., Ieno, E.~N.  and Elphick, C.~S. (2010{\rm{}}).
+\bibitem[{Zuur \emph{et~al.}(2010)Zuur, Ieno \& Elphick}]{Zuur2010}
+Zuur, A.F., Ieno, E.N. \& Elphick, C.S. (2010).
 \newblock {A protocol for data exploration to avoid common statistical
   problems}.
-\newblock {\rm Methods in Ecology and Evolution } \emph{1}, 3--14.
+\newblock \emph{Methods in Ecology and Evolution}, 1, 3--14.
 
 \end{thebibliography}
