@@ -145,7 +145,7 @@ def calc_turnover(months, days, years, bees, plants, noofmonths, startofmonths):
 # type in file to remove duplicates
 print "Data file must have the following columns in the order: Month Day Year Bee Plant"
 #filename = raw_input('Enter your data file name in rearranged folder: ')
-filename = 'NewCerradoData.csv'
+filename = 'CorrectedNewCerradoData.csv'
 pathname = os.path.join("../data/rearranged/", filename)
 months, days, years, bees, plants = extract_data(pathname)
 
@@ -277,7 +277,7 @@ def calc_osstturnover(startofmonths2, noofmonths, bees, commonbees, plants, comm
 
 ########### Extract climate data and Manipulate ####################
 
-cyears, cmonths, sumprecips, medtemps, medmaxtemps, medtempranges, medhumids = extract_data2('../data/rearranged/new/OldCerradoClimaData.csv')
+cyears, cmonths, sumprecips, medtemps, medmaxtemps, medtempranges, medhumids = extract_data2('../data/rearranged/new/NewCerradoClimaData.csv')
 
 # average between two months
 [avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids] = ([0]*(len(sumprecips)-1) for i in range(5))

@@ -17,7 +17,7 @@ from operator import div
 
 ########## Script starts here ##########
 
-filename = 'NewCerradoAllData.csv'
+filename = 'CorrectedNewCerradoData.csv'
 pathname = '../data/rearranged/' + filename
 h = open(pathname,'rb')
 data = csv.reader(h)

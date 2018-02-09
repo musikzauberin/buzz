@@ -20,7 +20,7 @@ import warnings
 warnings.filterwarnings('error')
 
 
-filename = 'NewCerradoData1-monthly(New).csv'
+filename = 'CorrectedNewCerradoData1-monthly(New).csv'
 pathname = '../data/rearranged/new/' + filename
 h = open(pathname,'rb')
 data = csv.reader(h)
