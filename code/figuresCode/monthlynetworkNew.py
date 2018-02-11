@@ -115,7 +115,7 @@ for plantlist in plantlists:
     plantlist.append(-10)
 
 ## create x axis labels
-monthlabels = 'Oct, Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep'
+monthlabels = 'Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct'
 monthlabels = monthlabels.split(', ')
 monthdisplay = monthlabels*2
 monthdisplay.append('Jun')
@@ -287,22 +287,44 @@ title = pl.title('Pollinator Networks at the IBGE site in Cerrado (2008-2009)', 
 title.set_position([.37, 1.05])
 
 # colour background according to season
-for i in np.arange(-1, 11.0, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
-for i in np.arange(0, 11.5, 2):
-  pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
-pl.axvspan(11, 11.5, facecolor='c', alpha=0.2)
+for i in np.arange(-1, 9.0, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.1)
+for i in np.arange(0, 9.5, 2):
+  pl.axvspan(i, i+1, facecolor='c', alpha=0.05)
+pl.axvspan(9, 9.5, facecolor='c', alpha=0.1)
 
-pl.axvspan(11.5, 12, facecolor='r', alpha=0.2)
-for i in np.arange(12, len(startofmonths)*2-2, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
-for i in np.arange(13, len(startofmonths)*2-2, 2):
-  pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
-
+pl.axvspan(9.5, 10, facecolor='r', alpha=0.1)
+for i in np.arange(10, len(startofmonths)*2-5, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.05)
+for i in np.arange(11, len(startofmonths)*2-5, 2):
+  pl.axvspan(i, i+1, facecolor='r', alpha=0.1)
+  
+pl.axvspan(len(startofmonths)*2-5, len(startofmonths)*2-4.5, facecolor='r', alpha=0.1)
+pl.axvspan(len(startofmonths)*2-4.5, len(startofmonths)*2-4, facecolor='c', alpha=0.1)
+pl.axvspan(len(startofmonths)*2-4, len(startofmonths)*2-3, facecolor='c', alpha=0.05)
+pl.axvspan(len(startofmonths)*2-3, len(startofmonths)*2-2, facecolor='c', alpha=0.1)
 
 # pl.axvspan(11.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
-pl.text(4.5, 230, 'Wet Season', size = 14)
-pl.text(16.5, 230, 'Dry Season', size = 14)
+pl.text(3.5, 230, 'Wet Season', size = 14)
+pl.text(15.5, 230, 'Dry Season', size = 14)
+
+# # colour background according to season
+# for i in np.arange(-1, 11.0, 2):
+#   pl.axvspan(i, i+1, facecolor='c', alpha=0.2)
+# for i in np.arange(0, 11.5, 2):
+#   pl.axvspan(i, i+1, facecolor='c', alpha=0.08)
+# pl.axvspan(11, 11.5, facecolor='c', alpha=0.2)
+#
+# pl.axvspan(11.5, 12, facecolor='r', alpha=0.2)
+# for i in np.arange(12, len(startofmonths)*2-2, 2):
+#   pl.axvspan(i, i+1, facecolor='r', alpha=0.08)
+# for i in np.arange(13, len(startofmonths)*2-2, 2):
+#   pl.axvspan(i, i+1, facecolor='r', alpha=0.2)
+#
+#
+# # pl.axvspan(11.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
+# pl.text(4.5, 230, 'Wet Season', size = 14)
+# pl.text(16.5, 230, 'Dry Season', size = 14)
 
 # remove borders
 pl.gca().spines['top'].set_visible(False)

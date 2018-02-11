@@ -13,7 +13,7 @@ import os.path
 import mpl_toolkits.axisartist as AA
 from mpl_toolkits.axes_grid1 import host_subplot
 
-h = open('../data/rearranged/new/AllTurnoverNewCerrado.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado.csv','rb')
 data = csv.reader(h)
 
 
@@ -224,7 +224,7 @@ legend.get_frame().set_color(light_grey)
 # overall
 pl.tight_layout()
 
-plotpath = '../' + 'Climate(New)1' + '.pdf'
+plotpath = '../../results/CorrectedNewCerrado/Timeplots/' + 'Climate(CorrectedNew)' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

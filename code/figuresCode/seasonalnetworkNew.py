@@ -317,8 +317,8 @@ pl.axvspan(len(startofmonths)*2-4, len(startofmonths)*2-3, facecolor='c', alpha=
 pl.axvspan(len(startofmonths)*2-3, len(startofmonths)*2-2, facecolor='c', alpha=0.1)
 
 # pl.axvspan(11.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
-pl.text(4.5, 230, 'Wet Season', size = 14)
-pl.text(16.5, 230, 'Dry Season', size = 14)
+pl.text(3.5, 230, 'Wet Season', size = 14)
+pl.text(15.5, 230, 'Dry Season', size = 14)
 
 # remove borders
 pl.gca().spines['top'].set_visible(False)
