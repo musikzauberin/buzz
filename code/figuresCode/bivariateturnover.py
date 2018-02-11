@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../data/rearranged/new/AllTurnoverOldCerrado.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado.csv','rb')
 data = csv.reader(h)
 
 
@@ -75,7 +75,7 @@ def plotturnovers(a, b, drya, dryb, weta, wetb, xlabel_str, ylabel_str):
   # labels
   pl.xlabel(xlabel_str, size=16)
   pl.ylabel(ylabel_str, size=16)
-  pl.title('Turnover in Cerrado (1995-1997)', size=16)
+  pl.title('Turnover in Cerrado (2008-2009)', size=16)
 
   # correlation text
   rc('text', usetex=True)
@@ -99,7 +99,7 @@ def plotturnovers(a, b, drya, dryb, weta, wetb, xlabel_str, ylabel_str):
 
   # save plot and show
   plotname = xlabel_str + '-' + ylabel_str
-  plotpath = '../results/BivariatePlots/OldCerrado/turnovers/' + plotname + '.pdf'
+  plotpath = '../../results/CorrectedNewCerrado/Bivariateplots/turnovers/' + plotname + '.pdf'
   pl.savefig(plotpath)
   pl.close()
   
@@ -109,7 +109,7 @@ def plotturnovers(a, b, drya, dryb, weta, wetb, xlabel_str, ylabel_str):
 def writenewdata(filename_str, headers, values):
   'inputting new data into csv file'
   headers = headers.split(', ')
-  pathname = '../results/BivariatePlots/OldCerrado/turnovers/' + filename_str + '.csv'
+  pathname = '../../results/CorrectedNewCerrado/Bivariateplots/turnovers/' + filename_str + '.csv'
   g = open(pathname, 'wb')
 
   csvwrite = csv.writer(g)

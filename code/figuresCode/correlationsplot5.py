@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../results/BivariatePlots/NewCerrado/monthavg&turnover/Turnover&ClimateAvg(New).csv','rb')
+h = open('../../results/CorrectedNewCerrado/Bivariateplots/monthavg&turnover/Turnover&ClimateAvg(CorrectedNew).csv','rb')
 data = csv.reader(h)
 
 
@@ -161,8 +161,8 @@ for nrows, ncols, plot_number in plotdimensions:
 # pl.gca().add_artist(legend)
 
 # save plot and show
-plotname = 'Turnover&ClimateAvg(New)'
-plotpath = '../results/BivariatePlots/' + plotname + '.pdf'
+plotname = 'Turnover&ClimateAvg(CorrectedNew)'
+plotpath = '../../results/CorrectedNewCerrado/Bivariateplots/' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

@@ -1,2 +1,5 @@
 (old) refers to BBG BoaVentura Dataset from 1995-1997
 (new) refers to IBGE Dataset by Simone from Nov2008-Oct2009
+
+Folders:
+Number results: all csv files with numbers

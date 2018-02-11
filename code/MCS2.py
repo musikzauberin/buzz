@@ -42,7 +42,7 @@ for column in data:
 h.close()
 
 
-h2 = open('../results/BivariatePlots/AllCoefficients(New).csv','rb')
+h2 = open('../results/CorrectedNewCerrado/Bivariateplots/AllCoefficients(CorrectedNew).csv','rb')
 data2 = csv.reader(h2)
 
 ########## Inputting data into lists ##########
@@ -211,7 +211,7 @@ actualvalues = allrs[0:13]
 # +447751442592
 random.seed(+447751442592)
 allrandrs = []
-n_required = 100000
+n_required = 10000
 n_current = 0
 bees_unique = list(set(bees))
 

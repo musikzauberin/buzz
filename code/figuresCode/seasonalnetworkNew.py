@@ -19,8 +19,8 @@ def longest(listoflists):
   else:
     return(max([len(onelist) for onelist in listoflists]))
 
-filename = 'NewCerradoData1-monthly(New).csv'
-pathname = '../data/rearranged/new/' + filename
+filename = 'CorrectedNewCerradoData1-monthly(New).csv'
+pathname = '../../data/rearranged/new/' + filename
 h = open(pathname,'rb')
 data = csv.reader(h)
 
@@ -66,6 +66,8 @@ def findstartindex(values, timescale_str):
     return startofyears
   if timescale_str == 'unique':
     for i in range(1, datalen):
+      if values[i] == 'Nov' and values[i] != values[i-1]:
+          startofunq.append(i)
       if values[i] == 'Apr' and values[i] != values[i-1]:
         startofunq.append(i)
       elif values[i] == 'Oct' and values[i] != values[i-1]:
@@ -77,7 +79,7 @@ def findstartindex(values, timescale_str):
 
 startofmonths = findstartindex(months, 'months')
 startofunq = findstartindex(months, 'unique')
-
+print startofmonths
 
 minbee = min(int(bee) for bee in bees)
 maxbee = max(int(bee) for bee in bees)
@@ -126,7 +128,7 @@ for plantlist in plantlists:
     plantlist.append(-10)
 
 ## create x axis labels
-monthlabels = 'Oct, Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep'
+monthlabels = 'Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct'
 monthlabels = monthlabels.split(', ')
 monthdisplay = monthlabels*2
 
@@ -183,10 +185,8 @@ for i in range(len(bees)):
 
 appearmax = 0
 
-wetbeeplants = beeplants[startofunq[0]:startofunq[1]]
+wetbeeplants = beeplants[startofunq[0]:startofunq[1]]+ beeplants[startofunq[2]:startofunq[3]]
 drybeeplants = beeplants[startofunq[1]:startofunq[2]]
-
-print drybeeplants
 
 # define colours, alpha and widths for lines dependent on number of int appearances
 colours2 = [colours[i] for i in [0, 2, 3]]
@@ -299,17 +299,22 @@ title = pl.title('Pollinator Networks at IBGE site in Cerrado (2008-2009)', size
 title.set_position([.37, 1.05])
 
 # colour background according to season
-for i in np.arange(-1, 11.0, 2):
+for i in np.arange(-1, 9.0, 2):
   pl.axvspan(i, i+1, facecolor='c', alpha=0.1)
-for i in np.arange(0, 11.5, 2):
+for i in np.arange(0, 9.5, 2):
   pl.axvspan(i, i+1, facecolor='c', alpha=0.05)
-pl.axvspan(11, 11.5, facecolor='c', alpha=0.1)
+pl.axvspan(9, 9.5, facecolor='c', alpha=0.1)
 
-pl.axvspan(11.5, 12, facecolor='r', alpha=0.1)
-for i in np.arange(12, len(startofmonths)*2-2, 2):
+pl.axvspan(9.5, 10, facecolor='r', alpha=0.1)
+for i in np.arange(10, len(startofmonths)*2-5, 2):
   pl.axvspan(i, i+1, facecolor='r', alpha=0.05)
-for i in np.arange(13, len(startofmonths)*2-2, 2):
+for i in np.arange(11, len(startofmonths)*2-5, 2):
   pl.axvspan(i, i+1, facecolor='r', alpha=0.1)
+  
+pl.axvspan(len(startofmonths)*2-5, len(startofmonths)*2-4.5, facecolor='r', alpha=0.1)
+pl.axvspan(len(startofmonths)*2-4.5, len(startofmonths)*2-4, facecolor='c', alpha=0.1)
+pl.axvspan(len(startofmonths)*2-4, len(startofmonths)*2-3, facecolor='c', alpha=0.05)
+pl.axvspan(len(startofmonths)*2-3, len(startofmonths)*2-2, facecolor='c', alpha=0.1)
 
 # pl.axvspan(11.5, len(startofmonths)*2-2, facecolor='r', alpha=0.08)
 pl.text(4.5, 230, 'Wet Season', size = 14)
@@ -362,8 +367,8 @@ pl.gca().add_artist(second_legend)
 ########## Save plot ##########
 
 pl.tight_layout()
-plotname = 'seasonalnetwork(new)'
-plotpath = '../' + plotname + '.pdf'
+plotname = 'seasonalnetwork(CorrectedNew)'
+plotpath = '../../results/CorrectedNewCerrado/Timeplots/' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

@@ -19,10 +19,10 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../results/BivariatePlots/OldCerrado/monthavg&turnover/Turnover&ClimateAvg(Old).csv','rb')
+h = open('../../results/CorrectedNewCerrado/Bivariateplots/monthavg&turnover/Turnover&ClimateAvg(CorrectedNew).csv','rb')
 data = csv.reader(h)
 
-h1 = open('../results/BivariatePlots/OldCerrado/monthdiff&turnover/Turnover&ClimateDiff(Old).csv','rb')
+h1 = open('../../results/CorrectedNewCerrado/Bivariateplots/monthdiff&turnover/Turnover&ClimateDiff(CorrectedNew).csv','rb')
 data1 = csv.reader(h1)
 
 ########## Inputting data into lists ##########
@@ -177,8 +177,8 @@ for nrows, ncols, plot_number in plotdimensions:
 
 # save plot and show
 pl.tight_layout()
-plotname = 'SpecTurnover&AvgClimate(Old)'
-plotpath = '../results/BivariatePlots/thesisplots/' + plotname + '.pdf'
+plotname = 'SpecTurnover&AvgClimate(CorrectedNew)'
+plotpath = '../../results/CorrectedNewCerrado/Bivariateplots/' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

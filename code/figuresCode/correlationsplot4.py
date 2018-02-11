@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../results/BivariatePlots/NewCerrado/monthlydiff/DiffClimateCoefficients(New).csv','rb')
+h = open('../../results/CorrectedNewCerrado/Bivariateplots/monthlydiff/DiffClimateCoefficients(CorrectedNew).csv','rb')
 data = csv.reader(h)
 
 
@@ -161,8 +161,8 @@ for nrows, ncols, plot_number in plotdimensions:
 # pl.gca().add_artist(legend)
 
 # save plot and show
-plotname = 'DiffClimateCoefficients(New)'
-plotpath = '../results/BivariatePlots/' + plotname + '.pdf'
+plotname = 'DiffClimateCoefficients(CorrectedNew)'
+plotpath = '../../results/CorrectedNewCerrado/Bivariateplots/' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

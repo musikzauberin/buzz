@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../data/rearranged/new/AllTurnoverNewCerrado.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado.csv','rb')
 data = csv.reader(h)
 
 
@@ -99,7 +99,7 @@ def plotturnovers(a, b, drya, dryb, weta, wetb, xlabel_str, ylabel_str):
 
   # save plot and show
   plotname = xlabel_str + '-' + ylabel_str
-  plotpath = '../results/BivariatePlots/NewCerrado/monthlyaverage/' + plotname + '.pdf'
+  plotpath = '../../results/CorrectedNewCerrado/Bivariateplots/monthlyaverage/' + plotname + '.pdf'
   pl.savefig(plotpath)
   pl.close()
   
@@ -109,7 +109,7 @@ def plotturnovers(a, b, drya, dryb, weta, wetb, xlabel_str, ylabel_str):
 def writenewdata(filename_str, headers, values):
   'inputting new data into csv file'
   headers = headers.split(', ')
-  pathname = '../results/BivariatePlots/NewCerrado/monthlyaverage/' + filename_str + '.csv'
+  pathname = '../../results/CorrectedNewCerrado/Bivariateplots/monthlyaverage/' + filename_str + '.csv'
   g = open(pathname, 'wb')
 
   csvwrite = csv.writer(g)
@@ -171,8 +171,8 @@ newvalues = [xlabels, ylabels, dryrs, dryps, wetrs, wetps, allrs, allps]
 writenewdata('AvgClimateCoefficients(New)', newheaders, newvalues)
 
 
-dryr, dryp = stats.spearmanr(drybints, drybeeturnovers)
-wetr, wetp = stats.spearmanr(wetbints, wetbeeturnovers)
-allr, allp = stats.spearmanr(bints, beeturnovers)
-
-print dryr, dryp, wetr, wetp, allr, allp
+# dryr, dryp = stats.spearmanr(drybints, drybeeturnovers)
+# wetr, wetp = stats.spearmanr(wetbints, wetbeeturnovers)
+# allr, allp = stats.spearmanr(bints, beeturnovers)
+#
+# print dryr, dryp, wetr, wetp, allr, allp

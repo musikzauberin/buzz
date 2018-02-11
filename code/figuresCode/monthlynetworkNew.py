@@ -20,8 +20,8 @@ def longest(listoflists):
   else:
     return(max([len(onelist) for onelist in listoflists]))
 
-filename = 'NewCerradoData1-monthly(New).csv'
-pathname = '../data/rearranged/new/' + filename
+filename = 'CorrectedNewCerradoData1-monthly(New).csv'
+pathname = '../../data/rearranged/new/' + filename
 h = open(pathname,'rb')
 data = csv.reader(h)
 
@@ -350,8 +350,8 @@ pl.gca().add_artist(second_legend)
 ########## Save plot ##########
 
 pl.tight_layout()
-plotname = 'network(New)'
-plotpath = '../' + plotname + '.pdf'
+plotname = 'network(CorrectedNew)'
+plotpath = '../../results/CorrectedNewCerrado/Timeplots/' + plotname + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

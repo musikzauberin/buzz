@@ -1,13 +1,14 @@
 '''Combine multiple csv files into one'''
+import sys
+sys.path.insert(0,'/usr/local/lib/python2.7/site-packages')
+import pandas as pd 
 
-import pandas as pd
+a = pd.read_csv("/Users/lele/Documents/MacDocuments/github/buzz/results/CorrectedNewCerrado/Bivariateplots/turnovers/TurnoverCoefficients(CorrectedNew).csv")
+b = pd.read_csv("/Users/lele/Documents/MacDocuments/github/buzz/results/CorrectedNewCerrado/Bivariateplots/monthlydiff/DiffClimateCoefficients(CorrectedNew).csv")
 
-a = pd.read_csv("../results/BivariatePlots/NewCerrado/turnovers/TurnoverCoefficients(New).csv")
-b = pd.read_csv("../results/BivariatePlots/NewCerrado/monthlydiff/DiffClimateCoefficients(New).csv")
-
-c = pd.read_csv("../results/BivariatePlots/NewCerrado/monthlyaverage/AvgClimateCoefficients(New).csv")
-d = pd.read_csv("../results/BivariatePlots/NewCerrado/monthdiff&turnover/Turnover&ClimateDiff(New).csv")
-e = pd.read_csv("../results/BivariatePlots/NewCerrado/monthavg&turnover/Turnover&ClimateAvg(New).csv")
+c = pd.read_csv("/Users/lele/Documents/MacDocuments/github/buzz/results/CorrectedNewCerrado/Bivariateplots/monthlyaverage/AvgClimateCoefficients(CorrectedNew).csv")
+d = pd.read_csv("/Users/lele/Documents/MacDocuments/github/buzz/results/CorrectedNewCerrado/Bivariateplots/monthdiff&turnover/Turnover&ClimateDiff(CorrectedNew).csv")
+e = pd.read_csv("/Users/lele/Documents/MacDocuments/github/buzz/results/CorrectedNewCerrado/Bivariateplots/monthavg&turnover/Turnover&ClimateAvg(CorrectedNew).csv")
 
 df_list = []
 df_list.append(a)
@@ -18,5 +19,5 @@ df_list.append(e)
 
 full_df = pd.concat(df_list)
 
-full_df.to_csv('../results/BivariatePlots/AllCoefficients(New).csv')
+full_df.to_csv('/Users/lele/Documents/MacDocuments/github/buzz/results/CorrectedNewCerrado/Bivariateplots/AllCoefficients(CorrectedNew).csv')
 # index = False removes first column of numbering

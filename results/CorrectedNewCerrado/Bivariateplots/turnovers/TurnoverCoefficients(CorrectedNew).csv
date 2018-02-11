@@ -1,0 +1,16 @@
+x-axis,y-axis,DryCoefficient,DryP-value,WetCoefficient,WetP-value,AllCoefficient,AllP-value
+Bst,IntTurnover,0.48571,0.32872,-0.9,0.03739,-0.02727,0.93656
+Bos,IntTurnover,-0.23191,0.65837,1.0,0.0,0.22831,0.49953
+SpeciesTurnovers,IntTurnover,0.6,0.208,0.9,0.03739,0.75455,0.00728
+BeeTurnovers,IntTurnover,-0.14286,0.78717,0.7,0.18812,0.27335,0.41604
+PlantTurnovers,IntTurnover,0.65714,0.15617,0.9,0.03739,0.71818,0.0128
+Bos,Bst,-0.92763,0.00767,-0.9,0.03739,-0.91782,7e-05
+SpeciesTurnovers,Bst,0.77143,0.0724,-0.7,0.18812,0.37273,0.25893
+BeeTurnovers,Bst,0.71429,0.11079,-0.4,0.50463,0.3918,0.23338
+PlantTurnovers,Bst,0.65714,0.15617,-0.7,0.18812,0.46364,0.1509
+SpeciesTurnovers,Bos,-0.57977,0.22778,0.9,0.03739,-0.15525,0.64852
+BeeTurnovers,Bos,-0.72471,0.10324,0.7,0.18812,-0.25629,0.44682
+PlantTurnovers,Bos,-0.49281,0.32063,0.9,0.03739,-0.24201,0.47339
+BeeTurnovers,SpeciesTurnovers,0.6,0.208,0.9,0.03739,0.60137,0.05034
+PlantTurnovers,SpeciesTurnovers,0.94286,0.0048,1.0,0.0,0.96364,0.0
+PlantTurnovers,BeeTurnovers,0.37143,0.46848,0.9,0.03739,0.45558,0.15907

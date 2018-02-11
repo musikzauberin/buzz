@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../data/CerradoBoaVentura/NewCerradoClima.csv','rb')
+h = open('../../data/CerradoBoaVentura/NewCerradoClima.csv','rb')
 data = csv.reader(h)
 
 
@@ -50,7 +50,6 @@ for i in reversed(range(len(humids))):
     print humids[i], i
     for values in [precips, humids, cyears, cmonths, cdays]:
       values.pop(i)
-
 
 def separateintoseasons(months, values, dryvalues, wetvalues, drymonths, wetmonths):
   'Separate data into dry and wet seasons'
@@ -104,7 +103,6 @@ wetr, wetp = stats.spearmanr(wethumids, wetprecips)
 #     plotpath = '../results/' + str(climatelist[c][1]) + '-' + str(turnoverlist[i][1]) + '.pdf'
 #     pl.savefig(plotpath)
 #     pl.close()
-# print wethumids, wetprecips
 
 # plot
 pl.plot(wethumids, wetprecips, 'bo', label = 'Wet Season')
@@ -136,6 +134,6 @@ pl.gca().yaxis.set_ticks_position('left')
 pl.grid(True)
 
 # save plot and show
-plotpath = '../results/ClimaPlots/NewCerradoClima/humids-precips.pdf'
+plotpath = '../../results/CorrectedNewCerrado/Bivariateplots/daily/humids-precips.pdf'
 pl.savefig(plotpath)
 pl.show()
