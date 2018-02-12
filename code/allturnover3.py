@@ -26,14 +26,14 @@ def extract_data(pathname):
 
   h = open(pathname,'rb')
   data = csv.reader(h)
-  [months, days, years, bees, plants] = ([] for i in range(len(next(data))))
-  headers = [months, days, years, bees, plants]
+  [season, months, days, years, bees, plants] = ([] for i in range(len(next(data))))
+  headers = [season, months, days, years, bees, plants]
   for column in data:
     for j, i in enumerate(headers):
       i.append(column[j])
   h.close()
 
-  return months, days, years, bees, plants
+  return season, months, days, years, bees, plants
 
 def extract_data2(pathname):
   'Extract data into corresponding columns + headers'
@@ -147,7 +147,7 @@ print "Data file must have the following columns in the order: Month Day Year Be
 #filename = raw_input('Enter your data file name in rearranged folder: ')
 filename = 'CorrectedNewCerradoData.csv'
 pathname = os.path.join("../data/rearranged/", filename)
-months, days, years, bees, plants = extract_data(pathname)
+season, months, days, years, bees, plants = extract_data(pathname)
 
 startofmonths = findstartindex(months, 'months')
 
@@ -280,23 +280,25 @@ def calc_osstturnover(startofmonths2, noofmonths, bees, commonbees, plants, comm
 cyears, cmonths, sumprecips, medtemps, medmaxtemps, medtempranges, medhumids = extract_data2('../data/rearranged/new/NewCerradoClimaData.csv')
 
 # average between two months
-[avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids] = ([0]*(len(sumprecips)-1) for i in range(5))
+[avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids] = ([0]*(len(sumprecips)-3) for i in range(5))
 averages = [avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids]
 measures = [sumprecips, medtemps, medmaxtemps, medtempranges, medhumids]
 pairs = zip(measures, averages)
 
+print avgprecips
+
 for pair in pairs:
-  for x in range(len(sumprecips)-1):
-    pair[1][x] = round((float(pair[0][x]) + float(pair[0][x+1]))/2, 2)
+  for x in range(0, len(sumprecips)-3):
+    pair[1][x] = round((float(pair[0][x+1]) + float(pair[0][x+2]))/2, 2)
 
 # difference between two months
-[diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids] = ([0]*(len(sumprecips)-1) for i in range(5))
+[diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids] = ([0]*(len(sumprecips)-3) for i in range(5))
 differences = [diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids]
 pairs2 = zip(measures, differences)
 
 for pair2 in pairs2:
-  for x in range(len(sumprecips)-1):
-    pair2[1][x] = round(float(pair2[0][x+1]) - float(pair2[0][x]), 2)
+  for x in range(0, len(sumprecips)-3):
+    pair2[1][x] = round(float(pair2[0][x+2]) - float(pair2[0][x+1]), 2)
 
 
 ########## Writing Turnover Data into new file ##########

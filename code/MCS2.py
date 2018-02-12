@@ -209,9 +209,9 @@ startofmonths = findstartindex(months, 'months')
 actualvalues = allrs[0:13]
 
 # +447751442592
-random.seed(+447751442592)
+random.seed(1)
 allrandrs = []
-n_required = 10000
+n_required = 100000
 n_current = 0
 bees_unique = list(set(bees))
 
@@ -317,6 +317,7 @@ while n_current < n_required:
 # 298 10192 672 3140 2 0 3502 1054 13040 3498 2004 7792 4992
 # 1452 50940 3084 15035 8 0 17727 5621 63986 17627 9692 39072 24243 (old)
 # 3747 84436 1229 36408 1183 0 37931 15818 19071 35857 87278 206 11628 (new)
+# 7055 73772 3805 63386 2454 1 54403 48055 27240 20055 99997 99873 10932 (correctednew)
 
 # for i in range(len(allrandrs)):
 #   print allrandrs[i][12]

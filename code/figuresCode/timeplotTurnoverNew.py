@@ -10,7 +10,7 @@ import calendar
 import sys
 import os.path
 
-h = open('../data/rearranged/new/AllTurnoverNewCerrado.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado2.csv','rb')
 data = csv.reader(h)
 
 
@@ -45,7 +45,7 @@ def makesubplotnice():
   # subplot labels
   pl.ylabel('Dissimilarity', size=12)
   
-  monthlabels = 'Oct, Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, '
+  monthlabels = 'Nov, Dec, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct'
   monthlabels = monthlabels.split(', ')
 
   minor_ticks = np.arange(-0.5, 12.5, 1)
@@ -65,8 +65,9 @@ def makesubplotnice():
   pl.gca().yaxis.set_ticks_position('left')
   
   # background color
-  pl.axvspan(-1, 4.5, facecolor='c', alpha=0.1)
-  pl.axvspan(4.5, 12.5, facecolor='r', alpha=0.1)
+  pl.axvspan(-0.5, 4, facecolor='c', alpha=0.1)
+  pl.axvspan(4, 10, facecolor='r', alpha=0.1)
+  pl.axvspan(10, 11, facecolor='c', alpha=0.1)
   # pl.text(1.5, 1.04, 'Dry Season', size = 12)
   # pl.text(7, 1.04, 'Wet Season', size = 12)
   # pl.text(12, 1.04, 'Dry Season', size = 12)
@@ -117,7 +118,7 @@ makesubplotnice()
 # overall
 pl.tight_layout()
 
-plotpath = '../' + 'TimeplotTurnovers(new)' + '.pdf'
+plotpath = '../../results/CorrectedNewCerrado/Timeplots/' + 'TimeplotTurnovers(new)' + '.pdf'
 pl.savefig(plotpath)
 
 pl.show()

@@ -59,7 +59,7 @@ def makesubplotnice():
   # pl.text(12, 1.04, 'Dry Season', size = 12)
   
   # legend
-  legend = pl.legend(loc='best', frameon=True, numpoints=1, fontsize = 11.5, labelspacing=0.2)
+  legend = pl.legend(loc='upper right', frameon=True, numpoints=1, fontsize = 11.5, labelspacing=0.2)
   light_grey = np.array([float(248)/float(255)]*3)
   legend.get_frame().set_linewidth(0.0)
   legend.get_frame().set_color(light_grey)

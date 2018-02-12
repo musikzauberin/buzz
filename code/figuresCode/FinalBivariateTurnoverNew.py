@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../data/rearranged/new/AllTurnoverNewCerrado.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado2.csv','rb')
 data = csv.reader(h)
 
 
@@ -170,6 +170,6 @@ pl.subplots_adjust(top=0.88)
 
 
 # save plot and show
-plotpath = '../turnoversbivariate(New).pdf'
+plotpath = '../../results/CorrectedNewCerrado/turnoversbivariate(New).pdf'
 pl.savefig(plotpath)
 pl.show()

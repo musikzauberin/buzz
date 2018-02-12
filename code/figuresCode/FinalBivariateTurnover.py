@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../data/rearranged/new/AllTurnoverNewCerrado.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado2.csv','rb')
 data = csv.reader(h)
 
 
