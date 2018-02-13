@@ -319,15 +319,29 @@ while n_current < n_required:
 # 3747 84436 1229 36408 1183 0 37931 15818 19071 35857 87278 206 11628 (new)
 # 7055 73772 3805 63386 2454 1 54403 48055 27240 20055 99997 99873 10932 (correctednew)
 
+# random.seed(1)
+# 6975 73562 3823 63377 2444 0 54489 48463 27325 19896 99998 99871 10901 (correctednew)
+
 # for i in range(len(allrandrs)):
 #   print allrandrs[i][12]
 print r12s
 print actualvalues[12]
 print r0s, r1s, r2s, r3s, r4s, r5s, r6s, r7s, r8s, r9s, r10s, r11s, r12s
 
+MCS_rxs = [r0s, r1s, r2s, r3s, r4s, r5s, r6s, r7s, r8s, r9s, r10s, r11s, r12s]
+
 ########## Calculating p-values ##########
 
+print MCS_rxs
+print n_required
+MCS_ps = []
 
+for x in MCS_rxs:
+    print x
+    MCS_ps.append(float(x)/float(n_required))
+
+print MCS_ps
+print len(MCS_ps)
 
 
 # def makeHist(allrs, x, valuetitle_str, plotname_str, color_str):
@@ -347,36 +361,26 @@ print r0s, r1s, r2s, r3s, r4s, r5s, r6s, r7s, r8s, r9s, r10s, r11s, r12s
 
 
 
-# ########## Writing Turnover Data into new file ##########
-#
-# def writenewdata(filename_str, headers, values):
-#   'inputting new data into csv file'
-#   headers = headers.split(', ')
-#   pathname = '../data/rearranged/new/' + filename_str + '.csv'
-#   g = open(pathname, 'wb')
-#
-#   csvwrite = csv.writer(g)
-#   csvwrite.writerow(headers)
-#   tobewritten = zip(*values)
-#   for row in tobewritten:
-#     csvwrite.writerow(row)
-#   g.close()
-#
-# def timelabels(timeinterval, startofmonths):
-#   'creating new timeinterval list that corresponds to new data'
-#   timelabels = []
-#   for i in startofmonths[:-1]:
-#     timelabels.append(timeinterval[i])
-#   return timelabels
-#
-# yearlabels = timelabels(years, startofmonths)
-# monthlabels = timelabels(months, startofmonths)
-#
-# newheaders2 = 'Year, Month, InteractionTurnover, BeeTurnover, PlantTurnover, SpeciesTurnover, B_os, B_st'
-# newvalues2 = [yearlabels, monthlabels, bints, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers]
-#
-# filename3 = 'RandomTurnoverOldCerrado'
-# writenewdata(filename3, newheaders2, newvalues2)
-# print 'Find edited data file in rearranged/new folder! \nFile saved as ' + filename3 + '.csv'
-# print 'Done!'
+########## Writing Turnover Data into new file ##########
+
+def writenewdata(filename_str, headers, values):
+  'inputting new data into csv file'
+  headers = headers.split(', ')
+  pathname = '../results/CorrectedNewCerrado/Bivariateplots/' + filename_str + '.csv'
+  g = open(pathname, 'wb')
+
+  csvwrite = csv.writer(g)
+  csvwrite.writerow(headers)
+  tobewritten = zip(*values)
+  for row in tobewritten:
+    csvwrite.writerow(row)
+  g.close()
+
+newheaders = ' , x-axis, y-axis, DryCoefficient, DryP-value, WetCoefficient, WetP-value, AllCoefficient, AllP-value, MCS_pvalues'
+newvalues = [index, xmeasures, ymeasures, dryrs, dryps, wetrs, wetps, allrs, allps, MCS_ps]
+
+filename = 'AllCoefficients(CorrectedNew)withMCS'
+writenewdata(filename, newheaders, newvalues)
+print 'Find edited data file in rearranged/new folder! \nFile saved as ' + filename + '.csv'
+print 'Done!'
 
