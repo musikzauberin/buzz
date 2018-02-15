@@ -19,9 +19,10 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../../results/CorrectedNewCerrado/Bivariateplots/AllCoefficients(CorrectedNew)withMCS.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado2.csv','rb')
 data = csv.reader(h)
-
+h2 = open('../../results/CorrectedNewCerrado/Bivariateplots/AllCoefficients(CorrectedNew)withMCS.csv','rb')
+data2 = csv.reader(h2)
 
 ########## Inputting data into lists ##########
 
@@ -30,15 +31,25 @@ data = csv.reader(h)
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
 diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids, seasons] = ([] for i in range(len(next(data))))
 
-headers2 = [years, months, bints, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, \
+headers = [years, months, bints, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, \
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
 diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids, seasons]
 
 for column in data:
-  for j, i in enumerate(headers2):
+  for j, i in enumerate(headers):
     i.append(column[j])
 
 h.close()
+
+[index, xmeasures, ymeasures, dryrs, dryps, wetrs, wetps, allrs, allps, MCS_ps] = ([] for i in range(len(next(data2))))
+
+headers2 = [index, xmeasures, ymeasures, dryrs, dryps, wetrs, wetps, allrs, allps, MCS_ps]
+
+for column in data2:
+  for j, i in enumerate(headers2):
+    i.append(column[j])
+
+h2.close()
 
 
 ########## Bivariates between turnover data ##########
@@ -57,7 +68,7 @@ pl.figure(figsize=(12, 4))
 pl.subplot(1, 3, 1)
 
 pl.plot(specturnovers, bints, 'ko', alpha = 0.7)
-allr, allp = stats.spearmanr(specturnovers, bints)
+# allr, allp = stats.spearmanr(specturnovers, bints)
 
 # plot dimensions
 axes = pl.gca()
@@ -72,7 +83,7 @@ pl.ylabel(r'$\beta_{int}$', size=16)
 
 # correlation text
 rc('text', usetex=True)
-pl.text(0.85, ymin,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.012', size = 12)
+pl.text(0.85, ymin,  r'$r_{s}$ = ' + str(round(float(allrs[2]), 3)) + '\n' + r'$p$ = ' + str(round(float(MCS_ps[2]), 3)), size = 12)
 
 # r' \underline{Spearman`s correlation}'
 
@@ -94,7 +105,7 @@ pl.grid(True)
 pl.subplot(1, 3, 2)
 
 pl.plot(specturnovers, osturnovers, 'ko', alpha = 0.7)
-allr, allp = stats.spearmanr(specturnovers, osturnovers)
+# allr, allp = stats.spearmanr(specturnovers, osturnovers)
 
 # plot dimensions
 axes = pl.gca()
@@ -109,7 +120,7 @@ pl.suptitle('Turnover measures of IBGE networks', size=16)
 
 # correlation text
 rc('text', usetex=True)
-pl.text(xmin + 0.01 , ymin + 0.01,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.359', size = 12)
+pl.text(xmin + 0.01 , ymin + 0.01,  r'$r_{s}$ = ' + str(round(float(allrs[9]), 3)) + '\n' + r'$p$ = ' + str(round(float(MCS_ps[9]), 3)), size = 12)
 
 # r' \underline{Spearman`s correlation}'
 
@@ -131,7 +142,7 @@ pl.grid(True)
 pl.subplot(1, 3, 3)
 
 pl.plot(specturnovers, stturnovers, 'ko', alpha = 0.7)
-allr, allp = stats.spearmanr(specturnovers, stturnovers)
+# allr, allp = stats.spearmanr(specturnovers, stturnovers)
 
 # plot dimensions
 axes = pl.gca()
@@ -146,7 +157,7 @@ pl.ylabel(r'$\beta_{st}$', size=16)
 
 # correlation text
 rc('text', usetex=True)
-pl.text(0.85, 0.01,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.379', size = 12)
+pl.text(0.85, 0.01,  r'$r_{s}$ = ' + str(round(float(allrs[6]), 3)) + '\n' + r'$p$ = ' + str(round(float(MCS_ps[6]), 3)), size = 12)
 
 # r' \underline{Spearman`s correlation}'
 
