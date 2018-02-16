@@ -19,7 +19,7 @@ from math import log
 from scipy import stats
 from matplotlib import rc
 
-h = open('../data/rearranged/new/AllTurnoverOldCerrado.csv','rb')
+h = open('../../data/rearranged/new/2017/AllTurnoverOldCerrado.csv','rb')
 data = csv.reader(h)
 
 
@@ -28,11 +28,11 @@ data = csv.reader(h)
 # copy and paste all headers in data twice
 [years, months, bints, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, \
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
-diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids] = ([] for i in range(len(next(data))))
+diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids, seasons] = ([] for i in range(len(next(data))))
 
 headers2 = [years, months, bints, beeturnovers, plantturnovers, specturnovers, osturnovers, stturnovers, \
 avgprecips, avgtemps, avgmaxtemps, avgtempranges, avghumids, \
-diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids]
+diffprecips, difftemps, diffmaxtemps, difftempranges, diffhumids, seasons]
 
 for column in data:
   for j, i in enumerate(headers2):
@@ -55,8 +55,8 @@ h.close()
 pl.figure(figsize=(8, 4))
 pl.subplot(1, 2, 1)
 
-pl.plot(plantturnovers, bints, 'ko', alpha = 0.7)
-allr, allp = stats.spearmanr(plantturnovers, bints)
+pl.plot(beeturnovers, bints, 'ko', alpha = 0.7)
+allr, allp = stats.spearmanr(beeturnovers, bints)
 
 # plot dimensions
 axes = pl.gca()
@@ -65,13 +65,13 @@ xmin, xmax = axes.get_xlim()
 pl.axis([ xmin - 0.01, xmax + 0.01, ymin - 0.01, ymax + 0.01])
 
 # labels
-pl.xlabel(r'$\beta_{Plant}$', size=16)
+pl.xlabel(r'$\beta_{Bee}$', size=16)
 pl.ylabel(r'$\beta_{int}$', size=16)
 pl.title('BBG site', size=16)
 
 # correlation text
 rc('text', usetex=True)
-pl.text(0.8,0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.00008', size = 12)
+pl.text(0.7,0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.150', size = 12)
 
 # r' \underline{Spearman`s correlation}'
 
@@ -90,7 +90,7 @@ pl.gca().yaxis.set_ticks_position('left')
 # grid
 pl.grid(True)
 
-h = open('../data/rearranged/new/AllTurnoverNewCerrado.csv','rb')
+h = open('../../data/rearranged/new/AllTurnoverCorrectedNewCerrado2.csv','rb')
 data = csv.reader(h)
 
 
@@ -127,8 +127,8 @@ h.close()
 
 pl.subplot(1, 2, 2)
 
-pl.plot(plantturnovers, bints, 'ko', alpha = 0.7)
-allr, allp = stats.spearmanr(plantturnovers, bints)
+pl.plot(beeturnovers, bints, 'ko', alpha = 0.7)
+allr, allp = stats.spearmanr(beeturnovers, bints)
 
 # plot dimensions
 axes = pl.gca()
@@ -137,13 +137,13 @@ xmin, xmax = axes.get_xlim()
 pl.axis([ xmin - 0.01, 1.01, 0.69, 1.01])
 
 # labels
-pl.xlabel(r'$\beta_{Plant}$', size=16)
+pl.xlabel(r'$\beta_{Bee}$', size=16)
 pl.ylabel(r'$\beta_{int}$', size=16)
 pl.title('IBGE site', size=16)
 
 # correlation text
 rc('text', usetex=True)
-pl.text(0.8, 0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.01183', size = 12)
+pl.text(0.8, 0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.63377', size = 12)
 
 # r' \underline{Spearman`s correlation}'
 
