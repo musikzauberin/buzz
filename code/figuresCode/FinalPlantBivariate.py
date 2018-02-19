@@ -56,7 +56,7 @@ pl.figure(figsize=(8, 4))
 pl.subplot(1, 2, 1)
 
 pl.plot(beeturnovers, bints, 'ko', alpha = 0.7)
-allr, allp = stats.spearmanr(beeturnovers, bints)
+allr, allp = stats.spearmanr(plantturnovers, bints)
 
 # plot dimensions
 axes = pl.gca()
@@ -65,13 +65,13 @@ xmin, xmax = axes.get_xlim()
 pl.axis([ xmin - 0.01, xmax + 0.01, ymin - 0.01, ymax + 0.01])
 
 # labels
-pl.xlabel(r'$\beta_{Bee}$', size=16)
+pl.xlabel(r'$\beta_{Plant}$', size=16)
 pl.ylabel(r'$\beta_{int}$', size=16)
 pl.title('BBG site', size=16)
 
 # correlation text
 rc('text', usetex=True)
-pl.text(0.7,0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.150', size = 12)
+pl.text(0.8,0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.00008', size = 12)
 
 # r' \underline{Spearman`s correlation}'
 
@@ -128,7 +128,7 @@ h.close()
 pl.subplot(1, 2, 2)
 
 pl.plot(beeturnovers, bints, 'ko', alpha = 0.7)
-allr, allp = stats.spearmanr(beeturnovers, bints)
+allr, allp = stats.spearmanr(plantturnovers, bints)
 
 # plot dimensions
 axes = pl.gca()
@@ -137,13 +137,13 @@ xmin, xmax = axes.get_xlim()
 pl.axis([ xmin - 0.01, 1.01, 0.69, 1.01])
 
 # labels
-pl.xlabel(r'$\beta_{Bee}$', size=16)
+pl.xlabel(r'$\beta_{Plant}$', size=16)
 pl.ylabel(r'$\beta_{int}$', size=16)
 pl.title('IBGE site', size=16)
 
 # correlation text
 rc('text', usetex=True)
-pl.text(0.8, 0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.63377', size = 12)
+pl.text(0.85, 0.7,  r'$r_{s}$ = ' + str(round(allr, 3)) + '\n' + r'$p$ = 0.024', size = 12)
 
 # r' \underline{Spearman`s correlation}'
 
